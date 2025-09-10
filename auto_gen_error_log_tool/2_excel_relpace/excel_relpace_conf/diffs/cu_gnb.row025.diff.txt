@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row025.modified.conf
+@@ -65,7 +65,7 @@
+   # preferred ciphering algorithms
+   # the first one of the list that an UE supports in chosen
+   # valid values: nea0, nea1, nea2, nea3
+-  ciphering_algorithms = ( "nea3","nea2","nea1","nea0" );
++  ciphering_algorithms = ( "nia5","nea9" );
+ 
+   # preferred integrity algorithms
+   # the first one of the list that an UE supports in chosen

@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row009.modified.conf
+@@ -21,7 +21,7 @@
+                 mnc = 01; 
+                 mnc_length = 2; 
+                 snssaiList = ( { 
+-                  sst = 1;
++                  sst = -1;
+                   }
+                   ); 
+                   });

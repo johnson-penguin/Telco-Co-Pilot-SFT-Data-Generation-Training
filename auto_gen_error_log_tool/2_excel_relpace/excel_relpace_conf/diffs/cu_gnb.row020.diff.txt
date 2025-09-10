@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row020.modified.conf
+@@ -44,7 +44,7 @@
+     {
+         # Number of streams to use in input/output
+         SCTP_INSTREAMS  = 2;
+-        SCTP_OUTSTREAMS = 2;
++        SCTP_OUTSTREAMS = 1234567;
+     };
+ 
+ 

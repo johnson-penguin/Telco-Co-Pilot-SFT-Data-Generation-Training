@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row001.modified.conf
+@@ -1,7 +1,7 @@
+ 
+ Active_gNBs = ["gNB-Eurecom-CU"]
+ # Asn1_verbosity, choice in: none, info, annoying
+-Asn1_verbosity = "none";
++Asn1_verbosity = "ibhizbccyon";
+ Num_Threads_PUSCH = 8;
+ 
+ gNBs =

@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row027.modified.conf
+@@ -74,7 +74,7 @@
+ 
+   # setting 'drb_ciphering' to "no" disables ciphering for DRBs, no matter
+   # what 'ciphering_algorithms' configures; same thing for 'drb_integrity'
+-  drb_ciphering = "yes";
++  drb_ciphering = "zczemor";
+   drb_integrity = "no";
+ };
+ 

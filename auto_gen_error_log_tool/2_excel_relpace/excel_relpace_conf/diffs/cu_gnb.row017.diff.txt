@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row017.modified.conf
+@@ -36,7 +36,7 @@
+     remote_s_address = "127.0.0.3";
+     local_s_portc   = 501;
+     local_s_portd   = 2152;
+-    remote_s_portc  = 500;
++    remote_s_portc  = 1234567;
+     remote_s_portd  = 2152;
+ 
+     # ------- SCTP definitions

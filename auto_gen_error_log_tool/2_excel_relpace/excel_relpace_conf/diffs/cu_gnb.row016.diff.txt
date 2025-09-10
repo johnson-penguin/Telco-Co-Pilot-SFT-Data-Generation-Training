@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row016.modified.conf
+@@ -35,7 +35,7 @@
+     local_s_address = "127.0.0.5";
+     remote_s_address = "127.0.0.3";
+     local_s_portc   = 501;
+-    local_s_portd   = 2152;
++    local_s_portd   = 1234567;
+     remote_s_portc  = 500;
+     remote_s_portd  = 2152;
+ 

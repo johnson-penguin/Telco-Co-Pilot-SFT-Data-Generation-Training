@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row032.modified.conf
+@@ -83,7 +83,7 @@
+   global_log_level                      ="info";
+   hw_log_level                          ="info";
+   phy_log_level                         ="info";
+-  mac_log_level                         ="info";
++  mac_log_level                         ="oruopleu";
+   rlc_log_level                         ="info";
+   pdcp_log_level                        ="info";
+   rrc_log_level                         ="info";

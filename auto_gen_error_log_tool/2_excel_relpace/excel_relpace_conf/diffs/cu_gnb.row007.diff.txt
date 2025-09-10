@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row007.modified.conf
+@@ -18,7 +18,7 @@
+     tracking_area_code  =  1;
+     plmn_list = ({ 
+                 mcc = 001; 
+-                mnc = 01; 
++                mnc = 99999; 
+                 mnc_length = 2; 
+                 snssaiList = ( { 
+                   sst = 1;

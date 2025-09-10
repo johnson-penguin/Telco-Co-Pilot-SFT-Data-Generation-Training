@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row034.modified.conf
+@@ -85,7 +85,7 @@
+   phy_log_level                         ="info";
+   mac_log_level                         ="info";
+   rlc_log_level                         ="info";
+-  pdcp_log_level                        ="info";
++  pdcp_log_level                        ="aflhvdkpezq";
+   rrc_log_level                         ="info";
+   ngap_log_level                        ="info";
+   f1ap_log_level                        ="info";

@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row011.modified.conf
+@@ -28,7 +28,7 @@
+ 
+     nr_cellid = 1;
+ 
+-    tr_s_preference = "f1";
++    tr_s_preference = "lmegmja";
+     # tr_s_preference = "s1"
+ 
+     local_s_if_name = "lo";

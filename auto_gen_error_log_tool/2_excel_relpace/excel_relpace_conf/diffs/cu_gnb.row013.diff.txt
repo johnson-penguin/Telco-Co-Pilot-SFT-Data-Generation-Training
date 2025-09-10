@@ -1,0 +1,11 @@
+--- cu_gnb.conf
++++ cu_gnb.row013.modified.conf
+@@ -32,7 +32,7 @@
+     # tr_s_preference = "s1"
+ 
+     local_s_if_name = "lo";
+-    local_s_address = "127.0.0.5";
++    local_s_address = "jovwfnvsu";
+     remote_s_address = "127.0.0.3";
+     local_s_portc   = 501;
+     local_s_portd   = 2152;

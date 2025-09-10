@@ -1,0 +1,2 @@
+param,target,old_value,new_value,status
+gNB_ID,CU,0xe00,0xDEADBEEF,modified

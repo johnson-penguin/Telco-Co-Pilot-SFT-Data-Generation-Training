@@ -1,0 +1,10 @@
+--- cu_gnb.conf
++++ cu_gnb.row036.modified.conf
+@@ -87,6 +87,6 @@
+   rlc_log_level                         ="info";
+   pdcp_log_level                        ="info";
+   rrc_log_level                         ="info";
+-  ngap_log_level                        ="info";
++  ngap_log_level                        ="lzkgbbnldk";
+   f1ap_log_level                        ="info";
+ };
