@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "PUCCH common encoding failure",
+    "Log Level": "FATAL",
+    "Message": "clone_pucch_configcommon(): could not encode NR_PUCCH_ConfigCommon",
+    "Event Description": "Invalid PUCCH Common configuration triggers assert; DU exits. Without DU, UE cannot connect."
+  }
+]
+

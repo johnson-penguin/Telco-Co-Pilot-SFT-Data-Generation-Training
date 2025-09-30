@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "PLMN mismatch",
+    "Log Level": "ERROR",
+    "Message": "[NR_RRC]   PLMN mismatch: CU 999.01, DU 00101",
+    "Event Description": "CU and DU PLMN mismatch causes F1 Setup failure and SCTP shutdown. Control-plane between CU and DU collapses, blocking UE attach and PDU Session; UE cannot connect."
+  }
+]
+

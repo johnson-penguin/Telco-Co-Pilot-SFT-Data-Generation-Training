@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid maxMIMO_layers",
+    "Log Level": "FATAL",
+    "Message": "Assertion in RCconfig_nr_macrlc(): Invalid maxMIMO_layers 1 for configured antennas",
+    "Event Description": "DU MAC/RLC configuration asserts on maxMIMO_layers; process exits. Without DU, F1AP stays down and UE cannot connect."
+  }
+]
+

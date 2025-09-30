@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "PRACH configuration index invalid",
+    "Log Level": "FATAL",
+    "Message": "Assertion in fix_scc(): PRACH configuration index 200 overflows slot symbols",
+    "Event Description": "Invalid PRACH configuration causes DU assert and exit. RACH cannot proceed; UE cannot connect."
+  }
+]
+

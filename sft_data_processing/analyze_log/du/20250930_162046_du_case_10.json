@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid bandwidth index",
+    "Log Level": "FATAL",
+    "Message": "Assertion in get_supported_bw_mhz(): bandwidth index -1 is invalid",
+    "Event Description": "DU PHY bandwidth configuration invalid; asserts and exits. UE cannot connect due to DU crash."
+  }
+]
+

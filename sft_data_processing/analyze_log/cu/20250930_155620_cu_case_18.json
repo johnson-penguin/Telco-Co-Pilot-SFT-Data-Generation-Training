@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "GTP-U instance not available",
+    "Log Level": "FATAL",
+    "Message": "Assertion (ret >= 0) failed! Unable to create GTP Tunnel for NG-U",
+    "Event Description": "GTP-U creation fails (CU-UP N3 not available); CU asserts in E1 bearer setup and exits. UE attach cannot complete or sustain data path."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "GTP-U instance not available",
+    "Log Level": "FATAL",
+    "Message": "Assertion (ret >= 0) failed! Unable to create GTP Tunnel for NG-U",
+    "Event Description": "GTP-U creation fails (CU-UP N3 not available); CU asserts in E1 bearer setup and exits. UE attach cannot complete or sustain data path."
+  }
+]
+

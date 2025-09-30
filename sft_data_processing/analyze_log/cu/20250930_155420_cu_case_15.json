@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid DRB ciphering flag",
+    "Log Level": "ERROR",
+    "Message": "[RRC]   in configuration file, bad drb_ciphering value 'invalid_yes_no', only 'yes' and 'no' allowed",
+    "Event Description": "Invalid DRB ciphering parameter; CU config parse fails and aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid DRB ciphering flag",
+    "Log Level": "ERROR",
+    "Message": "[RRC]   in configuration file, bad drb_ciphering value 'invalid_yes_no', only 'yes' and 'no' allowed",
+    "Event Description": "Invalid DRB ciphering parameter; CU config parse fails and aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

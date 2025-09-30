@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid MNC length",
+    "Log Level": "ERROR",
+    "Message": "config_check_intval: mnc_length: 5 invalid (allowed: 2 or 3)",
+    "Event Description": "DU PLMN MNC length invalid; config check aborts softmodem. Without DU, F1AP cannot establish and UE cannot connect."
+  }
+]
+

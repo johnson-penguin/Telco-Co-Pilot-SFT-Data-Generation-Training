@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid SNSSAI sst",
+    "Log Level": "ERROR",
+    "Message": "[CONFIG] config_check_intrange: sst: 256 invalid value, authorized range: 0 255",
+    "Event Description": "SNSSAI.sst out of allowed range; CU fails self-check and exits. With CU down, F1/NGAP cannot form; UE cannot register or establish data bearer."
+  }
+]
+

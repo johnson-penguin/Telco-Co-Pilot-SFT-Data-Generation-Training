@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "F1 SCTP connect failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "DU cannot establish SCTP (F1-C) to CU; repeated connection refused. F1AP remains down; UE attach/data setup cannot complete."
+  }
+]
+

@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid tracking_area_code",
+    "Log Level": "ERROR",
+    "Message": "config_check_intrange: tracking_area_code: 0 invalid value (allowed: 1..65533)",
+    "Event Description": "DU config validation fails at startup and exits. With DU down, F1AP cannot form and UE cannot connect."
+  }
+]
+

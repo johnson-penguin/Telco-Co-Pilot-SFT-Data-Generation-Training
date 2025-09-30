@@ -1,2 +1,0 @@
-param,target,old_value,new_value,status
-SCTP_OUTSTREAMS,CU,2,1234567,modified

@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid PLMN MCC",
+    "Log Level": "ERROR",
+    "Message": "config_check_intrange: mcc: 1000 invalid value (allowed: 0..999)",
+    "Event Description": "DU PLMN MCC out of range; softmodem exits during config check. F1AP stays down and UE cannot connect."
+  }
+]
+

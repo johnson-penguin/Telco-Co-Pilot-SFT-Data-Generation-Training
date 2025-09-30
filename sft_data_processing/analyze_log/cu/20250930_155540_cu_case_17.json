@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "SCTP address resolution failure",
+    "Log Level": "FATAL",
+    "Message": "Assertion (status == 0) failed! getaddrinfo(999.999.999.999) failed: Name or service not known",
+    "Event Description": "Invalid AMF IP address; SCTP association setup asserts and CU exits. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "SCTP address resolution failure",
+    "Log Level": "FATAL",
+    "Message": "Assertion (status == 0) failed! getaddrinfo(999.999.999.999) failed: Name or service not known",
+    "Event Description": "Invalid AMF IP address; SCTP association setup asserts and CU exits. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

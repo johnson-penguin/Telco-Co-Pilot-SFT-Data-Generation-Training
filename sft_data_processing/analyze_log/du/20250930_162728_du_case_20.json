@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "UE",
+    "Error": "SSB sync failure",
+    "Log Level": "ERROR",
+    "Message": "UE Initial Synch: repeated 'synch Failed' while scanning GSCN; SSB Freq 0.000000",
+    "Event Description": "UE fails to detect SSB despite DU running; radio sync collapses and UE cannot register or connect."
+  }
+]
+

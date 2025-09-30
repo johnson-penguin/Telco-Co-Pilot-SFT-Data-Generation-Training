@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid cellID (out of 36-bit range)",
+    "Log Level": "FATAL",
+    "Message": "Assertion failed in get_SIB1_NR(): cellID 18446744073709551615 not within 36 bits",
+    "Event Description": "DU RRC SIB1 configuration asserts due to invalid cellID; process exits. F1AP cannot proceed and UE cannot connect."
+  }
+]
+

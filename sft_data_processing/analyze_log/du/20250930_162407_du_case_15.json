@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "RACH config encoding failure",
+    "Log Level": "FATAL",
+    "Message": "clone_rach_configcommon(): could not encode NR_RACH_ConfigCommon",
+    "Event Description": "DU RRC encoding failure for RACH Common; process aborts. Without RACH, UE cannot connect."
+  }
+]
+

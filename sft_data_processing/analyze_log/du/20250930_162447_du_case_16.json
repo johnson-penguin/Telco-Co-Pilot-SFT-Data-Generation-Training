@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "PUCCH common encoding failure",
+    "Log Level": "FATAL",
+    "Message": "clone_pucch_configcommon(): could not encode NR_PUCCH_ConfigCommon",
+    "Event Description": "DU RRC PUCCH Common encoding fails; process exits. Control-plane uplink cannot be configured; UE cannot connect."
+  }
+]
+

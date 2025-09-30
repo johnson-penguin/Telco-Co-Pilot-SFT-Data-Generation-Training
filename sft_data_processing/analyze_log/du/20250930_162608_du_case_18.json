@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "ASN.1 SIB encoding failure",
+    "Log Level": "FATAL",
+    "Message": "encode_SIB_NR(): ASN1 encoding failed (ssb-PeriodicityServingCell = 18446744073709551615)",
+    "Event Description": "Invalid SIB value causes RRC ASN.1 encoder to fail; DU exits. Broadcast/config cannot proceed; UE cannot connect."
+  }
+]
+

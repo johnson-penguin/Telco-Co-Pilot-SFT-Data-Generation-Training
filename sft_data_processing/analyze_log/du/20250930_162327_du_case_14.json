@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Unsupported ssb_perRACH_config",
+    "Log Level": "FATAL",
+    "Message": "find_SSB_and_RO_available(): ssb_perRACH_config 9 not supported",
+    "Event Description": "Invalid SSB-to-RACH mapping; DU MAC scheduler asserts and exits. RACH cannot initiate; UE cannot connect."
+  }
+]
+

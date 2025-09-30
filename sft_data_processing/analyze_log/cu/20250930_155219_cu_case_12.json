@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid integrity algorithm",
+    "Log Level": "ERROR",
+    "Message": "[RRC]   unknown integrity algorithm \"nia9\" in section \"security\" of the configuration file",
+    "Event Description": "Unsupported integrity algorithm configured; CU initialization aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid integrity algorithm",
+    "Log Level": "ERROR",
+    "Message": "[RRC]   unknown integrity algorithm \"nia9\" in section \"security\" of the configuration file",
+    "Event Description": "Unsupported integrity algorithm configured; CU initialization aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid ciphering algorithm",
+    "Log Level": "ERROR",
+    "Message": "[RRC]   unknown ciphering algorithm \"nea9\" in section \"security\" of the configuration file",
+    "Event Description": "Unsupported ciphering algorithm configured; CU initialization aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

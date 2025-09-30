@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid DU IP causes SCTP/GTP failure",
+    "Log Level": "FATAL",
+    "Message": "sctp_handle_new_association_req(): getaddrinfo(999.999.0.1) failed; GTP-U instance creation failed",
+    "Event Description": "Misconfigured DU IP leads to SCTP association failure and GTP-U init failure; DU exits. F1-U/F1-C down; UE cannot connect."
+  }
+]
+

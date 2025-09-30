@@ -1,0 +1,228 @@
+[
+  {
+    "filename": "du_case_01.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": "debug",
+    "error_type": "invalid_enum",
+    "explanation_en": "'debug' is not an allowed ASN.1 verbosity level (expected: none|info|annoying). This causes configuration parsing to reject the setting early.",
+    "explanation_zh": "'debug' 並非允許的 ASN.1 詳細等級（預期：none|info|annoying），將在載入設定時被拒絕。"
+  },
+  {
+    "filename": "du_case_02.json",
+    "modified_key": "tracking_area_code",
+    "original_value": 1,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "TAC=0 is reserved and invalid, leading to RRC/NG setup rejection for the serving cell.",
+    "explanation_zh": "TAC=0 為保留值且無效，將導致服務小區在 RRC/NG 設定時被拒絕。"
+  },
+  {
+    "filename": "du_case_03.json",
+    "modified_key": "plmn_list[0].mcc",
+    "original_value": 1,
+    "error_value": "001A",
+    "error_type": "wrong_type",
+    "explanation_en": "MCC must be a numeric value; using a non-numeric string breaks PLMN encoding and registration.",
+    "explanation_zh": "MCC 必須為數值，使用非數字字串會破壞 PLMN 編碼並使註冊失敗。"
+  },
+  {
+    "filename": "du_case_04.json",
+    "modified_key": "plmn_list[0].mnc_length",
+    "original_value": 2,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation_en": "MNC length must be 2 or 3; 5 is invalid and causes PLMN parsing failure.",
+    "explanation_zh": "MNC 長度只能為 2 或 3；5 無效，將導致 PLMN 解析失敗。"
+  },
+  {
+    "filename": "du_case_05.json",
+    "modified_key": "plmn_list[0].snssaiList[0].sd",
+    "original_value": "0x010203",
+    "error_value": "010203",
+    "error_type": "invalid_format",
+    "explanation_en": "S-NSSAI SD must be a hex string with 0x prefix; missing prefix causes SD decoding error.",
+    "explanation_zh": "S-NSSAI 的 SD 需為帶 0x 前綴的十六進位字串；缺少前綴會導致解碼錯誤。"
+  },
+  {
+    "filename": "du_case_06.json",
+    "modified_key": "nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "NR Cell ID must be non-negative; negative value violates RRC cell identity constraints.",
+    "explanation_zh": "NR 小區識別碼必須為非負；負值違反 RRC 小區識別規範。"
+  },
+  {
+    "filename": "du_case_07.json",
+    "modified_key": "pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "Antenna port count cannot be zero; scheduler initialization will fail for PDSCH mapping.",
+    "explanation_zh": "天線埠數不可為 0；排程器於 PDSCH 映射初始化將失敗。"
+  },
+  {
+    "filename": "du_case_08.json",
+    "modified_key": "pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": "four",
+    "error_type": "wrong_type",
+    "explanation_en": "PUSCH antenna ports must be integer; string breaks PHY configuration validation.",
+    "explanation_zh": "PUSCH 天線埠需為整數；字串會使實體層設定驗證失敗。"
+  },
+  {
+    "filename": "du_case_09.json",
+    "modified_key": "dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation_en": "Subcarrier spacing must be 0|1|2|3; 5 is invalid and causes DL numerology mismatch.",
+    "explanation_zh": "子載波間距只允許 0|1|2|3；5 無效，造成下行數學架構不匹配。"
+  },
+  {
+    "filename": "du_case_10.json",
+    "modified_key": "dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "Carrier bandwidth cannot be zero; renders DL BWP invalid and scheduler nonfunctional.",
+    "explanation_zh": "載波頻寬不可為 0；將使下行 BWP 無效，排程器無法運作。"
+  },
+  {
+    "filename": "du_case_11.json",
+    "modified_key": "initialDLBWPlocationAndBandwidth",
+    "original_value": 28875,
+    "error_value": "RBstart=abc",
+    "error_type": "invalid_format",
+    "explanation_en": "Initial DL BWP location/bandwidth expects integer encoding; malformed text breaks parser.",
+    "explanation_zh": "初始 DL BWP 位置與頻寬需整數編碼；文本格式錯誤導致解析失敗。"
+  },
+  {
+    "filename": "du_case_12.json",
+    "modified_key": "prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": 200,
+    "error_type": "out_of_range",
+    "explanation_en": "PRACH configuration index out of spec causes RA preamble scheduling failure.",
+    "explanation_zh": "PRACH 組態索引超出規範，導致隨機接入前導之排程失敗。"
+  },
+  {
+    "filename": "du_case_13.json",
+    "modified_key": "preambleTransMax",
+    "original_value": 6,
+    "error_value": 11,
+    "error_type": "out_of_range",
+    "explanation_en": "PreambleTransMax valid set is limited; 11 is not allowed and RA loop will misbehave.",
+    "explanation_zh": "PreambleTransMax 僅允許特定集合；11 不被允許，將導致 RA 流程異常。"
+  },
+  {
+    "filename": "du_case_14.json",
+    "modified_key": "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR",
+    "original_value": 4,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation_en": "Enumeration outside 1..8 breaks PR calculation for PRACH mapping.",
+    "explanation_zh": "枚舉值超出 1..8，導致 PRACH 對應的 PR 計算失效。"
+  },
+  {
+    "filename": "du_case_15.json",
+    "modified_key": "rsrp_ThresholdSSB",
+    "original_value": 19,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "RSRP threshold cannot be negative; SSB selection logic will reject config.",
+    "explanation_zh": "RSRP 閾值不可為負；SSB 選擇邏輯將拒絕此設定。"
+  },
+  {
+    "filename": "du_case_16.json",
+    "modified_key": "pucchGroupHopping",
+    "original_value": 0,
+    "error_value": 3,
+    "error_type": "invalid_enum",
+    "explanation_en": "PUCCH group hopping only allows 0/1/2; 3 causes uplink control mapping error.",
+    "explanation_zh": "PUCCH 群組跳頻僅允許 0/1/2；值為 3 將導致上行控制映射錯誤。"
+  },
+  {
+    "filename": "du_case_17.json",
+    "modified_key": "hoppingId",
+    "original_value": 40,
+    "error_value": 2048,
+    "error_type": "out_of_range",
+    "explanation_en": "PUCCH hoppingId beyond permitted range breaks sequence generation.",
+    "explanation_zh": "PUCCH hoppingId 超出許可範圍，會使序列產生失敗。"
+  },
+  {
+    "filename": "du_case_18.json",
+    "modified_key": "ssb_periodicityServingCell",
+    "original_value": 2,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation_en": "SSB periodicity enum must be 0..7; 9 is invalid and TDD patterning fails.",
+    "explanation_zh": "SSB 週期枚舉必須為 0..7；9 無效並導致 TDD 佈局錯誤。"
+  },
+  {
+    "filename": "du_case_19.json",
+    "modified_key": "subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 4,
+    "error_type": "invalid_enum",
+    "explanation_en": "Common SCS must be 0..3; value 4 breaks UE compatibility and BWP setup.",
+    "explanation_zh": "通用 SCS 必須為 0..3；設為 4 會破壞 UE 相容性及 BWP 設定。"
+  },
+  {
+    "filename": "du_case_20.json",
+    "modified_key": "nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": 15,
+    "error_type": "out_of_range",
+    "explanation_en": "Number of DL slots exceeds period configuration; TDD grid becomes invalid.",
+    "explanation_zh": "下行時槽數超出週期配置，導致 TDD 網格無效。"
+  },
+  {
+    "filename": "du_case_21.json",
+    "modified_key": "SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "SCTP in-streams must be positive; negative value breaks F1AP association setup.",
+    "explanation_zh": "SCTP 輸入串流必須為正值；負值將導致 F1AP 連線建立失敗。"
+  },
+  {
+    "filename": "du_case_22.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": 70000,
+    "error_type": "out_of_range",
+    "explanation_en": "UDP port exceeds 65535; GTP-U plane cannot bind the socket.",
+    "explanation_zh": "UDP 連接埠不可超過 65535；GTP-U 平面無法綁定。"
+  },
+  {
+    "filename": "du_case_23.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.0.1",
+    "error_type": "invalid_format",
+    "explanation_en": "IP address format is invalid; network stack will reject the binding address.",
+    "explanation_zh": "IP 位址格式無效；網路堆疊將拒絕此綁定位址。"
+  },
+  {
+    "filename": "du_case_24.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": 999,
+    "error_type": "invalid_enum",
+    "explanation_en": "NR band 999 is undefined; RF chain cannot map to a valid frequency range.",
+    "explanation_zh": "NR 頻段 999 未定義；無法對應至有效的射頻頻段。"
+  },
+  {
+    "filename": "du_case_25.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": 120,
+    "error_type": "out_of_range",
+    "explanation_en": "MTU too small for eCPRI payloads; fronthaul segmentation fails and link drops.",
+    "explanation_zh": "MTU 過小不符 eCPRI 載荷需求；前傳分片失敗並導致鏈路中斷。"
+  }
+]
+

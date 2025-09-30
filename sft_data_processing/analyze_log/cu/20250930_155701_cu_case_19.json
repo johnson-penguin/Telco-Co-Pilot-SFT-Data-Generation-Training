@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "F1-U listener creation failure",
+    "Log Level": "FATAL",
+    "Message": "Assertion (getCxt(instance)->gtpInst > 0) failed! Failed to create CU F1-U UDP listener",
+    "Event Description": "Invalid CU F1-U IP configuration; GTP-U instance missing and F1-U listener creation asserts. UE cannot proceed to data-plane establishment."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "F1-U listener creation failure",
+    "Log Level": "FATAL",
+    "Message": "Assertion (getCxt(instance)->gtpInst > 0) failed! Failed to create CU F1-U UDP listener",
+    "Event Description": "Invalid CU F1-U IP configuration; GTP-U instance missing and F1-U listener creation asserts. UE cannot proceed to data-plane establishment."
+  }
+]
+

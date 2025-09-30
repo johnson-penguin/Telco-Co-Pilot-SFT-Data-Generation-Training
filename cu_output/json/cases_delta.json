@@ -1,0 +1,202 @@
+[
+  {
+    "filename": "cu_case_01.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": "0xFFFFFFFF",
+    "error_type": "out_of_range",
+    "explanation": "將 gNB_ID 設定為超出有效範圍的最大值 0xFFFFFFFF；會在 gNB 身份識別階段導致配置驗證失敗與系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_02.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": 65535,
+    "error_type": "out_of_range",
+    "explanation": "將 tracking_area_code 設定為超出有效範圍的值 65535；會在追蹤區域配置階段導致配置驗證失敗與系統拒絕。"
+  },
+  {
+    "filename": "cu_case_03.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": 999,
+    "error_type": "out_of_range",
+    "explanation": "將 MCC 設定為超出有效範圍的值 999；會在 PLMN 配置階段導致配置驗證失敗與網路識別錯誤。"
+  },
+  {
+    "filename": "cu_case_04.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 65535,
+    "error_type": "out_of_range",
+    "explanation": "將 S1U 端口設定為超出有效範圍的值 65535；會在網路介面配置階段導致端口配置失敗與連接建立錯誤。"
+  },
+  {
+    "filename": "cu_case_05.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": 256,
+    "error_type": "out_of_range",
+    "explanation": "將 SST 設定為超出有效範圍的值 256；會在 S-NSSAI 配置階段導致配置驗證失敗與切片識別錯誤。"
+  },
+  {
+    "filename": "cu_case_06.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將 tracking_area_code 從整數類型改為字串類型；會在追蹤區域配置解析階段導致類型錯誤與配置載入失敗。"
+  },
+  {
+    "filename": "cu_case_07.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將 Num_Threads_PUSCH 從整數類型改為字串類型；會在線程配置階段導致類型錯誤與系統初始化失敗。"
+  },
+  {
+    "filename": "cu_case_08.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將 nr_cellid 從整數類型改為字串類型；會在小區 ID 配置階段導致類型錯誤與小區配置失敗。"
+  },
+  {
+    "filename": "cu_case_09.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將 SCTP_INSTREAMS 從整數類型改為字串類型；會在 SCTP 配置階段導致類型錯誤與連接建立失敗。"
+  },
+  {
+    "filename": "cu_case_10.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將 SCTP_OUTSTREAMS 從整數類型改為字串類型；會在 SCTP 配置階段導致類型錯誤與連接建立失敗。"
+  },
+  {
+    "filename": "cu_case_11.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "將 ciphering 算法設定為未知枚舉值 'nea9'；會在安全協商階段導致協商失敗與 NAS 註冊拒絕。"
+  },
+  {
+    "filename": "cu_case_12.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "nia9",
+    "error_type": "invalid_enum",
+    "explanation": "將 integrity 算法設定為未知枚舉值 'nia9'；會在安全協商階段導致協商失敗與 NAS 註冊拒絕。"
+  },
+  {
+    "filename": "cu_case_13.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": "invalid_verbosity",
+    "error_type": "invalid_enum",
+    "explanation": "將 Asn1_verbosity 設定為無效的枚舉值 'invalid_verbosity'；會在 ASN.1 解析階段導致配置驗證失敗與系統啟動錯誤。"
+  },
+  {
+    "filename": "cu_case_14.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "invalid_preference",
+    "error_type": "invalid_enum",
+    "explanation": "將 tr_s_preference 設定為無效的枚舉值 'invalid_preference'；會在傳輸偏好配置階段導致配置驗證失敗與系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_15.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": "invalid_yes_no",
+    "error_type": "invalid_enum",
+    "explanation": "將 drb_ciphering 設定為無效的枚舉值 'invalid_yes_no'；會在 DRB 配置階段導致配置驗證失敗與安全策略錯誤。"
+  },
+  {
+    "filename": "cu_case_16.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "將 AMF IP 地址設定為無效格式 '999.999.999.999'；會在 NGAP 連接建立階段導致網路連接失敗與 AMF 註冊錯誤。"
+  },
+  {
+    "filename": "cu_case_17.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "將 NG-AMF IP 地址設定為無效格式 '999.999.999.999'；會在 NGAP 連接建立階段導致網路連接失敗與 AMF 註冊錯誤。"
+  },
+  {
+    "filename": "cu_case_18.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "將 NGU IP 地址設定為無效格式 '999.999.999.999'；會在 NGU 連接建立階段導致網路連接失敗與用戶面連接錯誤。"
+  },
+  {
+    "filename": "cu_case_19.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "invalid_ip_format",
+    "error_type": "invalid_format",
+    "explanation": "將本地地址設定為無效格式 'invalid_ip_format'；會在本地網路配置階段導致地址解析失敗與網路初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_20.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "invalid_ip_format",
+    "error_type": "invalid_format",
+    "explanation": "將遠程地址設定為無效格式 'invalid_ip_format'；會在遠程連接配置階段導致地址解析失敗與連接建立錯誤。"
+  },
+  {
+    "filename": "cu_case_21.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation": "將 SCTP 輸入流數量設定為 0；會在 SCTP 連接建立階段導致協議違反與 F1AP 連接失敗。"
+  },
+  {
+    "filename": "cu_case_22.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation": "將 SCTP 輸出流數量設定為 0；會在 SCTP 連接建立階段導致協議違反與 F1AP 連接失敗。"
+  },
+  {
+    "filename": "cu_case_23.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_level",
+    "error_type": "logical_contradiction",
+    "explanation": "將全域日誌級別設定為無效值 'invalid_level'；會在日誌系統初始化階段導致配置錯誤與系統啟動失敗。"
+  },
+  {
+    "filename": "cu_case_24.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少 drb_integrity 配置項；會在安全配置階段導致配置不完整與 DRB 完整性策略未定義錯誤。"
+  },
+  {
+    "filename": "cu_case_25.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation": "將遠程端口設定為與本地端口相同的值 501；會在端口配置階段導致端口衝突與連接建立失敗。"
+  }
+]

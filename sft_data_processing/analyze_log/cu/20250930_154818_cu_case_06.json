@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Invalid config value",
+    "Log Level": "ERROR",
+    "Message": "[CONFIG] config_check_intrange: tracking_area_code: 0 invalid value, authorized range: 1 65533",
+    "Event Description": "Tracking area code out of range; CU fails config check and exits. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

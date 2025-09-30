@@ -1,0 +1,19 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Config file syntax error",
+    "Log Level": "ERROR",
+    "Message": "[LIBCONFIG] file ... cu_case_16.conf - line 91: syntax error",
+    "Event Description": "Configuration file syntax error; config module fails to load and CU aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+[
+  {
+    "Unit": "CU",
+    "Error": "Config file syntax error",
+    "Log Level": "ERROR",
+    "Message": "[LIBCONFIG] file ... cu_case_16.conf - line 91: syntax error",
+    "Event Description": "Configuration file syntax error; config module fails to load and CU aborts. Without CU, NGAP/F1 cannot form and UE cannot connect."
+  }
+]
+

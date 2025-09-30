@@ -1,0 +1,10 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Invalid SSB raster/band config",
+    "Log Level": "FATAL",
+    "Message": "check_ssb_raster(): Couldn't find band 78 with SCS 4",
+    "Event Description": "SSB raster configuration invalid; DU PHY asserts and exits. Without SSB, UE cannot detect cell or connect."
+  }
+]
+
