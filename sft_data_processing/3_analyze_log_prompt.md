@@ -12,7 +12,7 @@ Your task is to analyze the given log directly and extract structured error info
   - Log Level (INFO, ERROR, FATAL, etc.)
   - Message (exact log message)
   - Event Description (human-readable summary)
-
+## Output format
 - If no error is found: 
   - If the UE successfully completes registration and establishes a PDU session, output only one success case:
   ```bash=
@@ -24,9 +24,10 @@ Your task is to analyze the given log directly and extract structured error info
     "Event Description": "UE successfully registered to 5G core through CU/DU. End-to-end connection established without errors."
   }
   ```
-
-## Output format
+  
+- If error: 
 Return a JSON array, each entry like:
+```bash=
 {
   "Unit": "DU",
   "Error": "Assertion Error",
@@ -34,3 +35,4 @@ Return a JSON array, each entry like:
   "Message": "Assertion (enc_rval.encoded > 0 && enc_rval.encoded < sizeof(buf)) failed!",
   "Event Description": "Failure in clone_rach_configcommon() during RRC initialization encoding"
 }
+```
