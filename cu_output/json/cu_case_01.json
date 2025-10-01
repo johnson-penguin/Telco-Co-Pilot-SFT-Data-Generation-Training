@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_01.json",
+  "modified_key": "gNBs.gNB_ID",
+  "original_value": "0xe00",
+  "error_value": "0xFFFFFFFF",
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNB_ID 設定為超出有效範圍的最大值 0xFFFFFFFF；會在 gNB 身份識別階段導致配置驗證失敗與系統初始化錯誤。",
+  "explanation_en": "Setting gNBs.gNB_ID to an out-of-range value will cause configuration validation failure during system initialization."
+}

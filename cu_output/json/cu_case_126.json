@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_126.json",
+  "modified_key": "security.drb_integrity",
+  "original_value": "no",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 security.drb_integrity 類型改為數值，導致解析錯誤。",
+  "explanation_en": "Changing security.drb_integrity from expected type to string will cause parsing errors during configuration loading."
+}

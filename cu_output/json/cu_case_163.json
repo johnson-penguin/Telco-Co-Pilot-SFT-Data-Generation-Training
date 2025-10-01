@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_163.json",
+  "modified_key": "gNBs.tr_s_preference",
+  "original_value": "f1",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 gNBs.tr_s_preference 設為無效枚舉值，導致配置驗證失敗。",
+  "explanation_en": "Setting gNBs.tr_s_preference to an invalid enum value will cause configuration validation failure during module initialization."
+}

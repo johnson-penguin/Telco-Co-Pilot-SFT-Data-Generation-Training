@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_66.json",
+  "modified_key": "gNBs.tracking_area_code",
+  "original_value": 1,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.tracking_area_code 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting gNBs.tracking_area_code to a negative value violates protocol constraints and causes configuration rejection."
+}

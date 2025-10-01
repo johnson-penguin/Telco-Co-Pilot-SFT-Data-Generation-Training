@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_148.json",
+  "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+  "original_value": 110,
+  "error_value": "text",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 fhi_72.fh_config[0].Ta4[0] 類型改為字串，格式不符。"
+}

@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_64.json",
+  "modified_key": "gNBs.gNB_name",
+  "original_value": "gNB-Eurecom-CU",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 gNBs.gNB_name 設為空，導致識別或註冊流程失敗。",
+  "explanation_en": "Setting gNBs.gNB_name to malformed value will cause decoding errors and system failure."
+}

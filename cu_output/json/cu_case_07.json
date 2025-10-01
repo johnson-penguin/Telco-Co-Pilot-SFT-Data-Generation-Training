@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_07.json",
+  "modified_key": "Num_Threads_PUSCH",
+  "original_value": 8,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 Num_Threads_PUSCH 從整數類型改為字串類型；會在線程配置階段導致類型錯誤與系統初始化失敗。",
+  "explanation_en": "Changing Num_Threads_PUSCH from expected type to string will cause parsing errors during configuration loading."
+}

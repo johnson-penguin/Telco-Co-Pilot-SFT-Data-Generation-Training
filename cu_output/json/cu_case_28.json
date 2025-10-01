@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_28.json",
+  "modified_key": "gNBs.nr_cellid",
+  "original_value": 1,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.nr_cellid 設為超出範圍值，導致配置驗證失敗。",
+  "explanation_en": "Setting gNBs.nr_cellid to an out-of-range value will cause configuration validation failure during system initialization."
+}

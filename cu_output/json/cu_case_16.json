@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_16.json",
+  "modified_key": "gNBs.amf_ip_address.ipv4",
+  "original_value": "192.168.70.132",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 AMF IP 地址設定為無效格式 '999.999.999.999'；會在 NGAP 連接建立階段導致網路連接失敗與 AMF 註冊錯誤。",
+  "explanation_en": "Setting gNBs.amf_ip_address.ipv4 to invalid IP format will cause network stack rejection and connection failure."
+}

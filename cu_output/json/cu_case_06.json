@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_06.json",
+  "modified_key": "gNBs.tracking_area_code",
+  "original_value": 1,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 tracking_area_code 從整數類型改為字串類型；會在追蹤區域配置解析階段導致類型錯誤與配置載入失敗。",
+  "explanation_en": "Changing gNBs.tracking_area_code from expected type to string will cause parsing errors during configuration loading."
+}

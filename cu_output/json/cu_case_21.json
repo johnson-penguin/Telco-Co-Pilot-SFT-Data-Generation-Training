@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_21.json",
+  "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+  "original_value": 2,
+  "error_value": 0,
+  "error_type": "logical_contradiction",
+  "explanation_zh": "將 SCTP 輸入流數量設定為 0；會在 SCTP 連接建立階段導致協議違反與 F1AP 連接失敗。",
+  "explanation_en": "Setting gNBs.SCTP.SCTP_INSTREAMS to invalid value violates protocol requirements and causes connection failure."
+}

@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_102.json",
+  "modified_key": "gNBs.gNB_ID",
+  "original_value": "0xe00",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation_zh": "缺少 gNBs.gNB_ID，導致系統初始化錯誤。",
+  "explanation_en": "Missing gNBs.gNB_ID configuration will cause incomplete setup and undefined policy errors."
+}

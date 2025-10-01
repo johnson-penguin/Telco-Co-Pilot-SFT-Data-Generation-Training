@@ -1,0 +1,1627 @@
+[
+  {
+    "filename": "du_case_01.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": "debug",
+    "error_type": "invalid_enum",
+    "explanation_en": "'debug' is not an allowed ASN.1 verbosity level (expected: none|info|annoying). This causes configuration parsing to reject the setting early.",
+    "explanation_zh": "'debug' 並非允許的 ASN.1 詳細等級（預期：none|info|annoying），將在載入設定時被拒絕。"
+  },
+  {
+    "filename": "du_case_02.json",
+    "modified_key": "tracking_area_code",
+    "original_value": 1,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "TAC=0 is reserved and invalid, leading to RRC/NG setup rejection for the serving cell.",
+    "explanation_zh": "TAC=0 為保留值且無效，將導致服務小區在 RRC/NG 設定時被拒絕。"
+  },
+  {
+    "filename": "du_case_03.json",
+    "modified_key": "plmn_list[0].mcc",
+    "original_value": 1,
+    "error_value": "001A",
+    "error_type": "wrong_type",
+    "explanation_en": "MCC must be a numeric value; using a non-numeric string breaks PLMN encoding and registration.",
+    "explanation_zh": "MCC 必須為數值，使用非數字字串會破壞 PLMN 編碼並使註冊失敗。"
+  },
+  {
+    "filename": "du_case_04.json",
+    "modified_key": "plmn_list[0].mnc_length",
+    "original_value": 2,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation_en": "MNC length must be 2 or 3; 5 is invalid and causes PLMN parsing failure.",
+    "explanation_zh": "MNC 長度只能為 2 或 3；5 無效，將導致 PLMN 解析失敗。"
+  },
+  {
+    "filename": "du_case_05.json",
+    "modified_key": "plmn_list[0].snssaiList[0].sd",
+    "original_value": "0x010203",
+    "error_value": "010203",
+    "error_type": "invalid_format",
+    "explanation_en": "S-NSSAI SD must be a hex string with 0x prefix; missing prefix causes SD decoding error.",
+    "explanation_zh": "S-NSSAI 的 SD 需為帶 0x 前綴的十六進位字串；缺少前綴會導致解碼錯誤。"
+  },
+  {
+    "filename": "du_case_06.json",
+    "modified_key": "nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "NR Cell ID must be non-negative; negative value violates RRC cell identity constraints.",
+    "explanation_zh": "NR 小區識別碼必須為非負；負值違反 RRC 小區識別規範。"
+  },
+  {
+    "filename": "du_case_07.json",
+    "modified_key": "pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "Antenna port count cannot be zero; scheduler initialization will fail for PDSCH mapping.",
+    "explanation_zh": "天線埠數不可為 0；排程器於 PDSCH 映射初始化將失敗。"
+  },
+  {
+    "filename": "du_case_08.json",
+    "modified_key": "pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": "four",
+    "error_type": "wrong_type",
+    "explanation_en": "PUSCH antenna ports must be integer; string breaks PHY configuration validation.",
+    "explanation_zh": "PUSCH 天線埠需為整數；字串會使實體層設定驗證失敗。"
+  },
+  {
+    "filename": "du_case_09.json",
+    "modified_key": "dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation_en": "Subcarrier spacing must be 0|1|2|3; 5 is invalid and causes DL numerology mismatch.",
+    "explanation_zh": "子載波間距只允許 0|1|2|3；5 無效，造成下行數學架構不匹配。"
+  },
+  {
+    "filename": "du_case_10.json",
+    "modified_key": "dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_en": "Carrier bandwidth cannot be zero; renders DL BWP invalid and scheduler nonfunctional.",
+    "explanation_zh": "載波頻寬不可為 0；將使下行 BWP 無效，排程器無法運作。"
+  },
+  {
+    "filename": "du_case_11.json",
+    "modified_key": "initialDLBWPlocationAndBandwidth",
+    "original_value": 28875,
+    "error_value": "RBstart=abc",
+    "error_type": "invalid_format",
+    "explanation_en": "Initial DL BWP location/bandwidth expects integer encoding; malformed text breaks parser.",
+    "explanation_zh": "初始 DL BWP 位置與頻寬需整數編碼；文本格式錯誤導致解析失敗。"
+  },
+  {
+    "filename": "du_case_12.json",
+    "modified_key": "prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": 200,
+    "error_type": "out_of_range",
+    "explanation_en": "PRACH configuration index out of spec causes RA preamble scheduling failure.",
+    "explanation_zh": "PRACH 組態索引超出規範，導致隨機接入前導之排程失敗。"
+  },
+  {
+    "filename": "du_case_13.json",
+    "modified_key": "preambleTransMax",
+    "original_value": 6,
+    "error_value": 11,
+    "error_type": "out_of_range",
+    "explanation_en": "PreambleTransMax valid set is limited; 11 is not allowed and RA loop will misbehave.",
+    "explanation_zh": "PreambleTransMax 僅允許特定集合；11 不被允許，將導致 RA 流程異常。"
+  },
+  {
+    "filename": "du_case_14.json",
+    "modified_key": "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR",
+    "original_value": 4,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation_en": "Enumeration outside 1..8 breaks PR calculation for PRACH mapping.",
+    "explanation_zh": "枚舉值超出 1..8，導致 PRACH 對應的 PR 計算失效。"
+  },
+  {
+    "filename": "du_case_15.json",
+    "modified_key": "rsrp_ThresholdSSB",
+    "original_value": 19,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "RSRP threshold cannot be negative; SSB selection logic will reject config.",
+    "explanation_zh": "RSRP 閾值不可為負；SSB 選擇邏輯將拒絕此設定。"
+  },
+  {
+    "filename": "du_case_16.json",
+    "modified_key": "pucchGroupHopping",
+    "original_value": 0,
+    "error_value": 3,
+    "error_type": "invalid_enum",
+    "explanation_en": "PUCCH group hopping only allows 0/1/2; 3 causes uplink control mapping error.",
+    "explanation_zh": "PUCCH 群組跳頻僅允許 0/1/2；值為 3 將導致上行控制映射錯誤。"
+  },
+  {
+    "filename": "du_case_17.json",
+    "modified_key": "hoppingId",
+    "original_value": 40,
+    "error_value": 2048,
+    "error_type": "out_of_range",
+    "explanation_en": "PUCCH hoppingId beyond permitted range breaks sequence generation.",
+    "explanation_zh": "PUCCH hoppingId 超出許可範圍，會使序列產生失敗。"
+  },
+  {
+    "filename": "du_case_18.json",
+    "modified_key": "ssb_periodicityServingCell",
+    "original_value": 2,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation_en": "SSB periodicity enum must be 0..7; 9 is invalid and TDD patterning fails.",
+    "explanation_zh": "SSB 週期枚舉必須為 0..7；9 無效並導致 TDD 佈局錯誤。"
+  },
+  {
+    "filename": "du_case_19.json",
+    "modified_key": "subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 4,
+    "error_type": "invalid_enum",
+    "explanation_en": "Common SCS must be 0..3; value 4 breaks UE compatibility and BWP setup.",
+    "explanation_zh": "通用 SCS 必須為 0..3；設為 4 會破壞 UE 相容性及 BWP 設定。"
+  },
+  {
+    "filename": "du_case_20.json",
+    "modified_key": "nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": 15,
+    "error_type": "out_of_range",
+    "explanation_en": "Number of DL slots exceeds period configuration; TDD grid becomes invalid.",
+    "explanation_zh": "下行時槽數超出週期配置，導致 TDD 網格無效。"
+  },
+  {
+    "filename": "du_case_21.json",
+    "modified_key": "SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_en": "SCTP in-streams must be positive; negative value breaks F1AP association setup.",
+    "explanation_zh": "SCTP 輸入串流必須為正值；負值將導致 F1AP 連線建立失敗。"
+  },
+  {
+    "filename": "du_case_22.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": 70000,
+    "error_type": "out_of_range",
+    "explanation_en": "UDP port exceeds 65535; GTP-U plane cannot bind the socket.",
+    "explanation_zh": "UDP 連接埠不可超過 65535；GTP-U 平面無法綁定。"
+  },
+  {
+    "filename": "du_case_23.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.0.1",
+    "error_type": "invalid_format",
+    "explanation_en": "IP address format is invalid; network stack will reject the binding address.",
+    "explanation_zh": "IP 位址格式無效；網路堆疊將拒絕此綁定位址。"
+  },
+  {
+    "filename": "du_case_24.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": 999,
+    "error_type": "invalid_enum",
+    "explanation_en": "NR band 999 is undefined; RF chain cannot map to a valid frequency range.",
+    "explanation_zh": "NR 頻段 999 未定義；無法對應至有效的射頻頻段。"
+  },
+  {
+    "filename": "du_case_25.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": 120,
+    "error_type": "out_of_range",
+    "explanation_en": "MTU too small for eCPRI payloads; fronthaul segmentation fails and link drops.",
+    "explanation_zh": "MTU 過小不符 eCPRI 載荷需求；前傳分片失敗並導致鏈路中斷。"
+  },
+  {
+    "filename": "du_case_26.json",
+    "modified_key": "gNBs[0].nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].nr_cellid 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_27.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_XP 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_28.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_N1 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_29.json",
+    "modified_key": "gNBs[0].pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pusch_AntennaPorts 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_30.json",
+    "modified_key": "gNBs[0].maxMIMO_layers",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].maxMIMO_layers 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_31.json",
+    "modified_key": "gNBs[0].min_rxtxtime",
+    "original_value": 6,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].min_rxtxtime 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_32.json",
+    "modified_key": "gNBs[0].sib1_tda",
+    "original_value": 15,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].sib1_tda 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_33.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB",
+    "original_value": 641280,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_34.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_35.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+    "original_value": 106,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_36.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_37.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].preambleTransMax",
+    "original_value": 6,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].preambleTransMax 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_38.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].hoppingId",
+    "original_value": 40,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].hoppingId 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_39.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_40.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_INSTREAMS 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_41.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_OUTSTREAMS 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_42.json",
+    "modified_key": "MACRLCs[0].local_n_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portc 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_43.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portd 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_44.json",
+    "modified_key": "MACRLCs[0].remote_n_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portc 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_45.json",
+    "modified_key": "MACRLCs[0].remote_n_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portd 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_46.json",
+    "modified_key": "RUs[0].nb_tx",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_tx 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_47.json",
+    "modified_key": "RUs[0].nb_rx",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_rx 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_48.json",
+    "modified_key": "RUs[0].max_rxgain",
+    "original_value": 114,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].max_rxgain 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_49.json",
+    "modified_key": "fhi_72.system_core",
+    "original_value": 0,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.system_core 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_50.json",
+    "modified_key": "fhi_72.io_core",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.io_core 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_51.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.mtu 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_52.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 Asn1_verbosity 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_53.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_54.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_55.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_56.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].restrictedSetConfig",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].restrictedSetConfig 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_57.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].pucchGroupHopping",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].pucchGroupHopping 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_58.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 log_config.global_log_level 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_59.json",
+    "modified_key": "rfsimulator.modelname",
+    "original_value": "AWGN",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 rfsimulator.modelname 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_60.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].local_n_address 設為無效 IPv4 格式，網路堆疊拒絕。"
+  },
+  {
+    "filename": "du_case_61.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].remote_n_address 設為無效 IPv4 格式，網路堆疊拒絕。"
+  },
+  {
+    "filename": "du_case_62.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].bands[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_63.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_dl[0]",
+    "original_value": 285,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_dl[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_64.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_ul[0]",
+    "original_value": 285,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_ul[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_65.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_up[0]",
+    "original_value": 96,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_up[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_66.json",
+    "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+    "original_value": 110,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].Ta4[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_67.json",
+    "modified_key": "gNBs[0].nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].nr_cellid 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_68.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_XP 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_69.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_N1 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_70.json",
+    "modified_key": "gNBs[0].pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pusch_AntennaPorts 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_71.json",
+    "modified_key": "gNBs[0].maxMIMO_layers",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].maxMIMO_layers 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_72.json",
+    "modified_key": "gNBs[0].min_rxtxtime",
+    "original_value": 6,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].min_rxtxtime 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_73.json",
+    "modified_key": "gNBs[0].sib1_tda",
+    "original_value": 15,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].sib1_tda 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_74.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB",
+    "original_value": 641280,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_75.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_76.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_77.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_78.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].preambleTransMax",
+    "original_value": 6,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].preambleTransMax 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_79.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].hoppingId",
+    "original_value": 40,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].hoppingId 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_80.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_81.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_INSTREAMS 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_82.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_OUTSTREAMS 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_83.json",
+    "modified_key": "MACRLCs[0].local_n_portc",
+    "original_value": 500,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portc 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_84.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portd 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_85.json",
+    "modified_key": "MACRLCs[0].remote_n_portc",
+    "original_value": 501,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portc 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_86.json",
+    "modified_key": "MACRLCs[0].remote_n_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portd 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_87.json",
+    "modified_key": "RUs[0].nb_tx",
+    "original_value": 4,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_tx 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_88.json",
+    "modified_key": "RUs[0].nb_rx",
+    "original_value": 4,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_rx 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_89.json",
+    "modified_key": "RUs[0].max_rxgain",
+    "original_value": 114,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].max_rxgain 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_90.json",
+    "modified_key": "fhi_72.system_core",
+    "original_value": 0,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.system_core 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_91.json",
+    "modified_key": "fhi_72.io_core",
+    "original_value": 4,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.io_core 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_92.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.mtu 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_93.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 Asn1_verbosity，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_94.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_95.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_96.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM",
+    "original_value": 0,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_97.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].restrictedSetConfig",
+    "original_value": 0,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 gNBs[0].servingCellConfigCommon[0].restrictedSetConfig，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_98.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].pucchGroupHopping",
+    "original_value": 0,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 gNBs[0].servingCellConfigCommon[0].pucchGroupHopping，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_99.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 log_config.global_log_level，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_100.json",
+    "modified_key": "rfsimulator.modelname",
+    "original_value": "AWGN",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 rfsimulator.modelname，導致策略或流程未定義。"
+  },
+  {
+    "filename": "du_case_101.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].local_n_address 設為非 IP 字串，地址解析失敗。"
+  },
+  {
+    "filename": "du_case_102.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].remote_n_address 設為非 IP 字串，地址解析失敗。"
+  },
+  {
+    "filename": "du_case_103.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 RUs[0].bands[0] 設為空，導致解析錯誤。"
+  },
+  {
+    "filename": "du_case_104.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_dl[0]",
+    "original_value": 285,
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_dl[0] 設為空，導致解析錯誤。"
+  },
+  {
+    "filename": "du_case_105.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_ul[0]",
+    "original_value": 285,
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_ul[0] 設為空，導致解析錯誤。"
+  },
+  {
+    "filename": "du_case_106.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_up[0]",
+    "original_value": 96,
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_up[0] 設為空，導致解析錯誤。"
+  },
+  {
+    "filename": "du_case_107.json",
+    "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+    "original_value": 110,
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 fhi_72.fh_config[0].Ta4[0] 設為空，導致解析錯誤。"
+  },
+  {
+    "filename": "du_case_108.json",
+    "modified_key": "gNBs[0].nr_cellid",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].nr_cellid 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_109.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_XP 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_110.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_N1 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_111.json",
+    "modified_key": "gNBs[0].pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].pusch_AntennaPorts 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_112.json",
+    "modified_key": "gNBs[0].maxMIMO_layers",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].maxMIMO_layers 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_113.json",
+    "modified_key": "gNBs[0].min_rxtxtime",
+    "original_value": 6,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].min_rxtxtime 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_114.json",
+    "modified_key": "gNBs[0].sib1_tda",
+    "original_value": 15,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].sib1_tda 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_115.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB",
+    "original_value": 641280,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_116.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_117.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+    "original_value": 106,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_118.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_119.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].preambleTransMax",
+    "original_value": 6,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].preambleTransMax 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_120.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].hoppingId",
+    "original_value": 40,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].hoppingId 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_121.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_122.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_INSTREAMS 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_123.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_OUTSTREAMS 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_124.json",
+    "modified_key": "MACRLCs[0].local_n_portc",
+    "original_value": 500,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 MACRLCs[0].local_n_portc 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_125.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 MACRLCs[0].local_n_portd 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_126.json",
+    "modified_key": "MACRLCs[0].remote_n_portc",
+    "original_value": 501,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portc 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_127.json",
+    "modified_key": "MACRLCs[0].remote_n_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portd 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_128.json",
+    "modified_key": "RUs[0].nb_tx",
+    "original_value": 4,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 RUs[0].nb_tx 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_129.json",
+    "modified_key": "RUs[0].nb_rx",
+    "original_value": 4,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 RUs[0].nb_rx 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_130.json",
+    "modified_key": "RUs[0].max_rxgain",
+    "original_value": 114,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 RUs[0].max_rxgain 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_131.json",
+    "modified_key": "fhi_72.system_core",
+    "original_value": 0,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.system_core 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_132.json",
+    "modified_key": "fhi_72.io_core",
+    "original_value": 4,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.io_core 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_133.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.mtu 類型改為字串，解析失敗。"
+  },
+  {
+    "filename": "du_case_134.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 Asn1_verbosity 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_135.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_136.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_137.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM",
+    "original_value": 0,
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_138.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].restrictedSetConfig",
+    "original_value": 0,
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].restrictedSetConfig 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_139.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].pucchGroupHopping",
+    "original_value": 0,
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].pucchGroupHopping 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_140.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 log_config.global_log_level 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_141.json",
+    "modified_key": "rfsimulator.modelname",
+    "original_value": "AWGN",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 rfsimulator.modelname 類型改為數值，造成解析錯誤。"
+  },
+  {
+    "filename": "du_case_142.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].local_n_address 設為空字串，無法綁定或連線。"
+  },
+  {
+    "filename": "du_case_143.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].remote_n_address 設為空字串，無法綁定或連線。"
+  },
+  {
+    "filename": "du_case_144.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": "text",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 RUs[0].bands[0] 類型改為字串，格式不符。"
+  },
+  {
+    "filename": "du_case_145.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_dl[0]",
+    "original_value": 285,
+    "error_value": "text",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_dl[0] 類型改為字串，格式不符。"
+  },
+  {
+    "filename": "du_case_146.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_ul[0]",
+    "original_value": 285,
+    "error_value": "text",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_ul[0] 類型改為字串，格式不符。"
+  },
+  {
+    "filename": "du_case_147.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_up[0]",
+    "original_value": 96,
+    "error_value": "text",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_up[0] 類型改為字串，格式不符。"
+  },
+  {
+    "filename": "du_case_148.json",
+    "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+    "original_value": 110,
+    "error_value": "text",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 fhi_72.fh_config[0].Ta4[0] 類型改為字串，格式不符。"
+  },
+  {
+    "filename": "du_case_149.json",
+    "modified_key": "gNBs[0].nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].nr_cellid 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_150.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_XP 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_151.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_N1 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_152.json",
+    "modified_key": "gNBs[0].pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pusch_AntennaPorts 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_153.json",
+    "modified_key": "gNBs[0].maxMIMO_layers",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].maxMIMO_layers 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_154.json",
+    "modified_key": "gNBs[0].min_rxtxtime",
+    "original_value": 6,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].min_rxtxtime 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_155.json",
+    "modified_key": "gNBs[0].sib1_tda",
+    "original_value": 15,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].sib1_tda 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_156.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB",
+    "original_value": 641280,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_157.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_158.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+    "original_value": 106,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_159.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_160.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].preambleTransMax",
+    "original_value": 6,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].preambleTransMax 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_161.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].hoppingId",
+    "original_value": 40,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].hoppingId 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_162.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots",
+    "original_value": 7,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].nrofDownlinkSlots 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_163.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_INSTREAMS 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_164.json",
+    "modified_key": "gNBs[0].SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].SCTP.SCTP_OUTSTREAMS 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_165.json",
+    "modified_key": "MACRLCs[0].local_n_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portc 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_166.json",
+    "modified_key": "MACRLCs[0].local_n_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].local_n_portd 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_167.json",
+    "modified_key": "MACRLCs[0].remote_n_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portc 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_168.json",
+    "modified_key": "MACRLCs[0].remote_n_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MACRLCs[0].remote_n_portd 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_169.json",
+    "modified_key": "RUs[0].nb_tx",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_tx 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_170.json",
+    "modified_key": "RUs[0].nb_rx",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].nb_rx 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_171.json",
+    "modified_key": "RUs[0].max_rxgain",
+    "original_value": 114,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].max_rxgain 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_172.json",
+    "modified_key": "fhi_72.system_core",
+    "original_value": 0,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.system_core 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_173.json",
+    "modified_key": "fhi_72.io_core",
+    "original_value": 4,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.io_core 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_174.json",
+    "modified_key": "fhi_72.mtu",
+    "original_value": 9000,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.mtu 設為負值，違反規範導致配置檢查失敗。"
+  },
+  {
+    "filename": "du_case_175.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "annoying",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 Asn1_verbosity 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_176.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_177.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_subcarrierSpacing 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_178.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_179.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].restrictedSetConfig",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].restrictedSetConfig 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_180.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].pucchGroupHopping",
+    "original_value": 0,
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].pucchGroupHopping 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_181.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 log_config.global_log_level 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_182.json",
+    "modified_key": "rfsimulator.modelname",
+    "original_value": "AWGN",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 rfsimulator.modelname 設為無效枚舉，導致模組初始化失敗。"
+  },
+  {
+    "filename": "du_case_183.json",
+    "modified_key": "MACRLCs[0].local_n_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].local_n_address 設為無效 IPv4 格式，網路堆疊拒絕。"
+  },
+  {
+    "filename": "du_case_184.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 MACRLCs[0].remote_n_address 設為無效 IPv4 格式，網路堆疊拒絕。"
+  },
+  {
+    "filename": "du_case_185.json",
+    "modified_key": "RUs[0].bands[0]",
+    "original_value": 78,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 RUs[0].bands[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_186.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_dl[0]",
+    "original_value": 285,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_dl[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_187.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_cp_ul[0]",
+    "original_value": 285,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_cp_ul[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_188.json",
+    "modified_key": "fhi_72.fh_config[0].T1a_up[0]",
+    "original_value": 96,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].T1a_up[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_189.json",
+    "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+    "original_value": 110,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 fhi_72.fh_config[0].Ta4[0] 設為 0 或異常值，破壞時間配置。"
+  },
+  {
+    "filename": "du_case_190.json",
+    "modified_key": "gNBs[0].nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].nr_cellid 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_191.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_XP",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_XP 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_192.json",
+    "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pdsch_AntennaPorts_N1 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_193.json",
+    "modified_key": "gNBs[0].pusch_AntennaPorts",
+    "original_value": 4,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].pusch_AntennaPorts 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_194.json",
+    "modified_key": "gNBs[0].maxMIMO_layers",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].maxMIMO_layers 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_195.json",
+    "modified_key": "gNBs[0].min_rxtxtime",
+    "original_value": 6,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].min_rxtxtime 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_196.json",
+    "modified_key": "gNBs[0].sib1_tda",
+    "original_value": 15,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].sib1_tda 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_197.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB",
+    "original_value": 641280,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_198.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].dl_carrierBandwidth 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_199.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+    "original_value": 106,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 設為過大，超出規格限制。"
+  },
+  {
+    "filename": "du_case_200.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+    "original_value": 98,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex 設為過大，超出規格限制。"
+  }
+]

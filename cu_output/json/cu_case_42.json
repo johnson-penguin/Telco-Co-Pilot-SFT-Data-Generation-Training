@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_42.json",
+  "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+  "original_value": "192.168.8.43",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU 設為無效 IPv4 格式，導致連線建立失敗。",
+  "explanation_en": "Setting gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU to invalid IP format will cause network stack rejection and connection failure."
+}

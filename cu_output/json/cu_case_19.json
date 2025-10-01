@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_19.json",
+  "modified_key": "gNBs.local_s_address",
+  "original_value": "127.0.0.5",
+  "error_value": "invalid_ip_format",
+  "error_type": "invalid_format",
+  "explanation_zh": "將本地地址設定為無效格式 'invalid_ip_format'；會在本地網路配置階段導致地址解析失敗與網路初始化錯誤。",
+  "explanation_en": "Setting gNBs.local_s_address to invalid IP format will cause network stack rejection and connection failure."
+}

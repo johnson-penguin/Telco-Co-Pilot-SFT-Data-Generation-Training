@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_142.json",
+  "modified_key": "gNBs.gNB_name",
+  "original_value": "gNB-Eurecom-CU",
+  "error_value": 12345,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 gNBs.gNB_name 類型改為數值，導致解析失敗。",
+  "explanation_en": "Changing gNBs.gNB_name from expected type to string will cause parsing errors during configuration loading."
+}

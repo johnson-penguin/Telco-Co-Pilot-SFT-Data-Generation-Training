@@ -1,0 +1,16 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Assertion Error",
+    "Log Level": "ERROR",
+    "Message": "Assertion (1 == 0) failed!",
+    "Event Description": "System assertion failed, indicating internal logic error"
+  },
+  {
+    "Unit": "DU",
+    "Error": "System Exit",
+    "Log Level": "ERROR",
+    "Message": "../../../openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_RA.c:182 find_SSB_and_RO_available() Exiting OAI softmodem: _Assert_Exit_",
+    "Event Description": "System terminated due to configuration or runtime error"
+  }
+]

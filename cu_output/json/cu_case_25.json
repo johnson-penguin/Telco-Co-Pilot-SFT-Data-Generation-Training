@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_25.json",
+  "modified_key": "gNBs.remote_s_portc",
+  "original_value": 500,
+  "error_value": 501,
+  "error_type": "logical_contradiction",
+  "explanation_zh": "將遠程端口設定為與本地端口相同的值 501；會在端口配置階段導致端口衝突與連接建立失敗。",
+  "explanation_en": "Setting gNBs.remote_s_portc to conflicting value will cause port conflicts and connection establishment failure."
+}

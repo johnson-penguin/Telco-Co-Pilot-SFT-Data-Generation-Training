@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_09.json",
+  "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+  "original_value": 2,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 SCTP_INSTREAMS 從整數類型改為字串類型；會在 SCTP 配置階段導致類型錯誤與連接建立失敗。",
+  "explanation_en": "Changing gNBs.SCTP.SCTP_INSTREAMS from expected type to string will cause parsing errors during configuration loading."
+}

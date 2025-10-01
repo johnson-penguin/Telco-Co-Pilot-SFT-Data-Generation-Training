@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_124.json",
+  "modified_key": "gNBs.tr_s_preference",
+  "original_value": "f1",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 gNBs.tr_s_preference 類型改為數值，導致解析錯誤。",
+  "explanation_en": "Changing gNBs.tr_s_preference from expected type to string will cause parsing errors during configuration loading."
+}

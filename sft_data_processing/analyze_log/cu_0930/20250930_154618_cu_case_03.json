@@ -1,0 +1,29 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "F1AP Setup Failure",
+    "Log Level": "ERROR",
+    "Message": "[NGAP]   Received NG setup failure for AMF... please check your parameters",
+    "Event Description": "F1AP interface setup failed between CU and DU",
+    "explanation_en": "F1AP interface setup between CU and DU failed, blocking higher-layer procedures.",
+    "explanation_zh": "CU 與 DU 之間的 F1AP 介面設置失敗，阻斷後續流程。"
+  },
+  {
+    "Unit": "CU",
+    "Error": "PLMN Mismatch",
+    "Log Level": "ERROR",
+    "Message": "[NR_RRC]   PLMN mismatch: CU 999.01, DU 00101",
+    "Event Description": "PLMN (Public Land Mobile Network) configuration mismatch between CU and DU",
+    "explanation_en": "PLMN configuration between CU and DU is inconsistent, preventing proper attachment/setup.",
+    "explanation_zh": "CU 與 DU 的 PLMN 設定不一致，導致無法正確附著/完成設定。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "F1AP Setup Failure",
+    "Log Level": "ERROR",
+    "Message": "[MAC]   the CU reported F1AP Setup Failure, is there a configuration mismatch?",
+    "Event Description": "F1AP interface setup failed between CU and DU",
+    "explanation_en": "F1AP interface setup between CU and DU failed, blocking higher-layer procedures.",
+    "explanation_zh": "CU 與 DU 之間的 F1AP 介面設置失敗，阻斷後續流程。"
+  }
+]

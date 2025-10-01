@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_04.json",
+  "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+  "original_value": 2152,
+  "error_value": 65535,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 S1U 端口設定為超出有效範圍的值 65535；會在網路介面配置階段導致端口配置失敗與連接建立錯誤。",
+  "explanation_en": "Setting gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U to an out-of-range value will cause configuration validation failure during system initialization."
+}

@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_02.json",
+  "modified_key": "gNBs.tracking_area_code",
+  "original_value": 1,
+  "error_value": 65535,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 tracking_area_code 設定為超出有效範圍的值 65535；會在追蹤區域配置階段導致配置驗證失敗與系統拒絕。",
+  "explanation_en": "Setting gNBs.tracking_area_code to an out-of-range value will cause configuration validation failure during system initialization."
+}

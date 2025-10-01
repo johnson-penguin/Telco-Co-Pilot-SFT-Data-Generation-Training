@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_15.json",
+  "modified_key": "security.drb_ciphering",
+  "original_value": "yes",
+  "error_value": "invalid_yes_no",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 drb_ciphering 設定為無效的枚舉值 'invalid_yes_no'；會在 DRB 配置階段導致配置驗證失敗與安全策略錯誤。",
+  "explanation_en": "Setting security.drb_ciphering to an invalid enum value will cause configuration validation failure during module initialization."
+}

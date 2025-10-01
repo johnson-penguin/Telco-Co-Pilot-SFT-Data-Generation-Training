@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_175.json",
+  "modified_key": "Asn1_verbosity",
+  "original_value": "annoying",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 Asn1_verbosity 設為無效枚舉，導致模組初始化失敗。"
+}

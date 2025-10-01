@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_23.json",
+  "modified_key": "log_config.global_log_level",
+  "original_value": "info",
+  "error_value": "invalid_level",
+  "error_type": "logical_contradiction",
+  "explanation_zh": "將全域日誌級別設定為無效值 'invalid_level'；會在日誌系統初始化階段導致配置錯誤與系統啟動失敗。",
+  "explanation_en": "Setting log_config.global_log_level to contradictory value will cause logical errors and system malfunction."
+}

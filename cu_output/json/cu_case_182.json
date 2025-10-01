@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_182.json",
+  "modified_key": "Num_Threads_PUSCH",
+  "original_value": 8,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 Num_Threads_PUSCH 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting Num_Threads_PUSCH to a negative value violates protocol constraints and causes configuration rejection."
+}

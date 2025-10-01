@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_83.json",
+  "modified_key": "gNBs.remote_s_address",
+  "original_value": "127.0.0.3",
+  "error_value": "abc.def.ghi.jkl",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 gNBs.remote_s_address 設為非 IP 字串，導致地址解析錯誤。",
+  "explanation_en": "Setting gNBs.remote_s_address to invalid IP format will cause network stack rejection and connection failure."
+}

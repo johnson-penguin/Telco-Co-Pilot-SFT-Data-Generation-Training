@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_35.json",
+  "modified_key": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+  "original_value": 106,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth 設為負值，違反規範導致配置檢查失敗。"
+}

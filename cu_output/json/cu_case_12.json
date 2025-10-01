@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_12.json",
+  "modified_key": "security.integrity_algorithms[0]",
+  "original_value": "nia2",
+  "error_value": "nia9",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 integrity 算法設定為未知枚舉值 'nia9'；會在安全協商階段導致協商失敗與 NAS 註冊拒絕。",
+  "explanation_en": "Setting security.integrity_algorithms[0] to an invalid enum value will cause configuration validation failure during module initialization."
+}

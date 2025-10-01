@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_184.json",
+  "modified_key": "MACRLCs[0].remote_n_address",
+  "original_value": "127.0.0.5",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 MACRLCs[0].remote_n_address 設為無效 IPv4 格式，網路堆疊拒絕。"
+}

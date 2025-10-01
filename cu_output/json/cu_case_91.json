@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_91.json",
+  "modified_key": "log_config.mac_log_level",
+  "original_value": "info",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation_zh": "缺少 log_config.mac_log_level 配置項，導致策略或日誌初始化錯誤。",
+  "explanation_en": "Missing log_config.mac_log_level configuration will cause incomplete setup and undefined policy errors."
+}

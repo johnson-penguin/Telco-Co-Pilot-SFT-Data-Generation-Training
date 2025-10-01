@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_62.json",
+  "modified_key": "security.integrity_algorithms[1]",
+  "original_value": "nia0",
+  "error_value": "nia9",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 security.integrity_algorithms[1] 設為未知算法，導致安全協商失敗。",
+  "explanation_en": "Setting security.integrity_algorithms[1] to an unknown enum value will cause negotiation failure and system rejection."
+}

@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_187.json",
+  "modified_key": "gNBs.remote_s_portc",
+  "original_value": 500,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.remote_s_portc 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting gNBs.remote_s_portc to a negative value violates protocol constraints and causes configuration rejection."
+}

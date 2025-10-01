@@ -1,0 +1,16 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Assertion Error",
+    "Log Level": "ERROR",
+    "Message": "Assertion (bw_index >= 0 && bw_index <= (sizeof(bandwidth_index_to_mhz)/sizeof(*(bandwidth_index_to_mhz)))) failed!",
+    "Event Description": "System assertion failed, indicating internal logic error"
+  },
+  {
+    "Unit": "DU",
+    "Error": "System Exit",
+    "Log Level": "ERROR",
+    "Message": "../../../common/utils/nr/nr_common.c:417 get_supported_bw_mhz() Exiting OAI softmodem: _Assert_Exit_",
+    "Event Description": "System terminated due to configuration or runtime error"
+  }
+]

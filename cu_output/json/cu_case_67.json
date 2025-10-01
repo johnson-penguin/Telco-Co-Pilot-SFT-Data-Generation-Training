@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_67.json",
+  "modified_key": "gNBs.nr_cellid",
+  "original_value": 1,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.nr_cellid 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting gNBs.nr_cellid to a negative value violates protocol constraints and causes configuration rejection."
+}

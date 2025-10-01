@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_101.json",
+  "modified_key": "security.integrity_algorithms[1]",
+  "original_value": "nia0",
+  "error_value": 0,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 security.integrity_algorithms[1] 類型改為數值，導致協商解析錯誤。",
+  "explanation_en": "Changing security.integrity_algorithms[1] from expected type to string will cause parsing errors during configuration loading."
+}

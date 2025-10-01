@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_150.json",
+  "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+  "original_value": 2,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.SCTP.SCTP_INSTREAMS 設為超出範圍值，導致配置驗證失敗。",
+  "explanation_en": "Setting gNBs.SCTP.SCTP_INSTREAMS to an out-of-range value will cause configuration validation failure during system initialization."
+}

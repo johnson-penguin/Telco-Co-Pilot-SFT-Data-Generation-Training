@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_177.json",
+  "modified_key": "security.ciphering_algorithms[2]",
+  "original_value": "nea1",
+  "error_value": "nea9",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 security.ciphering_algorithms[2] 設為未知算法，導致安全協商失敗。",
+  "explanation_en": "Setting security.ciphering_algorithms[2] to an unknown enum value will cause negotiation failure and system rejection."
+}

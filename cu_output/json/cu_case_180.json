@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_180.json",
+  "modified_key": "gNBs.gNB_ID",
+  "original_value": "0xe00",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 gNBs.gNB_ID 設為空，導致識別或註冊流程失敗。",
+  "explanation_en": "Setting gNBs.gNB_ID to malformed value will cause decoding errors and system failure."
+}

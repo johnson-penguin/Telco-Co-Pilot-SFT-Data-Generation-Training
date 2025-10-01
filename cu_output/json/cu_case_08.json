@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_08.json",
+  "modified_key": "gNBs.nr_cellid",
+  "original_value": 1,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 nr_cellid 從整數類型改為字串類型；會在小區 ID 配置階段導致類型錯誤與小區配置失敗。",
+  "explanation_en": "Changing gNBs.nr_cellid from expected type to string will cause parsing errors during configuration loading."
+}
