@@ -1,0 +1,11 @@
+[
+  {
+    "Unit": "UE",
+    "Error": "None",
+    "Log Level": "INFO",
+    "Message": "[NR_RRC]    Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)",
+    "Event Description": "Normal operation without errors",
+    "explanation_en": "No error detected. Normal operation or successful registration/session establishment.",
+    "explanation_zh": "未偵測到錯誤，系統正常運作或註冊/工作階段建立成功。"
+  }
+]

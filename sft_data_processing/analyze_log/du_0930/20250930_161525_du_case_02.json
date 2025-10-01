@@ -1,0 +1,23 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Configuration Error",
+    "Log Level": "ERROR",
+    "Message": "[CONFIG] config_check_intrange: tracking_area_code: 0 invalid value, authorized range: 1 65533",
+    "Event Description": "Invalid configuration parameter detected"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Configuration Error",
+    "Log Level": "ERROR",
+    "Message": "[ENB_APP]   [CONFIG] config_execcheck: section gNBs.[0] 1 parameters with wrong value",
+    "Event Description": "Invalid configuration parameter detected"
+  },
+  {
+    "Unit": "DU",
+    "Error": "System Exit",
+    "Log Level": "ERROR",
+    "Message": "../../../common/config/config_userapi.c:102 config_execcheck() Exiting OAI softmodem: exit_fun",
+    "Event Description": "System terminated due to configuration or runtime error"
+  }
+]

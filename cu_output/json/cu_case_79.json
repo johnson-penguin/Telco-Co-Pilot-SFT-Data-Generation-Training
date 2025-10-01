@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_79.json",
+  "modified_key": "gNBs.amf_ip_address.ipv4",
+  "original_value": "192.168.70.132",
+  "error_value": "abc.def.ghi.jkl",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 gNBs.amf_ip_address.ipv4 設為非 IP 字串，導致地址解析錯誤。",
+  "explanation_en": "Setting gNBs.amf_ip_address.ipv4 to invalid IP format will cause network stack rejection and connection failure."
+}

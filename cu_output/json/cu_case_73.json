@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_73.json",
+  "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+  "original_value": 2,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.SCTP.SCTP_OUTSTREAMS 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting gNBs.SCTP.SCTP_OUTSTREAMS to a negative value violates protocol constraints and causes configuration rejection."
+}

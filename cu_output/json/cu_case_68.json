@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_68.json",
+  "modified_key": "gNBs.local_s_portc",
+  "original_value": 501,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 gNBs.local_s_portc 設為負值，違反協議或範圍限制。",
+  "explanation_en": "Setting gNBs.local_s_portc to a negative value violates protocol constraints and causes configuration rejection."
+}

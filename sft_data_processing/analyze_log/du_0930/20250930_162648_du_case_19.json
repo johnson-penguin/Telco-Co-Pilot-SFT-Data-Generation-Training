@@ -1,0 +1,16 @@
+[
+  {
+    "Unit": "DU",
+    "Error": "Assertion Error",
+    "Log Level": "ERROR",
+    "Message": "Assertion (start_gscn != 0) failed!",
+    "Event Description": "System assertion failed, indicating internal logic error"
+  },
+  {
+    "Unit": "DU",
+    "Error": "System Exit",
+    "Log Level": "ERROR",
+    "Message": "../../../common/utils/nr/nr_common.c:375 check_ssb_raster() Exiting OAI softmodem: _Assert_Exit_",
+    "Event Description": "System terminated due to configuration or runtime error"
+  }
+]

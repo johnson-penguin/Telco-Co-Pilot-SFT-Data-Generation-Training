@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_55.json",
+  "modified_key": "log_config.rrc_log_level",
+  "original_value": "info",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation_zh": "將 log_config.rrc_log_level 設為無效枚舉值，導致配置驗證失敗。",
+  "explanation_en": "Setting log_config.rrc_log_level to an invalid enum value will cause configuration validation failure during module initialization."
+}

@@ -40,7 +40,7 @@ def replace_key_value(conf_text: str, modified_key: str, error_value, original_v
             return match.group(0)
         new_conf, count = re.subn(pattern, replacer, conf_text, flags=re.DOTALL)
         if count == 0:
-            print(f"⚠️ 警告: 陣列參數 '{key}[{index}]' 未在 baseline.conf 中找到 / Warning: array key '{key}[{index}]' not found in baseline.conf")
+            print(f"[WARN] 陣列參數 '{key}[{index}]' 未在 baseline.conf 中找到 / Warning: array key '{key}[{index}]' not found in baseline.conf")
         return new_conf
 
     else:
@@ -62,7 +62,7 @@ def replace_key_value(conf_text: str, modified_key: str, error_value, original_v
 
         new_conf, count = re.subn(pattern, replacer, conf_text)
         if count == 0:
-            print(f"⚠️ 警告: 參數 '{key}' 未在 baseline.conf 中找到 / Warning: key '{key}' not found in baseline.conf")
+            print(f"[WARN] 參數 '{key}' 未在 baseline.conf 中找到 / Warning: key '{key}' not found in baseline.conf")
         return new_conf
 
 
@@ -91,8 +91,8 @@ def main():
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(new_conf)
 
-        # ✅ 中英對照輸出
-        print(f"✅ {filename} 已生成 / Generated")
+        # Bilingual console output (ASCII only)
+        print(f"[OK] {filename} 已生成 / Generated")
         print(f"   參數修改: {modified_key} → {error_value}")
         print(f"   Parameter modified: {modified_key} → {error_value}")
         print("-" * 60)

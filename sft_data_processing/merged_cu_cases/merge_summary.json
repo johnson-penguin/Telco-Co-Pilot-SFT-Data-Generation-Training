@@ -1,0 +1,257 @@
+{
+  "merge_summary": {
+    "total_cases_processed": 25,
+    "successfully_merged": 25,
+    "missing_analyze_data": 0,
+    "merge_timestamp": "C:\\Users\\bmwlab\\Desktop\\cursor_gen_conf"
+  },
+  "case_statistics": {
+    "case_01": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_02": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 14,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1,
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "CU": 3,
+        "DU": 11
+      }
+    },
+    "case_03": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 3,
+      "error_types": {
+        "F1AP Setup Failure": 2,
+        "PLMN Mismatch": 1
+      },
+      "error_units": {
+        "CU": 2,
+        "DU": 1
+      }
+    },
+    "case_04": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_05": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 14,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1,
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "CU": 3,
+        "DU": 11
+      }
+    },
+    "case_06": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 14,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1,
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "CU": 3,
+        "DU": 11
+      }
+    },
+    "case_07": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_08": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_09": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_10": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_11": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_12": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_13": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_14": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_15": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_16": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_17": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 13,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1,
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "CU": 2,
+        "DU": 11
+      }
+    },
+    "case_18": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 8,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1,
+        "Connection Failure": 6
+      },
+      "error_units": {
+        "CU": 2,
+        "DU": 6
+      }
+    },
+    "case_19": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 13,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1,
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "CU": 2,
+        "DU": 11
+      }
+    },
+    "case_20": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_21": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_22": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_23": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_24": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 11,
+      "error_types": {
+        "Connection Failure": 11
+      },
+      "error_units": {
+        "DU": 11
+      }
+    },
+    "case_25": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    }
+  }
+}

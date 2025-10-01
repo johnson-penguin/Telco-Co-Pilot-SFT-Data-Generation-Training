@@ -32,7 +32,7 @@ def replace_key_value(conf_text: str, modified_key: str, error_value, original_v
         pattern = rf"({block_name}\s*=\s*\(\s*{{.*?}}\s*\);)"
         matches = list(re.finditer(pattern, conf_text, flags=re.DOTALL))
         if not matches:
-            print(f"⚠️ 警告: 區塊 '{block_name}' 未找到 / Warning: block '{block_name}' not found")
+            print(f"[WARN] 區塊 '{block_name}' 未找到 / Warning: block '{block_name}' not found")
             return conf_text
 
         # 取 index-th block
@@ -52,7 +52,7 @@ def replace_key_value(conf_text: str, modified_key: str, error_value, original_v
 
         new_block, count = re.subn(sub_pattern, sub_replacer, block_text)
         if count == 0:
-            print(f"⚠️ 警告: 子參數 '{subkey}' 未在 {block_name}[{index}] 中找到 / Warning: subkey '{subkey}' not found in {block_name}[{index}]")
+            print(f"[WARN] 子參數 '{subkey}' 未在 {block_name}[{index}] 中找到 / Warning: subkey '{subkey}' not found in {block_name}[{index}]")
             return conf_text
 
         # 替換回去
@@ -117,8 +117,8 @@ def main():
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(new_conf)
 
-        # ✅ 中英對照輸出
-        print(f"✅ {filename} 已生成 / Generated")
+        # ASCII-only console output for Windows
+        print(f"[OK] {filename} 已生成 / Generated")
         print(f"   參數修改: {modified_key} → {error_value}")
         print(f"   Parameter modified: {modified_key} → {error_value}")
         print("-" * 60)

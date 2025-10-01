@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_138.json",
+  "modified_key": "security.ciphering_algorithms[2]",
+  "original_value": "nea1",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "將 security.ciphering_algorithms[2] 設為空字串，導致算法配置缺失。",
+  "explanation_en": "Setting security.ciphering_algorithms[2] to malformed value will cause decoding errors and system failure."
+}

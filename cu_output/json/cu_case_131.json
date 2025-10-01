@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_131.json",
+  "modified_key": "log_config.rlc_log_level",
+  "original_value": "info",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 log_config.rlc_log_level 類型改為數值，導致解析錯誤。",
+  "explanation_en": "Changing log_config.rlc_log_level from expected type to string will cause parsing errors during configuration loading."
+}

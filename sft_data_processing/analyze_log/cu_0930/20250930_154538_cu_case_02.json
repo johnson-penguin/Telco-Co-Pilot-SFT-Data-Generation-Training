@@ -1,0 +1,128 @@
+[
+  {
+    "Unit": "CU",
+    "Error": "Configuration Error",
+    "Log Level": "ERROR",
+    "Message": "[CONFIG] config_check_intrange: tracking_area_code: 65535 invalid value, authorized range: 1 65533",
+    "Event Description": "Invalid configuration parameter detected",
+    "explanation_en": "An invalid configuration parameter or value was detected during validation.",
+    "explanation_zh": "在配置驗證過程中偵測到無效的參數或數值。"
+  },
+  {
+    "Unit": "CU",
+    "Error": "Configuration Error",
+    "Log Level": "ERROR",
+    "Message": "[ENB_APP]   [CONFIG] config_execcheck: section gNBs.[0] 1 parameters with wrong value",
+    "Event Description": "Invalid configuration parameter detected",
+    "explanation_en": "An invalid configuration parameter or value was detected during validation.",
+    "explanation_zh": "在配置驗證過程中偵測到無效的參數或數值。"
+  },
+  {
+    "Unit": "CU",
+    "Error": "System Exit",
+    "Log Level": "ERROR",
+    "Message": "../../../common/config/config_userapi.c:102 config_execcheck() Exiting OAI softmodem: exit_fun",
+    "Event Description": "System terminated due to configuration or runtime error",
+    "explanation_en": "The softmodem exited due to configuration or runtime error.",
+    "explanation_zh": "因配置或執行時錯誤導致軟體基站程序結束。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  },
+  {
+    "Unit": "DU",
+    "Error": "Connection Failure",
+    "Log Level": "ERROR",
+    "Message": "[SCTP]   Connect failed: Connection refused",
+    "Event Description": "Network connection could not be established",
+    "explanation_en": "The component failed to establish a required network connection (e.g., SCTP).",
+    "explanation_zh": "元件無法建立必要的網路連線（例如 SCTP 連線失敗）。"
+  }
+]

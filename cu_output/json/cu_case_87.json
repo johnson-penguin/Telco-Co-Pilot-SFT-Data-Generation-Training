@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_87.json",
+  "modified_key": "security.drb_integrity",
+  "original_value": "no",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation_zh": "缺少 security.drb_integrity 配置項，導致策略或日誌初始化錯誤。",
+  "explanation_en": "Missing security.drb_integrity configuration will cause incomplete setup and undefined policy errors."
+}

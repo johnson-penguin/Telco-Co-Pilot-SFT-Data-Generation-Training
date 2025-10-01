@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_43.json",
+  "modified_key": "MACRLCs[0].local_n_portd",
+  "original_value": 2152,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將 MACRLCs[0].local_n_portd 設為負值，違反規範導致配置檢查失敗。"
+}

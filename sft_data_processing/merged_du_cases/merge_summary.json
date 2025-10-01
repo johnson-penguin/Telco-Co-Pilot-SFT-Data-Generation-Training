@@ -1,0 +1,265 @@
+{
+  "merge_summary": {
+    "total_cases_processed": 25,
+    "successfully_merged": 25,
+    "missing_analyze_data": 0,
+    "merge_timestamp": "C:\\Users\\bmwlab\\Desktop\\cursor_gen_conf"
+  },
+  "case_statistics": {
+    "case_01": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_02": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 3,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 3
+      }
+    },
+    "case_03": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 3,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 3
+      }
+    },
+    "case_04": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 3,
+      "error_types": {
+        "Configuration Error": 2,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 3
+      }
+    },
+    "case_05": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_06": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_07": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_08": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_09": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_10": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_11": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_12": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_13": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_14": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_15": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_16": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_17": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_18": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_19": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 2,
+      "error_types": {
+        "Assertion Error": 1,
+        "System Exit": 1
+      },
+      "error_units": {
+        "DU": 2
+      }
+    },
+    "case_20": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_21": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_22": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_23": {
+      "has_errors": true,
+      "is_successful": false,
+      "total_errors": 4,
+      "error_types": {
+        "Assertion Error": 2,
+        "System Exit": 2
+      },
+      "error_units": {
+        "DU": 4
+      }
+    },
+    "case_24": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    },
+    "case_25": {
+      "has_errors": false,
+      "is_successful": true,
+      "total_errors": 0,
+      "error_types": {},
+      "error_units": {}
+    }
+  }
+}

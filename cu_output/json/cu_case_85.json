@@ -1,0 +1,9 @@
+{
+  "filename": "cu_case_85.json",
+  "modified_key": "gNBs.tr_s_preference",
+  "original_value": "f1",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation_zh": "缺少 gNBs.tr_s_preference 配置項，導致策略或日誌初始化錯誤。",
+  "explanation_en": "Missing gNBs.tr_s_preference configuration will cause incomplete setup and undefined policy errors."
+}

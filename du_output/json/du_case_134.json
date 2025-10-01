@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_134.json",
+  "modified_key": "Asn1_verbosity",
+  "original_value": "annoying",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation_zh": "將 Asn1_verbosity 類型改為數值，造成解析錯誤。"
+}

@@ -4,7 +4,8 @@
   "original_value": "nea3",
   "error_value": "nea9",
   "error_type": "invalid_enum",
-  "explanation": "將 ciphering 算法設定為未知枚舉值 'nea9'；會在安全協商階段導致協商失敗與 NAS 註冊拒絕。",
+  "explanation_zh": "將 ciphering 算法設定為未知枚舉值 'nea9'；會在安全協商階段導致協商失敗與 NAS 註冊拒絕。",
+  "explanation_en": "Setting security.ciphering_algorithms[0] to an invalid enum value will cause configuration validation failure during module initialization.",
   "error_log": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

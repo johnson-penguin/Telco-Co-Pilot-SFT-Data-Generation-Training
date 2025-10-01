@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_123.json",
+  "modified_key": "gNBs[0].SCTP.SCTP_OUTSTREAMS",
+  "original_value": 2,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將 gNBs[0].SCTP.SCTP_OUTSTREAMS 類型改為字串，解析失敗。"
+}
