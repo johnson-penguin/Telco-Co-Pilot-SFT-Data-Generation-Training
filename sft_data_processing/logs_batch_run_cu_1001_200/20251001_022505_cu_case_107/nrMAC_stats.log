@@ -1,0 +1,8 @@
+UE RNTI 47bd CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
+UE 47bd: dlsch_rounds 32/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01216 MCS (0) 0
+UE 47bd: ulsch_rounds 192/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 47bd: MAC:    TX           1074 RX           3968 bytes
+UE 47bd: LCID 1: TX            522 RX            313 bytes
+UE 47bd: LCID 2: TX              0 RX              0 bytes
+UE 47bd: LCID 4: TX              9 RX            187 bytes
+

@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_566.json",
+  "modified_key": "log_config.global_log_level",
+  "original_value": "info",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation_zh": "缺少配置項，導致策略或流程未定義。"
+}

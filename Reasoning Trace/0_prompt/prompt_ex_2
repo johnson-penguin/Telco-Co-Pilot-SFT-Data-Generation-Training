@@ -1,0 +1,27 @@
+You are an expert 5G NR and OpenAirInterface (OAI) analyst. 
+Your task is to generate synthetic reasoning traces based on the provided base JSON containing logs from CU,DU, and UE (for the error case), the misconfigured parameter causing the issue, and the extracted network configuration (focused on gnb.conf and ue.conf parameters as JSON objects). 
+Create 3-5 varied synthetic traces that diagnose the issue, identify the root cause based on the misconfigured parameter, and explain the fix. Each trace should vary slightly in phrasing, depth, or emphasis (e.g., one focusing more on 3GPP specs, another on code patterns) to increase diversity for training. 
+
+The traces should be structured to teach another model how to perform similar analysis, emphasizing systematic thinking, cross-component correlation, and use of external knowledge via tools if needed. 
+Assume advance knowledge of the issue from the misconfigured parameter to guide the diagnosis, and note limitations like truncated logs, missing timestamps, or incomplete JSON in the traces where relevant.
+
+Input JSON structure:
+    - "misconfigured_param": The wrong parameter value causing the issue (e.g., "prach_config_index=64").
+    - "logs": Object with "CU", "DU", "UE" arrays of log lines for the error case.
+    - "network_config": Extracted configuration as a JSON object with "gnb_conf" and "ue_conf" subsections 
+        - e.g.
+        - gnb_conf includes parameters like prach_config_index, tdd_ul_dl_configuration_common
+        - ue_conf includes imsi, frequency
+        - Parse it fully, extract relevant params, and use for mismatches with logs and misconfigured_param.
+
+
+Think step by step, writing down all thoughts as you go, guided by the misconfigured_param for accurate diagnosis. Follow this structure in your response:
+    1. Overall Context and Setup Assumptions: Summarize the scenario (e.g., OAI SA mode with rfsim, based on logs showing --rfsim --sa options), expected flow (e.g., component init → F1/NGAP setup → UE connection/PRACH → RRC/PDU session), and potential issues to look for (e.g., config mismatches in PRACH or SIB encoding, asserts in code, connection failures). Parse network_config's gnb_conf and ue_conf, summarize key params (e.g., prach_config_index in gnb_conf), noting initial mismatches with logs or misconfigured_param.
+    2. Analyzing CU Logs: Break down initialization (e.g., mode confirmation, threads, GTPU/NGAP setup), key events (e.g., AMF connection, F1AP start), anomalies (e.g., incomplete logs or stalled states). Cross-reference with network_config's gnb_conf if relevant (e.g., AMF IP or GTPU ports).
+    3. Analyzing DU Logs: Focus on PHY/MAC errors (e.g., PRACH config, assertions like 'bad r: L_ra 139, NCS 209'). Break down init (e.g., antenna ports, TDD period), and identify crash points. Link to network_config's gnb_conf params like prach_config_index.
+    4. Analyzing UE Logs: Focus on connection attempts (e.g., repeated connect failures to rfsim server). Link to network_config's ue_conf params like frequency or rfsimulator_serveraddr.
+    5. Cross-Component Correlations and Root Cause Hypothesis: Correlate timelines (e.g., DU crash prevents rfsim server, causing UE connect fails. CU waits for DU). Use the misconfigured_param for clues (e.g., known invalid prach_config_index=64 causes ASN.1 fail). If uncertain (e.g., spec details), use web_search tool with query like "3GPP TS 38.331 prach-ConfigurationIndex range" or "OpenAirInterface NR prach_config_index validation". Hypothesize how specific network_config entries (from gnb_conf/ue_conf) cause issues, guided by the misconfigured_param.
+    6. Recommendations for Fix and Further Analysis: Suggest config changes (e.g., update to a correct value), debug steps, tools. Output corrected gnb.conf and ue.conf snippets as JSON objects within network_config structure, addressing issues—format with comments explaining changes.
+    7. Limitations: Note truncated logs, missing timestamps, or incomplete JSON. If using tools, call them before concluding the root cause (e.g., via <xai:function_call). Base hypothesis on 3GPP specs (e.g., TS 38.211 for PRACH) and OAI code patterns, incorporating advance knowledge from the misconfigured_param. Output only the reasoning trace. 
+
+JSON File

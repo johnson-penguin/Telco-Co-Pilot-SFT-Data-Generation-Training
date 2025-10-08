@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_525.json",
+  "modified_key": "log_config.global_log_level",
+  "original_value": "info",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation_zh": "無效枚舉，導致模組初始化失敗。"
+}

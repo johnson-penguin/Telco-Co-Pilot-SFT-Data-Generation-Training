@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_52.json",
+  "modified_key": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+  "original_value": 98,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation_zh": "將數值設為過大，超出規格限制。"
+}

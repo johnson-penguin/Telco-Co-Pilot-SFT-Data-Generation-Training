@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_77.json",
+  "modified_key": "MACRLCs[0].remote_n_address",
+  "original_value": "127.0.0.5",
+  "error_value": "abc.def.ghi.jkl",
+  "error_type": "invalid_format",
+  "explanation_zh": "非 IP 字串，地址解析失敗。"
+}

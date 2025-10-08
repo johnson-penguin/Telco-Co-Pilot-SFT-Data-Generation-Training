@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_82.json",
+  "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+  "original_value": 110,
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "空值導致解析錯誤。"
+}

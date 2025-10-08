@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_80.json",
+  "modified_key": "fhi_72.fh_config[0].T1a_cp_ul[0]",
+  "original_value": 285,
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "空值導致解析錯誤。"
+}
