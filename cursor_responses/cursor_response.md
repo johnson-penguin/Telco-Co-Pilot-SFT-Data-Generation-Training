@@ -1,1 +1,2 @@
-9
+Created README for `Reasoning Trace` detailing pipeline, folders, and scripts. Saved at `Reasoning Trace/README.md`.
+Created README for `1_confgen_workspace` describing structure, scripts, and usage. Saved at `1_confgen_workspace/README.md`.
