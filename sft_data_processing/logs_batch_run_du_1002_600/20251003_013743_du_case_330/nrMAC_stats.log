@@ -1,0 +1,6 @@
+UE RNTI 65bb CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (11 meas)
+UE 65bb: dlsch_rounds 26/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01853 MCS (0) 0
+UE 65bb: ulsch_rounds 182/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 65bb: MAC:    TX            617 RX           3183 bytes
+UE 65bb: LCID 1: TX            226 RX            307 bytes
+

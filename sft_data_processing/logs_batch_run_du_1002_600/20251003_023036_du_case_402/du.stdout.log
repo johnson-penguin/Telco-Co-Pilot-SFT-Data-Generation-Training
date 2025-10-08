@@ -1,0 +1,21 @@
+[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[PHY]   No prs_config configuration found..!!
+[0m[PHY]   DL frequency 3619200000 Hz, UL frequency 3619200000 Hz: band 48, uldl offset 0 Hz
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[PHY]   RU clock source set as internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU thread-pool core string -1,-1 (size 2)
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m[1;31m[SCTP]   Connect failed: Connection refused
+[0m
