@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_232.json",
+  "modified_key": "security.integrity_algorithms[1]",
+  "original_value": "nia0",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致演算法配置缺失。"
+}

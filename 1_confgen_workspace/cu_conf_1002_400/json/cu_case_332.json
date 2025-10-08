@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_332.json",
+  "modified_key": "Asn1_verbosity",
+  "original_value": "none",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+}

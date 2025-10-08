@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_210.json",
+  "modified_key": "gNBs.amf_ip_address.ipv4",
+  "original_value": "192.168.70.132",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致地址配置缺失。"
+}

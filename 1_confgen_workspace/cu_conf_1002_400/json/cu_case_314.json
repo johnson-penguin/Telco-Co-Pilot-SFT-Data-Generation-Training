@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_314.json",
+  "modified_key": "gNBs.tracking_area_code",
+  "original_value": 1,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation": "將數值改為字串，導致解析錯誤。"
+}

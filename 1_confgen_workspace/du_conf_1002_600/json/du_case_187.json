@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_187.json",
+  "modified_key": "RUs[0].max_rxgain",
+  "original_value": 114,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation_zh": "將數值設為過大，超出規格限制。"
+}

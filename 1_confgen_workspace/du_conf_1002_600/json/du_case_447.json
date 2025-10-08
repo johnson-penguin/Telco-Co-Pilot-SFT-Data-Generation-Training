@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_447.json",
+  "modified_key": "RUs[0].bands[0]",
+  "original_value": 78,
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "空值導致解析錯誤。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_153.json",
+  "modified_key": "security.integrity_algorithms[0]",
+  "original_value": "nia2",
+  "error_value": "nea9",
+  "error_type": "invalid_enum",
+  "explanation": "未知演算法，導致安全協商失敗。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_18.json",
+  "modified_key": "gNBs.local_s_address",
+  "original_value": "127.0.0.5",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+}

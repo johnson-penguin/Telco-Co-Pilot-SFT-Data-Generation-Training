@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_88.json",
+  "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+  "original_value": 2152,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation": "將數值改為字串，導致解析錯誤。"
+}

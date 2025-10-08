@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_177.json",
+  "modified_key": "gNBs.tr_s_preference",
+  "original_value": "f1",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+}

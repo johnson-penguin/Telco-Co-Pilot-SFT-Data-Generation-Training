@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_118.json",
+  "modified_key": "Num_Threads_PUSCH",
+  "original_value": 8,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_09.json",
+  "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+  "original_value": 2,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+}

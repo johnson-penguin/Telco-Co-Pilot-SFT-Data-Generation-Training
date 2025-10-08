@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_350.json",
+  "modified_key": "gNBs.gNB_ID",
+  "original_value": "0xe00",
+  "error_value": 12345,
+  "error_type": "wrong_type",
+  "explanation": "將字串改為數值，導致解析失敗。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_175.json",
+  "modified_key": "gNBs.remote_s_address",
+  "original_value": "127.0.0.3",
+  "error_value": "abc.def.ghi.jkl",
+  "error_type": "invalid_format",
+  "explanation": "非 IP 字串，導致地址解析錯誤。"
+}

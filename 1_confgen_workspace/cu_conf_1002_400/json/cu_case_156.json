@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_156.json",
+  "modified_key": "gNBs.gNB_name",
+  "original_value": "gNB-Eurecom-CU",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致識別或註冊流程失敗。"
+}

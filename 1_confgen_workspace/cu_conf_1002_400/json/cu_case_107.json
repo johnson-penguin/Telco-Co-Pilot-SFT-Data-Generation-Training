@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_107.json",
+  "modified_key": "log_config.pdcp_log_level",
+  "original_value": "info",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+}

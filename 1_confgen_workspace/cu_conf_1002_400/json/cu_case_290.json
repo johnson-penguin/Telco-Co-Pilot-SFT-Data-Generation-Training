@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_290.json",
+  "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+  "original_value": "192.168.8.43",
+  "error_value": "abc.def.ghi.jkl",
+  "error_type": "invalid_format",
+  "explanation": "非 IP 字串，導致地址解析錯誤。"
+}

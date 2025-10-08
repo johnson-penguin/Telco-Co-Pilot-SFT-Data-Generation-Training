@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_257.json",
+  "modified_key": "security.drb_integrity",
+  "original_value": "no",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation": "無效枚舉值，導致配置驗證失敗。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_214.json",
+  "modified_key": "gNBs.remote_s_address",
+  "original_value": "127.0.0.3",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致地址配置缺失。"
+}

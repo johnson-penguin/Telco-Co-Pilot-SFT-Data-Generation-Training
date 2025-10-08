@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_312.json",
+  "modified_key": "fhi_72.io_core",
+  "original_value": 4,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation_zh": "將數值設為過大，超出規格限制。"
+}

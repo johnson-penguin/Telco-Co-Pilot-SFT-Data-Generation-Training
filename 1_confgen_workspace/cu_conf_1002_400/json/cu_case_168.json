@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_168.json",
+  "modified_key": "gNBs.plmn_list.mnc",
+  "original_value": 1,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為負值，違反協議或範圍限制。"
+}

@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_283.json",
+  "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+  "original_value": 2152,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為負值，違反協議或範圍限制。"
+}

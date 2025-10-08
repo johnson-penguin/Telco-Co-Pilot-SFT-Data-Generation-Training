@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_33.json",
+  "modified_key": "security.ciphering_algorithms[0]",
+  "original_value": "nea3",
+  "error_value": "nea9",
+  "error_type": "invalid_enum",
+  "explanation": "未知演算法，導致安全協商失敗。"
+}

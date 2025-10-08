@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_247.json",
+  "modified_key": "gNBs.plmn_list.mnc_length",
+  "original_value": 2,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+}

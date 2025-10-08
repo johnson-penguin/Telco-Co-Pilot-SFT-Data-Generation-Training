@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_136.json",
+  "modified_key": "gNBs.remote_s_address",
+  "original_value": "127.0.0.3",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+}

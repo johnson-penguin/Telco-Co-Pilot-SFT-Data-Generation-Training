@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_100.json",
+  "modified_key": "security.drb_ciphering",
+  "original_value": "yes",
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+}

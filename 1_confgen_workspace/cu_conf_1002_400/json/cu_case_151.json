@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_151.json",
+  "modified_key": "security.ciphering_algorithms[1]",
+  "original_value": "nea2",
+  "error_value": "nea9",
+  "error_type": "invalid_enum",
+  "explanation": "未知演算法，導致安全協商失敗。"
+}

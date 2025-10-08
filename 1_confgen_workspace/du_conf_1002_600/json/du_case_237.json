@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_237.json",
+  "modified_key": "gNBs[0].servingCellConfigCommon[0].pucchGroupHopping",
+  "original_value": 0,
+  "error_value": 123,
+  "error_type": "wrong_type",
+  "explanation_zh": "將枚舉型別改為數值，造成解析錯誤。"
+}

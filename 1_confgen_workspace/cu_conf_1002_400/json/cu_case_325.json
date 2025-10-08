@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_325.json",
+  "modified_key": "gNBs.plmn_list.mnc_length",
+  "original_value": 2,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation": "將數值改為字串，導致解析錯誤。"
+}

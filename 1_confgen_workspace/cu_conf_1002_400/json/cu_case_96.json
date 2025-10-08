@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_96.json",
+  "modified_key": "gNBs.local_s_address",
+  "original_value": "127.0.0.5",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致地址配置缺失。"
+}

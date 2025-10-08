@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_317.json",
+  "modified_key": "gNBs.local_s_portd",
+  "original_value": 2152,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation": "將數值改為字串，導致解析錯誤。"
+}

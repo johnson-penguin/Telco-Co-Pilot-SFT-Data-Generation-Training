@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_345.json",
+  "modified_key": "security.ciphering_algorithms[0]",
+  "original_value": "nea3",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation": "空字串導致演算法配置缺失。"
+}

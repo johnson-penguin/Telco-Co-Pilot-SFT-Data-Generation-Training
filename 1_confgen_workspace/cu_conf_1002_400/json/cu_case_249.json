@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_249.json",
+  "modified_key": "gNBs.amf_ip_address.ipv4",
+  "original_value": "192.168.70.132",
+  "error_value": "999.999.999.999",
+  "error_type": "invalid_format",
+  "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+}

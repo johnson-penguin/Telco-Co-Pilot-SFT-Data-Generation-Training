@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_356.json",
+  "modified_key": "gNBs.local_s_portd",
+  "original_value": 2152,
+  "error_value": 9999999,
+  "error_type": "out_of_range",
+  "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+}

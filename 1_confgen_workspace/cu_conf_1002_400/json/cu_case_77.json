@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_77.json",
+  "modified_key": "gNBs.gNB_ID",
+  "original_value": "0xe00",
+  "error_value": null,
+  "error_type": "missing_value",
+  "explanation": "缺少必要識別，導致系統初始化錯誤。"
+}

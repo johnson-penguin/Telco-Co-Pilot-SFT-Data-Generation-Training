@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_164.json",
+  "modified_key": "fhi_72.fh_config[0].Ta4[0]",
+  "original_value": 110,
+  "error_value": 0,
+  "error_type": "out_of_range",
+  "explanation_zh": "將值設為 0 或異常，破壞時間/頻段配置。"
+}

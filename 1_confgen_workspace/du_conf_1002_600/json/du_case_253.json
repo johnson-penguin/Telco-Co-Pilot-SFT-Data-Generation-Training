@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_253.json",
+  "modified_key": "gNBs[0].sib1_tda",
+  "original_value": 15,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將數值設為負值，違反規範導致配置檢查失敗。"
+}

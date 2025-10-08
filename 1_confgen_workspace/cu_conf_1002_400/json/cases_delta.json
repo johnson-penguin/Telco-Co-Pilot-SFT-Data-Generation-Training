@@ -1,0 +1,3202 @@
+[
+  {
+    "filename": "cu_case_01.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_02.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_03.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_04.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_05.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_06.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_07.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_08.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_09.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_10.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_11.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_12.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_13.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_14.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_15.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_16.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_17.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_18.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_19.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_20.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_21.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_22.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_23.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_24.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_25.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_26.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_27.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_28.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_29.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_30.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_31.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_32.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_33.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_34.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_35.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_36.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_37.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_38.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_39.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_40.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_41.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_42.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_43.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_44.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_45.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_46.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_47.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_48.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_49.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_50.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_51.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_52.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_53.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_54.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_55.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_56.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_57.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_58.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_59.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_60.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_61.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_62.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_63.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_64.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_65.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_66.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_67.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_68.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_69.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_70.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_71.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_72.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_73.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_74.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_75.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_76.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_77.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_78.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_79.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_80.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_81.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_82.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_83.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_84.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_85.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_86.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_87.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_88.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_89.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_90.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_91.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_92.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_93.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_94.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_95.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_96.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_97.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_98.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_99.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_100.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_101.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_102.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_103.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_104.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_105.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_106.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_107.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_108.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_109.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_110.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_111.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_112.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_113.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_114.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_115.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_116.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_117.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_118.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_119.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_120.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_121.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_122.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_123.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_124.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_125.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_126.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_127.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_128.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_129.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_130.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_131.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_132.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_133.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_134.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_135.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_136.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_137.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_138.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_139.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_140.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_141.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_142.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_143.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_144.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_145.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_146.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_147.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_148.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_149.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_150.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_151.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_152.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_153.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_154.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_155.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_156.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_157.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_158.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_159.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_160.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_161.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_162.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_163.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_164.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_165.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_166.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_167.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_168.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_169.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_170.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_171.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_172.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_173.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_174.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_175.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_176.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_177.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_178.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_179.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_180.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_181.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_182.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_183.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_184.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_185.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_186.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_187.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_188.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_189.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_190.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_191.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_192.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_193.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_194.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_195.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_196.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_197.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_198.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_199.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_200.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_201.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_202.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_203.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_204.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_205.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_206.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_207.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_208.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_209.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_210.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_211.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_212.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_213.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_214.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_215.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_216.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_217.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_218.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_219.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_220.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_221.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_222.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_223.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_224.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_225.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_226.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_227.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_228.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_229.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_230.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_231.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_232.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_233.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_234.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_235.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_236.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_237.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_238.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_239.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_240.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_241.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_242.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_243.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_244.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_245.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_246.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_247.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_248.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_249.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_250.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_251.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_252.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_253.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_254.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_255.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_256.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_257.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_258.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_259.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_260.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_261.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_262.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_263.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_264.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_265.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_266.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_267.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_268.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_269.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_270.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_271.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_272.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_273.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_274.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_275.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_276.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_277.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_278.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_279.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_280.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_281.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_282.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_283.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_284.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_285.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_286.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_287.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_288.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_289.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_290.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_291.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_292.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "abc.def.ghi.jkl",
+    "error_type": "invalid_format",
+    "explanation": "非 IP 字串，導致地址解析錯誤。"
+  },
+  {
+    "filename": "cu_case_293.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_294.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_295.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_296.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_297.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_298.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_299.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_300.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_301.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_302.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_303.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_304.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_305.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少此配置項，導致初始化或策略錯誤。"
+  },
+  {
+    "filename": "cu_case_306.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_307.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_308.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_309.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_310.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": 0,
+    "error_type": "wrong_type",
+    "explanation": "將演算法改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_311.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_312.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation": "缺少必要識別，導致系統初始化錯誤。"
+  },
+  {
+    "filename": "cu_case_313.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_314.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_315.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_316.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_317.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_318.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_319.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_320.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_321.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_322.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_323.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_324.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_325.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_326.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": "invalid_string",
+    "error_type": "wrong_type",
+    "explanation": "將數值改為字串，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_327.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_328.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_329.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_330.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_331.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致地址配置缺失。"
+  },
+  {
+    "filename": "cu_case_332.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_333.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_334.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_335.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_336.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_337.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_338.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_339.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_340.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_341.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_342.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_343.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_344.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": 123,
+    "error_type": "wrong_type",
+    "explanation": "將枚舉型別改為數值，導致解析錯誤。"
+  },
+  {
+    "filename": "cu_case_345.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_346.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_347.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_348.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_349.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致演算法配置缺失。"
+  },
+  {
+    "filename": "cu_case_350.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_351.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": 12345,
+    "error_type": "wrong_type",
+    "explanation": "將字串改為數值，導致解析失敗。"
+  },
+  {
+    "filename": "cu_case_352.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_353.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_354.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_355.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_356.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_357.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_358.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_359.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_360.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_361.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_362.json",
+    "modified_key": "gNBs.plmn_list.mcc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_363.json",
+    "modified_key": "gNBs.plmn_list.mnc",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_364.json",
+    "modified_key": "gNBs.plmn_list.mnc_length",
+    "original_value": 2,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_365.json",
+    "modified_key": "gNBs.plmn_list.snssaiList.sst",
+    "original_value": 1,
+    "error_value": 9999999,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為超出範圍，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_366.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_367.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_368.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_369.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_370.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "999.999.999.999",
+    "error_type": "invalid_format",
+    "explanation": "無效 IPv4 格式，導致連線建立失敗。"
+  },
+  {
+    "filename": "cu_case_371.json",
+    "modified_key": "Asn1_verbosity",
+    "original_value": "none",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_372.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_373.json",
+    "modified_key": "security.drb_ciphering",
+    "original_value": "yes",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_374.json",
+    "modified_key": "security.drb_integrity",
+    "original_value": "no",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_375.json",
+    "modified_key": "log_config.global_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_376.json",
+    "modified_key": "log_config.hw_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_377.json",
+    "modified_key": "log_config.phy_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_378.json",
+    "modified_key": "log_config.mac_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_379.json",
+    "modified_key": "log_config.rlc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_380.json",
+    "modified_key": "log_config.pdcp_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_381.json",
+    "modified_key": "log_config.rrc_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_382.json",
+    "modified_key": "log_config.ngap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_383.json",
+    "modified_key": "log_config.f1ap_log_level",
+    "original_value": "info",
+    "error_value": "invalid_enum_value",
+    "error_type": "invalid_enum",
+    "explanation": "無效枚舉值，導致配置驗證失敗。"
+  },
+  {
+    "filename": "cu_case_384.json",
+    "modified_key": "security.ciphering_algorithms[0]",
+    "original_value": "nea3",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_385.json",
+    "modified_key": "security.ciphering_algorithms[1]",
+    "original_value": "nea2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_386.json",
+    "modified_key": "security.ciphering_algorithms[2]",
+    "original_value": "nea1",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_387.json",
+    "modified_key": "security.integrity_algorithms[0]",
+    "original_value": "nia2",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_388.json",
+    "modified_key": "security.integrity_algorithms[1]",
+    "original_value": "nia0",
+    "error_value": "nea9",
+    "error_type": "invalid_enum",
+    "explanation": "未知演算法，導致安全協商失敗。"
+  },
+  {
+    "filename": "cu_case_389.json",
+    "modified_key": "gNBs.gNB_ID",
+    "original_value": "0xe00",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_390.json",
+    "modified_key": "gNBs.gNB_name",
+    "original_value": "gNB-Eurecom-CU",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation": "空字串導致識別或註冊流程失敗。"
+  },
+  {
+    "filename": "cu_case_391.json",
+    "modified_key": "Num_Threads_PUSCH",
+    "original_value": 8,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_392.json",
+    "modified_key": "gNBs.tracking_area_code",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_393.json",
+    "modified_key": "gNBs.nr_cellid",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_394.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_395.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_396.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_397.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_398.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_399.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  },
+  {
+    "filename": "cu_case_400.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "將該數值設為負值，違反協議或範圍限制。"
+  }
+]

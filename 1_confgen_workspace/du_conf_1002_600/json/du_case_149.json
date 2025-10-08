@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_149.json",
+  "modified_key": "fhi_72.mtu",
+  "original_value": 9000,
+  "error_value": -1,
+  "error_type": "out_of_range",
+  "explanation_zh": "將數值設為負值，違反規範導致配置檢查失敗。"
+}

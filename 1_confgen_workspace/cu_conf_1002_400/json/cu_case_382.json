@@ -1,0 +1,8 @@
+{
+  "filename": "cu_case_382.json",
+  "modified_key": "log_config.ngap_log_level",
+  "original_value": "info",
+  "error_value": "invalid_enum_value",
+  "error_type": "invalid_enum",
+  "explanation": "無效枚舉值，導致配置驗證失敗。"
+}

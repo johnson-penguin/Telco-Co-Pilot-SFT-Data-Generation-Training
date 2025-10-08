@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_331.json",
+  "modified_key": "gNBs[0].pdsch_AntennaPorts_N1",
+  "original_value": 2,
+  "error_value": "invalid_string",
+  "error_type": "wrong_type",
+  "explanation_zh": "將數值改為字串，解析失敗。"
+}

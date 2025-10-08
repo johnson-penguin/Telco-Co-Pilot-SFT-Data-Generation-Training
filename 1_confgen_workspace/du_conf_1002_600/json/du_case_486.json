@@ -1,0 +1,8 @@
+{
+  "filename": "du_case_486.json",
+  "modified_key": "MACRLCs[0].local_n_address",
+  "original_value": "127.0.0.3",
+  "error_value": "",
+  "error_type": "invalid_format",
+  "explanation_zh": "空字串，無法綁定或連線。"
+}
