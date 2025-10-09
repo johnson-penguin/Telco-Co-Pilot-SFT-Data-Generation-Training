@@ -1,0 +1,496 @@
+# 5G NR / OAI Reasoning Trace Generation Prompt
+
+You are an expert 5G NR and OpenAirInterface (OAI) analyst.  
+Your task is to analyze the provided JSON containing logs from CU, DU, and UE (for the error case), the misconfigured parameter causing the issue, and the extracted network configuration (focused on gnb.conf and ue.conf parameters as JSON objects), to generate a detailed step-by-step reasoning trace.  
+This trace diagnoses the issue, identifies the root cause based on the misconfigured parameter, and explains the fix.  
+The reasoning should be structured to teach another model how to perform similar analysis, emphasizing systematic thinking, cross-component correlation, and use of external knowledge via tools if needed.  
+Assume advance knowledge of the issue from the misconfigured parameter to guide the diagnosis.
+
+---
+
+### Input JSON structure:
+- **"misconfigured_param"**: The wrong parameter value causing the issue (e.g., `"prach_config_index=64"`).
+- **"logs"**: Object with `"CU"`, `"DU"`, `"UE"` arrays of log lines for the error case.
+- **"network_config"**: Extracted configuration as a JSON object with `"gnb_conf"` and `"ue_conf"` subsections (e.g., gnb_conf includes parameters like `prach_config_index`, `tdd_ul_dl_configuration_common`; ue_conf includes `imsi`, `frequency`).  
+  Parse it fully, extract relevant params, and use for mismatches with logs and misconfigured_param.
+
+---
+
+### Think step by step, writing down all thoughts as you go, guided by the misconfigured_param for accurate diagnosis.  
+Follow this structure in your response:
+
+---
+
+## 1. Overall Context and Setup Assumptions  
+Summarize the scenario (e.g., OAI SA mode with rfsim, based on logs showing `--rfsim --sa` options), expected flow (e.g., component init → F1/NGAP setup → UE connection/PRACH → RRC/PDU session), and potential issues to look for (e.g., config mismatches in PRACH or SIB encoding, asserts in code, connection failures).  
+Parse network_config's gnb_conf and ue_conf, summarize key params (e.g., prach_config_index in gnb_conf), noting initial mismatches with logs or misconfigured_param.
+
+---
+
+## 2. Analyzing CU Logs  
+Break down initialization (e.g., mode confirmation, threads, GTPU/NGAP setup), key events (e.g., AMF connection, F1AP start), anomalies (e.g., incomplete logs or stalled states).  
+Cross-reference with network_config's gnb_conf if relevant (e.g., AMF IP or GTPU ports).
+
+---
+
+## 3. Analyzing DU Logs  
+Focus on PHY/MAC errors (e.g., PRACH config, assertions like `bad r: L_ra 139, NCS 209`).  
+Break down init (e.g., antenna ports, TDD period), and identify crash points.  
+Link to network_config's gnb_conf params like `prach_config_index`.
+
+---
+
+## 4. Analyzing UE Logs  
+Focus on connection attempts (e.g., repeated connect failures to rfsim server).  
+Link to network_config's ue_conf params like frequency or rfsimulator_serveraddr.
+
+---
+
+## 5. Cross-Component Correlations and Root Cause Hypothesis  
+Correlate timelines (e.g., DU crash prevents rfsim server, causing UE connect fails; CU waits for DU).  
+Use the misconfigured_param for clues (e.g., known invalid `prach_config_index=64` causes ASN.1 fail).  
+If uncertain (e.g., spec details), use **web_search** tool with query like `"3GPP TS 38.331 prach-ConfigurationIndex range"` or `"OpenAirInterface NR prach_config_index validation"`.  
+Hypothesize how specific network_config entries (from gnb_conf/ue_conf) cause issues, guided by the misconfigured_param.
+
+---
+
+## 6. Recommendations for Fix and Further Analysis  
+Suggest config changes (e.g., update to a correct value), debug steps, tools.  
+Output corrected gnb.conf and ue.conf snippets as JSON objects within network_config structure, addressing issues — format with comments explaining changes.
+
+---
+
+## 7. Limitations  
+Note truncated logs, missing timestamps, or incomplete JSON.  
+If using tools, call them before concluding the root cause (e.g., via `<xai:function_call>`).  
+Base hypothesis on 3GPP specs (e.g., TS 38.211 for PRACH) and OAI code patterns, incorporating advance knowledge from the misconfigured_param.  
+**Output only the reasoning trace.**
+
+JSON File:
+
+JSON File
+{
+  "misconfigured_param": "pdsch_AntennaPorts_XP=0",
+  "logs": {
+    "CU": [
+      "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
+      "\u001b[0m[OPT]   OPT disabled",
+      "\u001b[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000",
+      "\u001b[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 0, RC.nb_nr_L1_inst = 0, RC.nb_RU = 0, RC.nb_nr_CC[0] = 0",
+      "\u001b[0m[GNB_APP]   F1AP: gNB_CU_id[0] 3584",
+      "\u001b[0m[GNB_APP]   F1AP: gNB_CU_name[0] gNB-Eurecom-CU",
+      "\u001b[0m[GNB_APP]   SDAP layer is disabled",
+      "\u001b[0m[GNB_APP]   Data Radio Bearer count 1",
+      "\u001b[0m[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[X2AP]   X2AP is disabled.",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[NGAP]   Registered new gNB[0] and macro gNB id 3584",
+      "\u001b[0m[NGAP]   [gNB 0] check the amf registration state",
+      "\u001b[0m[NR_RRC]   Entering main loop of NR_RRC message task",
+      "\u001b[0m[GTPU]   Configuring GTPu",
+      "\u001b[0m[GTPU]   SA mode ",
+      "\u001b[0m[GTPU]   Configuring GTPu address : 192.168.8.43, port : 2152",
+      "\u001b[0m[GTPU]   Initializing UDP for local address 192.168.8.43 with port 2152",
+      "\u001b[0m[GTPU]   Created gtpu instance id: 94",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[NR_RRC]   Accepting new CU-UP ID 3584 name gNB-Eurecom-CU (assoc_id -1)",
+      "\u001b[0m\u001b[32m[NGAP]   Send NGSetupRequest to AMF",
+      "\u001b[0m[NGAP]   3584 -> 0000e000",
+      "\u001b[0m\u001b[32m[NGAP]   Received NGSetupResponse from AMF",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_CU_F1: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for time source realtime: creating thread with affinity ffffffff, priority 2",
+      "\u001b[0m[F1AP]   Starting F1AP at CU",
+      "\u001b[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1",
+      "\u001b[0m[UTIL]   time manager configuration: [time source: reatime] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)",
+      "\u001b[0m[F1AP]   F1AP_CU_SCTP_REQ(create socket) for 127.0.0.5 len 10",
+      "\u001b[0m[GTPU]   Initializing UDP for local address 127.0.0.5 with port 2152",
+      "\u001b[0m[GTPU]   Created gtpu instance id: 95",
+      "\u001b[0m"
+    ],
+    "DU": [
+      "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
+      "\u001b[0m[OPT]   OPT disabled",
+      "\u001b[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000",
+      "\u001b[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1",
+      "\u001b[0m[NR_PHY]   Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 ",
+      "\u001b[0m[NR_PHY]   Registered with MAC interface module (0x40245d0)",
+      "\u001b[0m[NR_PHY]   Initializing NR L1: RC.nb_nr_L1_inst = 1",
+      "\u001b[0m[NR_PHY]   L1_RX_THREAD_CORE -1 (15)",
+      "\u001b[0m[NR_PHY]   TX_AMP = 519 (-36 dBFS)",
+      "\u001b[0m[PHY]   No prs_config configuration found..!!",
+      "\u001b[0m[GNB_APP]   pdsch_AntennaPorts N1 2 N2 1 XP 0 pusch_AntennaPorts 4",
+      "\u001b[0m[GNB_APP]   minTXRXTIME 6",
+      "\u001b[0m[GNB_APP]   SIB1 TDA 15",
+      "\u001b[0m[GNB_APP]   CSI-RS 0, SRS 0, SINR:0, 256 QAM force off, delta_MCS off, maxMIMO_Layers 1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16",
+      "\u001b[0m",
+      "Assertion (config.maxMIMO_layers != 0 && config.maxMIMO_layers <= tot_ant) failed!",
+      "In RCconfig_nr_macrlc() ../../../openair2/GNB_APP/gnb_config.c:1538",
+      "Invalid maxMIMO_layers 1",
+      "",
+      "Exiting execution",
+      "CMDLINE: \"/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem\" \"--rfsim\" \"--sa\" \"-O\" \"/home/oai72/Johnson/auto_run_gnb_ue/error_conf/du_case_07.conf\" ",
+      "[CONFIG] function config_libconfig_init returned 0",
+      "Reading 'GNBSParams' section from the config file",
+      "Reading 'GNBSParams' section from the config file",
+      "Reading 'GNBSParams' section from the config file",
+      "Reading 'GNBSParams' section from the config file",
+      "../../../openair2/GNB_APP/gnb_config.c:1538 RCconfig_nr_macrlc() Exiting OAI softmodem: _Assert_Exit_"
+    ],
+    "UE": [
+      "\u001b[0m[PHY]   SA init parameters. DL freq 3619200000 UL offset 0 SSB numerology 1 N_RB_DL 106",
+      "\u001b[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048",
+      "\u001b[0m\u001b[93m[PHY]   samples_per_subframe 61440/per second 61440000, wCP 57344",
+      "\u001b[0m[UTIL]   threadCreate() for SYNC__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for UL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for UL__actor: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[PHY]   Initializing UE vars for gNB TXant 1, UE RXant 1",
+      "\u001b[0m[PHY]   prs_config configuration NOT found..!! Skipped configuring UE for the PRS reception",
+      "\u001b[0m[PHY]   HW: Configuring card 0, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 1, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 2, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 3, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 4, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 5, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 6, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   HW: Configuring card 7, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0",
+      "\u001b[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110",
+      "\u001b[0m[PHY]   Intializing UE Threads for instance 0 ...",
+      "\u001b[0m[UTIL]   threadCreate() for UEthread_0: creating thread with affinity ffffffff, priority 97",
+      "\u001b[0m[UTIL]   threadCreate() for L1_UE_stats_0: creating thread with affinity ffffffff, priority 1",
+      "\u001b[0m[HW]   Running as client: will connect to a rfsimulator server side",
+      "\u001b[0m[HW]   [RRU] has loaded RFSIMULATOR device.",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m[HW]   Trying to connect to 127.0.0.1:4043",
+      "\u001b[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)",
+      "\u001b[0m"
+    ]
+  },
+  "network_config": {
+    "cu_conf": {
+      "Active_gNBs": [
+        "gNB-Eurecom-CU"
+      ],
+      "Asn1_verbosity": "none",
+      "Num_Threads_PUSCH": 8,
+      "gNBs": {
+        "gNB_ID": "0xe00",
+        "gNB_name": "gNB-Eurecom-CU",
+        "tracking_area_code": 1,
+        "plmn_list": {
+          "mcc": 1,
+          "mnc": 1,
+          "mnc_length": 2,
+          "snssaiList": {
+            "sst": 1
+          }
+        },
+        "nr_cellid": 1,
+        "tr_s_preference": "f1",
+        "local_s_if_name": "lo",
+        "local_s_address": "127.0.0.5",
+        "remote_s_address": "127.0.0.3",
+        "local_s_portc": 501,
+        "local_s_portd": 2152,
+        "remote_s_portc": 500,
+        "remote_s_portd": 2152,
+        "SCTP": {
+          "SCTP_INSTREAMS": 2,
+          "SCTP_OUTSTREAMS": 2
+        },
+        "amf_ip_address": {
+          "ipv4": "192.168.70.132"
+        },
+        "NETWORK_INTERFACES": {
+          "GNB_IPV4_ADDRESS_FOR_NG_AMF": "192.168.8.43",
+          "GNB_IPV4_ADDRESS_FOR_NGU": "192.168.8.43",
+          "GNB_PORT_FOR_S1U": 2152
+        }
+      },
+      "security": {
+        "ciphering_algorithms": [
+          "nea3",
+          "nea2",
+          "nea1",
+          "nea0"
+        ],
+        "integrity_algorithms": [
+          "nia2",
+          "nia0"
+        ],
+        "drb_ciphering": "yes",
+        "drb_integrity": "no"
+      },
+      "log_config": {
+        "global_log_level": "info",
+        "hw_log_level": "info",
+        "phy_log_level": "info",
+        "mac_log_level": "info",
+        "rlc_log_level": "info",
+        "pdcp_log_level": "info",
+        "rrc_log_level": "info",
+        "ngap_log_level": "info",
+        "f1ap_log_level": "info"
+      }
+    },
+    "du_conf": {
+      "Active_gNBs": [
+        "gNB-Eurecom-DU"
+      ],
+      "Asn1_verbosity": "annoying",
+      "gNBs": [
+        {
+          "gNB_ID": "0xe00",
+          "gNB_DU_ID": "0xe00",
+          "gNB_name": "gNB-Eurecom-DU",
+          "tracking_area_code": 1,
+          "plmn_list": [
+            {
+              "mcc": 1,
+              "mnc": 1,
+              "mnc_length": 2,
+              "snssaiList": [
+                {
+                  "sst": 1,
+                  "sd": "0x010203"
+                }
+              ]
+            }
+          ],
+          "nr_cellid": 1,
+          "pdsch_AntennaPorts_XP": 0,
+          "pdsch_AntennaPorts_N1": 2,
+          "pusch_AntennaPorts": 4,
+          "do_CSIRS": 0,
+          "maxMIMO_layers": 1,
+          "do_SRS": 0,
+          "min_rxtxtime": 6,
+          "force_256qam_off": 1,
+          "sib1_tda": 15,
+          "pdcch_ConfigSIB1": [
+            {
+              "controlResourceSetZero": 11,
+              "searchSpaceZero": 0
+            }
+          ],
+          "servingCellConfigCommon": [
+            {
+              "physCellId": 0,
+              "absoluteFrequencySSB": 641280,
+              "dl_frequencyBand": 78,
+              "dl_absoluteFrequencyPointA": 640008,
+              "dl_offstToCarrier": 0,
+              "dl_subcarrierSpacing": 1,
+              "dl_carrierBandwidth": 106,
+              "initialDLBWPlocationAndBandwidth": 28875,
+              "initialDLBWPsubcarrierSpacing": 1,
+              "initialDLBWPcontrolResourceSetZero": 12,
+              "initialDLBWPsearchSpaceZero": 0,
+              "ul_frequencyBand": 78,
+              "ul_offstToCarrier": 0,
+              "ul_subcarrierSpacing": 1,
+              "ul_carrierBandwidth": 106,
+              "pMax": 20,
+              "initialULBWPlocationAndBandwidth": 28875,
+              "initialULBWPsubcarrierSpacing": 1,
+              "prach_ConfigurationIndex": 98,
+              "prach_msg1_FDM": 0,
+              "prach_msg1_FrequencyStart": 0,
+              "zeroCorrelationZoneConfig": 13,
+              "preambleReceivedTargetPower": -96,
+              "preambleTransMax": 6,
+              "powerRampingStep": 1,
+              "ra_ResponseWindow": 4,
+              "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR": 4,
+              "ssb_perRACH_OccasionAndCB_PreamblesPerSSB": 15,
+              "ra_ContentionResolutionTimer": 7,
+              "rsrp_ThresholdSSB": 19,
+              "prach_RootSequenceIndex_PR": 2,
+              "prach_RootSequenceIndex": 1,
+              "msg1_SubcarrierSpacing": 1,
+              "restrictedSetConfig": 0,
+              "msg3_DeltaPreamble": 1,
+              "p0_NominalWithGrant": -90,
+              "pucchGroupHopping": 0,
+              "hoppingId": 40,
+              "p0_nominal": -90,
+              "ssb_PositionsInBurst_Bitmap": 1,
+              "ssb_periodicityServingCell": 2,
+              "dmrs_TypeA_Position": 0,
+              "subcarrierSpacing": 1,
+              "referenceSubcarrierSpacing": 1,
+              "dl_UL_TransmissionPeriodicity": 6,
+              "nrofDownlinkSlots": 7,
+              "nrofDownlinkSymbols": 6,
+              "nrofUplinkSlots": 2,
+              "nrofUplinkSymbols": 4,
+              "ssPBCH_BlockPower": -25
+            }
+          ],
+          "SCTP": {
+            "SCTP_INSTREAMS": 2,
+            "SCTP_OUTSTREAMS": 2
+          }
+        }
+      ],
+      "MACRLCs": [
+        {
+          "num_cc": 1,
+          "tr_s_preference": "local_L1",
+          "tr_n_preference": "f1",
+          "local_n_address": "127.0.0.3",
+          "remote_n_address": "127.0.0.5",
+          "local_n_portc": 500,
+          "local_n_portd": 2152,
+          "remote_n_portc": 501,
+          "remote_n_portd": 2152
+        }
+      ],
+      "L1s": [
+        {
+          "num_cc": 1,
+          "tr_n_preference": "local_mac",
+          "prach_dtx_threshold": 120,
+          "pucch0_dtx_threshold": 150,
+          "ofdm_offset_divisor": 8
+        }
+      ],
+      "RUs": [
+        {
+          "local_rf": "yes",
+          "nb_tx": 4,
+          "nb_rx": 4,
+          "att_tx": 0,
+          "att_rx": 0,
+          "bands": [
+            78
+          ],
+          "max_pdschReferenceSignalPower": -27,
+          "max_rxgain": 114,
+          "sf_extension": 0,
+          "eNB_instances": [
+            0
+          ],
+          "clock_src": "internal",
+          "ru_thread_core": 6,
+          "sl_ahead": 5,
+          "do_precoding": 0
+        }
+      ],
+      "rfsimulator": {
+        "serveraddr": "server",
+        "serverport": 4043,
+        "options": [],
+        "modelname": "AWGN",
+        "IQfile": "/tmp/rfsimulator.iqs"
+      },
+      "log_config": {
+        "global_log_level": "info",
+        "hw_log_level": "info",
+        "phy_log_level": "info",
+        "mac_log_level": "info"
+      },
+      "fhi_72": {
+        "dpdk_devices": [
+          "0000:ca:02.0",
+          "0000:ca:02.1"
+        ],
+        "ru_addr": [
+          "e8:c7:4f:25:80:ed",
+          "e8:c7:4f:25:80:ed"
+        ],
+        "worker_cores": [
+          2
+        ],
+        "system_core": 0,
+        "io_core": 4,
+        "mtu": 9000
+      }
+    },
+    "ue_conf": {
+      "uicc0": {
+        "imsi": "001010000000001",
+        "key": "fec86ba6eb707ed08905757b1bb44b8f",
+        "opc": "C42449363BBAD02B66D16BC975D77CC1",
+        "dnn": "oai",
+        "nssai_sst": 1
+      }
+    }
+  }
+}
