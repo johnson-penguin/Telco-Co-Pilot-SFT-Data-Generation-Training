@@ -8,9 +8,12 @@ import os
 import json
 import re
 
-BASELINE_CONF = r"baseline_conf\du_gnb.conf"
-ERROR_CASES_JSON = "du_output/json/cases_delta.json"   # 存放錯誤描述 JSON
-OUTPUT_DIR = "du_output/error_conf"
+SCRIPT_DIR = os.path.dirname(__file__)
+
+# 基準檔與輸入/輸出目錄（指向 du_conf_1009_200）
+BASELINE_CONF = os.path.join(SCRIPT_DIR, "..", "0_required_inputs", "baseline_conf", "du_gnb.conf")
+ERROR_CASES_JSON = os.path.join(SCRIPT_DIR, "du_conf_1009_200", "json", "cases_delta.json")   # 存放錯誤描述 JSON
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "du_conf_1009_200", "conf")
 
 
 def replace_key_value(conf_text: str, modified_key: str, error_value, original_value=None) -> str:
