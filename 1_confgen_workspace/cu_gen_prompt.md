@@ -12,7 +12,7 @@ You are a 5G gNodeB configuration fuzz-test expert. Given a valid JSON configura
   - invalid_format
   - logical_contradiction
   - missing_value
-5. Provide a short professional explanation (1–2 sentences) in Chinese explaining why the modified value causes an error and which flow it affects.
+5. Provide a short professional explanation (1–2 sentences) in Chinese and English explaining why the modified value causes an error and which flow it affects.
 6. Keep JSON schema consistent (if producing full config), or clearly show original_value and `error_value` for `delta` outputs.
 7. Name files `cu_case_01.json` … `cu_case_n.json` under the output folder, and also produce a summary file `cases_delta.json.`
 8. Optional flags: --seed <int> for reproducibility; --format full|delta.
