@@ -1,0 +1,8 @@
+UE 0 CU UE ID 1 DU UE ID 18657 RNTI 48e1 random identity a0086c78f0000000:
+    last RRC activity: 19 seconds ago
+    PDU session 0 ID 10 status established
+    associated DU:  DU assoc ID 14256
+
+1 connected DUs 
+[1] DU ID 3584 (gNB-Eurecom-DU) assoc_id 14256: nrCellID 1, PCI 0, SSB ARFCN 641280
+    TDD: band 78 ARFCN 640008 SCS 30 (kHz) PRB 106

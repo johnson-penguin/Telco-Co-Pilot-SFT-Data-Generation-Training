@@ -1,0 +1,6 @@
+UE RNTI 53ef CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
+UE 53ef: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01853 MCS (0) 0
+UE 53ef: ulsch_rounds 181/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 53ef: MAC:    TX            571 RX           3166 bytes
+UE 53ef: LCID 1: TX            194 RX            304 bytes
+

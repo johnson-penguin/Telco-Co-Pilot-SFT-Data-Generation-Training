@@ -1,6 +1,0 @@
-UE RNTI de1c CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
-UE de1c: dlsch_rounds 26/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01853 MCS (0) 0
-UE de1c: ulsch_rounds 183/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
-UE de1c: MAC:    TX            617 RX           3200 bytes
-UE de1c: LCID 1: TX            226 RX            307 bytes
-

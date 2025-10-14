@@ -1,0 +1,272 @@
+===== CU stdout (tail -n 100) =====
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 0, RC.nb_nr_L1_inst = 0, RC.nb_RU = 0, RC.nb_nr_CC[0] = 0
+[0m[GNB_APP]   F1AP: gNB_CU_id[0] 3584
+[0m[GNB_APP]   F1AP: gNB_CU_name[0] gNB-Eurecom-CU
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3584
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[GTPU]   Configuring GTPu
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 192.168.8.43, port : 2152
+[0m[GTPU]   Initializing UDP for local address 192.168.8.43 with port 2152
+[0m[GTPU]   Created gtpu instance id: 94
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3584 name gNB-Eurecom-CU (assoc_id -1)
+[0m[32m[NGAP]   Send NGSetupRequest to AMF
+[0m[NGAP]   3584 -> 0000e000
+[0m[32m[NGAP]   Received NGSetupResponse from AMF
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_CU_F1: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for time source realtime: creating thread with affinity ffffffff, priority 2
+[0m[F1AP]   Starting F1AP at CU
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[UTIL]   time manager configuration: [time source: reatime] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)
+[0m[F1AP]   F1AP_CU_SCTP_REQ(create socket) for 127.0.0.5 len 10
+[0m[GTPU]   Initializing UDP for local address 127.0.0.5 with port 2152
+[0m[GTPU]   Created gtpu instance id: 95
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3584 (gNB-Eurecom-DU) on assoc_id 15368
+[0m[NR_RRC]   Accepting DU 3584 (gNB-Eurecom-DU), sending F1 Setup Response
+[0m[NR_RRC]   DU uses RRC version 17.3.0
+[0m[NR_RRC]   cell PLMN 001.01 Cell ID 1 is in service
+[0m[NR_RRC]   Decoding CCCH: RNTI 2f0f, payload_size 6
+[0m[32m[NR_RRC]   [--] (cellID 0, UE ID 1 RNTI 2f0f) Create UE context: CU UE ID 1 DU UE ID 12047 (rnti: 2f0f, random ue id 7833bd32f7000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 2f0f) Send RRC Setup
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRCSetupComplete (RRC_CONNECTED reached)
+[0m[NGAP]   UE 1: Chose AMF 'OAI-AMF' (assoc_id 15365) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 2f0f) Send DL Information Transfer [42 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRC UL Information Transfer [24 bytes]
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 2f0f) Send DL Information Transfer [21 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRC UL Information Transfer [60 bytes]
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[32m[NR_RRC]   [--] (cellID 1, UE ID 1 RNTI 2f0f) Selected security algorithms: ciphering 2, integrity 2
+[0m[NR_RRC]   [UE 2f0f] Saved security key B9
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received Security Mode Complete
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received UE capabilities
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 2f0f) Send DL Information Transfer [53 bytes]
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRC UL Information Transfer [13 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRC UL Information Transfer [35 bytes]
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   UE 1: received PDU Session Resource Setup Request
+[0m[NR_RRC]   Adding pdusession 10, total nb of sessions 1
+[0m[NR_RRC]   UE 1: configure DRB ID 1 for PDU session ID 10
+[0m[32m[NR_RRC]   [--] (cellID 1, UE ID 1 RNTI 2f0f) selecting CU-UP ID 3584 based on exact NSSAI match (1:0xffffff)
+[0m[RRC]   UE 1 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[E1AP]   UE 1: add PDU session ID 10 (1 bearers)
+[0m[GTPU]   [94] Created tunnel for UE ID 1, teid for incoming: 8b32ad1e, teid for outgoing b9 to remote IPv4: 192.168.70.134, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 1
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[GTPU]   [95] Created tunnel for UE ID 1, teid for incoming: 8854733d, teid for outgoing ffff to remote IPv4: 0.0.0.0, IPv6 ::
+[0m[RRC]   activate SRB 2 of UE 1
+[0m[RRC]   UE 1 trigger UE context setup request with 1 DRBs
+[0m[RRC]   UE 2f0f replacing existing CellGroupConfig with new one received from DU
+[0m[E1AP]   UE 1: updating PDU session ID 10 (1 bearers)
+[0m[PDCP]   DRB 1 re-established
+[0m[GTPU]   [95] Tunnel Outgoing TEID updated to d0338240 and address to 300007f
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 2f0f) Generate RRCReconfiguration (bytes 313, xid 3)
+[0m[RRC]   UE 1: PDU session ID 10 modified 1 bearers
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 2f0f) Received RRCReconfigurationComplete
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 10, teid: 2335354142 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m
+===== DU stdout (tail -n 100) =====
+[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[PHY]   No prs_config configuration found..!!
+[0m[PHY]   DL frequency 3619200000 Hz, UL frequency 3619200000 Hz: band 48, uldl offset 0 Hz
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[MAC]   received F1 Setup Response from CU gNB-Eurecom-CU
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[MAC]   Clearing the DU's UE states before, if any.
+[0m[MAC]   received gNB-DU configuration update acknowledge
+[0m[PHY]   RU clock source set as internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU thread-pool core string -1,-1 (size 2)
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 25
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3619200000
+[0m[PHY]   fp->ul_CarrierFreq=3619200000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1412
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=106
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Setting RF config for N_RB 106, NB_RX 4, NB_TX 4
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 1: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 2: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 3: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 1: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 2: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 3: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[93m[HW]   The RFSIMULATOR environment variable is deprecated and support will be removed in the future. Instead, add parameter --rfsimulator.serveraddr server to set the server address. Note: the default is "server"; for the gNB/eNB, you don't have to set any configuration.
+[0m[HW]   Remove RFSIMULATOR environment variable to get rid of this message and the sleep.
+[0m[HW]   Running as server waiting opposite rfsimulators to connect
+[0m[HW]   [RAU] has loaded RFSIMULATOR device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (UL Freq 3600120, N_RB 106, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 5
+[0m[PHY]   L1 configured without analog beamforming
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[PHY]   Attaching RU 0 antenna 1 to gNB antenna 1
+[0m[PHY]   Attaching RU 0 antenna 2 to gNB antenna 2
+[0m[PHY]   Attaching RU 0 antenna 3 to gNB antenna 3
+[0m[PHY]   got sync (ru_thread)
+[0m[PHY]   got sync (L1_stats_thread)
+[0mCMDLINE: "/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "--rfsim" "--sa" "-O" "/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/du_case_181.conf" 
+[CONFIG] function config_libconfig_init returned 0
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Timers_Params' section from the config file
+Reading 'SCCsParams' section from the config file
+Reading 'MsgASCCsParams' section from the config file
+DL frequency 3619200000: band 48, UL frequency 3619200000
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Periodical_EventParams' section from the config file
+Reading 'A2_EventParams' section from the config file
+Initializing random number generator, seed 16516013590593581780
+TYPE <CTRL-C> TO TERMINATE
+[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started cpu_meas_enabled 0
+[0m[HW]   No connected device, generating void samples...
+[0m[HW]   A client connects, sending the current time
+[0m[93m[HW]   Not supported to send Tx out of order 25098240, 25098239
+[0m[32m[PHY]   Command line parameters for OAI UE: -C 3619200000 -r 106 --numerology 1 --ssb 516 
+[0m[MAC]   [RAPROC] Received SDU for CCCH length 6 for UE 2f0f
+[0m
+===== UE stdout (tail -n 100) =====
+Initializing random number generator, seed 10090471285678301603
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+kgnb : b9 71 83 13 af e4 6d 9e 2f d9 71 c9 22 84 db 0d 74 df 79 bf ea f7 f2 10 25 c6 37 1f d0 58 19 d7 
+kausf:19 f5 1f 1 27 62 ff f0 af 49 66 82 68 a4 8f 18 5f ab 73 7f d4 b1 3b b5 99 eb 6d c5 1 fa e1 b3 
+kseaf:f5 2e 6a ea 51 23 1d e7 57 39 55 21 b6 96 76 b4 99 dd 96 74 60 15 83 af 71 fa 65 ec b1 1 19 7e 
+kamf:2c df 45 5c 10 d 51 9f 9f a4 e 80 74 d2 84 50 bd 97 b5 cc 6e cd 86 a2 df 5d 9d 4f a7 ff 37 5d 
+knas_int: ac 89 73 a8 c0 d0 3c 60 58 24 8 88 c9 55 2c d0 
+knas_enc: 75 66 fa 98 d4 51 aa db 12 ed 82 30 f1 40 a1 25 
+mac 51 0 f2 fb 
+[NR_RRC]   deriving kRRCenc, kRRCint from KgNB=b9 71 83 13 af e4 6d 9e 2f d9 71 c9 22 84 db 0d 74 df 79 bf ea f7 f2 10 25 c6 37 1f d0 58 19 d7 [0m
+[NR_RRC]   securityModeComplete payload: 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+<UE-NR-Capability>
+    <accessStratumRelease><rel15/></accessStratumRelease>
+    <pdcp-Parameters>
+        <supportedROHC-Profiles>
+            <profile0x0000><false/></profile0x0000>
+            <profile0x0001><false/></profile0x0001>
+            <profile0x0002><false/></profile0x0002>
+            <profile0x0003><false/></profile0x0003>
+            <profile0x0004><false/></profile0x0004>
+            <profile0x0006><false/></profile0x0006>
+            <profile0x0101><false/></profile0x0101>
+            <profile0x0102><false/></profile0x0102>
+            <profile0x0103><false/></profile0x0103>
+            <profile0x0104><false/></profile0x0104>
+        </supportedROHC-Profiles>
+        <maxNumberROHC-ContextSessions><cs2/></maxNumberROHC-ContextSessions>
+    </pdcp-Parameters>
+    <phy-Parameters>
+    </phy-Parameters>
+    <rf-Parameters>
+        <supportedBandListNR>
+            <BandNR>
+                <bandNR>1</bandNR>
+            </BandNR>
+        </supportedBandListNR>
+    </rf-Parameters>
+</UE-NR-Capability>
+[PHY]   [RRC]UE NR Capability encoded, 10 bytes (86 bits)
+[0m[NR_RRC]   UECapabilityInformation Encoded 106 bits (14 bytes)
+[0m[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: length 53 , buffer 0x7fd89c036470
+[0m[NAS]   Received Registration Accept with result 3GPP
+[0m[NAS]   SMS not allowed in 5GS Registration Result
+[0m[NR_RRC]   5G-GUTI: AMF pointer 1, AMF Set ID 1, 5G-TMSI 1592350612 
+[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(RegistrationComplete)
+[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(PduSessionEstablishRequest)
+[0m[NR_RRC]   RRCReconfiguration includes radio Bearer Configuration
+[0m[PDCP]   added drb 1 to UE ID 0
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[NR_RRC]   State = NR_RRC_CONNECTED
+[0m[RLC]   Added srb 2 to UE 0
+[0m[RLC]   Added drb 1 to UE 0
+[0m[RLC]   Added DRB to UE 0
+[0m[NR_RRC]   RRCReconfiguration includes Measurement Configuration
+[0m[NR_RRC]   rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+[0m[NAS]   [UE 0] Received NAS_CONN_ESTABLI_CNF: errCode 1, length 98
+[0m[NR_RRC]    Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+[0m[NAS]   Received PDU Session Establishment Accept, UE IPv4: 10.0.0.179
+[0mUnknown IEI 129
+[MAC]   [UE 0] Applying CellGroupConfig from gNodeB
+[0m[OIP]   Interface oaitun_ue1 successfully configured, IPv4 10.0.0.179, IPv6 (null)
+[0m[UTIL]   threadCreate() for ue_tun_read_0_p10: creating thread with affinity ffffffff, priority 1
+[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0
+    DL harq: 14/0
+    Ul harq: 36/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 16.0, nb symbols 9.7)
+[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0
+    DL harq: 16/0
+    Ul harq: 49/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 13.1, nb symbols 10.6)
+[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0
+    DL harq: 17/0
+    Ul harq: 61/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 11.5, nb symbols 11.0)
+[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0
+    DL harq: 19/0
+    Ul harq: 76/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 10.9, nb symbols 11.3)
+[0m[NR_MAC]   UE 0 stats sfn: 768.8, cumulated bad DCI 0
+    DL harq: 20/0
+    Ul harq: 89/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 10.1, nb symbols 11.5)
+[0m[NR_MAC]   UE 0 stats sfn: 896.8, cumulated bad DCI 0
+    DL harq: 22/0
+    Ul harq: 102/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 9.4, nb symbols 11.7)
+[0m[NR_MAC]   UE 0 stats sfn: 0.8, cumulated bad DCI 0
+    DL harq: 23/0
+    Ul harq: 115/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.9, nb symbols 11.9)
+[0m[NR_MAC]   UE 0 stats sfn: 128.8, cumulated bad DCI 0
+    DL harq: 24/0
+    Ul harq: 128/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.5, nb symbols 12.0)
+[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0
+    DL harq: 27/0
+    Ul harq: 143/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.4, nb symbols 12.0)
+[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0
+    DL harq: 28/0
+    Ul harq: 156/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.1, nb symbols 12.1)
+[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0
+    DL harq: 29/0
+    Ul harq: 169/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 7.9, nb symbols 12.2)
+[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0
+    DL harq: 30/0
+    Ul harq: 182/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 7.7, nb symbols 12.2)
+[0m

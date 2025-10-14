@@ -1,0 +1,39 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 0, RC.nb_nr_L1_inst = 0, RC.nb_RU = 0, RC.nb_nr_CC[0] = 0
+[0m[GNB_APP]   F1AP: gNB_CU_id[0] 0
+[0m[GNB_APP]   F1AP: gNB_CU_name[0] gNB-Eurecom-CU
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 0
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[GTPU]   Configuring GTPu
+[0m[GTPU]   SA mode 
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m
+Assertion (config_isparamset(gnbParms, 0)) failed!
+In RCconfig_NR_CU_E1() ../../../openair2/E1AP/e1ap_setup.c:135
+gNB_ID is not defined in configuration file
+
+Exiting execution
+CMDLINE: "/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "--rfsim" "--sa" "-O" "/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/cu_case_63.conf" 
+[CONFIG] function config_libconfig_init returned 0
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'SCTPParams' section from the config file
+Reading 'Periodical_EventParams' section from the config file
+Reading 'A2_EventParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'SCTPParams' section from the config file
+Reading 'NETParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'NETParams' section from the config file
+../../../openair2/E1AP/e1ap_setup.c:135 RCconfig_NR_CU_E1() Exiting OAI softmodem: _Assert_Exit_

@@ -1,6 +1,0 @@
-UE RNTI 7104 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
-UE 7104: dlsch_rounds 17/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02059 MCS (0) 0
-UE 7104: ulsch_rounds 162/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
-UE 7104: MAC:    TX            272 RX           2759 bytes
-UE 7104: LCID 1: TX              3 RX             49 bytes
-

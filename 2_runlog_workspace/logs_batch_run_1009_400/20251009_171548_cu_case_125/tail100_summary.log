@@ -1,0 +1,287 @@
+===== CU stdout (tail -n 100) =====
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 0, RC.nb_nr_L1_inst = 0, RC.nb_RU = 0, RC.nb_nr_CC[0] = 0
+[0m[GNB_APP]   F1AP: gNB_CU_id[0] 3584
+[0m[GNB_APP]   F1AP: gNB_CU_name[0] gNB-Eurecom-CU
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50
+[0m[NGAP]   Registered new gNB[0] and macro gNB id 3584
+[0m[NGAP]   [gNB 0] check the amf registration state
+[0m[GTPU]   Configuring GTPu
+[0m[NR_RRC]   Entering main loop of NR_RRC message task
+[0m[GTPU]   SA mode 
+[0m[GTPU]   Configuring GTPu address : 192.168.8.43, port : 2152
+[0m[GTPU]   Initializing UDP for local address 192.168.8.43 with port 2152
+[0m[GTPU]   Created gtpu instance id: 94
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[NR_RRC]   Accepting new CU-UP ID 3584 name gNB-Eurecom-CU (assoc_id -1)
+[0m[32m[NGAP]   Send NGSetupRequest to AMF
+[0m[NGAP]   3584 -> 0000e000
+[0m[32m[NGAP]   Received NGSetupResponse from AMF
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_CU_F1: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for time source realtime: creating thread with affinity ffffffff, priority 2
+[0m[F1AP]   Starting F1AP at CU
+[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1
+[0m[UTIL]   time manager configuration: [time source: reatime] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)
+[0m[F1AP]   F1AP_CU_SCTP_REQ(create socket) for 127.0.0.5 len 10
+[0m[GTPU]   Initializing UDP for local address 127.0.0.5 with port 2152
+[0m[GTPU]   Created gtpu instance id: 96
+[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3584 (gNB-Eurecom-DU) on assoc_id 13770
+[0m[NR_RRC]   Accepting DU 3584 (gNB-Eurecom-DU), sending F1 Setup Response
+[0m[NR_RRC]   DU uses RRC version 17.3.0
+[0m[NR_RRC]   cell PLMN 001.01 Cell ID 1 is in service
+[0m[NR_RRC]   Decoding CCCH: RNTI 70ed, payload_size 6
+[0m[32m[NR_RRC]   [--] (cellID 0, UE ID 1 RNTI 70ed) Create UE context: CU UE ID 1 DU UE ID 28909 (rnti: 70ed, random ue id b6eddd994a000000)
+[0m[RRC]   activate SRB 1 of UE 1
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 70ed) Send RRC Setup
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRCSetupComplete (RRC_CONNECTED reached)
+[0m[NGAP]   UE 1: Chose AMF 'OAI-AMF' (assoc_id 13767) through selected PLMN Identity index 0 MCC 1 MNC 1
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 70ed) Send DL Information Transfer [42 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRC UL Information Transfer [24 bytes]
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 70ed) Send DL Information Transfer [21 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRC UL Information Transfer [60 bytes]
+[0m[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate
+[0m[32m[NR_RRC]   [--] (cellID 1, UE ID 1 RNTI 70ed) Selected security algorithms: ciphering 2, integrity 2
+[0m[NR_RRC]   [UE 70ed] Saved security key 9F
+[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received Security Mode Complete
+[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received UE capabilities
+[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 70ed) Send DL Information Transfer [53 bytes]
+[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRC UL Information Transfer [13 bytes]
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRC UL Information Transfer [35 bytes]
+[0m[NGAP]   PDUSESSIONSetup initiating message
+[0m[NR_RRC]   UE 1: received PDU Session Resource Setup Request
+[0m[NR_RRC]   Adding pdusession 10, total nb of sessions 1
+[0m[NR_RRC]   UE 1: configure DRB ID 1 for PDU session ID 10
+[0m[32m[NR_RRC]   [--] (cellID 1, UE ID 1 RNTI 70ed) selecting CU-UP ID 3584 based on exact NSSAI match (1:0xffffff)
+[0m[RRC]   UE 1 associating to CU-UP assoc_id -1 out of 1 CU-UPs
+[0m[E1AP]   UE 1: add PDU session ID 10 (1 bearers)
+[0m[GTPU]   [94] Created tunnel for UE ID 1, teid for incoming: c48daa7a, teid for outgoing 1a to remote IPv4: 192.168.70.134, IPv6 ::
+[0m[PDCP]   added drb 1 to UE ID 1
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[GTPU]   [96] Created tunnel for UE ID 1, teid for incoming: ec1e03, teid for outgoing ffff to remote IPv4: 0.0.0.0, IPv6 ::
+[0m[RRC]   activate SRB 2 of UE 1
+[0m[RRC]   UE 1 trigger UE context setup request with 1 DRBs
+[0m[RRC]   UE 70ed replacing existing CellGroupConfig with new one received from DU
+[0m[E1AP]   UE 1: updating PDU session ID 10 (1 bearers)
+[0m[PDCP]   DRB 1 re-established
+[0m[GTPU]   [96] Tunnel Outgoing TEID updated to d7f568fd and address to 300007f
+[0m[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 70ed) Generate RRCReconfiguration (bytes 313, xid 3)
+[0m[RRC]   UE 1: PDU session ID 10 modified 1 bearers
+[0m[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 70ed) Received RRCReconfigurationComplete
+[0m[NR_RRC]   msg index 0, pdu_sessions index 0, status 2, xid 3): nb_of_pdusessions 1,  pdusession_id 10, teid: 3297618554 
+ [0m[NR_RRC]   NGAP_PDUSESSION_SETUP_RESP: sending the message
+[0m
+===== DU stdout (tail -n 100) =====
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 16/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06561 MCS (0) 0
+UE 70ed: ulsch_rounds 48/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01094 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            738 RX           1008 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              3 RX             59 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 0
+UE 70ed: ulsch_rounds 63/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00309 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            780 RX           1348 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              6 RX            123 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 19/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04783 MCS (0) 0
+UE 70ed: ulsch_rounds 76/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00079 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            801 RX           1608 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              6 RX            123 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 20/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (0) 0
+UE 70ed: ulsch_rounds 89/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00020 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            822 RX           1868 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              6 RX            123 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 22/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 0
+UE 70ed: ulsch_rounds 101/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00006 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            864 RX           2108 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              6 RX            123 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 23/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03138 MCS (0) 0
+UE 70ed: ulsch_rounds 114/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            885 RX           2368 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              6 RX            123 bytes
+
+[0m[NR_MAC]   Frame.Slot 128.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02542 MCS (0) 0
+UE 70ed: ulsch_rounds 130/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            927 RX           2728 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              9 RX            187 bytes
+
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02059 MCS (0) 0
+UE 70ed: ulsch_rounds 142/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            969 RX           2968 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              9 RX            187 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 28/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01853 MCS (0) 0
+UE 70ed: ulsch_rounds 155/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX            990 RX           3228 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              9 RX            187 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 29/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01668 MCS (0) 0
+UE 70ed: ulsch_rounds 168/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX           1011 RX           3488 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              9 RX            187 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 70ed CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)
+UE 70ed: dlsch_rounds 30/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01501 MCS (0) 0
+UE 70ed: ulsch_rounds 181/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 70ed: MAC:    TX           1032 RX           3748 bytes
+UE 70ed: LCID 1: TX            522 RX            313 bytes
+UE 70ed: LCID 2: TX              0 RX              0 bytes
+UE 70ed: LCID 4: TX              9 RX            187 bytes
+
+[0m
+===== UE stdout (tail -n 100) =====
+Initializing random number generator, seed 1104039872566886605
+Entering ITTI signals handler
+TYPE <CTRL-C> TO TERMINATE
+kgnb : 9f ab f0 8c ca 2f 6f e8 57 06 63 40 59 d3 af da 52 c9 6e 9d e2 83 80 42 e7 e4 21 49 26 ee 6b 60 
+kausf:62 b6 92 f7 f9 99 10 96 f1 61 76 49 e2 f2 29 43 a1 24 a4 c8 51 98 10 b1 7d 70 7 29 2 dd d1 14 
+kseaf:5e 3a af 2b 9b 1b d6 dd 38 85 fa 37 98 87 11 f2 cb 2d 36 ca 80 63 8a 79 26 6c 1c 93 32 b5 f3 77 
+kamf:45 bf 30 66 30 e e4 0 2c 62 65 28 70 fd 85 4 8 4 7c a7 aa 2c a 76 a1 a9 35 8f 2c 1f d1 f1 
+knas_int: 5f d1 a4 db 8 58 8b b6 d7 d3 bf 73 83 15 53 f2 
+knas_enc: 1d af f4 d1 24 ac ae fb 5a e1 de f7 5d c4 f0 1e 
+mac 59 e5 f7 32 
+[NR_RRC]   deriving kRRCenc, kRRCint from KgNB=9f ab f0 8c ca 2f 6f e8 57 06 63 40 59 d3 af da 52 c9 6e 9d e2 83 80 42 e7 e4 21 49 26 ee 6b 60 [0m
+[NR_RRC]   securityModeComplete payload: 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 [0m
+<UE-NR-Capability>
+    <accessStratumRelease><rel15/></accessStratumRelease>
+    <pdcp-Parameters>
+        <supportedROHC-Profiles>
+            <profile0x0000><false/></profile0x0000>
+            <profile0x0001><false/></profile0x0001>
+            <profile0x0002><false/></profile0x0002>
+            <profile0x0003><false/></profile0x0003>
+            <profile0x0004><false/></profile0x0004>
+            <profile0x0006><false/></profile0x0006>
+            <profile0x0101><false/></profile0x0101>
+            <profile0x0102><false/></profile0x0102>
+            <profile0x0103><false/></profile0x0103>
+            <profile0x0104><false/></profile0x0104>
+        </supportedROHC-Profiles>
+        <maxNumberROHC-ContextSessions><cs2/></maxNumberROHC-ContextSessions>
+    </pdcp-Parameters>
+    <phy-Parameters>
+    </phy-Parameters>
+    <rf-Parameters>
+        <supportedBandListNR>
+            <BandNR>
+                <bandNR>1</bandNR>
+            </BandNR>
+        </supportedBandListNR>
+    </rf-Parameters>
+</UE-NR-Capability>
+[PHY]   [RRC]UE NR Capability encoded, 10 bytes (86 bits)
+[0m[NR_RRC]   UECapabilityInformation Encoded 106 bits (14 bytes)
+[0m[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: length 53 , buffer 0x7fe850036470
+[0m[NAS]   Received Registration Accept with result 3GPP
+[0m[NAS]   SMS not allowed in 5GS Registration Result
+[0m[NR_RRC]   5G-GUTI: AMF pointer 1, AMF Set ID 1, 5G-TMSI 3750378304 
+[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(RegistrationComplete)
+[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(PduSessionEstablishRequest)
+[0m[NR_RRC]   RRCReconfiguration includes radio Bearer Configuration
+[0m[PDCP]   added drb 1 to UE ID 0
+[0m[SDAP]   Default DRB for the created SDAP entity: 1 
+[0m[NR_RRC]   State = NR_RRC_CONNECTED
+[0m[RLC]   Added srb 2 to UE 0
+[0m[RLC]   Added drb 1 to UE 0
+[0m[RLC]   Added DRB to UE 0
+[0m[NR_RRC]   RRCReconfiguration includes Measurement Configuration
+[0m[NR_RRC]   rrcReconfigurationComplete Encoded 10 bits (2 bytes)
+[0m[NAS]   [UE 0] Received NAS_CONN_ESTABLI_CNF: errCode 1, length 98
+[0m[NR_RRC]    Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2)
+[0m[NAS]   Received PDU Session Establishment Accept, UE IPv4: 10.0.0.20
+[0mUnknown IEI 129
+[MAC]   [UE 0] Applying CellGroupConfig from gNodeB
+[0m[OIP]   Interface oaitun_ue1 successfully configured, IPv4 10.0.0.20, IPv6 (null)
+[0m[UTIL]   threadCreate() for ue_tun_read_0_p10: creating thread with affinity ffffffff, priority 1
+[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0
+    DL harq: 14/0
+    Ul harq: 36/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 16.0, nb symbols 9.7)
+[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0
+    DL harq: 16/0
+    Ul harq: 49/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 13.1, nb symbols 10.6)
+[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0
+    DL harq: 18/0
+    Ul harq: 64/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 12.1, nb symbols 11.0)
+[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0
+    DL harq: 19/0
+    Ul harq: 77/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 10.9, nb symbols 11.3)
+[0m[NR_MAC]   UE 0 stats sfn: 768.8, cumulated bad DCI 0
+    DL harq: 20/0
+    Ul harq: 90/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 10.0, nb symbols 11.6)
+[0m[NR_MAC]   UE 0 stats sfn: 896.8, cumulated bad DCI 0
+    DL harq: 22/0
+    Ul harq: 103/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 9.4, nb symbols 11.7)
+[0m[NR_MAC]   UE 0 stats sfn: 0.8, cumulated bad DCI 0
+    DL harq: 23/0
+    Ul harq: 115/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.9, nb symbols 11.9)
+[0m[NR_MAC]   UE 0 stats sfn: 128.8, cumulated bad DCI 0
+    DL harq: 25/0
+    Ul harq: 131/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.9, nb symbols 11.9)
+[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0
+    DL harq: 27/0
+    Ul harq: 144/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.5, nb symbols 12.0)
+[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0
+    DL harq: 28/0
+    Ul harq: 156/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.3, nb symbols 12.1)
+[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0
+    DL harq: 29/0
+    Ul harq: 169/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 8.0, nb symbols 12.2)
+[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0
+    DL harq: 30/0
+    Ul harq: 182/0 avg code rate 0.1, avg bit/symbol 2.0, avg per TB: (nb RBs 7.8, nb symbols 12.2)
+[0m
