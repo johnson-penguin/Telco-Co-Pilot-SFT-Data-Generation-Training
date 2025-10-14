@@ -1,0 +1,8 @@
+UE RNTI 0c1a CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (11 meas)
+UE 0c1a: dlsch_rounds 31/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01501 MCS (0) 0
+UE 0c1a: ulsch_rounds 190/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 0c1a: MAC:    TX           1053 RX           3907 bytes
+UE 0c1a: LCID 1: TX            522 RX            317 bytes
+UE 0c1a: LCID 2: TX              0 RX              0 bytes
+UE 0c1a: LCID 4: TX              9 RX            187 bytes
+

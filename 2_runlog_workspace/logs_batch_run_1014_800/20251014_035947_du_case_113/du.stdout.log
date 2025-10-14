@@ -1,0 +1,35 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1
+[0m[NR_PHY]   Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 
+[0m[NR_PHY]   Registered with MAC interface module (0x4be35d0)
+[0m[NR_PHY]   Initializing NR L1: RC.nb_nr_L1_inst = 1
+[0m[NR_PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[NR_PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 2 N2 1 XP 2 pusch_AntennaPorts 4
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 15
+[0m[GNB_APP]   CSI-RS 0, SRS 0, SINR:0, 256 QAM force off, delta_MCS off, maxMIMO_Layers 1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[0m[NR_MAC]   No RedCap configuration found
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[NR_MAC]   Candidates per PDCCH aggregation level on UESS: L1: 0, L2: 2, L4: 0, L8: 0, L16: 0
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 700012, DLBand 78, ABSFREQPOINTA 640008, DLBW 106,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 700012 corresponds to 4500180000 Hz
+[0m
+Assertion ((freq - 3000000000) % 1440000 == 0) failed!
+In check_ssb_raster() ../../../common/utils/nr/nr_common.c:390
+SSB frequency 4500180000 Hz not on the synchronization raster (3000 MHz + N * 1.44 MHz)
+
+Exiting execution
+CMDLINE: "/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "--rfsim" "--sa" "-O" "/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1014_800/du_case_113.conf" 
+[CONFIG] function config_libconfig_init returned 0
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Timers_Params' section from the config file
+Reading 'SCCsParams' section from the config file
+Reading 'MsgASCCsParams' section from the config file
+../../../common/utils/nr/nr_common.c:390 check_ssb_raster() Exiting OAI softmodem: _Assert_Exit_

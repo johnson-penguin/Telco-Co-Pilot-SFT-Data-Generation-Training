@@ -1,0 +1,8 @@
+UE RNTI a52f CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
+UE a52f: dlsch_rounds 32/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01216 MCS (0) 0
+UE a52f: ulsch_rounds 191/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE a52f: MAC:    TX           1074 RX           3942 bytes
+UE a52f: LCID 1: TX            522 RX            313 bytes
+UE a52f: LCID 2: TX              0 RX              0 bytes
+UE a52f: LCID 4: TX              9 RX            187 bytes
+
