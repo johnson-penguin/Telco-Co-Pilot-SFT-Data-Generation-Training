@@ -1,6 +1,0 @@
-CASE_NAME=cu_case_37
-CU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/error_conf/cu_case_37.conf
-DU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/du_gnb.conf
-UE_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/ue_oai.conf
-START_TIME=2025-10-01T03:46:44+08:00
-DURATION=30s

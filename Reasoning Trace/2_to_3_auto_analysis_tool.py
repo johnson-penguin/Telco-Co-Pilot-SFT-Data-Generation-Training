@@ -39,8 +39,8 @@ def stop_mouse_mover_thread():
 WAIT_TIME = 2  # 每次輪詢間隔（秒）
 response_file = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\cursor_responses\cursor_response.md"
 
-PROMPT_DIR = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace\2_prompt_with_json\filter_defind_format_1001_400_with_prompt_1"
-OUTPUT_BASE = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace\3_cursor_reasoning\defind_format_1001_400_with_prompt_1_reason"
+PROMPT_DIR = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace\2_prompt_with_json\filter_defind_format_1009_400_with_prompt_1"
+OUTPUT_BASE = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace\3_cursor_reasoning\defind_format_1009_400_with_prompt_1_reason"
 
 
 # ---------- 載入 prompt ----------
@@ -201,7 +201,7 @@ if __name__ == "__main__":
 
             # 等待檔案變動
             print("⌛ Waiting for response.md to update...")
-            content = wait_for_response_change(response_file, old_response, max_rounds=15, wait_interval=10)
+            content = wait_for_response_change(response_file, old_response, max_rounds=30, wait_interval=10)
 
 
             if not content:

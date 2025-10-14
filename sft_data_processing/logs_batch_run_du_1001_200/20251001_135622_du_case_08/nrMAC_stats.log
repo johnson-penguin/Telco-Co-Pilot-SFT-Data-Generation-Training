@@ -1,6 +1,0 @@
-UE RNTI 09be CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (13 meas)
-UE 09be: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01668 MCS (0) 0
-UE 09be: ulsch_rounds 185/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 50.5 dB
-UE 09be: MAC:    TX            634 RX           3234 bytes
-UE 09be: LCID 1: TX            226 RX            307 bytes
-

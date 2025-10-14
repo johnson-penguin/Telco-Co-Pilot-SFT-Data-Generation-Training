@@ -12,8 +12,8 @@ SCRIPT_DIR = os.path.dirname(__file__)
 
 # 基準檔與輸入/輸出目錄（指向 du_conf_1009_200）
 BASELINE_CONF = os.path.join(SCRIPT_DIR, "..", "0_required_inputs", "baseline_conf", "du_gnb.conf")
-ERROR_CASES_JSON = os.path.join(SCRIPT_DIR, "du_conf_1009_200", "json", "cases_delta.json")   # 存放錯誤描述 JSON
-OUTPUT_DIR = os.path.join(SCRIPT_DIR, "du_conf_1009_200", "conf")
+ERROR_CASES_JSON = os.path.join(SCRIPT_DIR, "du_conf_1014_800", "json", "cases_delta.json")   # 存放錯誤描述 JSON
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "du_conf_1014_800", "conf")
 
 
 def replace_key_value(conf_text: str, modified_key: str, error_value, original_value=None) -> str:
@@ -23,7 +23,49 @@ def replace_key_value(conf_text: str, modified_key: str, error_value, original_v
       - 普通 key = value;
       - 陣列元素 key[index]
       - 巢狀結構 key[index].subkey
+      - 特殊處理: gNBs[0].servingCellConfigCommon[0].subkey -> servingCellConfigCommon.subkey
+      - 特殊處理: fhi_72.fh_config[0].subkey -> fhi_72.fh_config.subkey
     """
+
+    # 特殊處理: gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB -> servingCellConfigCommon.absoluteFrequencySSB
+    if "gNBs[0].servingCellConfigCommon[0]." in modified_key:
+        subkey = modified_key.split("gNBs[0].servingCellConfigCommon[0].")[-1]
+        pattern = rf"({subkey}\s*=\s*)([^;]+)(;)"
+        
+        if isinstance(error_value, str) and not error_value.startswith("0x"):
+            formatted_value = f"\"{error_value}\""
+        else:
+            formatted_value = str(error_value)
+        
+        def replacer(match):
+            comment = f"  # 修改: 原始值 {original_value} → 錯誤值 {error_value} / Modified: original {original_value} → error {error_value}"
+            return f"{match.group(1)}{formatted_value}{match.group(3)}{comment}"
+        
+        new_text, count = re.subn(pattern, replacer, conf_text)
+        if count == 0:
+            print(f"[WARN] 子參數 '{subkey}' 未在 gNBs[0] 中找到 / Warning: subkey '{subkey}' not found in gNBs[0]")
+            return conf_text
+        return new_text
+
+    # 特殊處理: fhi_72.fh_config[0].subkey -> fhi_72.fh_config.subkey
+    if "fhi_72.fh_config[0]." in modified_key:
+        subkey = modified_key.split("fhi_72.fh_config[0].")[-1]
+        pattern = rf"({subkey}\s*=\s*)([^;]+)(;)"
+        
+        if isinstance(error_value, str) and not error_value.startswith("0x"):
+            formatted_value = f"\"{error_value}\""
+        else:
+            formatted_value = str(error_value)
+        
+        def replacer(match):
+            comment = f"  # 修改: 原始值 {original_value} → 錯誤值 {error_value} / Modified: original {original_value} → error {error_value}"
+            return f"{match.group(1)}{formatted_value}{match.group(3)}{comment}"
+        
+        new_text, count = re.subn(pattern, replacer, conf_text)
+        if count == 0:
+            print(f"[WARN] 區塊 'fhi_72.fh_config' 未找到 / Warning: block 'fhi_72.fh_config' not found")
+            return conf_text
+        return new_text
 
     # case: plmn_list[0].mnc_length
     if "[" in modified_key and "]" in modified_key and "." in modified_key.split("]")[-1]:

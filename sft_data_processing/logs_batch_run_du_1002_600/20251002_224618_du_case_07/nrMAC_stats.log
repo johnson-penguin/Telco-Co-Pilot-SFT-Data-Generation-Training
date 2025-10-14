@@ -1,6 +1,0 @@
-UE RNTI 27eb CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
-UE 27eb: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01668 MCS (0) 0
-UE 27eb: ulsch_rounds 184/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
-UE 27eb: MAC:    TX            634 RX           3235 bytes
-UE 27eb: LCID 1: TX            226 RX            303 bytes
-

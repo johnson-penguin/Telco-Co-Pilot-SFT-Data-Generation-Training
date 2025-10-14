@@ -108,9 +108,9 @@ def parse_args() -> argparse.Namespace:
     base_dir = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace"
 
     default_prompt = os.path.join(base_dir, "0_prompt", "prompt_ex_1")
-    default_input_root = os.path.join(base_dir, "1_after_processing(clean)", "filter_defind_format_1001_400_case")
+    default_input_root = os.path.join(base_dir, "1_after_processing(clean)", "filter_defind_format_1009_400_case")
     default_input_dir = default_input_root  # backward compatible default
-    default_output = os.path.join(base_dir, "2_prompt_with_json", "filter_defind_format_1001_400_with_prompt_1")
+    default_output = os.path.join(base_dir, "2_prompt_with_json", "filter_defind_format_1009_400_with_prompt_1")
 
     parser = argparse.ArgumentParser(
         description="Merge a prompt template with JSON case files to produce CU-style reasoning trace Markdown files.",

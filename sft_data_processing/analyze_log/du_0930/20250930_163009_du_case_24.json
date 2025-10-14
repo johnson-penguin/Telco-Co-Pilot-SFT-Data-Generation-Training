@@ -1,9 +1,0 @@
-[
-  {
-    "Unit": "CU",
-    "Error": "None",
-    "Log Level": "INFO",
-    "Message": "[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43",
-    "Event Description": "Normal operation without errors"
-  }
-]
