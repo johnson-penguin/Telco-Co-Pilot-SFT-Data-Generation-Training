@@ -1,0 +1,6 @@
+CASE_NAME=du_case_740
+CU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/cu_gnb.conf
+DU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1014_800/du_case_740.conf
+UE_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/ue_oai.conf
+START_TIME=2025-10-14T11:00:31+08:00
+DURATION=30s

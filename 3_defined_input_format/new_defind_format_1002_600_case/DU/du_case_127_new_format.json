@@ -1,0 +1,552 @@
+{
+  "misconfigured_param": "gNBs[0].pusch_AntennaPorts",
+  "logs": {
+    "CU": [
+      "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
+      "\u001b[0m[OPT]   OPT disabled",
+      "\u001b[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000",
+      "\u001b[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 0, RC.nb_nr_L1_inst = 0, RC.nb_RU = 0, RC.nb_nr_CC[0] = 0",
+      "\u001b[0m[GNB_APP]   F1AP: gNB_CU_id[0] 3584",
+      "\u001b[0m[GNB_APP]   F1AP: gNB_CU_name[0] gNB-Eurecom-CU",
+      "\u001b[0m[GNB_APP]   SDAP layer is disabled",
+      "\u001b[0m[GNB_APP]   Data Radio Bearer count 1",
+      "\u001b[0m[GNB_APP]   Parsed IPv4 address for NG AMF: 192.168.8.43",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[X2AP]   X2AP is disabled.",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_NGAP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_RRC_GNB: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[NGAP]   Registered new gNB[0] and macro gNB id 3584",
+      "\u001b[0m[NGAP]   [gNB 0] check the amf registration state",
+      "\u001b[0m[NR_RRC]   Entering main loop of NR_RRC message task",
+      "\u001b[0m[GTPU]   Configuring GTPu",
+      "\u001b[0m[GTPU]   SA mode ",
+      "\u001b[0m[GTPU]   Configuring GTPu address : 192.168.8.43, port : 2152",
+      "\u001b[0m[GTPU]   Initializing UDP for local address 192.168.8.43 with port 2152",
+      "\u001b[0m[GTPU]   Created gtpu instance id: 94",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[NR_RRC]   Accepting new CU-UP ID 3584 name gNB-Eurecom-CU (assoc_id -1)",
+      "\u001b[0m\u001b[32m[NGAP]   Send NGSetupRequest to AMF",
+      "\u001b[0m[NGAP]   3584 -> 0000e000",
+      "\u001b[0m\u001b[32m[NGAP]   Received NGSetupResponse from AMF",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for TASK_CU_F1: creating thread with affinity ffffffff, priority 50",
+      "\u001b[0m[UTIL]   threadCreate() for time source realtime: creating thread with affinity ffffffff, priority 2",
+      "\u001b[0m[F1AP]   Starting F1AP at CU",
+      "\u001b[0m[GNB_APP]   [gNB 0] Received NGAP_REGISTER_GNB_CNF: associated AMF 1",
+      "\u001b[0m[UTIL]   time manager configuration: [time source: reatime] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)",
+      "\u001b[0m[F1AP]   F1AP_CU_SCTP_REQ(create socket) for 127.0.0.5 len 10",
+      "\u001b[0m[GTPU]   Initializing UDP for local address 127.0.0.5 with port 2152",
+      "\u001b[0m[GTPU]   Created gtpu instance id: 96",
+      "\u001b[0m[NR_RRC]   Received F1 Setup Request from gNB_DU 3584 (gNB-Eurecom-DU) on assoc_id 4435",
+      "\u001b[0m[NR_RRC]   Accepting DU 3584 (gNB-Eurecom-DU), sending F1 Setup Response",
+      "\u001b[0m[NR_RRC]   DU uses RRC version 17.3.0",
+      "\u001b[0m[NR_RRC]   cell PLMN 001.01 Cell ID 1 is in service",
+      "\u001b[0m[NR_RRC]   Decoding CCCH: RNTI 20e8, payload_size 6",
+      "\u001b[0m\u001b[32m[NR_RRC]   [--] (cellID 0, UE ID 1 RNTI 20e8) Create UE context: CU UE ID 1 DU UE ID 8424 (rnti: 20e8, random ue id e6b68497a5000000)",
+      "\u001b[0m[RRC]   activate SRB 1 of UE 1",
+      "\u001b[0m\u001b[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 20e8) Send RRC Setup",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received RRCSetupComplete (RRC_CONNECTED reached)",
+      "\u001b[0m[NGAP]   UE 1: Chose AMF 'OAI-AMF' (assoc_id 4432) through selected PLMN Identity index 0 MCC 1 MNC 1",
+      "\u001b[0m\u001b[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 20e8) Send DL Information Transfer [42 bytes]",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received RRC UL Information Transfer [24 bytes]",
+      "\u001b[0m\u001b[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 20e8) Send DL Information Transfer [21 bytes]",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received RRC UL Information Transfer [60 bytes]",
+      "\u001b[0m\u001b[93m[NGAP]   could not find NGAP_ProtocolIE_ID_id_UEAggregateMaximumBitRate",
+      "\u001b[0m\u001b[32m[NR_RRC]   [--] (cellID 1, UE ID 1 RNTI 20e8) Selected security algorithms: ciphering 2, integrity 2",
+      "\u001b[0m[NR_RRC]   [UE 20e8] Saved security key D4",
+      "\u001b[0m[NR_RRC]   UE 1 Logical Channel DL-DCCH, Generate SecurityModeCommand (bytes 3)",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received Security Mode Complete",
+      "\u001b[0m[NR_RRC]   UE 1: Logical Channel DL-DCCH, Generate NR UECapabilityEnquiry (bytes 8, xid 1)",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received UE capabilities",
+      "\u001b[0m[NR_RRC]   Send message to ngap: NGAP_UE_CAPABILITIES_IND",
+      "\u001b[0m\u001b[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 20e8) Send DL Information Transfer [53 bytes]",
+      "\u001b[0m[NR_RRC]   Send message to sctp: NGAP_InitialContextSetupResponse",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received RRC UL Information Transfer [13 bytes]",
+      "\u001b[0m\u001b[32m[NR_RRC]   [UL] (cellID 1, UE ID 1 RNTI 20e8) Received RRC UL Information Transfer [35 bytes]",
+      "\u001b[0m\u001b[32m[NR_RRC]   [DL] (cellID 1, UE ID 1 RNTI 20e8) Send DL Information Transfer [21 bytes]",
+      "\u001b[0m"
+    ],
+    "DU": [
+      "\u001b[0m[NR_MAC]   Frame.Slot 128.0",
+      "",
+      "\u001b[0m\u001b[32m[NR_PHY]   [RAPROC] 169.19 Initiating RA procedure with preamble 13, energy 43.2 dB (I0 0, thres 120), delay 0 start symbol 8 freq index 0",
+      "\u001b[0m\u001b[32m[NR_MAC]   169.19 UE RA-RNTI 0113 TC-RNTI 20e8: initiating RA procedure",
+      "\u001b[0m[NR_MAC]   UE 20e8: Msg3 scheduled at 170.17 (170.7 TDA 3) start 0 RBs 8",
+      "\u001b[0m\u001b[32m[NR_MAC]   UE 20e8: 170.7 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 13, timing_offset = 0 (estimated distance 0.0 [m])",
+      "\u001b[0m\u001b[32m[NR_MAC]   170.7 Send RAR to RA-RNTI 0113",
+      "\u001b[0m\u001b[32m[NR_MAC]    170.17 PUSCH with TC_RNTI 0x20e8 received correctly",
+      "\u001b[0m[MAC]   [RAPROC] Received SDU for CCCH length 6 for UE 20e8",
+      "\u001b[0m[RLC]   Activated srb0 for UE 8424",
+      "\u001b[0m[RLC]   Added srb 1 to UE 8424",
+      "\u001b[0m[NR_MAC]   Activating scheduling Msg4 for TC_RNTI 0x20e8 (state WAIT_Msg3)",
+      "\u001b[0m[NR_MAC]   UE 20e8 Generate Msg4: feedback at  171.17, payload 161 bytes, next state nrRA_WAIT_Msg4_MsgB_ACK",
+      "\u001b[0m[NR_MAC]   Adding new UE context with RNTI 0x20e8",
+      "\u001b[0m\u001b[32m[NR_MAC]    171.17 UE 20e8: Received Ack of Msg4. CBRA procedure succeeded!",
+      "\u001b[0m[NR_MAC]   Frame.Slot 256.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (10 meas)",
+      "UE 20e8: dlsch_rounds 11/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.09000 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 33/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.04783 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            362 RX            650 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 384.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 13/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.07290 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 46/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.01216 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            396 RX            871 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 512.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 14/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.06561 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 59/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00309 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            413 RX           1092 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 640.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 15/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05905 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 71/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00087 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            430 RX           1296 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 768.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 16/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.05314 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 84/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00022 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            447 RX           1517 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 896.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 18/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.04305 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 97/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00006 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            481 RX           1738 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 0.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 19/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03874 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 110/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00001 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            498 RX           1959 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 128.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 20/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.03487 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 123/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            515 RX           2180 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 256.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 22/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02824 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 135/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            549 RX           2384 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 384.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 23/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02542 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 148/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            566 RX           2605 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 512.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 24/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02288 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 161/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            583 RX           2826 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m[NR_MAC]   Frame.Slot 640.0",
+      "UE RNTI 20e8 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (16 meas)",
+      "UE 20e8: dlsch_rounds 25/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02059 MCS (0) 0",
+      "UE 20e8: ulsch_rounds 174/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB",
+      "UE 20e8: MAC:    TX            600 RX           3047 bytes",
+      "UE 20e8: LCID 1: TX            226 RX            307 bytes",
+      "",
+      "\u001b[0m"
+    ],
+    "UE": [
+      "\u001b[0m[NAS]    nr_nas_msg.c:419  derive_kgnb  with count= 0",
+      "\u001b[0m[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: length 21 , buffer 0x7f5de8005380",
+      "\u001b[0m[NAS]   Generate Initial NAS Message: Registration Request",
+      "\u001b[0m[NR_RRC]   Received securityModeCommand (gNB 0)",
+      "\u001b[0m[NR_RRC]   Receiving from SRB1 (DL-DCCH), Processing securityModeCommand",
+      "\u001b[0m[NR_RRC]   Security algorithm is set to nea2",
+      "\u001b[0m[NR_RRC]   Integrity protection algorithm is set to nia2",
+      "\u001b[0m[NR_RRC]   Receiving from SRB1 (DL-DCCH), encoding securityModeComplete, rrc_TransactionIdentifier: 0",
+      "\u001b[0m[NR_RRC]   Received Capability Enquiry (gNB 0)",
+      "\u001b[0m[NR_RRC]   Receiving from SRB1 (DL-DCCH), Processing UECapabilityEnquiry",
+      "\u001b[0mCMDLINE: \"/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-uesoftmodem\" \"-r\" \"106\" \"--numerology\" \"1\" \"--band\" \"78\" \"-C\" \"3619200000\" \"--rfsim\" \"-O\" \"/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/ue_oai.conf\" ",
+      "[CONFIG] function config_libconfig_init returned 0",
+      "UE threads created by 598568",
+      "TYPE <CTRL-C> TO TERMINATE",
+      "Initializing random number generator, seed 9904934815272501423",
+      "Entering ITTI signals handler",
+      "TYPE <CTRL-C> TO TERMINATE",
+      "kgnb : d4 9a ce e2 cb c6 6c fd 23 92 29 22 2d c9 bf 5b ea c9 06 b2 e0 e3 72 67 aa f4 0b 87 f9 48 6a e0 ",
+      "kausf:88 50 58 da cc 1d 29 cf c4 e6 ee 73 84 6e 38 af c7 2 e8 a6 41 37 41 1a 57 7a 79 1b 3b 2b 90 cd ",
+      "kseaf:a0 6c c1 92 72 83 2e 31 6e 35 e5 d3 31 f7 71 26 b3 a0 ac 9f 84 ec 59 fe fc 63 94 3c 9 c9 57 3a ",
+      "kamf:6a da 55 58 3e d2 db 8c a5 7c 55 b 79 24 b4 1a c6 45 24 6a f 4e 48 98 14 37 b 77 5e 3b dc 85 ",
+      "knas_int: 43 48 36 2a 9e 24 9b ed d0 2a 3 18 4d 9d 83 1c ",
+      "knas_enc: 38 74 9f bc 28 d9 35 a4 e d6 88 46 35 74 8 c2 ",
+      "mac 13 27 84 c0 ",
+      "[NR_RRC]   deriving kRRCenc, kRRCint from KgNB=d4 9a ce e2 cb c6 6c fd 23 92 29 22 2d c9 bf 5b ea c9 06 b2 e0 e3 72 67 aa f4 0b 87 f9 48 6a e0 \u001b[0m",
+      "[NR_RRC]   securityModeComplete payload: 28 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 \u001b[0m",
+      "<UE-NR-Capability>",
+      "    <accessStratumRelease><rel15/></accessStratumRelease>",
+      "    <pdcp-Parameters>",
+      "        <supportedROHC-Profiles>",
+      "            <profile0x0000><false/></profile0x0000>",
+      "            <profile0x0001><false/></profile0x0001>",
+      "            <profile0x0002><false/></profile0x0002>",
+      "            <profile0x0003><false/></profile0x0003>",
+      "            <profile0x0004><false/></profile0x0004>",
+      "            <profile0x0006><false/></profile0x0006>",
+      "            <profile0x0101><false/></profile0x0101>",
+      "            <profile0x0102><false/></profile0x0102>",
+      "            <profile0x0103><false/></profile0x0103>",
+      "            <profile0x0104><false/></profile0x0104>",
+      "        </supportedROHC-Profiles>",
+      "        <maxNumberROHC-ContextSessions><cs2/></maxNumberROHC-ContextSessions>",
+      "    </pdcp-Parameters>",
+      "    <phy-Parameters>",
+      "    </phy-Parameters>",
+      "    <rf-Parameters>",
+      "        <supportedBandListNR>",
+      "            <BandNR>",
+      "                <bandNR>1</bandNR>",
+      "            </BandNR>",
+      "        </supportedBandListNR>",
+      "    </rf-Parameters>",
+      "</UE-NR-Capability>",
+      "[PHY]   [RRC]UE NR Capability encoded, 10 bytes (86 bits)",
+      "\u001b[0m[NR_RRC]   UECapabilityInformation Encoded 106 bits (14 bytes)",
+      "\u001b[0m[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: length 53 , buffer 0x7f5de8036470",
+      "\u001b[0m[NAS]   Received Registration Accept with result 3GPP",
+      "\u001b[0m[NAS]   SMS not allowed in 5GS Registration Result",
+      "\u001b[0m[NR_RRC]   5G-GUTI: AMF pointer 1, AMF Set ID 1, 5G-TMSI 105558406 ",
+      "\u001b[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(RegistrationComplete)",
+      "\u001b[0m[NAS]   Send NAS_UPLINK_DATA_REQ message(PduSessionEstablishRequest)",
+      "\u001b[0m[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: length 21 , buffer 0x7f5de8000ca0",
+      "\u001b[0m\u001b[1;31m[NAS]   Received PDU Session Establishment reject",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0",
+      "    DL harq: 11/0",
+      "    Ul harq: 34/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 13.9, nb symbols 10.1)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0",
+      "    DL harq: 13/0",
+      "    Ul harq: 47/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 11.4, nb symbols 10.9)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0",
+      "    DL harq: 14/0",
+      "    Ul harq: 60/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 10.1, nb symbols 11.3)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0",
+      "    DL harq: 15/0",
+      "    Ul harq: 72/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 9.2, nb symbols 11.6)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 768.8, cumulated bad DCI 0",
+      "    DL harq: 16/0",
+      "    Ul harq: 85/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 8.6, nb symbols 11.8)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 896.8, cumulated bad DCI 0",
+      "    DL harq: 18/0",
+      "    Ul harq: 98/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 8.1, nb symbols 12.0)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 0.8, cumulated bad DCI 0",
+      "    DL harq: 19/0",
+      "    Ul harq: 111/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 7.7, nb symbols 12.1)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 128.8, cumulated bad DCI 0",
+      "    DL harq: 20/0",
+      "    Ul harq: 124/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 7.4, nb symbols 12.2)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 256.8, cumulated bad DCI 0",
+      "    DL harq: 22/0",
+      "    Ul harq: 136/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 7.2, nb symbols 12.3)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 384.8, cumulated bad DCI 0",
+      "    DL harq: 23/0",
+      "    Ul harq: 149/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 7.0, nb symbols 12.3)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 512.8, cumulated bad DCI 0",
+      "    DL harq: 24/0",
+      "    Ul harq: 162/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 6.9, nb symbols 12.4)",
+      "\u001b[0m[NR_MAC]   UE 0 stats sfn: 640.8, cumulated bad DCI 0",
+      "    DL harq: 25/0",
+      "    Ul harq: 175/0 avg code rate 0.1, avg bit/symbol 2.1, avg per TB: (nb RBs 6.7, nb symbols 12.4)",
+      "\u001b[0m"
+    ]
+  },
+  "network_config": {
+    "cu_conf": {
+      "Active_gNBs": [
+        "gNB-Eurecom-CU"
+      ],
+      "Asn1_verbosity": "none",
+      "Num_Threads_PUSCH": 8,
+      "gNBs": {
+        "gNB_ID": "0xe00",
+        "gNB_name": "gNB-Eurecom-CU",
+        "tracking_area_code": 1,
+        "plmn_list": {
+          "mcc": 1,
+          "mnc": 1,
+          "mnc_length": 2,
+          "snssaiList": {
+            "sst": 1
+          }
+        },
+        "nr_cellid": 1,
+        "tr_s_preference": "f1",
+        "local_s_if_name": "lo",
+        "local_s_address": "127.0.0.5",
+        "remote_s_address": "127.0.0.3",
+        "local_s_portc": 501,
+        "local_s_portd": 2152,
+        "remote_s_portc": 500,
+        "remote_s_portd": 2152,
+        "SCTP": {
+          "SCTP_INSTREAMS": 2,
+          "SCTP_OUTSTREAMS": 2
+        },
+        "amf_ip_address": {
+          "ipv4": "192.168.70.132"
+        },
+        "NETWORK_INTERFACES": {
+          "GNB_IPV4_ADDRESS_FOR_NG_AMF": "192.168.8.43",
+          "GNB_IPV4_ADDRESS_FOR_NGU": "192.168.8.43",
+          "GNB_PORT_FOR_S1U": 2152
+        }
+      },
+      "security": {
+        "ciphering_algorithms": [
+          "nea3",
+          "nea2",
+          "nea1",
+          "nea0"
+        ],
+        "integrity_algorithms": [
+          "nia2",
+          "nia0"
+        ],
+        "drb_ciphering": "yes",
+        "drb_integrity": "no"
+      },
+      "log_config": {
+        "global_log_level": "info",
+        "hw_log_level": "info",
+        "phy_log_level": "info",
+        "mac_log_level": "info",
+        "rlc_log_level": "info",
+        "pdcp_log_level": "info",
+        "rrc_log_level": "info",
+        "ngap_log_level": "info",
+        "f1ap_log_level": "info"
+      }
+    },
+    "du_conf": {
+      "Active_gNBs": [
+        "gNB-Eurecom-DU"
+      ],
+      "Asn1_verbosity": "annoying",
+      "gNBs": [
+        {
+          "gNB_ID": "0xe00",
+          "gNB_DU_ID": "0xe00",
+          "gNB_name": "gNB-Eurecom-DU",
+          "tracking_area_code": 1,
+          "plmn_list": [
+            {
+              "mcc": 1,
+              "mnc": 1,
+              "mnc_length": 2,
+              "snssaiList": [
+                {
+                  "sst": 1,
+                  "sd": "0x010203"
+                }
+              ]
+            }
+          ],
+          "nr_cellid": 1,
+          "pdsch_AntennaPorts_XP": 2,
+          "pdsch_AntennaPorts_N1": 2,
+          "pusch_AntennaPorts": 4,
+          "do_CSIRS": 0,
+          "maxMIMO_layers": 1,
+          "do_SRS": 0,
+          "min_rxtxtime": 6,
+          "force_256qam_off": 1,
+          "sib1_tda": 15,
+          "pdcch_ConfigSIB1": [
+            {
+              "controlResourceSetZero": 11,
+              "searchSpaceZero": 0
+            }
+          ],
+          "servingCellConfigCommon": [
+            {
+              "physCellId": 0,
+              "absoluteFrequencySSB": 641280,
+              "dl_frequencyBand": 78,
+              "dl_absoluteFrequencyPointA": 640008,
+              "dl_offstToCarrier": 0,
+              "dl_subcarrierSpacing": 1,
+              "dl_carrierBandwidth": 106,
+              "initialDLBWPlocationAndBandwidth": 28875,
+              "initialDLBWPsubcarrierSpacing": 1,
+              "initialDLBWPcontrolResourceSetZero": 12,
+              "initialDLBWPsearchSpaceZero": 0,
+              "ul_frequencyBand": 78,
+              "ul_offstToCarrier": 0,
+              "ul_subcarrierSpacing": 1,
+              "ul_carrierBandwidth": 106,
+              "pMax": 20,
+              "initialULBWPlocationAndBandwidth": 28875,
+              "initialULBWPsubcarrierSpacing": 1,
+              "prach_ConfigurationIndex": 98,
+              "prach_msg1_FDM": 0,
+              "prach_msg1_FrequencyStart": 0,
+              "zeroCorrelationZoneConfig": 13,
+              "preambleReceivedTargetPower": -96,
+              "preambleTransMax": 6,
+              "powerRampingStep": 1,
+              "ra_ResponseWindow": 4,
+              "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR": 4,
+              "ssb_perRACH_OccasionAndCB_PreamblesPerSSB": 15,
+              "ra_ContentionResolutionTimer": 7,
+              "rsrp_ThresholdSSB": 19,
+              "prach_RootSequenceIndex_PR": 2,
+              "prach_RootSequenceIndex": 1,
+              "msg1_SubcarrierSpacing": 1,
+              "restrictedSetConfig": 0,
+              "msg3_DeltaPreamble": 1,
+              "p0_NominalWithGrant": -90,
+              "pucchGroupHopping": 0,
+              "hoppingId": 40,
+              "p0_nominal": -90,
+              "ssb_PositionsInBurst_Bitmap": 1,
+              "ssb_periodicityServingCell": 2,
+              "dmrs_TypeA_Position": 0,
+              "subcarrierSpacing": 1,
+              "referenceSubcarrierSpacing": 1,
+              "dl_UL_TransmissionPeriodicity": 6,
+              "nrofDownlinkSlots": 7,
+              "nrofDownlinkSymbols": 6,
+              "nrofUplinkSlots": 2,
+              "nrofUplinkSymbols": 4,
+              "ssPBCH_BlockPower": -25
+            }
+          ],
+          "SCTP": {
+            "SCTP_INSTREAMS": 2,
+            "SCTP_OUTSTREAMS": 2
+          }
+        }
+      ],
+      "MACRLCs": [
+        {
+          "num_cc": 1,
+          "tr_s_preference": "local_L1",
+          "tr_n_preference": "f1",
+          "local_n_address": "127.0.0.3",
+          "remote_n_address": "127.0.0.5",
+          "local_n_portc": 500,
+          "local_n_portd": 2152,
+          "remote_n_portc": 501,
+          "remote_n_portd": 2152
+        }
+      ],
+      "L1s": [
+        {
+          "num_cc": 1,
+          "tr_n_preference": "local_mac",
+          "prach_dtx_threshold": 120,
+          "pucch0_dtx_threshold": 150,
+          "ofdm_offset_divisor": 8
+        }
+      ],
+      "RUs": [
+        {
+          "local_rf": "yes",
+          "nb_tx": 4,
+          "nb_rx": 4,
+          "att_tx": 0,
+          "att_rx": 0,
+          "bands": [
+            78
+          ],
+          "max_pdschReferenceSignalPower": -27,
+          "max_rxgain": 114,
+          "sf_extension": 0,
+          "eNB_instances": [
+            0
+          ],
+          "clock_src": "internal",
+          "ru_thread_core": 6,
+          "sl_ahead": 5,
+          "do_precoding": 0
+        }
+      ],
+      "rfsimulator": {
+        "serveraddr": "server",
+        "serverport": 4043,
+        "options": [],
+        "modelname": "AWGN",
+        "IQfile": "/tmp/rfsimulator.iqs"
+      },
+      "log_config": {
+        "global_log_level": "info",
+        "hw_log_level": "info",
+        "phy_log_level": "info",
+        "mac_log_level": "info"
+      },
+      "fhi_72": {
+        "dpdk_devices": [
+          "0000:ca:02.0",
+          "0000:ca:02.1"
+        ],
+        "system_core": 0,
+        "io_core": 4,
+        "worker_cores": [
+          2
+        ],
+        "ru_addr": [
+          "e8:c7:4f:25:80:ed",
+          "e8:c7:4f:25:80:ed"
+        ],
+        "mtu": 9000,
+        "fh_config": [
+          {
+            "T1a_cp_dl": [
+              285,
+              429
+            ],
+            "T1a_cp_ul": [
+              285,
+              429
+            ],
+            "T1a_up": [
+              96,
+              196
+            ],
+            "Ta4": [
+              110,
+              180
+            ],
+            "ru_config": {
+              "iq_width": 9,
+              "iq_width_prach": 9
+            },
+            "prach_config": {
+              "kbar": 0
+            }
+          }
+        ]
+      }
+    },
+    "ue_conf": {
+      "uicc0": {
+        "imsi": "001010000000001",
+        "key": "fec86ba6eb707ed08905757b1bb44b8f",
+        "opc": "C42449363BBAD02B66D16BC975D77CC1",
+        "dnn": "oai",
+        "nssai_sst": 1
+      }
+    }
+  }
+}

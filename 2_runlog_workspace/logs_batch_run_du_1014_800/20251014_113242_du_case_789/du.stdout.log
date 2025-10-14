@@ -1,0 +1,39 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1
+[0m[NR_PHY]   Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 
+[0m[NR_PHY]   Registered with MAC interface module (0x37ef5d0)
+[0m[NR_PHY]   Initializing NR L1: RC.nb_nr_L1_inst = 1
+[0m[NR_PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[NR_PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 2 N2 1 XP 2 pusch_AntennaPorts 4
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 15
+[0m[GNB_APP]   CSI-RS 0, SRS 0, SINR:0, 256 QAM force off, delta_MCS off, maxMIMO_Layers 1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[0m[NR_MAC]   No RedCap configuration found
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[NR_MAC]   Candidates per PDCCH aggregation level on UESS: L1: 0, L2: 2, L4: 0, L8: 0, L16: 0
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 106,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[NR_MAC]   PUSCH Target 200, PUCCH Target 150, PUCCH Failure 10, PUSCH Failure 10
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m
+Assertion (r > 0) failed!
+In compute_nr_root_seq() ../../../openair2/LAYER2/NR_MAC_COMMON/nr_mac_common.c:1848
+bad r: L_ra 139, NCS 167
+
+Exiting execution
+CMDLINE: "/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "--rfsim" "--sa" "-O" "/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1014_800/du_case_789.conf" 
+[CONFIG] function config_libconfig_init returned 0
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Timers_Params' section from the config file
+Reading 'SCCsParams' section from the config file
+Reading 'MsgASCCsParams' section from the config file
+../../../openair2/LAYER2/NR_MAC_COMMON/nr_mac_common.c:1848 compute_nr_root_seq() Exiting OAI softmodem: _Assert_Exit_
