@@ -1,8 +1,0 @@
-UE 0 CU UE ID 1 DU UE ID 16523 RNTI 408b random identity c6e1a91c73000000:
-    last RRC activity: 19 seconds ago
-    (no PDU sessions)
-    associated DU:  DU assoc ID 18269
-
-1 connected DUs 
-[1] DU ID 3584 (gNB-Eurecom-DU) assoc_id 18269: nrCellID 1, PCI 0, SSB ARFCN 641280
-    TDD: band 78 ARFCN 640008 SCS 30 (kHz) PRB 106

@@ -1,8 +1,0 @@
-UE RNTI a5fb CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (12 meas)
-UE a5fb: dlsch_rounds 31/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01351 MCS (0) 0
-UE a5fb: ulsch_rounds 190/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
-UE a5fb: MAC:    TX           1047 RX           3923 bytes
-UE a5fb: LCID 1: TX            522 RX            317 bytes
-UE a5fb: LCID 2: TX              0 RX              0 bytes
-UE a5fb: LCID 4: TX              9 RX            182 bytes
-

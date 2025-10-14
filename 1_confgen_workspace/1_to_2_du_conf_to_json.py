@@ -430,8 +430,8 @@ def convert_file(input_path: str, output_path: str) -> None:
 
 def main() -> None:
     # Hardcoded defaults (absolute paths requested by user)
-    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\du_conf_1014_800\conf"
-    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\du_conf_1014_800_json"
+    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\du_conf_1002_600\conf"
+    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\du_conf_1002_600_json"
 
     parser = argparse.ArgumentParser(description="Convert DU .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)
@@ -440,11 +440,11 @@ def main() -> None:
 
     # Fallback to workspace-relative paths if absolute defaults are not present
     if not os.path.exists(args.input):
-        rel_input = os.path.join("1_confgen_workspace", "1_conf", "du_conf_1014_800", "conf")
+        rel_input = os.path.join("1_confgen_workspace", "1_conf", "du_conf_1002_600", "conf")
         if os.path.exists(rel_input):
             args.input = rel_input
     if not os.path.exists(args.output):
-        rel_output = os.path.join("1_confgen_workspace", "2_json", "du_conf_1014_800_json")
+        rel_output = os.path.join("1_confgen_workspace", "2_json", "du_conf_1002_600_json")
         if os.path.exists(rel_output):
             args.output = rel_output
 
