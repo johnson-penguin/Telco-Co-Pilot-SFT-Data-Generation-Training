@@ -1,3 +1,20 @@
+Created `1_confgen_workspace/tool/ue_generate_error_confs.py` modeled after `du_generate_error_confs.py`.
+
+Key details:
+- Baseline: `0_required_inputs/baseline_conf/ue_oai.conf`
+- Default cases: `1_confgen_workspace/1_conf/ue_conf_1016_1/json/cases_delta.json`
+- Output dir: `1_confgen_workspace/1_conf/ue_conf_1016_1/conf`
+- Supports replacements for simple keys, indexed arrays, and `block[index].subkey` with bilingual comments.
+
+Usage example:
+```bash
+python 1_confgen_workspace/tool/ue_generate_error_confs.py \
+  --baseline 0_required_inputs/baseline_conf/ue_oai.conf \
+  --cases 1_confgen_workspace/1_conf/ue_conf_1016_1/json/cases_delta.json \
+  --output 1_confgen_workspace/1_conf/ue_conf_1016_1/conf
+```
+
+No linter issues detected.
 Generated 500 CU delta error cases at `1_confgen_workspace/1_conf/cu_conf_1014_600/json/cases_delta.json` based on baseline `0_required_inputs/baseline_conf_json/cu_gnb.json`, modifying `gNBs.remote_s_address` (original `127.0.0.3`) to test-net/unroutable IPs. Structure mirrors DU `cases_delta.json` with fields: filename, modified_key, original_value, error_value, error_type, explanation.
 Generated 500 erroneous CU conf files into `1_confgen_workspace/1_conf/cu_conf_1014_600` based on `0_required_inputs/baseline_conf_json/cu_gnb.json` and referenced DU cases at `1_confgen_workspace/1_conf/du_conf_1014_2_1000/json/cases_delta.json`.
 

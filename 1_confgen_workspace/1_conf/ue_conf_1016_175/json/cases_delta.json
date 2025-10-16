@@ -1,0 +1,1581 @@
+[
+  {
+    "filename": "ue_case_001.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000000000",
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MSIN 設定為全零；此值通常被系統保留或視為無效，代表超出有效用戶的分配範圍。",
+    "explanation_en": "Setting MSIN to all zeros; this value is often reserved or considered invalid, thus it is out of the valid subscriber allocation range."
+  },
+  {
+    "filename": "ue_case_002.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001019999999999",
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MSIN 設定為全九；此類邊界值常用於測試或廣播目的，被視為超出普通用戶的有效範圍。",
+    "explanation_en": "Setting MSIN to all nines; such boundary values are often used for testing or broadcast purposes and are considered out of the valid range for regular subscribers."
+  },
+  {
+    "filename": "ue_case_003.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "46692123456789",
+    "error_type": "out_of_range",
+    "explanation_zh": "IMSI 的總長度為 14 位，雖然格式為純數字，但在嚴格要求 15 位長度的系統中，會被判定為長度超出有效範圍。",
+    "explanation_en": "The IMSI has a total length of 14 digits. Although it consists of pure numbers, it will be considered out of the valid length range in systems that strictly enforce a 15-digit length."
+  },
+  {
+    "filename": "ue_case_004.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "188010000000001",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個 ITU 從未分配過的 MCC (例如 188)；此 MCC 超出全球已定義的國家代碼有效範圍。",
+    "explanation_en": "Using an MCC that has never been assigned by the ITU (e.g., 188); this MCC is outside the valid range of defined country codes worldwide."
+  },
+  {
+    "filename": "ue_case_005.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "466800000000001",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個真實的 MCC (台灣=466)，但搭配一個該國未分配的 MNC (80)；此 MNC 超出該 MCC 下已分配的網路代碼範圍。",
+    "explanation_en": "Using a real MCC (Taiwan=466) but with an unassigned MNC (80) for that country; this MNC is outside the range of allocated network codes for that MCC."
+  },
+  {
+    "filename": "ue_case_006.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "999990000000001",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用專為私有網路保留的 PLMN (MCC=999)；對於一個公網核心網，此 PLMN 超出其服務的 PLMN 範圍。",
+    "explanation_en": "Using a PLMN (MCC=999) reserved for private networks; for a public core network, this PLMN is outside its serving PLMN range."
+  },
+  {
+    "filename": "ue_case_007.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001018765432109",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個在用戶資料庫中不存在的 MSIN；此 IMSI 超出了核心網中已配置 (Provisioned) 的用戶身份範圍。",
+    "explanation_en": "Using an MSIN that does not exist in the subscriber database; this IMSI is outside the range of provisioned subscriber identities in the core network."
+  },
+  {
+    "filename": "ue_case_008.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "901450000000001",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用為國際共享網路保留的 MCC (901)；若非特定場景 (如衛星通訊)，此 PLMN 會被常規地面網路視為超出服務範圍。",
+    "explanation_en": "Using an MCC (901) reserved for international shared networks; except for specific scenarios (e.g., satellite), this PLMN is considered out of service range by regular terrestrial networks."
+  },
+  {
+    "filename": "ue_case_009.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001000000000001",
+    "error_type": "out_of_range",
+    "explanation_zh": "將 MNC 設定為『00』；對於測試網路 MCC『001』，此 MNC 可能被定義為超出其有效網路代碼的分配範圍。",
+    "explanation_en": "Setting MNC to '00'; for the test MCC '001', this MNC may be defined as being outside the allocated range of its valid network codes."
+  },
+  {
+    "filename": "ue_case_010.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "310269999999999",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個真實 PLMN (T-Mobile US) 但 MSIN 為全九；此組合代表一個超出該運營商實際用戶分配範圍的邊界值。",
+    "explanation_en": "Using a real PLMN (T-Mobile US) but with an all-nines MSIN; this combination represents a boundary value that is outside the operator's actual subscriber allocation range."
+  },
+  {
+    "filename": "ue_case_011.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000000002",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個連續但未在核心網用戶資料庫 (UDM) 中配置的 MSIN；會導致『用戶未知』的認證失敗。",
+    "explanation_en": "Using a consecutive but un-provisioned MSIN in the Core Network's database (UDM); will cause an 'Unknown Subscriber' authentication failure."
+  },
+  {
+    "filename": "ue_case_012.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000000010",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個在同一 PLMN 下，但資料庫中不存在的 MSIN；會導致找不到用戶資料而註冊失敗。",
+    "explanation_en": "Using an MSIN under the same PLMN that does not exist in the database; will lead to registration failure due to 'Subscriber data not found'."
+  },
+  {
+    "filename": "ue_case_013.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001011234567890",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個隨機產生的、高機率未被配置的 MSIN；模擬一個從未被創建過的用戶。",
+    "explanation_en": "Using a randomly generated MSIN that is highly likely to be un-provisioned; simulates a subscriber that has never been created."
+  },
+  {
+    "filename": "ue_case_014.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001020000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不同的測試 PLMN (001-02)；若核心網僅配置了 001-01，此用戶將被視為來自未知網路。",
+    "explanation_en": "Using a different test PLMN (001-02); if the core network is only configured for 001-01, this subscriber will be treated as being from an unknown network."
+  },
+  {
+    "filename": "ue_case_015.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "466920000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個真實世界的 PLMN (中華電信)，但此用戶未在當前測試網路的 UDM 中配置；模擬漫遊失敗。",
+    "explanation_en": "Using a real-world PLMN (Chunghwa Telecom), but this subscriber is not provisioned in the current test network's UDM; simulates a roaming failure."
+  },
+  {
+    "filename": "ue_case_016.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001019876543210",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個格式正確但數值隨機的大數字 MSIN，確保其未在訂閱列表中。",
+    "explanation_en": "Using a well-formed but large, random MSIN to ensure it is not on the subscription list."
+  },
+  {
+    "filename": "ue_case_017.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000000022",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個未配置的 MSIN，用於批量測試用戶不存在的場景。",
+    "explanation_en": "Another un-provisioned MSIN for batch testing 'subscriber not found' scenarios."
+  },
+  {
+    "filename": "ue_case_018.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000000300",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個跳號的、未配置的 MSIN。",
+    "explanation_en": "Using a non-consecutive, un-provisioned MSIN."
+  },
+  {
+    "filename": "ue_case_019.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001015555555555",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個帶有特殊模式的 MSIN，此類號碼可能被保留，因此超出普通用戶的訂閱範圍。",
+    "explanation_en": "Using an MSIN with a special pattern, which might be reserved and thus out of the subscription range for regular users."
+  },
+  {
+    "filename": "ue_case_020.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "310260123456789",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個美國運營商 (T-Mobile) 的 PLMN，模擬一個無漫遊協議的用戶。",
+    "explanation_en": "Using a US operator's PLMN (T-Mobile) to simulate a user without a roaming agreement."
+  },
+  {
+    "filename": "ue_case_021.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000010000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "測試一個較大數值的、未訂閱的 MSIN。",
+    "explanation_en": "Testing a larger, unsubscribed MSIN value."
+  },
+  {
+    "filename": "ue_case_022.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000020000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "繼續測試較大數值的、未訂閱的 MSIN。",
+    "explanation_en": "Continuing to test larger, unsubscribed MSIN values."
+  },
+  {
+    "filename": "ue_case_023.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000030000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "持續批量測試未訂閱的 MSIN。",
+    "explanation_en": "Continuing batch tests for unsubscribed MSINs."
+  },
+  {
+    "filename": "ue_case_024.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000040000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "持續批量測試未訂閱的 MSIN。",
+    "explanation_en": "Continuing batch tests for unsubscribed MSINs."
+  },
+  {
+    "filename": "ue_case_025.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001010000050000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "持續批量測試未訂閱的 MSIN。",
+    "explanation_en": "Continuing batch tests for unsubscribed MSINs."
+  },
+  {
+    "filename": "ue_case_026.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "440101111111111",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個日本運營商 (NTT Docomo) 的 PLMN，測試另一個漫遊失敗場景。",
+    "explanation_en": "Using a Japanese operator's PLMN (NTT Docomo) to test another roaming failure scenario."
+  },
+  {
+    "filename": "ue_case_027.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001030000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未在核心網配置的測試 MNC (03)。",
+    "explanation_en": "Using a test MNC (03) that is not configured in the core network."
+  },
+  {
+    "filename": "ue_case_028.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001011000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_029.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001012000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_030.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001013000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_031.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001014000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_032.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001015000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_033.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001016000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_034.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001017000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_035.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001018000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_036.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001019000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個未訂閱的、以0結尾的 MSIN。",
+    "explanation_en": "Using an unsubscribed MSIN ending in zero."
+  },
+  {
+    "filename": "ue_case_037.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "466011234567890",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個真實世界的 PLMN (遠傳電信)，模擬另一個漫遊失敗場景。",
+    "explanation_en": "Using a real-world PLMN (Far EasTone) to simulate another roaming failure scenario."
+  },
+  {
+    "filename": "ue_case_038.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001040000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (04)。",
+    "explanation_en": "Using a non-existent test MNC (04)."
+  },
+  {
+    "filename": "ue_case_039.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001050000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (05)。",
+    "explanation_en": "Using a non-existent test MNC (05)."
+  },
+  {
+    "filename": "ue_case_040.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001060000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (06)。",
+    "explanation_en": "Using a non-existent test MNC (06)."
+  },
+  {
+    "filename": "ue_case_041.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001070000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (07)。",
+    "explanation_en": "Using a non-existent test MNC (07)."
+  },
+  {
+    "filename": "ue_case_042.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001080000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (08)。",
+    "explanation_en": "Using a non-existent test MNC (08)."
+  },
+  {
+    "filename": "ue_case_043.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001090000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (09)。",
+    "explanation_en": "Using a non-existent test MNC (09)."
+  },
+  {
+    "filename": "ue_case_044.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001100000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (10)。",
+    "explanation_en": "Using a non-existent test MNC (10)."
+  },
+  {
+    "filename": "ue_case_045.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001110000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (11)。",
+    "explanation_en": "Using a non-existent test MNC (11)."
+  },
+  {
+    "filename": "ue_case_046.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001120000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (12)。",
+    "explanation_en": "Using a non-existent test MNC (12)."
+  },
+  {
+    "filename": "ue_case_047.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001130000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (13)。",
+    "explanation_en": "Using a non-existent test MNC (13)."
+  },
+  {
+    "filename": "ue_case_048.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001140000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (14)。",
+    "explanation_en": "Using a non-existent test MNC (14)."
+  },
+  {
+    "filename": "ue_case_049.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001150000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個不存在的測試 MNC (15)。",
+    "explanation_en": "Using a non-existent test MNC (15)."
+  },
+  {
+    "filename": "ue_case_050.json",
+    "modified_key": "imsi",
+    "original_value": "001010000000001",
+    "error_value": "001011122334455",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用一個有規律但未被配置的 MSIN，此 IMSI 超出已配置的用戶身份範圍。",
+    "explanation_en": "Using a patterned but un-provisioned MSIN; this IMSI is outside the range of configured subscriber identities."
+  },
+  {
+    "filename": "ue_case_051.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "fec86ba6eb707ed08905757b1bb44b8e",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "金鑰的最後一位元組錯誤；雖然格式正確，但在 AKA 認證計算中會產生錯誤的回應 (RES*)，導致認證失敗。",
+    "explanation_en": "The last byte of the key is incorrect; although the format is correct, it will produce a wrong response (RES*) during AKA authentication, leading to authentication failure."
+  },
+  {
+    "filename": "ue_case_052.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "eec86ba6eb707ed08905757b1bb44b8f",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "金鑰的第一個位元組錯誤；此金鑰與 UDM 中儲存的金鑰不符，將無法通過鑑權中心的驗證。",
+    "explanation_en": "The first byte of the key is incorrect; this key does not match the one stored in the UDM and will fail verification at the authentication center."
+  },
+  {
+    "filename": "ue_case_053.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "d2a67a27545e462f831ba521581347e3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個完全不同但格式正確的隨機金鑰；這是最典型的金鑰不匹配導致的認證失敗場景。",
+    "explanation_en": "Using a completely different but well-formed random key; this is the most typical scenario for authentication failure due to a key mismatch."
+  },
+  {
+    "filename": "ue_case_054.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "00000000000000000000000000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個全零的弱金鑰；某些安全實現會拒絕此類已知不安全的金鑰，即使 UDM 中也如此配置。",
+    "explanation_en": "Using an all-zero weak key; some security implementations will reject such known insecure keys, even if configured identically in the UDM."
+  },
+  {
+    "filename": "ue_case_055.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "ffffffffffffffffffffffffffffffff",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個全 'f' 的弱金鑰；可能被安全策略視為無效金鑰而拒絕，或因與 UDM 不符而失敗。",
+    "explanation_en": "Using an all-'f' weak key; may be rejected by security policies as invalid, or fail due to mismatch with the UDM."
+  },
+  {
+    "filename": "ue_case_056.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "c42449363bbad02b66d16bc975d77cc1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 key 誤設為對應的 Opc 值；這是嚴重的配置錯誤，會導致認證計算完全錯誤。",
+    "explanation_en": "Mistakenly setting the key to its corresponding Opc value; this is a critical configuration error and will lead to completely incorrect authentication calculations."
+  },
+  {
+    "filename": "ue_case_057.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "0123456789abcdef0123456789abcdef",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個有規律、可預測的弱金鑰；會因與 UDM 中的隨機金鑰不符而認證失敗。",
+    "explanation_en": "Using a regular, predictable weak key; will fail authentication due to mismatching the random key in the UDM."
+  },
+  {
+    "filename": "ue_case_058.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "abababababababababababababababab",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用重複模式 ('ab') 的弱金鑰，將無法通過鑑權。",
+    "explanation_en": "Using a weak key with a repeating pattern ('ab') will not pass authentication."
+  },
+  {
+    "filename": "ue_case_059.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "FEC86BA6EB707ED08905757B1BB44B8F",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全大寫的金鑰；如果系統中的金鑰儲存為小寫，會導致金鑰字串比對失敗，認證無法通過。",
+    "explanation_en": "Using an all-uppercase key; if the key in the system is stored in lowercase, this will cause a key string comparison failure and authentication will not pass."
+  },
+  {
+    "filename": "ue_case_060.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "deadbeefdeadbeefdeadbeefdeadbeef",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個常見於程式設計範例中的弱金鑰，與真實金鑰不符。",
+    "explanation_en": "Using a weak key commonly found in programming examples, which does not match the real key."
+  },
+  {
+    "filename": "ue_case_061.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "1d6c8b3a5d8f2e9c4b7a6d8f0c1e2b3a",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_062.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "7a3b8c4d5e6f1a2b3c4d5e6f7a8b9c0d",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_063.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "e2f1b0a3c4d5e6f7a8b9c0d1e2f3a4b5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_064.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "5c8f2b1a4d6e8f0c3b5a7d9f1e3b5c7d",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_065.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_066.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_067.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "2a1b3c4d5e6f7a8b9c0d1e2f3a4b5c6d",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_068.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "9f8e7d6c5b4a3f2e1d0c9b8a7f6e5d4c",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_069.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_070.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "b3a2c1d0e9f8a7b6c5d4e3f2a1b0c9d8",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_071.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "4f5e6d7c8b9a0f1e2d3c4b5a6f7e8d9c",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_072.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_073.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "3c2b1a0f9e8d7c6b5a4f3e2d1c0b9a8f",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_074.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "7890abcdef0123456789abcdef012345",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機金鑰。",
+    "explanation_en": "Another random key that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_075.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個有規律的弱金鑰。",
+    "explanation_en": "Another weak key with a regular pattern."
+  },
+  {
+    "filename": "ue_case_076.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用單一字元重複的弱金鑰。",
+    "explanation_en": "Using a weak key with a single repeating character."
+  },
+  {
+    "filename": "ue_case_077.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "11111111111111111111111111111111",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '1' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'1's weak key pattern."
+  },
+  {
+    "filename": "ue_case_078.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "22222222222222222222222222222222",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '2' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'2's weak key pattern."
+  },
+  {
+    "filename": "ue_case_079.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "33333333333333333333333333333333",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '3' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'3's weak key pattern."
+  },
+  {
+    "filename": "ue_case_080.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "44444444444444444444444444444444",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '4' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'4's weak key pattern."
+  },
+  {
+    "filename": "ue_case_081.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "55555555555555555555555555555555",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '5' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'5's weak key pattern."
+  },
+  {
+    "filename": "ue_case_082.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "66666666666666666666666666666666",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '6' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'6's weak key pattern."
+  },
+  {
+    "filename": "ue_case_083.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "77777777777777777777777777777777",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '7' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'7's weak key pattern."
+  },
+  {
+    "filename": "ue_case_084.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "88888888888888888888888888888888",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '8' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'8's weak key pattern."
+  },
+  {
+    "filename": "ue_case_085.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "99999999999999999999999999999999",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '9' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'9's weak key pattern."
+  },
+  {
+    "filename": "ue_case_086.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 'b' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'b's weak key pattern."
+  },
+  {
+    "filename": "ue_case_087.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "cccccccccccccccccccccccccccccccc",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 'c' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'c's weak key pattern."
+  },
+  {
+    "filename": "ue_case_088.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "dddddddddddddddddddddddddddddddd",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 'd' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'d's weak key pattern."
+  },
+  {
+    "filename": "ue_case_089.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 'e' 的弱金鑰模式。",
+    "explanation_en": "Using an all-'e's weak key pattern."
+  },
+  {
+    "filename": "ue_case_090.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "12341234123412341234123412341234",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用 '1234' 重複的弱金鑰模式。",
+    "explanation_en": "Using a weak key with a repeating '1234' pattern."
+  },
+  {
+    "filename": "ue_case_091.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "0000000000000000ffffffffffffffff",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一半 '0' 一半 'f' 的弱金鑰模式。",
+    "explanation_en": "Using a weak key pattern of half '0's and half 'f's."
+  },
+  {
+    "filename": "ue_case_092.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "ffffffffffffffff0000000000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一半 'f' 一半 '0' 的弱金鑰模式。",
+    "explanation_en": "Using a weak key pattern of half 'f's and half '0's."
+  },
+  {
+    "filename": "ue_case_093.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用 'f0' 重複的弱金鑰模式。",
+    "explanation_en": "Using a weak key with a repeating 'f0' pattern."
+  },
+  {
+    "filename": "ue_case_094.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用 '0f' 重複的弱金鑰模式。",
+    "explanation_en": "Using a weak key with a repeating '0f' pattern."
+  },
+  {
+    "filename": "ue_case_095.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "80000000000000000000000000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "僅最高位元為1的弱金鑰。",
+    "explanation_en": "A weak key with only the most significant bit set."
+  },
+  {
+    "filename": "ue_case_096.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "00000000000000000000000000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "僅最低位元為1的弱金鑰。",
+    "explanation_en": "A weak key with only the least significant bit set."
+  },
+  {
+    "filename": "ue_case_097.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "7fffffffffffffffffffffffffffffff",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "最高位元為0，其餘為1的弱金鑰。",
+    "explanation_en": "A weak key with the most significant bit as 0 and all others as 1."
+  },
+  {
+    "filename": "ue_case_098.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "fffffffffffffffffffffffffffffe",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "最低位元為0，其餘為1的弱金鑰。",
+    "explanation_en": "A weak key with the least significant bit as 0 and all others as 1."
+  },
+  {
+    "filename": "ue_case_099.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "f8b44bb1b75750980de70be6ab8cef",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用原始金鑰的反轉值；這是一個非隨機且與原始金鑰相關的錯誤金鑰。",
+    "explanation_en": "Using the reversed value of the original key; this is a non-random and related incorrect key."
+  },
+  {
+    "filename": "ue_case_100.json",
+    "modified_key": "key",
+    "original_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_value": "00101000000000100101000000000010",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 IMSI 的一部分錯誤地重複用作金鑰；這是常見的配置錯誤。",
+    "explanation_en": "Mistakenly using parts of an IMSI repeatedly as the key; this is a common configuration error."
+  },
+  {
+    "filename": "ue_case_101.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "C42449363BBAD02B66D16BC975D77CC0",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "Opc 的最後一個位元組不正確。這會導致在 AKA 認證過程中計算出錯誤的 OP，從而產生錯誤的 RES*，導致認證失敗。",
+    "explanation_en": "The last byte of the Opc is incorrect. This will lead to an incorrect OP calculation during the AKA authentication process, resulting in a wrong RES* and authentication failure."
+  },
+  {
+    "filename": "ue_case_102.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "D42449363BBAD02B66D16BC975D77CC1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "Opc 的第一個位元組不正確。此 Opc 與 UDM/AuC 中儲存的值不符，將導致鑑權失敗。",
+    "explanation_en": "The first byte of the Opc is incorrect. This Opc does not match the value stored in the UDM/AuC and will cause authentication failure."
+  },
+  {
+    "filename": "ue_case_103.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "A1B2C3D4E5F6A7B8C9D0E1F2A3B4C5D6",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個完全不同但格式正確的隨機 Opc。這是最典型的 Opc 不匹配導致的認證失敗場景。",
+    "explanation_en": "Using a completely different but well-formed random Opc. This is the most typical scenario for authentication failure due to an Opc mismatch."
+  },
+  {
+    "filename": "ue_case_104.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "00000000000000000000000000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個全零的弱 Opc。某些安全實現會拒絕此類已知不安全的參數。",
+    "explanation_en": "Using an all-zero weak Opc. Some security implementations will reject such known insecure parameters."
+  },
+  {
+    "filename": "ue_case_105.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個全 'F' 的弱 Opc。可能被安全策略視為無效值而拒絕。",
+    "explanation_en": "Using an all-'F' weak Opc. May be rejected by security policies as an invalid value."
+  },
+  {
+    "filename": "ue_case_106.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "fec86ba6eb707ed08905757b1bb44b8f",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 Opc 誤設為對應的 Key 值。這是嚴重的配置錯誤，會導致認證計算完全失敗。",
+    "explanation_en": "Mistakenly setting the Opc to its corresponding Key value. This is a critical configuration error and will lead to a complete failure in authentication calculations."
+  },
+  {
+    "filename": "ue_case_107.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "0123456789ABCDEF0123456789ABCDEF",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個有規律、可預測的弱 Opc，會因與 UDM 中的值不符而認證失敗。",
+    "explanation_en": "Using a regular, predictable weak Opc will fail authentication due to mismatching the value in the UDM."
+  },
+  {
+    "filename": "ue_case_108.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "ABABABABABABABABABABABABABABABAB",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用重複模式 ('AB') 的弱 Opc，將無法通過鑑權。",
+    "explanation_en": "Using a weak Opc with a repeating pattern ('AB') will not pass authentication."
+  },
+  {
+    "filename": "ue_case_109.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "c42449363bbad02b66d16bc975d77cc1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全小寫的 Opc。如果系統實現是區分大小寫的，這將導致比對失敗。",
+    "explanation_en": "Using an all-lowercase Opc. If the system implementation is case-sensitive, this will cause a comparison failure."
+  },
+  {
+    "filename": "ue_case_110.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "DEADBEEFDEADBEEFDEADBEEFDEADBEEF",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個常見於程式設計範例中的 Opc 值，與真實值不符。",
+    "explanation_en": "Using an Opc value commonly found in programming examples, which does not match the real value."
+  },
+  {
+    "filename": "ue_case_111.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "E3A61F5D8C4B2A9E7F0D6B1C5A3E9D2F",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機 Opc 值。",
+    "explanation_en": "Another random Opc value that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_112.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "9D2C8E4A6B0F3D1C7E5A2B8D4F6C0E9A",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "另一個與 UDM 中儲存不符的隨機 Opc 值。",
+    "explanation_en": "Another random Opc value that does not match the one stored in the UDM."
+  },
+  {
+    "filename": "ue_case_113.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用單一字元重複的弱 Opc ('A')。",
+    "explanation_en": "Using a weak Opc with a single repeating character ('A')."
+  },
+  {
+    "filename": "ue_case_114.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "11111111111111111111111111111111",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '1' 的弱 Opc 模式。",
+    "explanation_en": "Using an all-'1's weak Opc pattern."
+  },
+  {
+    "filename": "ue_case_115.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "12341234123412341234123412341234",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用 '1234' 重複的弱 Opc 模式。",
+    "explanation_en": "Using a weak Opc with a repeating '1234' pattern."
+  },
+  {
+    "filename": "ue_case_116.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "0000000000000000FFFFFFFFFFFFFFFF",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一半 '0' 一半 'F' 的弱 Opc 模式。",
+    "explanation_en": "Using a weak Opc pattern of half '0's and half 'F's."
+  },
+  {
+    "filename": "ue_case_117.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0F0",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用 'F0' 重複的弱 Opc 模式。",
+    "explanation_en": "Using a weak Opc with a repeating 'F0' pattern."
+  },
+  {
+    "filename": "ue_case_118.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "80000000000000000000000000000000",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "僅最高位元為 1 的邊界值 Opc。",
+    "explanation_en": "A boundary value Opc with only the most significant bit set."
+  },
+  {
+    "filename": "ue_case_119.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "00000000000000000000000000000001",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "僅最低位元為 1 的邊界值 Opc。",
+    "explanation_en": "A boundary value Opc with only the least significant bit set."
+  },
+  {
+    "filename": "ue_case_120.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "1CC77D59CB61D66B20DABB36394424C",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用原始 Opc 的反轉值。這是一個非隨機且與原始值相關的錯誤參數。",
+    "explanation_en": "Using the reversed value of the original Opc. This is a non-random and related incorrect parameter."
+  },
+  {
+    "filename": "ue_case_121.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "20893000000001232089300000000123",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 IMSI 的一部分錯誤地用作 Opc。這是常見的配置錯誤。",
+    "explanation_en": "Mistakenly using parts of an IMSI as the Opc. This is a common configuration error."
+  },
+  {
+    "filename": "ue_case_122.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "C42449363BBAD02B00000BC975D77CC1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "Opc 的中間某個位元組不正確，將導致認證計算失敗。",
+    "explanation_en": "An incorrect byte in the middle of the Opc will cause the authentication calculation to fail."
+  },
+  {
+    "filename": "ue_case_123.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "最高位元為 0，其餘為 1 的邊界值 Opc。",
+    "explanation_en": "A boundary value Opc with the most significant bit as 0 and all others as 1."
+  },
+  {
+    "filename": "ue_case_124.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "最低位元為 0，其餘為 1 的邊界值 Opc。",
+    "explanation_en": "A boundary value Opc with the least significant bit as 0 and all others as 1."
+  },
+  {
+    "filename": "ue_case_125.json",
+    "modified_key": "opc",
+    "original_value": "C42449363BBAD02B66D16BC975D77CC1",
+    "error_value": "55555555555555555555555555555555",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用全 '5' 的弱 Opc 模式。",
+    "explanation_en": "Using an all-'5's weak Opc pattern."
+  },
+  {
+    "filename": "ue_case_126.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": " randomnet",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 前端加入一個空格。根據 3GPP TS 23.003 規範，空格為無效字符，將導致 DNN 解析失敗，從而阻止 PDU 會話建立。",
+    "explanation_en": "Adding a leading space to the DNN. According to 3GPP TS 23.003, a space is an invalid character and will cause DNN parsing to fail, thus preventing PDU session establishment."
+  },
+  {
+    "filename": "ue_case_127.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "testnet-",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 標籤結尾使用連字符。此格式違反了標籤不能以連字符結尾的規定，將在 UE 接入控制階段被識別為格式錯誤。",
+    "explanation_en": "Using a trailing hyphen in a DNN label. This format violates the rule that labels cannot end with a hyphen and will be identified as a format error during the UE access control phase."
+  },
+  {
+    "filename": "ue_case_128.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "corp_network",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 中使用下劃線。下劃線是不被允許的特殊字符，會導致 S-Plane 配置解析失敗，使 UE 無法請求數據連接。",
+    "explanation_en": "Using an underscore in the DNN. The underscore is a disallowed special character, which will cause an S-Plane configuration parsing failure, preventing the UE from requesting a data connection."
+  },
+  {
+    "filename": "ue_case_129.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "longlabelstringof64characterslonglabelstringof64characterslongla",
+    "error_type": "invalid_format",
+    "explanation_zh": "使用一個長度為 64 個字符的 DNN 標籤。這超出了單個標籤 63 個字符的最大長度限制，將導致 PDU 會話建立請求因格式無效而被拒絕。",
+    "explanation_en": "Using a DNN label with a length of 64 characters. This exceeds the maximum length limit of 63 characters for a single label and will cause the PDU Session Establishment request to be rejected due to an invalid format."
+  },
+  {
+    "filename": "ue_case_130.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "label1.label2.label3.label4.label5.label6.label7.label8.label9.label10.label11.label12.label13.label14.xyz",
+    "error_type": "out_of_range",
+    "explanation_zh": "使用總長度為 101 個字符的 DNN。這超出了 TS 23.003 定義的 100 個字符的最大總長度，屬於超出範圍錯誤，將導致 UE 配置驗證失敗。",
+    "explanation_en": "Using a DNN with a total length of 101 characters. This exceeds the maximum total length of 100 characters defined in TS 23.003, which is an out-of-range error that will cause UE configuration validation to fail."
+  },
+  {
+    "filename": "ue_case_131.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "fastconnect",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個通用但未在此測試核心網中配置的 DNN 'internet'。此邏輯矛盾將導致 SMF 找不到匹配的數據網絡配置，從而拒絕 PDU 會話請求。",
+    "explanation_en": "Using a common but un-provisioned DNN 'internet' in this test core network. This logical contradiction will cause the SMF to find no matching data network configuration, thus rejecting the PDU session request."
+  },
+  {
+    "filename": "ue_case_132.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "voip-service",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求專用於 IMS 服務的 DNN。如果網絡未配置 IMS，這將導致一個有效的 PDU 會話請求因服務不支持而被拒絕，屬於 S-Plane 的邏輯錯誤。",
+    "explanation_en": "Requesting the DNN specifically for IMS services. If the network is not configured for IMS, this will cause a valid PDU session request to be rejected due to unsupported service, which is an S-Plane logical error."
+  },
+  {
+    "filename": "ue_case_133.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": true,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DNN 的值設置為布爾類型 `true`。UE 的配置解析器預期一個字符串，此類型錯誤將在初始化階段導致致命錯誤，阻止任何網絡接入嘗試。",
+    "explanation_en": "Setting the DNN value to a boolean type `true`. The UE's configuration parser expects a string; this type error will cause a fatal error during the initialization phase, preventing any network access attempts."
+  },
+  {
+    "filename": "ue_case_134.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": null,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DNN 的值設置為 JSON 的 `null`。這將導致配置加載時出現空指針或類型錯誤，屬於 S-Plane 配置失敗的範疇。",
+    "explanation_en": "Setting the DNN value to JSON `null`. This will lead to a null pointer or type error during configuration loading, falling under the category of an S-Plane configuration failure."
+  },
+  {
+    "filename": "ue_case_135.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": [
+      "anothernet"
+    ],
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DNN 的值設置為一個包含字符串的數組。配置解析器無法處理此數據結構，會觸發類型不匹配異常，導致 UE 接入控制失敗。",
+    "explanation_en": "Setting the DNN value to an array containing a string. The configuration parser cannot handle this data structure and will trigger a type mismatch exception, leading to a UE access control failure."
+  },
+  {
+    "filename": "ue_case_136.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "data.service..com",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 中使用連續的點。此格式不符合 FQDN 規範，會導致 DNN 驗證失敗，從而使 PDU 會話請求在發送前就被 UE 內部阻止。",
+    "explanation_en": "Using consecutive dots in the DNN. This format does not comply with FQDN specifications and will cause DNN validation to fail, blocking the PDU session request internally on the UE before it is sent."
+  },
+  {
+    "filename": "ue_case_137.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": ".startnet",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 開頭使用一個點。此格式無效，因為標籤不能為空，將導致 S-Plane 配置解析器在驗證階段拋出錯誤。",
+    "explanation_en": "Using a leading dot in the DNN. This format is invalid as it implies an empty label, which will cause the S-Plane configuration parser to throw an error during validation."
+  },
+  {
+    "filename": "ue_case_138.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "endnet.",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 結尾使用一個點。與前導點類似，這意味著一個空標籤，是無效的 FQDN 格式，會在 UE 接入控制流程中被拒絕。",
+    "explanation_en": "Using a trailing dot in the DNN. Similar to a leading dot, this implies an empty label and is an invalid FQDN format that will be rejected during the UE access control flow."
+  },
+  {
+    "filename": "ue_case_139.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "DATAPLANE",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用大寫的 DNN。雖然 DNN 格式本身不區分大小寫，但如果核心網的配置是嚴格區分大小寫的，此值將被視為一個不同的、未配置的 DNN，導致邏輯矛盾。",
+    "explanation_en": "Using an uppercase DNN. While the DNN format itself is case-insensitive, if the core network's configuration is strictly case-sensitive, this value will be treated as a different, un-provisioned DNN, causing a logical contradiction."
+  },
+  {
+    "filename": "ue_case_140.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "newnet.mnc001.mcc001.gprs",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "提供一個完整的 APN/DNN 限定名稱。雖然格式正確，但 UE 通常僅配置網絡標識符部分 ('oai')。提供完整名稱可能與網絡側的期望不符，導致匹配失敗。",
+    "explanation_en": "Providing a fully qualified APN/DNN name. While correctly formatted, UEs typically only configure the network identifier part ('oai'). Providing the full name might mismatch the network's expectation, leading to a matching failure."
+  },
+  {
+    "filename": "ue_case_141.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": " sos-service",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求為緊急服務保留的 DNN。對緊急 DNN 的請求會觸發特殊的 PDU 會話流程，如果 UE 不處於緊急狀態，此請求將被核心網拒絕。",
+    "explanation_en": "Requesting a DNN reserved for emergency services. A request for an emergency DNN triggers a special PDU session procedure, and if the UE is not in an emergency state, this request will be rejected by the core network."
+  },
+  {
+    "filename": "ue_case_142.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "extranet;group=corp",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 字段中嵌入額外的參數。分號 (;) 是無效字符，會導致 DNN 解析失敗，屬於 S-Plane 配置錯誤。",
+    "explanation_en": "Embedding extra parameters in the DNN field. The semicolon (;) is an invalid character and will cause the DNN parsing to fail, which is an S-Plane configuration error."
+  },
+  {
+    "filename": "ue_case_143.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "54321",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個純數字的 DNN。雖然格式上有效，但它極不可能是一個已配置的服務網絡名稱，會導致核心網因找不到對應 DNN 而拒絕會話。",
+    "explanation_en": "Using a purely numeric DNN. While valid in format, it is highly unlikely to be a provisioned service network name, causing the core network to reject the session as it cannot find a corresponding DNN."
+  },
+  {
+    "filename": "ue_case_144.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "some-other-network",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用一個隨機但格式有效的 DNN。這模擬了用戶手動輸入錯誤或配置了過時的 DNN，將導致 PDU 會話建立因 'unknown DNN' 而失敗。",
+    "explanation_en": "Using a random but validly formatted DNN. This simulates a user typo or an outdated DNN configuration, which will lead to PDU session establishment failure due to 'unknown DNN'."
+  },
+  {
+    "filename": "ue_case_145.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "ランダムネット",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 中使用非 ASCII 字符（例如日語）。DNN 僅允許字母、數字和連字符，此類多字節字符將導致無線資源管理層的配置驗證失敗。",
+    "explanation_en": "Using non-ASCII characters (e.g., Japanese) in the DNN. The DNN specification only allows letters, digits, and hyphens; such multi-byte characters will cause a configuration validation failure at the radio resource management layer."
+  },
+  {
+    "filename": "ue_case_146.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "video.fastconnect",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求一個特定服務類型（如 IoT）的子域 DNN。如果核心網的 DNN 配置不包含此子域，即便根 DNN ('oai') 存在，匹配也會失敗。",
+    "explanation_en": "Requesting a subdomain DNN for a specific service type (e.g., IoT). If the core network's DNN configuration does not include this subdomain, the match will fail even if the root DNN ('oai') exists."
+  },
+  {
+    "filename": "ue_case_147.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "*",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "使用通配符 '*' 作為 DNN。雖然在某些協議中通配符有特殊含義，但在 PDU 會話請求中，它通常被視為一個字面量且未配置的 DNN，導致請求被拒絕。",
+    "explanation_en": "Using a wildcard character '*' as the DNN. While wildcards have special meanings in some protocols, in a PDU session request, it's typically treated as a literal and un-provisioned DNN, causing the request to be rejected."
+  },
+  {
+    "filename": "ue_case_148.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "iotnet.gprs",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "附加一個舊的 GPRS 標識符。在 5G 核心網環境中，這種混合格式可能不被識別，導致 S-Plane 控制流程中的 DNN 匹配失敗。",
+    "explanation_en": "Appending a legacy GPRS identifier. In a 5G Core network context, this mixed format might not be recognized, leading to a DNN matching failure in the S-Plane control flow."
+  },
+  {
+    "filename": "ue_case_149.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": {
+      "dnn": "virtual-net"
+    },
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DNN 的值設置為一個 JSON 對象。此複雜類型無法被期望字符串的解析器處理，會在 UE 接入控制的初始階段就導致配置崩潰。",
+    "explanation_en": "Setting the DNN value to a JSON object. This complex type cannot be processed by a parser expecting a string and will cause the configuration to crash at the initial stage of UE access control."
+  },
+  {
+    "filename": "ue_case_150.json",
+    "modified_key": "dnn",
+    "original_value": "oai",
+    "error_value": "finalnet\n",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DNN 末尾附加一個換行符。換行符是無效字符，會導致解析器錯誤地處理字符串長度或內容，從而使 PDU 會話請求失敗。",
+    "explanation_en": "Appending a newline character to the DNN. The newline is an invalid character and will cause the parser to incorrectly handle the string length or content, thus failing the PDU session request."
+  },
+  {
+    "filename": "ue_case_151.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SST 設為負值；SST 定義為 8 位元無符號整數 (0-255)，任何負值均超出其有效範圍，將在 S-Plane 配置階段被拒絕。",
+    "explanation_en": "Setting SST to a negative value; SST is defined as an 8-bit unsigned integer (0-255), and any negative value is out of its valid range, which will be rejected during S-Plane configuration."
+  },
+  {
+    "filename": "ue_case_152.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 256,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SST 設為 256；該值超出 8 位元無符號整數的最大值 (255)，會導致 UE 接入控制因無效的 NSSAI 而失敗。",
+    "explanation_en": "Setting SST to 256; this value exceeds the maximum for an 8-bit unsigned integer (255), causing UE access control to fail due to an invalid NSSAI."
+  },
+  {
+    "filename": "ue_case_153.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "1",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為字串型別；即使內容為數字，嚴格的解析器會因型別不符 (應為整數) 而拒絕此配置，影響 S-Plane 建立。",
+    "explanation_en": "Setting SST to a string type; even if the content is numeric, a strict parser will reject this configuration due to a type mismatch (should be integer), affecting S-Plane establishment."
+  },
+  {
+    "filename": "ue_case_154.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 1.0,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為浮點數型別；NSSAI 參數要求 SST 為整數，浮點數會被視為無效型別，導致 UE 接入請求被拒。",
+    "explanation_en": "Setting SST to a float type; the NSSAI parameter requires an integer for SST, and a float will be considered an invalid type, leading to the rejection of the UE's access request."
+  },
+  {
+    "filename": "ue_case_155.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "eMBB",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為描述性字串；配置系統期望的是標準化的整數值而非文本標籤，此舉將導致解析失敗與配置被拒絕。",
+    "explanation_en": "Setting SST to a descriptive string; the configuration system expects a standardized integer value, not a text label, which will cause a parsing failure and rejection."
+  },
+  {
+    "filename": "ue_case_156.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": null,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為 null；空值違反了該欄位為強制性整數的約束，將在 UE 接入控制時因缺少切片資訊而被拒絕。",
+    "explanation_en": "Setting SST to null; a null value violates the mandatory integer constraint for this field, leading to rejection during UE access control due to missing slice information."
+  },
+  {
+    "filename": "ue_case_157.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": true,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為布林值；此型別與規範的整數型別不符，將導致 S-Plane 配置解析錯誤。",
+    "explanation_en": "Setting SST to a boolean value; this type does not match the specified integer type and will cause an S-Plane configuration parsing error."
+  },
+  {
+    "filename": "ue_case_158.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": " 1 ",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 SST 設為帶有空格的字串；若系統未對輸入進行修剪 (trim)，此格式將被視為無效字串而非數字，導致 UE 接入失敗。",
+    "explanation_en": "Setting SST to a string with whitespace; if the system does not trim the input, this format will be treated as an invalid string instead of a number, causing UE access to fail."
+  },
+  {
+    "filename": "ue_case_159.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "0xFF",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 SST 設為十六進位字串；除非解析器明確支援，否則此格式將被視為無效，無法正確映射到 S-Plane 配置所需的整數值。",
+    "explanation_en": "Setting SST to a hexadecimal string; unless the parser explicitly supports it, this format will be considered invalid and cannot be correctly mapped to the integer value required for S-Plane configuration."
+  },
+  {
+    "filename": "ue_case_160.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 0,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 0；根據 3GPP TS 23.501，SST 值 0 未分配特定服務，通常被核心網視為無效枚舉而拒絕。",
+    "explanation_en": "Setting SST to 0; according to 3GPP TS 23.501, SST value 0 is not assigned to a specific service and is typically rejected by the core network as an invalid enum."
+  },
+  {
+    "filename": "ue_case_161.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 255,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 255；此值位於運營商自定義範圍的邊界，若未在核心網中明確配置，將被視為一個無效或未知的切片類型。",
+    "explanation_en": "Setting SST to 255; this value is at the boundary of the operator-specific range and will be considered an invalid or unknown slice type if not explicitly configured in the core network."
+  },
+  {
+    "filename": "ue_case_162.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 128,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 128；此為運營商自定義範圍的起始值，若無對應的網路配置，UE 的接入請求將因請求未授權的切片服務而被拒絕。",
+    "explanation_en": "Setting SST to 128; this is the start of the operator-specific range, and without a corresponding network configuration, the UE's access request will be denied for requesting an unauthorized slice service."
+  },
+  {
+    "filename": "ue_case_163.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 2,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求 URLLC (SST=2) 切片；若核心網僅配置了 eMBB (SST=1) 服務，則此請求與網路能力存在邏輯矛盾，導致切片選擇失敗。",
+    "explanation_en": "Requesting a URLLC (SST=2) slice; if the core network is only configured for eMBB (SST=1) services, this request presents a logical contradiction with the network's capabilities, leading to slice selection failure."
+  },
+  {
+    "filename": "ue_case_164.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 3,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求 MIoT (SST=3) 切片；在一個未部署物聯網服務的核心網上，此請求構成邏輯矛盾，將在 UE 接入控制流程中被拒絕。",
+    "explanation_en": "Requesting an MIoT (SST=3) slice; on a core network where IoT services are not deployed, this request constitutes a logical contradiction and will be rejected during the UE access control procedure."
+  },
+  {
+    "filename": "ue_case_165.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "01",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 SST 設為帶有前導零的字串；部分解析器可能無法正確處理這種格式，將其視為無效八進位或普通字串，從而導致配置失敗。",
+    "explanation_en": "Setting SST to a string with a leading zero; some parsers may not handle this format correctly, treating it as an invalid octal or a plain string, thus causing a configuration failure."
+  },
+  {
+    "filename": "ue_case_166.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": {},
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為一個空的 JSON 物件；此型別完全錯誤，將在配置文件的驗證階段立即導致 S-Plane 解析器失敗。",
+    "explanation_en": "Setting SST to an empty JSON object; this type is completely incorrect and will cause the S-Plane parser to fail immediately during the configuration file validation phase."
+  },
+  {
+    "filename": "ue_case_167.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": [],
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SST 設為一個空的 JSON 陣列；此錯誤型別會違反配置的 schema，導致 UE 無法載入正確的切片參數。",
+    "explanation_en": "Setting SST to an empty JSON array; this incorrect type violates the configuration schema, preventing the UE from loading the correct slice parameters."
+  },
+  {
+    "filename": "ue_case_168.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 5,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "請求 V2X (SST=5) 切片；若當前網路環境未部署 V2X 基礎設施，則 UE 請求一個不支援的服務，構成邏輯矛盾。",
+    "explanation_en": "Requesting a V2X (SST=5) slice; if the current network environment has no V2X infrastructure deployed, the UE is requesting an unsupported service, which constitutes a logical contradiction."
+  },
+  {
+    "filename": "ue_case_169.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 100,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 100；此值位於標準化範圍內但非常用，若核心網 AMF 未配置此切片，將導致註冊被拒絕。",
+    "explanation_en": "Setting SST to 100; this value is within the standardized range but not commonly used. If the core network's AMF is not configured for this slice, it will lead to registration rejection."
+  },
+  {
+    "filename": "ue_case_170.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 200,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 200；此值位於運營商自定義範圍，在一個通用測試環境中，極不可能被配置，因此會被視為無效枚舉。",
+    "explanation_en": "Setting SST to 200; this value falls within the operator-specific range and is highly unlikely to be configured in a generic test environment, thus being treated as an invalid enum."
+  },
+  {
+    "filename": "ue_case_171.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 300,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SST 設為 300；此值顯著大於 8 位元整數的最大值 255，會立即在 UE 接入控制時被識別為範圍溢位錯誤。",
+    "explanation_en": "Setting SST to 300; this value is significantly larger than the 8-bit integer maximum of 255 and will be immediately identified as an out-of-range error during UE access control."
+  },
+  {
+    "filename": "ue_case_172.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 42,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 42；這是一個在標準化範圍內但未明確分配用途的值，核心網會因無法識別此服務類型而拒絕 S-Plane 配置。",
+    "explanation_en": "Setting SST to 42; this is a value within the standardized range but without a specifically assigned purpose. The core network will reject the S-Plane configuration due to being unable to recognize this service type."
+  },
+  {
+    "filename": "ue_case_173.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": 127,
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 SST 設為 127；此為標準化範圍的邊界值，通常未被使用，若網路不支持將導致切片選擇失敗。",
+    "explanation_en": "Setting SST to 127; this is a boundary value for the standardized range that is generally unused and will cause slice selection failure if not supported by the network."
+  },
+  {
+    "filename": "ue_case_174.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "NaN",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 SST 設為字串 'NaN' (Not a Number)；這是一個無效的數字格式，會在 S-Plane 參數解析時觸發錯誤。",
+    "explanation_en": "Setting SST to the string 'NaN' (Not a Number); this is an invalid numeric format that will trigger an error during S-Plane parameter parsing."
+  },
+  {
+    "filename": "ue_case_175.json",
+    "modified_key": "nssai_sst",
+    "original_value": 1,
+    "error_value": "2.0e0",
+    "error_type": "invalid_format",
+    "explanation_zh": "將 SST 設為科學記數法字串；UE 配置解析器通常不支援此格式，會將其視為無效字串而非整數 2，導致接入失敗。",
+    "explanation_en": "Setting SST to a scientific notation string; the UE configuration parser typically does not support this format and will treat it as an invalid string rather than the integer 2, leading to access failure."
+  }
+]
