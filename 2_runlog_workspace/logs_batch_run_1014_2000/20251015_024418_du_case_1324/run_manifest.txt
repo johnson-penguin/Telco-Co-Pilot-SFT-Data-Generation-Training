@@ -1,0 +1,6 @@
+CASE_NAME=du_case_1324
+CU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/cu_gnb.conf
+DU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/error_conf_du_1014_2000/du_case_1324.conf
+UE_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/ue_oai.conf
+START_TIME=2025-10-15T02:44:56+08:00
+DURATION=30s

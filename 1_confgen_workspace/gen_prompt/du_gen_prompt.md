@@ -20,15 +20,30 @@ You are a 5G gNodeB configuration fuzz-test expert. Given a valid JSON configura
 c
 Example delta output
 [
+ {
+    "filename": "du_case_001.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "198.19.93.191"
+  },
   {
-    "filename": "case_01.json",
-    "modified_key": "security.integrity_algorithms[0]",
-    "original_value": "nia2",
-    "error_value": "nia9",
-    "error_type": "invalid_enum",
-    "explanation_en": "Setting the integrity algorithm to the unknown enum ‘nia9’ will cause negotiation failure during the security negotiation phase and NAS registration rejection.",
-    "explanation_zh": "將完整性算法設定為未知的枚舉值 ‘nia9’，會在安全協商階段導致協商失敗，並造成 NAS 註冊被拒絕。"
-  }
+    "filename": "du_case_002.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "198.18.53.26"
+  },
+  .
+  .
+  .
+  .
+  .
+  .
+    {
+    "filename": "du_case_n.json",
+    "modified_key": "MACRLCs[0].remote_n_address",
+    "original_value": "127.0.0.5",
+    "error_value": "198.18.53.26"
+  },
 ]
 
 
