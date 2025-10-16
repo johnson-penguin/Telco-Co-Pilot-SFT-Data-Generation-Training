@@ -313,10 +313,10 @@ def save_case(output_dir: Path, case_type: str, case_num: int, case_data: dict) 
     print(f"  -> Saved to {output_file}")
 
 def main():
-    conf_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/1_conf/du_conf_1014_800")
-    runlog_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/2_runlog_workspace/logs_batch_run_du_1014_800")
-    output_dir = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/3_defined_input_format/new_defind_format_1014_800_case")
-    du_config_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/2_json/du_conf_1014_800_json")
+    conf_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/1_conf/du_conf_1014_2_1000")
+    runlog_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/2_runlog_workspace/logs_batch_run_1014_2000")
+    output_dir = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/3_defined_input_format/new_defind_format_1014_2_1000_case")
+    du_config_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/2_json/du_conf_1014_2_1000_json")
 
     # Store paths in a dictionary for easy iteration
     paths = {
