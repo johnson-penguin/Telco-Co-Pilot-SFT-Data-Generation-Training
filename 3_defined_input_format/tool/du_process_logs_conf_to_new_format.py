@@ -86,10 +86,10 @@ def save_du_case(output_dir: Path, case_num: int, case_data: dict) -> None:
 def main():
     """Main function: merge DU runlogs and configs."""
     # --- 請根據您的 DU 專案路徑修改以下路徑 ---
-    conf_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/1_conf/du_conf_1002_600")
-    runlog_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/2_runlog_workspace/logs_batch_run_du_1002_600")
-    output_dir = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/3_defined_input_format/new_defind_format_1002_600_case")
-    du_config_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/2_json/du_conf_1002_600_json")
+    conf_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/1_conf/du_conf_1009_200")
+    runlog_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/2_runlog_workspace/logs_batch_run_du_1009_200")
+    output_dir = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/3_defined_input_format/new_defind_format_du_1009_200_case")
+    du_config_root = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/1_confgen_workspace/2_json/du_conf_1009_200_json")
 
     # Baseline JSONs for CU and UE filling
     baseline_dir = Path(r"C:/Users/bmwlab/Desktop/cursor_gen_conf/0_required_inputs/baseline_conf_json")

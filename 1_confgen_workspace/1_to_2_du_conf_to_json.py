@@ -430,8 +430,8 @@ def convert_file(input_path: str, output_path: str) -> None:
 
 def main() -> None:
     # Hardcoded defaults (absolute paths requested by user)
-    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\du_conf_1014_2_1000\conf"
-    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\du_conf_1014_2_1000_json"
+    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\du_conf_1009_200\conf"
+    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\du_conf_1009_200_json"
 
     parser = argparse.ArgumentParser(description="Convert DU .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)
