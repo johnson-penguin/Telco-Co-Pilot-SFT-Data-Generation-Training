@@ -1,0 +1,6 @@
+UE RNTI e20d CU-UE-ID 1 out-of-sync PH 48 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE e20d: dlsch_rounds 7/6/5/5, dlsch_errors 5, pucch0_DTX 22, BLER 0.24100 MCS (0) 0
+UE e20d: ulsch_rounds 6/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.20350 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 51  SNR 57.0 dB
+UE e20d: MAC:    TX            186 RX             70 bytes
+UE e20d: LCID 1: TX            108 RX             49 bytes
+

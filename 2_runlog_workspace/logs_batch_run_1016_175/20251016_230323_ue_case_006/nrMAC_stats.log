@@ -1,0 +1,8 @@
+UE RNTI 89bd CU-UE-ID 1 out-of-sync PH 48 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 89bd: dlsch_rounds 9/8/7/7, dlsch_errors 7, pucch0_DTX 30, BLER 0.31690 MCS (0) 0
+UE 89bd: ulsch_rounds 6/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 74  SNR 56.5 dB
+UE 89bd: MAC:    TX            242 RX             74 bytes
+UE 89bd: LCID 1: TX            138 RX             45 bytes
+
+
+

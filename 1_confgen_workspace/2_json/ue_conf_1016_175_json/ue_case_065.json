@@ -1,0 +1,9 @@
+{
+  "uicc0": {
+    "imsi": "001010000000001",
+    "key": "f0e1d2c3b4a5968778695a4b3c2d1e0f",
+    "opc": "C42449363BBAD02B66D16BC975D77CC1",
+    "dnn": "oai",
+    "nssai_sst": 1
+  }
+}

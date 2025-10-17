@@ -1,0 +1,9 @@
+UE RNTI aeea CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (5 meas)
+UE aeea: dlsch_rounds 28/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.02059 MCS (0) 0
+UE aeea: ulsch_rounds 160/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE aeea: MAC:    TX            990 RX           3328 bytes
+UE aeea: LCID 1: TX            522 RX            313 bytes
+UE aeea: LCID 2: TX              0 RX              0 bytes
+UE aeea: LCID 4: TX              9 RX            187 bytes
+
+

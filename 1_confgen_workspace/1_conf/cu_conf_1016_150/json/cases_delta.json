@@ -1,0 +1,1352 @@
+[
+  {
+    "filename": "cu_case_01.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1 接口 IP 位址設定為與遠端 DU 的 IP 位址相同，會導致 F1 接口初始化期間出現位址衝突，從而阻止 CU-DU 連接建立。",
+    "explanation_en": "Setting the local F1 interface IP address to be identical to the remote DU's IP address will cause an address conflict during F1 interface initialization, preventing CU-DU connection establishment."
+  },
+  {
+    "filename": "cu_case_02.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1-C 控制面端口設定為與 F1-U 用戶面端口相同的值，會導致端口綁定衝突，使 CU 無法同時處理與 DU 的控制信令與用戶數據。",
+    "explanation_en": "Setting the F1-C control plane port to the same value as the F1-U user plane port will cause a port binding conflict, preventing the CU from handling control signaling and user data with the DU simultaneously."
+  },
+  {
+    "filename": "cu_case_03.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "224.0.0.1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 IP 位址設定為多播位址，與 F1AP 協議要求的單播 SCTP 連接不符，將導致與 DU 的 SCTP 關聯建立失敗。",
+    "explanation_en": "Configuring the remote DU's IP address as a multicast address conflicts with the F1AP protocol's requirement for a unicast SCTP connection, leading to SCTP association setup failure with the DU."
+  },
+  {
+    "filename": "cu_case_04.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "du-hostname",
+    "error_type": "invalid_format",
+    "explanation_zh": "使用主機名而非 IP 位址，如果 CU 的配置解析器不支援 DNS 解析，將導致 F1 接口位址綁定失敗，無法監聽來自 DU 的連接。",
+    "explanation_en": "Using a hostname instead of an IP address will cause the F1 interface address binding to fail if the CU's configuration parser does not support DNS resolution, preventing it from listening for connections from the DU."
+  },
+  {
+    "filename": "cu_case_05.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "2001:db8::1",
+    "error_type": "invalid_format",
+    "explanation_zh": "在預期為 DU 的 IPv4 位址欄位中設定一個 IPv6 位址，會導致位址族不匹配，從而使 F1 接口的 SCTP 連接建立失敗。",
+    "explanation_en": "Setting an IPv6 address in a field expecting the DU's IPv4 address will cause an address family mismatch, leading to a failure in establishing the SCTP connection for the F1 interface."
+  },
+  {
+    "filename": "cu_case_06.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": "nonexistent_if",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口綁定到一個在 CU 主機上不存在的網路接口名稱，將導致系統在初始化網路堆疊時找不到對應設備而失敗。",
+    "explanation_en": "Binding the F1 interface to a network interface name that does not exist on the CU host will cause the system to fail when initializing the network stack, as the device cannot be found."
+  },
+  {
+    "filename": "cu_case_07.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 65536,
+    "error_type": "out_of_range",
+    "explanation_zh": "將本地 F1-C 端口設定為大於 65535 的值，超出了有效的 TCP/UDP 端口範圍，將導致 CU 在綁定 F1 接口端口時出現系統錯誤。",
+    "explanation_en": "Setting the local F1-C port to a value greater than 65535 exceeds the valid TCP/UDP port range and will cause a system error on the CU when binding the F1 interface port."
+  },
+  {
+    "filename": "cu_case_08.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少本地 F1 接口 IP 位址配置，將導致 CU 無法建立監聽套接字，從而無法接收來自 DU 的任何連接請求。",
+    "explanation_en": "Missing the local F1 interface IP address configuration will prevent the CU from creating a listening socket, thus failing to accept any incoming connection requests from the DU."
+  },
+  {
+    "filename": "cu_case_09.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-C 端口設定為與 DU 的 F1-C 端口相同，這在存在網路地址轉換(NAT)時可能導致數據包路由混亂，造成連接不穩定。",
+    "explanation_en": "Setting the CU's F1-C port to be the same as the DU's F1-C port can cause packet routing confusion in the presence of Network Address Translation (NAT), leading to an unstable connection."
+  },
+  {
+    "filename": "cu_case_10.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 IP 位址錯誤地設定為 gNB 自身的 N-Plane (NGAP/NGU) IP 位址，將導致 F1 流量被發送到錯誤的網路接口，造成連接超時。",
+    "explanation_en": "Incorrectly setting the remote DU's F1 IP address to the gNB's own N-Plane (NGAP/NGU) IP address will cause F1 traffic to be sent to the wrong network interface, resulting in a connection timeout."
+  },
+  {
+    "filename": "cu_case_11.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": ["2152"],
+    "error_type": "wrong_type",
+    "explanation_zh": "將遠端 DU 的 F1-U 端口從整數改為陣列，將導致 CU 的配置解析器在讀取端口值時失敗，阻止與 DU 的 F1-U 隧道建立。",
+    "explanation_en": "Changing the remote DU's F1-U port from an integer to an array will cause the CU's configuration parser to fail when reading the port value, preventing F1-U tunnel setup with the DU."
+  },
+  {
+    "filename": "cu_case_12.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少本地 F1-U 端口配置，將導致 CU 無法為來自 DU 的用戶數據建立 GTP 隧道，造成數據面完全中斷。",
+    "explanation_en": "Missing the local F1-U port configuration will prevent the CU from establishing GTP tunnels for user data from the DU, causing a complete data plane outage."
+  },
+  {
+    "filename": "cu_case_13.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少遠端 DU 的 F1-C 端口，CU 將無法得知目標端口，從而無法發起 SCTP 連接，導致 F1 控制面無法建立。",
+    "explanation_en": "Without the remote DU's F1-C port, the CU will not know the destination port and cannot initiate an SCTP connection, leading to a failure in F1 control plane establishment."
+  },
+  {
+    "filename": "cu_case_14.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "240.0.0.1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1 接口 IP 設定為 E 類保留位址，此類位址不用於通用網路通信，會導致 CU 無法綁定該地址，使 DU 連接失敗。",
+    "explanation_en": "Setting the local F1 interface IP to a Class E reserved address, which is not for general use, will prevent the CU from binding to that address, causing DU connection attempts to fail."
+  },
+  {
+    "filename": "cu_case_15.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": true,
+    "error_type": "wrong_type",
+    "explanation_zh": "將遠端 DU 的 F1-C 端口從整數改為布林值，將在 CU 嘗試連接 DU 時因參數類型錯誤而導致 SCTP 連接建立失敗。",
+    "explanation_en": "Changing the remote DU's F1-C port from an integer to a boolean will cause SCTP connection establishment to fail due to a parameter type error when the CU attempts to connect to the DU."
+  },
+  {
+    "filename": "cu_case_16.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 指向 DU 的 F1-C（控制面）目標端口錯誤地設定為 DU 的 F1-U（用戶面）端口，將導致 F1AP 信令發送到錯誤的端點，連接失敗。",
+    "explanation_en": "Incorrectly setting the CU's F1-C (control plane) destination port to the DU's F1-U (user plane) port will cause F1AP signaling to be sent to the wrong endpoint, resulting in connection failure."
+  },
+  {
+    "filename": "cu_case_17.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 20,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "設定一個遠超常規需求的 SCTP 輸出流數量，如果該值與 DU 的輸入流配置不匹配，將可能導致 SCTP 關聯協商失敗。",
+    "explanation_en": "Configuring an unusually high number of SCTP out-streams may lead to an SCTP association negotiation failure if this value does not match the DU's in-stream configuration."
+  },
+  {
+    "filename": "cu_case_18.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 接口位址設定為 CU 自身的 F1 接口位址，會導致 CU 嘗試與自己建立 F1 連接，造成自迴圈錯誤與連接超時。",
+    "explanation_en": "Setting the remote DU's F1 interface address to the CU's own F1 interface address will cause the CU to attempt to establish an F1 connection with itself, resulting in a loopback error and connection timeout."
+  },
+  {
+    "filename": "cu_case_19.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少遠端 DU 的 F1 IP 位址是致命錯誤，CU 將不知道向何處發起連接請求，導致 F1 接口完全無法工作。",
+    "explanation_en": "Missing the remote DU's F1 IP address is a fatal error, as the CU will not know where to send the connection request, rendering the F1 interface completely non-functional."
+  },
+  {
+    "filename": "cu_case_20.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "udp",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將傳輸偏好設定為 'udp'，但 F1AP 標準要求使用 SCTP。這種不匹配將導致 CU 嘗試使用錯誤的傳輸層協議與 DU 通信。",
+    "explanation_en": "Setting the transport preference to 'udp' is a mismatch, as the F1AP standard requires SCTP. This will cause the CU to attempt communication with the DU using the wrong transport layer protocol."
+  },
+  {
+    "filename": "cu_case_21.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將遠端 DU 的 F1-U 端口設定為負值，會在 CU 的配置驗證階段就因數值無效而被拒絕，從而無法啟動 F1 接口。",
+    "explanation_en": "Setting the remote DU's F1-U port to a negative value will be rejected during the CU's configuration validation phase due to the invalid value, preventing the F1 interface from starting."
+  },
+  {
+    "filename": "cu_case_22.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1 接口 IP 位址錯誤地設定為 AMF 的 IP 位址，可能導致 F1 接口與 NGAP 接口產生嚴重的路由衝突與功能異常。",
+    "explanation_en": "Incorrectly setting the CU's F1 interface IP address to the AMF's IP address can cause severe routing conflicts and malfunctions between the F1 and NGAP interfaces."
+  },
+  {
+    "filename": "cu_case_23.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "",
+    "error_type": "invalid_format",
+    "explanation_zh": "將遠端 DU 的 F1 地址設定為空字串，會導致地址解析失敗，CU 無法確定 DU 的位置，連接無法建立。",
+    "explanation_en": "Setting the remote DU's F1 address to an empty string will cause address resolution to fail, preventing the CU from locating the DU and establishing a connection."
+  },
+  {
+    "filename": "cu_case_24.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 SCTP 輸入流數量設定為 0；這違反了 SCTP 協議要求（至少為 1），會在與 DU 建立 SCTP 連接階段導致協議錯誤與 F1AP 連接失敗。",
+    "explanation_en": "Setting gNBs.SCTP.SCTP_INSTREAMS to 0 violates protocol requirements (minimum of 1) and causes a protocol error during SCTP association with the DU, leading to F1AP connection failure."
+  },
+  {
+    "filename": "cu_case_25.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 SCTP 輸出流數量設定為 0；這違反了 SCTP 協議要求（至少為 1），會在與 DU 建立 SCTP 連接階段導致協議錯誤與 F1AP 連接失敗。",
+    "explanation_en": "Setting gNBs.SCTP.SCTP_OUTSTREAMS to 0 violates protocol requirements (minimum of 1) and causes a protocol error during SCTP association with the DU, leading to F1AP connection failure."
+  },
+  {
+    "filename": "cu_case_26.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "0.0.0.0",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口綁定到 '0.0.0.0'，如果 DU 的網路安全策略要求 CU 從一個特定的源 IP 發起連接，則會導致連接被拒絕。",
+    "explanation_en": "Binding the F1 interface to '0.0.0.0' may cause the connection to be rejected if the DU's network security policy requires the CU to connect from a specific source IP address."
+  },
+  {
+    "filename": "cu_case_27.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.1",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的地址指向 CU 的本地回環地址 '127.0.0.1'，會導致 CU 嘗試向自己發起 F1 連接，造成連接失敗。",
+    "explanation_en": "Pointing the remote DU address to the CU's own loopback address '127.0.0.1' will cause the CU to attempt an F1 connection to itself, resulting in failure."
+  },
+  {
+    "filename": "cu_case_28.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 65535,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SCTP 輸入流配置為最大值，如果 DU 的輸出流容量小於此值，可能導致 SCTP 關聯協商失敗或資源分配問題。",
+    "explanation_en": "Configuring the maximum number of SCTP in-streams can cause SCTP association negotiation to fail or lead to resource allocation issues if the DU's out-stream capacity is lower."
+  },
+  {
+    "filename": "cu_case_29.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 1,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 SCTP 輸出流設為 1，可能低於協議棧對 F1AP 消息分類的最低要求，導致發往 DU 的信令擁塞或性能下降。",
+    "explanation_en": "Setting the SCTP out-streams to 1 may be below the stack's minimum requirement for F1AP message classification, causing signaling congestion or performance degradation towards the DU."
+  },
+  {
+    "filename": "cu_case_30.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": "lo:1",
+    "error_type": "invalid_format",
+    "explanation_zh": "使用某些系統不支援的接口別名格式 'lo:1'，可能導致 CU 無法正確識別並綁定 F1 接口。",
+    "explanation_en": "Using an interface alias format 'lo:1', which may not be supported by some systems, can prevent the CU from correctly identifying and binding the F1 interface."
+  },
+  {
+    "filename": "cu_case_31.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.3/32",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 F1 遠端地址中使用 CIDR 符號，如果 CU 的解析器不支援此格式，將導致地址解析失敗，無法連接 DU。",
+    "explanation_en": "Using CIDR notation in the F1 remote address will cause address parsing to fail if the CU's parser does not support this format, preventing a connection to the DU."
+  },
+  {
+    "filename": "cu_case_32.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": "501",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1-C 端口從整數類型改為字串，會導致網路堆疊進行端口綁定時發生類型錯誤，造成 F1 接口初始化失敗。",
+    "explanation_en": "Changing the F1-C port from an integer to a string type will cause a type error when the network stack attempts to bind the port, resulting in F1 interface initialization failure."
+  },
+  {
+    "filename": "cu_case_33.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 DU 的遠端 F1-U 端口，CU 將無法建立與 DU 的用戶面 GTP 隧道，導致數據無法轉發。",
+    "explanation_en": "Missing the DU's remote F1-U port will prevent the CU from establishing the user plane GTP tunnel to the DU, causing data forwarding to fail."
+  },
+  {
+    "filename": "cu_case_34.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "s1",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 CU-DU 接口的傳輸偏好錯誤地設定為 's1' (NGAP 接口類型)，會導致 CU 使用錯誤的協議棧初始化 F1 接口。",
+    "explanation_en": "Incorrectly setting the transport preference for the CU-DU interface to 's1' (an NGAP interface type) will cause the CU to initialize the F1 interface with the wrong protocol stack."
+  },
+  {
+    "filename": "cu_case_35.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.3 ",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DU 的 IP 地址末尾添加一個尾隨空格，如果解析器未對輸入進行修剪，將導致地址解析失敗。",
+    "explanation_en": "Adding a trailing space to the DU's IP address will cause address parsing to fail if the parser does not trim the input."
+  },
+  {
+    "filename": "cu_case_36.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 2152.0,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1-U 端口值從整數改為浮點數，即使數值相同，類型不匹配也可能導致配置驗證或套接字 API 調用失敗。",
+    "explanation_en": "Changing the F1-U port value from an integer to a float, even if numerically equivalent, can cause configuration validation or socket API call failures due to type mismatch."
+  },
+  {
+    "filename": "cu_case_37.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": -10,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SCTP 輸出流設為負值，違反了 SCTP 參數的有效範圍，將在配置驗證階段被拒絕。",
+    "explanation_en": "Setting the SCTP out-streams to a negative value violates the valid range for SCTP parameters and will be rejected at the configuration validation stage."
+  },
+  {
+    "filename": "cu_case_38.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": "",
+    "error_type": "missing_value",
+    "explanation_zh": "將 F1 接口名稱設置為空字串，等同於缺少配置，CU 將不知道在哪個物理或虛擬接口上監聽 DU 的連接。",
+    "explanation_en": "Setting the F1 interface name to an empty string is equivalent to a missing configuration, leaving the CU unaware of which physical or virtual interface to listen on for the DU's connection."
+  },
+  {
+    "filename": "cu_case_39.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 DU 的 F1-C 端口設為 0，通常是系統保留或無效端口，會導致 CU 向 DU 發起 SCTP 連接時失敗。",
+    "explanation_en": "Setting the DU's F1-C port to 0, which is typically a system-reserved or invalid port, will cause the CU's attempt to initiate an SCTP connection to the DU to fail."
+  },
+  {
+    "filename": "cu_case_40.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "１２７.０.０.５",
+    "error_type": "invalid_format",
+    "explanation_zh": "使用全形字符輸入 F1 接口 IP 地址，會導致標準 ASCII 解析器無法識別，造成地址解析失敗。",
+    "explanation_en": "Using full-width characters for the F1 interface IP address will make it unrecognizable to standard ASCII parsers, causing address resolution to fail."
+  },
+  {
+    "filename": "cu_case_41.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.3",
+    "error_type": "invalid_format",
+    "explanation_zh": "提供一個缺少一個八位位組的不完整 IP 地址給 DU，會導致 F1 連接建立時地址格式驗證失敗。",
+    "explanation_en": "Providing an incomplete IP address missing an octet for the DU will cause address format validation to fail during F1 connection setup."
+  },
+  {
+    "filename": "cu_case_42.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 22,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1-U 端口設定為熟知的 SSH 端口 22，可能因為權限不足或端口已被系統其他服務佔用而導致綁定失敗。",
+    "explanation_en": "Assigning the F1-U port to the well-known SSH port 22 may lead to a binding failure due to insufficient privileges or the port already being in use by another system service."
+  },
+  {
+    "filename": "cu_case_43.json",
+    "modified_key": "gNBs.SCTP",
+    "original_value": { "SCTP_INSTREAMS": 2, "SCTP_OUTSTREAMS": 2 },
+    "error_value": "SCTP_INSTREAMS: 2",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SCTP 配置塊從一個 JSON 對象錯誤地改為一個字串，會導致解析器無法讀取流參數，從而阻止與 DU 的 SCTP 關聯。",
+    "explanation_en": "Incorrectly changing the SCTP configuration block from a JSON object to a string will prevent the parser from reading stream parameters, thus blocking SCTP association with the DU."
+  },
+  {
+    "filename": "cu_case_44.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": {},
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DU 的 F1-U 端口設定為一個空的 JSON 對象而非整數，將在 CU 配置載入階段引發類型錯誤。",
+    "explanation_en": "Setting the DU's F1-U port to an empty JSON object instead of an integer will raise a type error during the CU's configuration loading phase."
+  },
+  {
+    "filename": "cu_case_45.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 F1 接口的本地接口名稱，CU 將無法確定在哪個網絡接口上監聽 DU 的連接請求。",
+    "explanation_en": "Missing the local interface name for the F1 link prevents the CU from determining on which network interface to listen for the DU's connection request."
+  },
+  {
+    "filename": "cu_case_46.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": 1,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1 傳輸偏好從字串 'f1' 改為數字 1，會導致枚舉值驗證失敗，因為系統預期的是一個特定的字串。",
+    "explanation_en": "Changing the F1 transport preference from the string 'f1' to the number 1 will cause enumeration value validation to fail, as a specific string is expected."
+  },
+  {
+    "filename": "cu_case_47.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-C 端口（501）與本地 F1-U 端口（2152）的值互換，會導致控制信令被發往用戶面端口，反之亦然，造成 F1 接口完全失能。",
+    "explanation_en": "Swapping the values of the local F1-C port (to 2152) and the local F1-U port (to 501) would cause control signaling and user data to be sent to the wrong ports, rendering the F1 interface completely dysfunctional."
+  },
+  {
+    "filename": "cu_case_48.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0.0.5/24",
+    "error_type": "invalid_format",
+    "explanation_zh": "為 CU 的 F1 本地地址提供 CIDR 標記，若配置系統預期純 IP 地址，將導致解析失敗。",
+    "explanation_en": "Providing CIDR notation for the CU's local F1 address will cause a parsing failure if the configuration system expects a pure IP address."
+  },
+  {
+    "filename": "cu_case_49.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": -500,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 DU 的 F1-C 端口設為負數，是無效的端口值，將在 CU 嘗試建立連接前被驗證邏輯攔截。",
+    "explanation_en": "Setting the DU's F1-C port to a negative number is an invalid port value and will be caught by validation logic before the CU attempts to establish a connection."
+  },
+  {
+    "filename": "cu_case_50.json",
+    "modified_key": "gNBs.SCTP",
+    "original_value": { "SCTP_INSTREAMS": 2, "SCTP_OUTSTREAMS": 2 },
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "完全移除 SCTP 配置塊，會導致 F1 接口無法獲取流參數，從而無法與 DU 建立 SCTP 關聯。",
+    "explanation_en": "Completely removing the SCTP configuration block will prevent the F1 interface from obtaining stream parameters, thus failing to establish an SCTP association with the DU."
+  },
+  {
+    "filename": "cu_case_51.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "169.254.10.10",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口配置為一個鏈路本地地址(APIPA)，如果 DU 不在同一廣播域內，CU 將無法將數據包路由到 DU。",
+    "explanation_en": "Configuring the F1 interface with a link-local address (APIPA) will prevent the CU from routing packets to the DU if the DU is not in the same broadcast domain."
+  },
+  {
+    "filename": "cu_case_52.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.1.255",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 DU 的 IP 地址設定為子網路的廣播地址，將導致發往 DU 的單播 SCTP 請求被當作廣播處理，無法建立有效的 F1 連接。",
+    "explanation_en": "Setting the DU's IP address to a subnet's broadcast address will cause unicast SCTP requests to be treated as broadcasts, failing to establish a valid F1 connection."
+  },
+  {
+    "filename": "cu_case_53.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 80,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1-C 端口配置為 HTTP 服務的標準端口 80，極易與系統上運行的 Web 服務衝突，導致端口綁定失敗。",
+    "explanation_en": "Configuring the F1-C port to 80, the standard port for HTTP, is highly likely to conflict with a web service running on the system, leading to a port binding failure."
+  },
+  {
+    "filename": "cu_case_54.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": "2152-udp",
+    "error_type": "invalid_format",
+    "explanation_zh": "在端口號中附加非數字字符，會導致端口號解析失敗，CU 無法識別與 DU 建立用戶面隧道的正確端口。",
+    "explanation_en": "Appending non-numeric characters to the port number will cause parsing to fail, preventing the CU from identifying the correct port for the user plane tunnel with the DU."
+  },
+  {
+    "filename": "cu_case_55.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": false,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1 接口 IP 地址從字串類型改為布林值，會在網路接口配置的驗證階段引發致命的類型錯誤。",
+    "explanation_en": "Changing the F1 interface IP address from a string type to a boolean will raise a fatal type error during the validation stage of network interface configuration."
+  },
+  {
+    "filename": "cu_case_56.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": "low",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SCTP 輸入流數量從數字改為字串 'low'，會導致 CU 在設置 SCTP 關聯參數時發生類型不匹配錯誤。",
+    "explanation_en": "Changing the number of SCTP in-streams from a number to the string 'low' will cause a type mismatch error when the CU sets up SCTP association parameters."
+  },
+  {
+    "filename": "cu_case_57.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127,0,0,3",
+    "error_type": "invalid_format",
+    "explanation_zh": "使用逗號而非點作為 IP 地址分隔符，構成無效格式，將導致 CU 的地址解析庫在解析 DU 地址時拋出錯誤。",
+    "explanation_en": "Using commas instead of dots as IP address delimiters constitutes an invalid format and will cause the CU's address resolution library to throw an error when parsing the DU's address."
+  },
+  {
+    "filename": "cu_case_58.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 1023,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 F1-C 端口設定為低於 1024 的特權端口，如果 CU 進程沒有以 root 權限運行，將導致端口綁定因權限不足而失敗。",
+    "explanation_en": "Setting the F1-C port to a privileged port below 1024 will cause a permission denied error on binding if the CU process is not running with root privileges."
+  },
+  {
+    "filename": "cu_case_59.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 99999,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 DU 的 F1-U 端口配置為一個超出有效範圍 (0-65535) 的值，將在 CU 嘗試發起連接前被配置驗證器攔截。",
+    "explanation_en": "Configuring the DU's F1-U port with a value outside the valid range (0-65535) will be caught by the configuration validator on the CU before a connection is attempted."
+  },
+  {
+    "filename": "cu_case_60.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": "eth-very-long-interface-name-that-exceeds-kernel-limits",
+    "error_type": "invalid_format",
+    "explanation_zh": "提供一個超出作業系統內核限制（通常為 16 個字符）的接口名稱，會導致 CU 在綁定 F1 接口時出現系統級錯誤。",
+    "explanation_en": "Providing an interface name that exceeds the operating system kernel's limit (typically 16 characters) will cause a system-level error on the CU during F1 interface binding."
+  },
+  {
+    "filename": "cu_case_61.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-U 用戶面端口設定為與本地 F1-C 控制面端口相同的值，會導致端口衝突，使 CU 無法區分來自 DU 的控制和用戶流量。",
+    "explanation_en": "Setting the local F1-U user plane port to the same value as the local F1-C control plane port will cause a port conflict, making the CU unable to distinguish control and user traffic from the DU."
+  },
+  {
+    "filename": "cu_case_62.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.0.3",
+    "error_type": "invalid_format",
+    "explanation_zh": "為 DU 的 F1 地址提供一個包含五個八位位組的無效 IPv4 格式，將導致地址解析失敗。",
+    "explanation_en": "Providing an invalid IPv4 format with five octets for the DU's F1 address will result in a parsing failure."
+  },
+  {
+    "filename": "cu_case_63.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": " 127.0.0.5 ",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 F1 接口 IP 地址的兩端都添加空格，如果解析器未能正確處理，將導致地址綁定失敗。",
+    "explanation_en": "Adding both leading and trailing spaces to the F1 interface IP address will cause the address binding to fail if the parser does not handle them correctly."
+  },
+  {
+    "filename": "cu_case_64.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": {},
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DU 的 F1-C 端口值從整數替換為一個空的 JSON 對象，將在 CU 處理 F1 接口配置時引發致命的類型錯誤。",
+    "explanation_en": "Replacing the integer value of the DU's F1-C port with an empty JSON object will raise a fatal type error when the CU processes the F1 interface configuration."
+  },
+  {
+    "filename": "cu_case_65.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少本地 F1-C 端口配置，將導致 CU 無法為 F1AP 信令建立 SCTP 監聽端點，使 DU 無法連接。",
+    "explanation_en": "Missing the local F1-C port configuration prevents the CU from creating an SCTP listening endpoint for F1AP signaling, making it impossible for the DU to connect."
+  },
+  {
+    "filename": "cu_case_66.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少 SCTP 輸出流參數，將導致 CU 在與 DU 進行 SCTP 關聯協商時無法提供完整的參數，可能導致協商失敗。",
+    "explanation_en": "Missing the SCTP out-streams parameter will cause the CU to provide incomplete parameters during the SCTP association negotiation with the DU, potentially leading to negotiation failure."
+  },
+  {
+    "filename": "cu_case_67.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "8.8.8.8",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 DU 的 F1 接口地址配置為一個公共 DNS 服務器地址，這幾乎肯定是一個錯誤的目標地址，將導致 F1 連接超時。",
+    "explanation_en": "Configuring the DU's F1 interface address to a public DNS server is almost certainly an incorrect target, which will result in an F1 connection timeout."
+  },
+  {
+    "filename": "cu_case_68.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 65535,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1-C 端口設為臨時端口範圍的上限，雖然有效，但可能與操作系統為其他應用程序分配的臨時端口衝突。",
+    "explanation_en": "Setting the F1-C port to the upper limit of the ephemeral port range, while valid, risks collision with an ephemeral port assigned by the OS to another application."
+  },
+  {
+    "filename": "cu_case_69.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": [2152],
+    "error_type": "wrong_type",
+    "explanation_zh": "將 DU 的 F1-U 端口號包裝在一個數組中，會導致 CU 在解析此值時發生類型錯誤。",
+    "explanation_en": "Wrapping the DU's F1-U port number in an array will cause a type error on the CU when it attempts to parse the value."
+  },
+  {
+    "filename": "cu_case_70.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0 .0.5",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 IP 地址的八位位組之間插入空格，會破壞其標準格式，導致 F1 接口地址解析失敗。",
+    "explanation_en": "Inserting a space between the octets of an IP address breaks its standard format and will cause the F1 interface address parsing to fail."
+  },
+  {
+    "filename": "cu_case_71.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": 1.5,
+    "error_type": "wrong_type",
+    "explanation_zh": "為 SCTP 流數量提供一個浮點數值，這在協議中是無效的，會導致 CU 的 F1 接口配置驗證失敗。",
+    "explanation_en": "Providing a float value for the number of SCTP streams is invalid according to the protocol and will cause the CU's F1 interface configuration to fail validation."
+  },
+  {
+    "filename": "cu_case_72.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 F1 傳輸偏好設為空字串，系統在進行枚舉值匹配時會找不到對應項，導致配置失敗。",
+    "explanation_en": "Setting the F1 transport preference to an empty string will result in a configuration failure, as the system will not find a corresponding match during enumeration."
+  },
+  {
+    "filename": "cu_case_73.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": -2152,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 F1-U 端口設為負值，是無效的配置，將在 CU 啟動 F1 接口前被驗證邏輯所拒絕。",
+    "explanation_en": "Setting the F1-U port to a negative value is an invalid configuration that will be rejected by the validation logic on the CU before the F1 interface is initiated."
+  },
+  {
+    "filename": "cu_case_74.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.256",
+    "error_type": "invalid_format",
+    "explanation_zh": "為 DU 的 F1 地址提供一個包含無效八位位組 (256) 的 IPv4 地址，會被 CU 的網路堆疊拒絕。",
+    "explanation_en": "Providing an IPv4 address with an invalid octet (256) for the DU's F1 address will be rejected by the CU's network stack."
+  },
+  {
+    "filename": "cu_case_75.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": 10,
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1 接口名稱從字串類型改為數字，將導致 CU 在查找網絡設備時因類型不匹配而失敗。",
+    "explanation_en": "Changing the F1 interface name from a string to a number will cause the CU to fail when looking up the network device due to a type mismatch."
+  },
+  {
+    "filename": "cu_case_76.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1-C 端口錯誤地設定為 CU 的 F1-C 端口，這在 CU 和 DU 位於同一主機進行測試時會導致端口衝突。",
+    "explanation_en": "Incorrectly setting the remote DU's F1-C port to the CU's F1-C port will cause a port conflict when testing CU and DU on the same host."
+  },
+  {
+    "filename": "cu_case_77.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-U 端口設定為與遠端 DU 的 F1-C 端口相同，可能導致從 DU 發來的控制信號被 CU 的用戶面錯誤地接收。",
+    "explanation_en": "Setting the local F1-U port to be the same as the remote DU's F1-C port could cause control signals from the DU to be incorrectly received by the CU's user plane."
+  },
+  {
+    "filename": "cu_case_78.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0..3",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DU 的 IP 地址中包含連續的點，構成無效格式，將導致 CU 無法解析 DU 的地址。",
+    "explanation_en": "Including consecutive dots in the DU's IP address constitutes an invalid format and will prevent the CU from parsing the DU's address."
+  },
+  {
+    "filename": "cu_case_79.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SCTP 輸入流數量設定為負值，違反協議參數的非負約束，將導致 F1 接口配置失敗。",
+    "explanation_en": "Setting the number of SCTP in-streams to a negative value violates the non-negative constraint of the protocol parameter, causing the F1 interface configuration to fail."
+  },
+  {
+    "filename": "cu_case_80.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": ["lo"],
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1 接口名稱從一個簡單字串改為包含該字串的數組，會導致 CU 在配置綁定時發生類型不匹配。",
+    "explanation_en": "Changing the F1 interface name from a simple string to an array containing that string will cause a type mismatch during configuration binding on the CU."
+  },
+  {
+    "filename": "cu_case_81.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": "high-port",
+    "error_type": "wrong_type",
+    "explanation_zh": "使用字串 'high-port' 而非數字來定義 DU 的 F1-C 端口，將在 CU 驗證配置文件時導致解析錯誤。",
+    "explanation_en": "Using the string 'high-port' instead of a number for the DU's F1-C port will cause a parsing error when the CU validates the configuration file."
+  },
+  {
+    "filename": "cu_case_82.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": 65536,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 SCTP 輸出流數量配置為超出其 16 位元限制的值，如果未經檢查，可能導致與 DU 協商時的溢出或協議錯誤。",
+    "explanation_en": "Configuring the number of SCTP out-streams to a value exceeding its 16-bit limit can cause an overflow or protocol error during negotiation with the DU if not validated."
+  },
+  {
+    "filename": "cu_case_83.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0.0",
+    "error_type": "invalid_format",
+    "explanation_zh": "提供一個缺少最後一個八位位組的本地 F1 接口 IP 地址，將導致 CU 無法成功綁定套接字。",
+    "explanation_en": "Providing a local F1 interface IP address that is missing the last octet will prevent the CU from successfully binding the socket."
+  },
+  {
+    "filename": "cu_case_84.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": null,
+    "error_type": "missing_value",
+    "explanation_zh": "缺少傳輸偏好配置，可能導致 CU 無法確定為 F1 接口加載哪個協議棧（例如 SCTP），從而無法初始化。",
+    "explanation_en": "Missing the transport preference configuration may prevent the CU from determining which protocol stack (e.g., SCTP) to load for the F1 interface, failing its initialization."
+  },
+  {
+    "filename": "cu_case_85.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": "2152 ",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1-U 端口從整數改為帶有尾隨空格的字串，這種類型不匹配將導致套接字選項設置失敗。",
+    "explanation_en": "Changing the F1-U port from an integer to a string with a trailing space is a type mismatch that will cause socket option settings to fail."
+  },
+  {
+    "filename": "cu_case_86.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "0.0.0.0",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的地址設為 '0.0.0.0' 是無效的目標地址，CU 將無法向其發起任何連接。",
+    "explanation_en": "Setting the remote DU address to '0.0.0.0' is an invalid destination, and the CU will be unable to initiate any connection to it."
+  },
+  {
+    "filename": "cu_case_87.json",
+    "modified_key": "gNBs.SCTP.SCTP_OUTSTREAMS",
+    "original_value": 2,
+    "error_value": "2",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SCTP 輸出流數量的值從數字 2 改為字串 '2'，會導致 CU 在設置 SCTP 協議參數時因類型錯誤而失敗。",
+    "explanation_en": "Changing the value for the number of SCTP out-streams from the number 2 to the string '2' will cause the CU to fail when setting SCTP protocol parameters due to a type error."
+  },
+  {
+    "filename": "cu_case_88.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 指向 DU 的 F1-U 端口錯誤地設定為 CU 自己的 F1-C 端口，這會導致用戶數據被錯誤地發送到 CU 自己的控制面端口。",
+    "explanation_en": "Incorrectly pointing the CU's F1-U destination port to its own F1-C port will cause user data to be mistakenly sent back to the CU's own control plane port."
+  },
+  {
+    "filename": "cu_case_89.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "::1",
+    "error_type": "invalid_format",
+    "explanation_zh": "在預期 IPv4 地址的 F1 接口上配置 IPv6 回環地址，會導致地址族不匹配和綁定失敗。",
+    "explanation_en": "Configuring an IPv6 loopback address on an F1 interface expecting an IPv4 address will lead to an address family mismatch and binding failure."
+  },
+  {
+    "filename": "cu_case_90.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 0,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 F1-C 端口設為 0，這是一個無效的監聽端口，會導致 CU 的 SCTP 端點初始化失敗。",
+    "explanation_en": "Setting the F1-C port to 0, which is an invalid listening port, will cause the CU's SCTP endpoint initialization to fail."
+  },
+  {
+    "filename": "cu_case_91.json",
+    "modified_key": "gNBs.local_s_if_name",
+    "original_value": "lo",
+    "error_value": "eth0\u0000",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 F1 接口名稱中包含一個空字節 (null byte)，可能會被 C/C++ 後端視為字串結束符，導致接口名稱被截斷或引發安全漏洞。",
+    "explanation_en": "Including a null byte in the F1 interface name can be interpreted as a string terminator by C/C++ backends, leading to a truncated interface name or a security vulnerability."
+  },
+  {
+    "filename": "cu_case_92.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 1,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 DU 的 F1-C 端口設定為特權端口 1 (tcpmux)，這幾乎肯定不是 DU F1AP 服務的監聽端口，會導致連接被拒絕。",
+    "explanation_en": "Setting the DU's F1-C port to the privileged port 1 (tcpmux), which is almost certainly not where the DU's F1AP service is listening, will result in a connection refused error."
+  },
+  {
+    "filename": "cu_case_93.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 1,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-U 端口設為 1，可能導致 CU 與 DU 的用戶面隧道建立失敗，因為此端口通常需要特殊權限才能綁定。",
+    "explanation_en": "Setting the local F1-U port to 1 may cause the user plane tunnel establishment between CU and DU to fail, as this port typically requires special privileges to bind."
+  },
+  {
+    "filename": "cu_case_94.json",
+    "modified_key": "gNBs.SCTP.SCTP_INSTREAMS",
+    "original_value": 2,
+    "error_value": " ",
+    "error_type": "wrong_type",
+    "explanation_zh": "將 SCTP 輸入流數量設為一個空格字串，會在解析階段導致類型轉換失敗，阻止 F1 接口的 SCTP 參數配置。",
+    "explanation_en": "Setting the number of SCTP in-streams to a space character string will cause a type conversion failure during parsing, preventing SCTP parameter configuration for the F1 interface."
+  },
+  {
+    "filename": "cu_case_95.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "localhost",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 地址設為 'localhost'，這會解析為 127.0.0.1，導致 CU 嘗試連接自己而非遠端的 DU。",
+    "explanation_en": "Setting the remote DU address to 'localhost', which resolves to 127.0.0.1, will cause the CU to attempt a connection to itself instead of the remote DU."
+  },
+  {
+    "filename": "cu_case_96.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": {},
+    "error_type": "wrong_type",
+    "explanation_zh": "將 F1 接口的本地 IP 地址從字串改為一個空的 JSON 對象，是嚴重的類型錯誤，將導致配置系統崩潰。",
+    "explanation_en": "Changing the F1 interface's local IP address from a string to an empty JSON object is a severe type error that will cause the configuration system to crash."
+  },
+  {
+    "filename": "cu_case_97.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 65536,
+    "error_type": "out_of_range",
+    "explanation_zh": "將 DU 的 F1-U 端口設為超出 TCP/UDP 有效範圍的值，將使 CU 在嘗試連接時因目標端口無效而失敗。",
+    "explanation_en": "Setting the DU's F1-U port to a value outside the valid TCP/UDP range will cause the CU to fail when attempting to connect due to an invalid destination port."
+  },
+  {
+    "filename": "cu_case_98.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0.0.5:501",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 F1 接口的 IP 地址字段中錯誤地包含了端口號，如果解析器不夠健壯，將無法正確分離出 IP 地址部分。",
+    "explanation_en": "Incorrectly including the port number in the F1 interface's IP address field will prevent a non-robust parser from correctly isolating the IP address component."
+  },
+  {
+    "filename": "cu_case_99.json",
+    "modified_key": "gNBs.tr_s_preference",
+    "original_value": "f1",
+    "error_value": "F1",
+    "error_type": "invalid_enum",
+    "explanation_zh": "將 F1 傳輸偏好設為大寫的 'F1'，如果枚舉值匹配是區分大小寫的，將導致找不到匹配項而配置失敗。",
+    "explanation_en": "Setting the F1 transport preference to uppercase 'F1' will lead to a configuration failure if the enum matching is case-sensitive."
+  },
+  {
+    "filename": "cu_case_100.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.3\n",
+    "error_type": "invalid_format",
+    "explanation_zh": "在 DU 的 F1 地址末尾添加換行符，會導致地址解析失敗，從而阻止 CU 與 DU 建立連接。",
+    "explanation_en": "Adding a newline character at the end of the DU's F1 address will cause address parsing to fail, thus preventing the CU from establishing a connection with the DU."
+  },
+  {
+    "filename": "cu_case_101.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 IP 位址錯誤地設定為 AMF 的 IP 位址，將導致 F1AP 信令被發送到核心網，而不是 DU，造成 F1 連接建立失敗。",
+    "explanation_en": "Incorrectly setting the remote DU's F1 IP address to the AMF's IP address will cause F1AP signaling to be sent to the core network instead of the DU, leading to F1 connection setup failure."
+  },
+  {
+    "filename": "cu_case_102.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的 IP 位址錯誤地設定為遠端 DU 的 F1 接口位址，將導致 NGAP 流量被發送到 DU，而不是核心網 AMF，造成 NGAP Setup 失敗。",
+    "explanation_en": "Incorrectly setting the AMF's IP address to the remote DU's F1 interface address will cause NGAP traffic to be sent to the DU instead of the core network AMF, causing NGAP Setup failure."
+  },
+  {
+    "filename": "cu_case_103.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1 接口 IP 位址錯誤地設定為 gNB 自身的 NGU 接口位址，會導致 F1 和 NGU 接口在同一 IP 上產生綁定衝突，造成接口初始化失敗。",
+    "explanation_en": "Incorrectly setting the local F1 interface IP address to the gNB's own NGU interface address will cause a binding conflict between the F1 and NGU interfaces on the same IP, leading to initialization failure."
+  },
+  {
+    "filename": "cu_case_104.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGU 用戶面接口 IP 位址錯誤地設定為本地 F1 接口的位址，會導致用戶數據流量與 F1 控制信令在同一 IP 上混淆，引發路由和處理錯誤。",
+    "explanation_en": "Incorrectly setting the NGU user plane interface IP to the local F1 interface address will cause user data traffic and F1 control signaling to be mixed on the same IP, leading to routing and processing errors."
+  },
+  {
+    "filename": "cu_case_105.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1-C (控制面) 端口錯誤地設定為 F1-U (用戶面) 的端口號，會導致 F1AP 控制信令被發送到 DU 的用戶面處理單元，造成連接被拒絕。",
+    "explanation_en": "Incorrectly setting the remote DU's F1-C (control plane) port to the F1-U (user plane) port number will cause F1AP control signals to be sent to the DU's user plane processing unit, resulting in a connection rejection."
+  },
+  {
+    "filename": "cu_case_106.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1-U (用戶面) 端口錯誤地設定為 F1-C (控制面) 的端口號，會導致 GTP-U 數據包被發送到 DU 的控制面，造成協議解析錯誤。",
+    "explanation_en": "Incorrectly setting the remote DU's F1-U (user plane) port to the F1-C (control plane) port number will cause GTP-U packets to be sent to the DU's control plane, leading to protocol parsing errors."
+  },
+  {
+    "filename": "cu_case_107.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-C (控制面) 端口錯誤地設定為 NGU (用戶面) 的端口號，會導致 CU 在同一端口上混淆監聽 F1AP 信令和 GTP-U 數據，造成端口綁定衝突。",
+    "explanation_en": "Incorrectly setting the local F1-C (control plane) port to the NGU (user plane) port number will cause the CU to confuse listening for F1AP signaling and GTP-U data on the same port, resulting in a port binding conflict."
+  },
+  {
+    "filename": "cu_case_108.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGU 用戶面端口錯誤地設定為本地 F1-C 控制面的端口號，會導致 gNB 嘗試在已用於 F1 信令的端口上建立用戶面隧道，造成綁定失敗。",
+    "explanation_en": "Incorrectly setting the NGU user plane port to the local F1-C control plane port number will cause the gNB to attempt user plane tunneling on a port already used for F1 signaling, resulting in a binding failure."
+  },
+  {
+    "filename": "cu_case_109.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 IP 位址錯誤地設定為 gNB 自身的 NGAP 接口位址，將導致發往 DU 的 F1 流量被錯誤地路由到自己的 NGAP 接口，造成連接超時。",
+    "explanation_en": "Incorrectly setting the remote DU's F1 IP address to the gNB's own NGAP interface address will cause F1 traffic intended for the DU to be misrouted to its own NGAP interface, resulting in a connection timeout."
+  },
+  {
+    "filename": "cu_case_110.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 gNB 用於 NGAP 的 IP 位址錯誤地設定為遠端 DU 的位址，會導致 gNB 嘗試從 DU 的 IP 發起 NGAP 連接，這通常是不可能的，除非有特殊的路由配置。",
+    "explanation_en": "Incorrectly setting the gNB's IP address for NGAP to the remote DU's address will cause the gNB to source its NGAP connection from the DU's IP, which is typically impossible without special routing configurations."
+  },
+  {
+    "filename": "cu_case_111.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 本地 F1 接口的監聽 IP 設定為遠端 AMF 的 IP 位址，這在邏輯上是矛盾的，將導致 CU 無法在任何本地接口上成功綁定該地址。",
+    "explanation_en": "Setting the CU's local F1 listening IP to the remote AMF's IP address is a logical contradiction and will cause the CU to fail to bind that address on any local interface."
+  },
+  {
+    "filename": "cu_case_112.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的 IP 位址錯誤地設定為 CU 本地的 F1 接口位址，會導致 NGAP 流量被發送到 CU 自身的一個內部接口，而不是核心網。",
+    "explanation_en": "Incorrectly setting the AMF's IP address to the CU's local F1 interface address will cause NGAP traffic to be sent to one of the CU's own internal interfaces instead of the core network."
+  },
+  {
+    "filename": "cu_case_113.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將本地 F1-U (用戶面) 端口錯誤地設定為 F1-C (控制面) 的端口號，會導致用戶面 GTP 隧道和控制面 SCTP 在同一端口上發生衝突。",
+    "explanation_en": "Incorrectly setting the local F1-U (user plane) port to the F1-C (control plane) port number will cause a conflict between the user plane GTP tunnel and the control plane SCTP on the same port."
+  },
+  {
+    "filename": "cu_case_114.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU F1-C 端口錯誤地設定為 CU 的 F1-C 端口號，這可能導致在 NAT 環境下或本地測試中出現非預期的路由或端口衝突問題。",
+    "explanation_en": "Incorrectly setting the remote DU F1-C port to the CU's F1-C port number can cause unexpected routing or port conflict issues in NAT environments or local testing."
+  },
+  {
+    "filename": "cu_case_115.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 IP 位址設定為 CU 自身的本地 F1 IP 位址，會導致 CU 嘗試與自己建立 F1 連接，造成自循環連接失敗。",
+    "explanation_en": "Setting the remote DU's F1 IP address to the CU's own local F1 IP address will cause the CU to attempt to establish a connection with itself, leading to a loopback connection failure."
+  },
+  {
+    "filename": "cu_case_116.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 gNB 用於 NGAP 的源 IP 位址設定為 AMF 的 IP 位址，這是一個嚴重的邏輯錯誤，將導致 gNB 無法在任何合法接口上綁定該地址以發起 NGAP 連接。",
+    "explanation_en": "Setting the gNB's source IP address for NGAP to the AMF's IP address is a critical logical error that will prevent the gNB from binding to a legitimate interface to initiate the NGAP connection."
+  },
+  {
+    "filename": "cu_case_117.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1-U 端口錯誤地設定為 CU 的 F1-C 端口，將導致 CU 發送的 GTP-U 數據包被錯誤地路由回自己的控制面端口。",
+    "explanation_en": "Incorrectly setting the remote DU's F1-U port to the CU's own F1-C port will cause GTP-U packets sent from the CU to be misrouted back to its own control plane port."
+  },
+  {
+    "filename": "cu_case_118.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的 IP 位址錯誤地設定為 gNB 自身的 NGAP/NGU 接口位址，會導致 gNB 嘗試與自己建立 NGAP 連接，造成自循環失敗。",
+    "explanation_en": "Incorrectly setting the AMF's IP address to the gNB's own NGAP/NGU interface address will cause the gNB to attempt to establish an NGAP connection with itself, leading to a loopback failure."
+  },
+  {
+    "filename": "cu_case_119.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-C 端口設定為與 DU 的 F1-C 端口相同，這在 CU 和 DU 位於同一主機的測試場景中將直接導致端口綁定失敗。",
+    "explanation_en": "Setting the CU's F1-C port to be the same as the DU's F1-C port will directly cause a port binding failure in test scenarios where the CU and DU are on the same host."
+  },
+  {
+    "filename": "cu_case_120.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGU 端口設定為遠端 DU 的 F1-C 端口號，如果此端口已被其他服務使用，或與 F1 接口的本地端口衝突，將導致綁定錯誤。",
+    "explanation_en": "Setting the NGU port to the remote DU's F1-C port number can lead to a binding error if this port is already in use or conflicts with the F1 interface's local port."
+  },
+  {
+    "filename": "cu_case_121.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將遠端 DU 的 F1 IP 位址錯誤地設定為 gNB 自身的 NGU 接口位址，將導致 F1AP 信令被錯誤地發送到用戶面接口，造成協議處理失敗。",
+    "explanation_en": "Incorrectly setting the remote DU's F1 IP address to the gNB's own NGU interface address will cause F1AP signaling to be mistakenly sent to the user plane interface, leading to protocol handling failure."
+  },
+  {
+    "filename": "cu_case_122.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 本地 F1 接口的 IP 位址設定為遠端 DU 的 IP 位址，這是一個嚴重的配置錯誤，將使 CU 無法在本地綁定一個不屬於它的 IP 地址。",
+    "explanation_en": "Setting the CU's local F1 interface IP to the remote DU's IP address is a critical configuration error that will prevent the CU from binding to an IP address it does not own locally."
+  },
+  {
+    "filename": "cu_case_123.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的 IP 位址指向 DU，會導致 NGAP 協議消息被發送到一個只期望接收 F1AP 協議的設備，造成協議不匹配和連接拒絕。",
+    "explanation_en": "Pointing the AMF's IP address to the DU will cause NGAP protocol messages to be sent to a device that only expects the F1AP protocol, resulting in a protocol mismatch and connection rejection."
+  },
+  {
+    "filename": "cu_case_124.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 gNB 的 NGU 接口源 IP 位址設定為 AMF 的 IP 位址，這在邏輯上是不可能的，會導致 gNB 無法綁定該接口。",
+    "explanation_en": "Setting the gNB's NGU interface source IP to the AMF's IP address is logically impossible and will result in the gNB failing to bind the interface."
+  },
+  {
+    "filename": "cu_case_125.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1AP 控制信令的目標端口（遠端 DU F1-C）設定為用戶面端口（2152），將導致 DU 無法正確解析控制消息。",
+    "explanation_en": "Targeting F1AP control signaling to a user plane port (2152) on the remote DU will cause the DU to fail in correctly parsing the control messages."
+  },
+  {
+    "filename": "cu_case_126.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 用於接收用戶數據的 F1-U 端口設定為其 F1-C 控制端口，將導致進入的 GTP-U 包與 F1AP 信令發生衝突。",
+    "explanation_en": "Setting the CU's F1-U port for user data to its F1-C control port will cause incoming GTP-U packets to conflict with F1AP signaling."
+  },
+  {
+    "filename": "cu_case_127.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 用於 NGU 核心網用戶面的端口設定為其 F1-C 控制面端口，將導致核心網用戶數據與 F1 控制信令在同一端口上衝突。",
+    "explanation_en": "Configuring the CU's NGU port for core network user plane to its F1-C control port will create a conflict between core user data and F1 control signaling on the same port."
+  },
+  {
+    "filename": "cu_case_128.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將用戶面數據的目標端口（遠端 DU F1-U）設定為其控制面端口（500），將導致 DU 的控制面收到非預期的 GTP-U 流量。",
+    "explanation_en": "Targeting user plane data to the remote DU's control plane port (500) will cause the DU's control plane to receive unexpected GTP-U traffic."
+  },
+  {
+    "filename": "cu_case_129.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口的本地綁定地址設定為 NGAP 接口的地址，會在這兩個邏輯功能間造成 IP 地址衝突，可能導致其中一個或兩個接口都無法正常初始化。",
+    "explanation_en": "Setting the local binding address for the F1 interface to the NGAP interface's address will create an IP address conflict between these two logical functions, potentially causing one or both to fail initialization."
+  },
+  {
+    "filename": "cu_case_130.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGAP 接口的源 IP 設定為 F1 接口的 IP，這會改變 gNB 與核心網通信的源地址，可能違反網絡路由和安全策略，導致連接被拒絕。",
+    "explanation_en": "Setting the source IP for the NGAP interface to the F1 interface's IP changes the gNB's source address for core network communication, which may violate network routing and security policies, leading to connection refusal."
+  },
+  {
+    "filename": "cu_case_131.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將核心網 AMF 的地址設定為 DU 的地址，會導致 NGAP Setup 請求被錯誤地發往 DU，而 DU 並不具備處理 NGAP 消息的能力。",
+    "explanation_en": "Setting the core network AMF's address to the DU's address will cause NGAP Setup requests to be mistakenly sent to the DU, which is not capable of handling NGAP messages."
+  },
+  {
+    "filename": "cu_case_132.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口的目標 DU 地址設定為 AMF 的地址，CU 將嘗試與 AMF 建立 F1AP 連接，這將因協議不匹配而被 AMF 拒絕。",
+    "explanation_en": "Setting the F1 interface's target DU address to the AMF's address will cause the CU to attempt an F1AP connection with the AMF, which will be rejected due to a protocol mismatch."
+  },
+  {
+    "filename": "cu_case_133.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-C 端口設定為其 NGU 端口，將導致 CU 無法區分來自 DU 的 F1AP 信令和來自 UPF 的 GTP-U 數據，造成處理混亂。",
+    "explanation_en": "Setting the CU's F1-C port to its NGU port will make it impossible for the CU to distinguish between F1AP signaling from the DU and GTP-U data from the UPF, causing processing chaos."
+  },
+  {
+    "filename": "cu_case_134.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 NGU 端口設定為其 F1-C 端口，將導致 CU 在期望接收 F1AP 信令的端口上接收到用戶面數據，引發協議錯誤。",
+    "explanation_en": "Setting the CU's NGU port to its F1-C port will cause user plane data to be received on a port where F1AP signaling is expected, triggering protocol errors."
+  },
+  {
+    "filename": "cu_case_135.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將發往 DU 的 F1-C 信令目標端口設定為用戶面端口，將導致 DU 的 GTP-U 處理單元收到無法解析的 F1AP 消息。",
+    "explanation_en": "Targeting F1-C signaling for the DU to a user plane port will result in the DU's GTP-U handling unit receiving un-parseable F1AP messages."
+  },
+  {
+    "filename": "cu_case_136.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-U 端口設定為遠端 DU 的 F1-C 端口號，這可能導致 CU 嘗試在一個已被其他進程（如 F1-C 連接）使用的源端口上進行綁定，從而失敗。",
+    "explanation_en": "Setting the CU's F1-U port to the remote DU's F1-C port number could cause the CU to fail when trying to bind to a source port that is already in use by another process (like the F1-C connection)."
+  },
+  {
+    "filename": "cu_case_137.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGAP 接口的 gNB 源 IP 設定為遠端 DU 的 IP，會導致 gNB 向 AMF 通信時偽裝成 DU 的 IP 地址，這將被網絡防火牆或 AMF 本身拒絕。",
+    "explanation_en": "Setting the gNB's source IP for the NGAP interface to the remote DU's IP will cause the gNB to masquerade as the DU when communicating with the AMF, which will be rejected by network firewalls or the AMF itself."
+  },
+  {
+    "filename": "cu_case_138.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的地址指向 CU 的 F1 接口地址，會使 NGAP 消息在 CU 內部形成環路，無法到達真正的核心網。",
+    "explanation_en": "Pointing the AMF's address to the CU's F1 interface address will create an internal loop for NGAP messages within the CU, preventing them from reaching the actual core network."
+  },
+  {
+    "filename": "cu_case_139.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口的 DU 地址設為 gNB 的 NGU 地址，會導致 F1AP SCTP 流量被發送到處理 GTP-U 流量的接口，造成協議層面的混亂。",
+    "explanation_en": "Setting the F1 interface's DU address to the gNB's NGU address will cause F1AP SCTP traffic to be sent to the interface that handles GTP-U traffic, creating protocol-level confusion."
+  },
+  {
+    "filename": "cu_case_140.json",
+    "modified_key": "gNBs.local_s_address",
+    "original_value": "127.0.0.5",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 F1 接口的本地監聽地址設為遠端 AMF 的地址，這是無效的配置，因為 CU 無法綁定一個不屬於其本地網絡接口的 IP 地址。",
+    "explanation_en": "Setting the F1 interface's local listening address to the remote AMF's address is an invalid configuration, as the CU cannot bind to an IP that doesn't belong to its local network interfaces."
+  },
+  {
+    "filename": "cu_case_141.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 DU 的 F1-C 端口設為 CU 的 F1-C 端口，這會導致 CU 嘗試向自己發起 F1AP 連接，前提是 DU 的 IP 也被錯誤地設為 CU 的 IP。",
+    "explanation_en": "Setting the DU's F1-C port to the CU's F1-C port would cause the CU to attempt an F1AP connection to itself, provided the DU's IP was also misconfigured to be the CU's IP."
+  },
+  {
+    "filename": "cu_case_142.json",
+    "modified_key": "gNBs.remote_s_portd",
+    "original_value": 2152,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "雖然此例中錯誤值與原始值相同，但在真實場景中，將 DU 的 F1-U 端口錯誤地設為 CU 的 NGU 端口（此處恰好都是2152），可能導致數據平面路由混亂。",
+    "explanation_en": "Although the error value is the same as the original here, in a real scenario, incorrectly setting the DU's F1-U port to the CU's NGU port (which happen to both be 2152) could cause data plane routing confusion."
+  },
+  {
+    "filename": "cu_case_143.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U",
+    "original_value": 2152,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGU 端口配置為遠端 DU 的 F1-C 端口號，將導致 CU 發往核心網的用戶數據被錯誤地路由到 DU 的控制面。",
+    "explanation_en": "Configuring the NGU port with the remote DU's F1-C port number would cause user data from the CU intended for the core network to be misrouted to the DU's control plane."
+  },
+  {
+    "filename": "cu_case_144.json",
+    "modified_key": "gNBs.local_s_portc",
+    "original_value": 501,
+    "error_value": 500,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-C 端口設為 DU 的 F1-C 端口，在本地測試環境下會導致地址已在使用中的綁定錯誤。",
+    "explanation_en": "Setting the CU's F1-C port to the DU's F1-C port will cause an 'address already in use' binding error in a local test environment."
+  },
+  {
+    "filename": "cu_case_145.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF",
+    "original_value": "192.168.8.43",
+    "error_value": "192.168.70.132",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGAP 的源 IP 設為 AMF 的 IP，等於讓 gNB 冒充 AMF，這將導致與 AMF 的 SCTP 關聯建立失敗，因為源和目標地址相同。",
+    "explanation_en": "Setting the NGAP source IP to the AMF's IP is equivalent to the gNB impersonating the AMF, which will cause the SCTP association to fail as the source and destination addresses would be the same."
+  },
+  {
+    "filename": "cu_case_146.json",
+    "modified_key": "gNBs.remote_s_address",
+    "original_value": "127.0.0.3",
+    "error_value": "127.0.0.5",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 DU 的地址配置為 CU 的 F1 地址，會導致 CU 向自身發送 F1AP 消息，形成一個無法建立連接的閉環。",
+    "explanation_en": "Configuring the DU's address as the CU's F1 address will cause the CU to send F1AP messages to itself, creating a closed loop where no connection can be established."
+  },
+  {
+    "filename": "cu_case_147.json",
+    "modified_key": "gNBs.local_s_portd",
+    "original_value": 2152,
+    "error_value": 501,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 CU 的 F1-U 端口綁定到其 F1-C 端口上，會導致系統無法區分應該由 SCTP 還是 GTP-U 協議棧處理的數據包。",
+    "explanation_en": "Binding the CU's F1-U port to its F1-C port will make the system unable to distinguish whether an incoming packet should be handled by the SCTP or the GTP-U stack."
+  },
+  {
+    "filename": "cu_case_148.json",
+    "modified_key": "gNBs.amf_ip_address.ipv4",
+    "original_value": "192.168.70.132",
+    "error_value": "192.168.8.43",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 AMF 的 IP 配置為 gNB 自身的 N-Plane IP，會導致 NGAP 流量被路由回 gNB 自身，造成 NGAP 連接超時。",
+    "explanation_en": "Configuring the AMF's IP as the gNB's own N-Plane IP will cause NGAP traffic to be routed back to the gNB itself, leading to an NGAP connection timeout."
+  },
+  {
+    "filename": "cu_case_149.json",
+    "modified_key": "gNBs.remote_s_portc",
+    "original_value": 500,
+    "error_value": 2152,
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將發往 DU 的 F1-C 控制消息的目標端口設定為 DU 的用戶面端口，將導致 DU 無法建立 F1AP 連接。",
+    "explanation_en": "Setting the destination port for F1-C control messages to the DU's user plane port will prevent the DU from establishing an F1AP connection."
+  },
+  {
+    "filename": "cu_case_150.json",
+    "modified_key": "gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU",
+    "original_value": "192.168.8.43",
+    "error_value": "127.0.0.3",
+    "error_type": "logical_contradiction",
+    "explanation_zh": "將 NGU 接口的源 IP 設定為遠端 DU 的 IP，會導致 CU 發往 UPF 的用戶數據包看起來像是來自 DU，這可能導致 UPF 的路由或策略執行錯誤。",
+    "explanation_en": "Setting the NGU interface source IP to the remote DU's IP will make user packets from the CU to the UPF appear as if they are from the DU, which can cause routing or policy enforcement errors on the UPF."
+  }
+]

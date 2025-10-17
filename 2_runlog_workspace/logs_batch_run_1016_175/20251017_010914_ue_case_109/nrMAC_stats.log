@@ -1,0 +1,9 @@
+UE RNTI e990 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (2 meas)
+UE e990: dlsch_rounds 33/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01216 MCS (0) 0
+UE e990: ulsch_rounds 209/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE e990: MAC:    TX           1095 RX           4308 bytes
+UE e990: LCID 1: TX            522 RX            313 bytes
+UE e990: LCID 2: TX              0 RX              0 bytes
+UE e990: LCID 4: TX              9 RX            187 bytes
+
+

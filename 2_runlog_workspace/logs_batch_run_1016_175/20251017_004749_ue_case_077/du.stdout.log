@@ -1,0 +1,216 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[GNB_APP]   Initialized RAN Context: RC.nb_nr_inst = 1, RC.nb_nr_macrlc_inst = 1, RC.nb_nr_L1_inst = 1, RC.nb_RU = 1, RC.nb_nr_CC[0] = 1
+[0m[NR_PHY]   Initializing gNB RAN context: RC.nb_nr_L1_inst = 1 
+[0m[NR_PHY]   Registered with MAC interface module (0x42545d0)
+[0m[NR_PHY]   Initializing NR L1: RC.nb_nr_L1_inst = 1
+[0m[NR_PHY]   L1_RX_THREAD_CORE -1 (15)
+[0m[NR_PHY]   TX_AMP = 519 (-36 dBFS)
+[0m[PHY]   No prs_config configuration found..!!
+[0m[GNB_APP]   pdsch_AntennaPorts N1 2 N2 1 XP 2 pusch_AntennaPorts 4
+[0m[GNB_APP]   minTXRXTIME 6
+[0m[GNB_APP]   SIB1 TDA 15
+[0m[GNB_APP]   CSI-RS 0, SRS 0, SINR:0, 256 QAM force off, delta_MCS off, maxMIMO_Layers 1, HARQ feedback enabled, num DLHARQ:16, num ULHARQ:16
+[0m[NR_MAC]   No RedCap configuration found
+[0m[GNB_APP]   sr_ProhibitTimer 0, sr_TransMax 64, sr_ProhibitTimer_v1700 0, t300 400, t301 400, t310 2000, n310 10, t311 3000, n311 1, t319 400
+[0m[NR_MAC]   Candidates per PDCCH aggregation level on UESS: L1: 0, L2: 2, L4: 0, L8: 0, L16: 0
+[0m[RRC]   Read in ServingCellConfigCommon (PhysCellId 0, ABSFREQSSB 641280, DLBand 78, ABSFREQPOINTA 640008, DLBW 106,RACH_TargetReceivedPower -96
+[0m[RRC]   absoluteFrequencySSB 641280 corresponds to 3619200000 Hz
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[UTIL]   threadCreate() for MAC_STATS: creating thread with affinity ffffffff, priority 2
+[0m[NR_MAC]   PUSCH Target 200, PUCCH Target 150, PUCCH Failure 10, PUSCH Failure 10
+[0m[NR_PHY]   Copying 0 blacklisted PRB to L1 context
+[0m[NR_MAC]   Set TX antenna number to 4, Set RX antenna number to 4 (num ssb 1: 80000000,0)
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[NR_PHY]   Set TDD Period Configuration: 2 periods per frame, 20 slots to be configured (8 DL, 3 UL)
+[0m[NR_PHY]   TDD period configuration: slot 0 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 1 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 2 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 3 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 4 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 5 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 6 is DOWNLINK
+[0m[NR_PHY]   TDD period configuration: slot 7 is FLEXIBLE: DDDDDDFFFFUUUU
+[0m[NR_PHY]   TDD period configuration: slot 8 is UPLINK
+[0m[NR_PHY]   TDD period configuration: slot 9 is UPLINK
+[0m[PHY]   DL frequency 3619200000 Hz, UL frequency 3619200000 Hz: band 48, uldl offset 0 Hz
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[NR_RRC]   SIB1 freq: offsetToPointA 86
+[0m[GNB_APP]   F1AP: gNB idx 0 gNB_DU_id 3584, gNB_DU_name gNB-Eurecom-DU, TAC 1 MCC/MNC/length 1/1/2 cellID 1
+[0m[GNB_APP]   ngran_DU: Configuring Cell 0 for TDD
+[0m[GNB_APP]   SDAP layer is disabled
+[0m[GNB_APP]   Data Radio Bearer count 1
+[0m[UTIL]   threadCreate() for TASK_SCTP: creating thread with affinity ffffffff, priority 50
+[0m[X2AP]   X2AP is disabled.
+[0m[UTIL]   threadCreate() for TASK_GNB_APP: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_GTPV1_U: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_DU_F1: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for time source iq samples: creating thread with affinity ffffffff, priority 2
+[0m[F1AP]   Starting F1AP at DU
+[0m[F1AP]   F1-C DU IPaddr 127.0.0.3, connect to F1-C CU 127.0.0.5, binding GTP to 127.0.0.3
+[0m[UTIL]   time manager configuration: [time source: iq_samples] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)
+[0m[GTPU]   Initializing UDP for local address 127.0.0.3 with port 2152
+[0m[GTPU]   Created gtpu instance id: 94
+[0m[MAC]   received F1 Setup Response from CU gNB-Eurecom-CU
+[0m[MAC]   CU uses RRC version 17.3.0
+[0m[MAC]   Clearing the DU's UE states before, if any.
+[0m[MAC]   received gNB-DU configuration update acknowledge
+[0m[PHY]   RU clock source set as internal
+[0m[PHY]   number of L1 instances 1, number of RU 1, number of CPU cores 32
+[0m[PHY]   Initialized RU proc 0 (,synch_to_ext_device),
+[0m[PHY]   RU thread-pool core string -1,-1 (size 2)
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for ru_thread: creating thread with affinity 6, priority 97
+[0m[PHY]   Starting RU 0 (,synch_to_ext_device) on cpu 31
+[0m[PHY]   Initializing frame parms for mu 1, N_RB 106, Ncp 0
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[PHY]   fp->scs=30000
+[0m[PHY]   fp->ofdm_symbol_size=2048
+[0m[PHY]   fp->nb_prefix_samples0=176
+[0m[PHY]   fp->nb_prefix_samples=144
+[0m[PHY]   fp->slots_per_subframe=2
+[0m[PHY]   fp->samples_per_subframe_wCP=57344
+[0m[PHY]   fp->samples_per_frame_wCP=573440
+[0m[PHY]   fp->samples_per_subframe=61440
+[0m[PHY]   fp->samples_per_frame=614400
+[0m[PHY]   fp->dl_CarrierFreq=3619200000
+[0m[PHY]   fp->ul_CarrierFreq=3619200000
+[0m[PHY]   fp->Nid_cell=0
+[0m[PHY]   fp->first_carrier_offset=1412
+[0m[PHY]   fp->ssb_start_subcarrier=0
+[0m[PHY]   fp->Ncp=0
+[0m[PHY]   fp->N_RB_DL=106
+[0m[PHY]   fp->numerology_index=1
+[0m[PHY]   fp->nr_band=48
+[0m[PHY]   fp->ofdm_offset_divisor=8
+[0m[PHY]   fp->threequarter_fs=0
+[0m[PHY]   fp->sl_CarrierFreq=0
+[0m[PHY]   fp->N_RB_SL=0
+[0m[PHY]   Setting RF config for N_RB 106, NB_RX 4, NB_TX 4
+[0m[PHY]   tune_offset 0 Hz, sample_rate 61440000 Hz
+[0m[PHY]   Channel 0: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 1: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 2: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 3: setting tx_gain offset 0, tx_freq 3619200000 Hz
+[0m[PHY]   Channel 0: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 1: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 2: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[PHY]   Channel 3: setting rx_gain offset 114, rx_freq 3619200000 Hz
+[0m[93m[HW]   The RFSIMULATOR environment variable is deprecated and support will be removed in the future. Instead, add parameter --rfsimulator.serveraddr server to set the server address. Note: the default is "server"; for the gNB/eNB, you don't have to set any configuration.
+[0m[HW]   Remove RFSIMULATOR environment variable to get rid of this message and the sleep.
+[0m[HW]   Running as server waiting opposite rfsimulators to connect
+[0m[HW]   [RAU] has loaded RFSIMULATOR device.
+[0m[PHY]   RU 0 Setting N_TA_offset to 800 samples (UL Freq 3600120, N_RB 106, mu 1)
+[0m[PHY]   Signaling main thread that RU 0 is ready, sl_ahead 5
+[0m[PHY]   L1 configured without analog beamforming
+[0m[PHY]   Attaching RU 0 antenna 0 to gNB antenna 0
+[0m[PHY]   Attaching RU 0 antenna 1 to gNB antenna 1
+[0m[PHY]   Attaching RU 0 antenna 2 to gNB antenna 2
+[0m[PHY]   Attaching RU 0 antenna 3 to gNB antenna 3
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_rx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_tx_thread: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_stats: creating thread with affinity ffffffff, priority 1
+[0m[PHY]   got sync (L1_stats_thread)
+[0m[PHY]   got sync (ru_thread)
+[0mCMDLINE: "/home/oai72/oai_johnson/openairinterface5g/cmake_targets/ran_build/build/nr-softmodem" "--rfsim" "--sa" "-O" "/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/du_gnb.conf" 
+[CONFIG] function config_libconfig_init returned 0
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Timers_Params' section from the config file
+Reading 'SCCsParams' section from the config file
+Reading 'MsgASCCsParams' section from the config file
+DL frequency 3619200000: band 48, UL frequency 3619200000
+Reading 'GNBSParams' section from the config file
+Reading 'GNBSParams' section from the config file
+Reading 'Periodical_EventParams' section from the config file
+Reading 'A2_EventParams' section from the config file
+Initializing random number generator, seed 534770448567309736
+TYPE <CTRL-C> TO TERMINATE
+[PHY]   RU 0 rf device ready
+[0m[PHY]   RU 0 RF started cpu_meas_enabled 0
+[0m[HW]   No connected device, generating void samples...
+[0m[HW]   A client connects, sending the current time
+[0m[93m[HW]   Not supported to send Tx out of order 25374720, 25374719
+[0m[32m[PHY]   Command line parameters for OAI UE: -C 3619200000 -r 106 --numerology 1 --ssb 516 
+[0m[NR_MAC]   Frame.Slot 128.0
+
+[0m[32m[NR_PHY]   [RAPROC] 157.19 Initiating RA procedure with preamble 8, energy 43.3 dB (I0 0, thres 120), delay 0 start symbol 8 freq index 0
+[0m[32m[NR_MAC]   157.19 UE RA-RNTI 0113 TC-RNTI 77d8: initiating RA procedure
+[0m[NR_MAC]   UE 77d8: Msg3 scheduled at 158.17 (158.7 TDA 3) start 0 RBs 8
+[0m[32m[NR_MAC]   UE 77d8: 158.7 Generating RA-Msg2 DCI, RA RNTI 0x113, state 1, preamble_index(RAPID) 8, timing_offset = 0 (estimated distance 0.0 [m])
+[0m[32m[NR_MAC]   158.7 Send RAR to RA-RNTI 0113
+[0m[32m[NR_MAC]    158.17 PUSCH with TC_RNTI 0x77d8 received correctly
+[0m[MAC]   [RAPROC] Received SDU for CCCH length 6 for UE 77d8
+[0m[RLC]   Activated srb0 for UE 30680
+[0m[RLC]   Added srb 1 to UE 30680
+[0m[NR_MAC]   Activating scheduling Msg4 for TC_RNTI 0x77d8 (state WAIT_Msg3)
+[0m[NR_MAC]   UE 77d8 Generate Msg4: feedback at  159. 9, payload 161 bytes, next state nrRA_WAIT_Msg4_MsgB_ACK
+[0m[NR_MAC]   Adding new UE context with RNTI 0x77d8
+[0m[32m[NR_MAC]    159. 9 UE 77d8: Received Ack of Msg4. CBRA procedure succeeded!
+[0m[93m[HW]   Lost socket
+[0m[93m[NR_MAC]   UE 77d8: Detected UL Failure on PUSCH after 10 PUSCH DTX, stopping scheduling
+[0m[NR_MAC]   Frame.Slot 256.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP -44 (1 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 384.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 512.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 640.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 768.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 896.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m[NR_MAC]   Frame.Slot 0.0
+UE RNTI 77d8 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 77d8: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE 77d8: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 77d8: MAC:    TX            311 RX            153 bytes
+UE 77d8: LCID 1: TX            179 RX             92 bytes
+
+[0m

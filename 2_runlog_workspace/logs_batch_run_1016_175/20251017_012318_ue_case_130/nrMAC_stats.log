@@ -1,0 +1,7 @@
+UE RNTI 3108 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (3 meas)
+UE 3108: dlsch_rounds 28/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01501 MCS (0) 0
+UE 3108: ulsch_rounds 202/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 3108: MAC:    TX            651 RX           3707 bytes
+UE 3108: LCID 1: TX            226 RX            411 bytes
+
+

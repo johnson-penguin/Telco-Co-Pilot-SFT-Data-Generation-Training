@@ -1,0 +1,6 @@
+UE RNTI c8c0 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE c8c0: dlsch_rounds 11/7/7/7, dlsch_errors 7, pucch0_DTX 29, BLER 0.28315 MCS (0) 0
+UE c8c0: ulsch_rounds 12/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE c8c0: MAC:    TX            311 RX            152 bytes
+UE c8c0: LCID 1: TX            179 RX             96 bytes
+

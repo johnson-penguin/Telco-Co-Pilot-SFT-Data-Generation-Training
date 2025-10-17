@@ -1,0 +1,6 @@
+UE RNTI 7233 CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 7233: dlsch_rounds 12/8/8/8, dlsch_errors 8, pucch0_DTX 33, BLER 0.29530 MCS (0) 0
+UE 7233: ulsch_rounds 12/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 7233: MAC:    TX            324 RX            152 bytes
+UE 7233: LCID 1: TX            179 RX             96 bytes
+

@@ -1,0 +1,7 @@
+UE RNTI 599b CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (3 meas)
+UE 599b: dlsch_rounds 27/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01501 MCS (0) 0
+UE 599b: ulsch_rounds 201/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 599b: MAC:    TX            605 RX           3445 bytes
+UE 599b: LCID 1: TX            194 RX            261 bytes
+
+

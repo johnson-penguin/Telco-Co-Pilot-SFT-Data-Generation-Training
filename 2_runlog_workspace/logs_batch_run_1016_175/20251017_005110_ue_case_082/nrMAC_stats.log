@@ -1,0 +1,8 @@
+UE RNTI 9f4b CU-UE-ID 1 out-of-sync PH 51 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE 9f4b: dlsch_rounds 11/8/7/7, dlsch_errors 7, pucch0_DTX 30, BLER 0.28315 MCS (0) 0
+UE 9f4b: ulsch_rounds 11/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE 9f4b: MAC:    TX            311 RX            153 bytes
+UE 9f4b: LCID 1: TX            179 RX             92 bytes
+
+
+

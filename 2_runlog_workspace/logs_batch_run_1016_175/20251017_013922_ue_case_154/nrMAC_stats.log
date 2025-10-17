@@ -1,0 +1,10 @@
+UE RNTI 2f91 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (3 meas)
+UE 2f91: dlsch_rounds 33/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01094 MCS (0) 0
+UE 2f91: ulsch_rounds 211/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 57.0 dB
+UE 2f91: MAC:    TX           1095 RX           4327 bytes
+UE 2f91: LCID 1: TX            522 RX            317 bytes
+UE 2f91: LCID 2: TX              0 RX              0 bytes
+UE 2f91: LCID 4: TX              9 RX            187 bytes
+
+
+

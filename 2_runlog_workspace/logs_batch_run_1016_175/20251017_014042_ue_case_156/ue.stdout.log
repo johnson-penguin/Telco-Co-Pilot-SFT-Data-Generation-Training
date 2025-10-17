@@ -1,0 +1,10 @@
+[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1016_175/ue_case_156.conf - line 6: syntax error
+
+[CONFIG] ../../../common/config/config_load_configmodule.c 379 config module "libconfig" couldn't be loaded
+[CONFIG] config_get, section log_config skipped, config module not properly initialized
+[LOG] init aborted, configuration couldn't be performed
+[CONFIG] config_get, section (null) skipped, config module not properly initialized
+[CONFIG] config_get, section (null) skipped, config module not properly initialized
+[CONFIG] ../../../common/config/config_userapi.c 68 nfapi has no processed integer availablle
+[CONFIG] config_get, section (null) skipped, config module not properly initialized
+[CONFIG] config_get, section TTracer skipped, config module not properly initialized

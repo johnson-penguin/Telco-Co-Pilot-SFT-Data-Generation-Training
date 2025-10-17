@@ -1,0 +1,8 @@
+UE RNTI ec69 CU-UE-ID 1 in-sync PH 48 dB PCMAX 20 dBm, average RSRP -44 (14 meas)
+UE ec69: dlsch_rounds 29/0/0/0, dlsch_errors 0, pucch0_DTX 0, BLER 0.01668 MCS (0) 0
+UE ec69: ulsch_rounds 166/0/0/0, ulsch_errors 0, ulsch_DTX 0, BLER 0.00000 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE ec69: MAC:    TX           1005 RX           3448 bytes
+UE ec69: LCID 1: TX            522 RX            313 bytes
+UE ec69: LCID 2: TX              0 RX              0 bytes
+UE ec69: LCID 4: TX              9 RX            187 bytes
+

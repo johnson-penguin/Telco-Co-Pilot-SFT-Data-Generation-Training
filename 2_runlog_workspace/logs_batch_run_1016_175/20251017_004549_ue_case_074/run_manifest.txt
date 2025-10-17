@@ -1,0 +1,6 @@
+CASE_NAME=ue_case_074
+CU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/cu_gnb.conf
+DU_CONF=/home/oai72/Johnson/auto_run_gnb_ue/baseline_conf/du_gnb.conf
+UE_CONF=/home/oai72/Johnson/auto_run_gnb_ue/error_conf_1016_175/ue_case_074.conf
+START_TIME=2025-10-17T00:46:27+08:00
+DURATION=30s

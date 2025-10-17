@@ -1,0 +1,6 @@
+UE RNTI a4f6 CU-UE-ID 1 out-of-sync PH 48 dB PCMAX 20 dBm, average RSRP 0 (0 meas)
+UE a4f6: dlsch_rounds 10/8/7/7, dlsch_errors 7, pucch0_DTX 30, BLER 0.30340 MCS (0) 0
+UE a4f6: ulsch_rounds 7/3/2/2, ulsch_errors 2, ulsch_DTX 10, BLER 0.26290 MCS (0) 0 (Qm 2 deltaMCS 0 dB) NPRB 5  SNR 56.5 dB
+UE a4f6: MAC:    TX            241 RX             73 bytes
+UE a4f6: LCID 1: TX            123 RX             49 bytes
+
