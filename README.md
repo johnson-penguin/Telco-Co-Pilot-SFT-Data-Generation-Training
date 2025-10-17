@@ -1,4 +1,4 @@
-## cursor_gen_conf
+## Telco-Co-Pilot-SFT-Data-Generation-Training
 
 An end-to-end toolkit for generating erroneous configuration cases, filtering error logs, and automating reasoning runs in Cursor for CU/DU/UE scenarios. It includes:
 - Baseline inputs (conf and JSON)
