@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "MACRLCs[0].local_n_portc",
+  "misconfigured_param": "MACRLCs[0].local_n_portc=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -368,9 +368,9 @@
               "rsrp_ThresholdSSB": 19,
               "prach_RootSequenceIndex_PR": 2,
               "prach_RootSequenceIndex": 1,
-              "msg1_SubcarrierSpacing": 1,
-              "restrictedSetConfig": 0,
-              "msg3_DeltaPreamble": 1,
+              "msg1_SubcarrierSpacing": 147,
+              "restrictedSetConfig": null,
+              "msg3_DeltaPreamble": null,
               "p0_NominalWithGrant": -90,
               "pucchGroupHopping": 0,
               "hoppingId": 40,
@@ -401,7 +401,7 @@
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
           "remote_n_address": "127.0.0.5",
-          "local_n_portc": "invalid_string",
+          "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,
           "remote_n_portd": 2152

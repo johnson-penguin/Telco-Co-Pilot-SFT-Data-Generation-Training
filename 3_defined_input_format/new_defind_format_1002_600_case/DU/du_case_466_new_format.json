@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].SCTP.SCTP_INSTREAMS",
+  "misconfigured_param": "gNBs[0].SCTP.SCTP_INSTREAMS=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -399,7 +399,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "10.10.77.128",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,

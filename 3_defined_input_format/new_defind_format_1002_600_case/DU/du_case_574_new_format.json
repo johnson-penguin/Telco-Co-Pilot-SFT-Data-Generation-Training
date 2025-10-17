@@ -347,7 +347,7 @@
               "initialDLBWPsubcarrierSpacing": 1,
               "initialDLBWPcontrolResourceSetZero": 12,
               "initialDLBWPsearchSpaceZero": 0,
-              "ul_frequencyBand": 78,
+              "ul_frequencyBand": 146,
               "ul_offstToCarrier": 0,
               "ul_subcarrierSpacing": 1,
               "ul_carrierBandwidth": 106,
@@ -481,6 +481,7 @@
               196
             ],
             "Ta4": [
+              110,
               180
             ],
             "ru_config": {

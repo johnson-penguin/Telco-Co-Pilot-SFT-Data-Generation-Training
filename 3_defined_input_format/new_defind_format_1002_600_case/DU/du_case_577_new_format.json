@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].pdsch_AntennaPorts_N1",
+  "misconfigured_param": "gNBs[0].pdsch_AntennaPorts_N1=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -354,7 +354,7 @@
               "pMax": 20,
               "initialULBWPlocationAndBandwidth": 28875,
               "initialULBWPsubcarrierSpacing": 1,
-              "prach_ConfigurationIndex": 98,
+              "prach_ConfigurationIndex": 145,
               "prach_msg1_FDM": 0,
               "prach_msg1_FrequencyStart": 0,
               "zeroCorrelationZoneConfig": 13,

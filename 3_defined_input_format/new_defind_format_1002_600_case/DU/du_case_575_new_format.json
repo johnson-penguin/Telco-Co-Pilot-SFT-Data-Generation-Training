@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].nr_cellid",
+  "misconfigured_param": "gNBs[0].nr_cellid=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -368,9 +368,9 @@
               "rsrp_ThresholdSSB": 19,
               "prach_RootSequenceIndex_PR": 2,
               "prach_RootSequenceIndex": 1,
-              "msg1_SubcarrierSpacing": 1,
-              "restrictedSetConfig": 0,
-              "msg3_DeltaPreamble": 1,
+              "msg1_SubcarrierSpacing": 143,
+              "restrictedSetConfig": null,
+              "msg3_DeltaPreamble": null,
               "p0_NominalWithGrant": -90,
               "pucchGroupHopping": 0,
               "hoppingId": 40,

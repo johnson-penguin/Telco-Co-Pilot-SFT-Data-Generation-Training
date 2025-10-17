@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex",
+  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -354,7 +354,7 @@
               "pMax": 20,
               "initialULBWPlocationAndBandwidth": 28875,
               "initialULBWPsubcarrierSpacing": 1,
-              "prach_ConfigurationIndex": 98,
+              "prach_ConfigurationIndex": 147,
               "prach_msg1_FDM": 0,
               "prach_msg1_FrequencyStart": 0,
               "zeroCorrelationZoneConfig": 13,

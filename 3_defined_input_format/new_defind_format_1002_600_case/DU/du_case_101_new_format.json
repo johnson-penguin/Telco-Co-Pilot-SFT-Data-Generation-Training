@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "MACRLCs[0].remote_n_portc",
+  "misconfigured_param": "MACRLCs[0].remote_n_portc=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -444,10 +444,10 @@
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
-          "remote_n_address": "127.0.0.5",
+          "remote_n_address": "192.0.2.49",
           "local_n_portc": 500,
           "local_n_portd": 2152,
-          "remote_n_portc": "invalid_string",
+          "remote_n_portc": 501,
           "remote_n_portd": 2152
         }
       ],

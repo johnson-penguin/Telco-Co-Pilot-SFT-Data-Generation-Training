@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.fh_config[0].Ta4[0]",
+  "misconfigured_param": "fhi_72.fh_config[0].Ta4[0]=0",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -399,7 +399,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "10.10.124.174",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,
@@ -481,7 +481,7 @@
               196
             ],
             "Ta4": [
-              0,
+              110,
               180
             ],
             "ru_config": {

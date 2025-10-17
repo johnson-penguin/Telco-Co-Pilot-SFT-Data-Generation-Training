@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.dpdk_devices[0]",
+  "misconfigured_param": "fhi_72.dpdk_devices[0]=abcd:12:34.5",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.fh_config[0].T1a_up",
+  "misconfigured_param": "fhi_72.fh_config[0].T1a_up=[0, 10]",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.io_core",
+  "misconfigured_param": "fhi_72.io_core=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -368,9 +368,9 @@
               "rsrp_ThresholdSSB": 19,
               "prach_RootSequenceIndex_PR": 2,
               "prach_RootSequenceIndex": 1,
-              "msg1_SubcarrierSpacing": 1,
-              "restrictedSetConfig": 0,
-              "msg3_DeltaPreamble": 1,
+              "msg1_SubcarrierSpacing": 149,
+              "restrictedSetConfig": null,
+              "msg3_DeltaPreamble": null,
               "p0_NominalWithGrant": -90,
               "pucchGroupHopping": 0,
               "hoppingId": 40,
@@ -457,7 +457,7 @@
           "0000:ca:02.1"
         ],
         "system_core": 0,
-        "io_core": "invalid_string",
+        "io_core": 4,
         "worker_cores": [
           2
         ],

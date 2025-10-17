@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "RUs[0].bands[0]",
+  "misconfigured_param": "RUs[0].bands[0]=0",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -400,7 +400,7 @@
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
-          "remote_n_address": "127.0.0.5",
+          "remote_n_address": "100.96.136.135",
           "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,

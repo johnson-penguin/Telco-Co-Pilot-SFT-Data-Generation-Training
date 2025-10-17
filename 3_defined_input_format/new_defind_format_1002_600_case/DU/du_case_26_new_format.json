@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.mtu",
+  "misconfigured_param": "fhi_72.mtu=-1",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -444,7 +444,7 @@
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
-          "remote_n_address": "127.0.0.5",
+          "remote_n_address": "100.127.72.121",
           "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,
@@ -509,7 +509,7 @@
           "e8:c7:4f:25:80:ed",
           "e8:c7:4f:25:80:ed"
         ],
-        "mtu": -1,
+        "mtu": 9000,
         "fh_config": [
           {
             "T1a_cp_dl": [

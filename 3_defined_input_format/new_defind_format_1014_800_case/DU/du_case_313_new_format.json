@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.mtu",
+  "misconfigured_param": "fhi_72.mtu=20000",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

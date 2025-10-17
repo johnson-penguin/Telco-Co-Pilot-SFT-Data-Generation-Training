@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].pusch_AntennaPorts",
+  "misconfigured_param": "gNBs[0].pusch_AntennaPorts=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -347,7 +347,7 @@
               "initialDLBWPsubcarrierSpacing": 1,
               "initialDLBWPcontrolResourceSetZero": 12,
               "initialDLBWPsearchSpaceZero": 0,
-              "ul_frequencyBand": 78,
+              "ul_frequencyBand": 147,
               "ul_offstToCarrier": 0,
               "ul_subcarrierSpacing": 1,
               "ul_carrierBandwidth": 106,

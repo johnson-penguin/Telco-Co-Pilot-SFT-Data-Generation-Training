@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "MACRLCs[0].local_n_address",
+  "misconfigured_param": "MACRLCs[0].local_n_address=abc.def.ghi.jkl",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -337,7 +337,7 @@
           "servingCellConfigCommon": [
             {
               "physCellId": 0,
-              "absoluteFrequencySSB": 641280,
+              "absoluteFrequencySSB": 151342,
               "dl_frequencyBand": 78,
               "dl_absoluteFrequencyPointA": 640008,
               "dl_offstToCarrier": 0,
@@ -399,7 +399,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "abc.def.ghi.jkl",
+          "local_n_address": "127.0.0.3",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,

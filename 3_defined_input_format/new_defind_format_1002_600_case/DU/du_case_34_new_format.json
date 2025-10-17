@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "rfsimulator.modelname",
+  "misconfigured_param": "rfsimulator.modelname=invalid_enum_value",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -400,7 +400,7 @@
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
-          "remote_n_address": "127.0.0.5",
+          "remote_n_address": "100.127.178.60",
           "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,
@@ -442,7 +442,7 @@
         "serveraddr": "server",
         "serverport": 4043,
         "options": [],
-        "modelname": "invalid_enum_value",
+        "modelname": "AWGN",
         "IQfile": "/tmp/rfsimulator.iqs"
       },
       "log_config": {

@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "Asn1_verbosity",
+  "misconfigured_param": "Asn1_verbosity=None",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -222,7 +222,7 @@
       "Active_gNBs": [
         "gNB-Eurecom-DU"
       ],
-      "Asn1_verbosity": "None",
+      "Asn1_verbosity": "annoying",
       "gNBs": [
         {
           "gNB_ID": "0xe00",
@@ -323,7 +323,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "10.20.206.105",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,

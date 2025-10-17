@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "rfsimulator.modelname",
+  "misconfigured_param": "rfsimulator.modelname=None",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -323,7 +323,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "172.30.248.126",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,
@@ -366,7 +366,7 @@
         "serveraddr": "server",
         "serverport": 4043,
         "options": [],
-        "modelname": "None",
+        "modelname": "AWGN",
         "IQfile": "/tmp/rfsimulator.iqs"
       },
       "log_config": {

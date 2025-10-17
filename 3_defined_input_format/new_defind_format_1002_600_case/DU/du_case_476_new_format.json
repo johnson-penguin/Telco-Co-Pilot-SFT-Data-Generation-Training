@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.io_core",
+  "misconfigured_param": "fhi_72.io_core=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -399,7 +399,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "10.10.110.32",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,
@@ -457,7 +457,7 @@
           "0000:ca:02.1"
         ],
         "system_core": 0,
-        "io_core": "invalid_string",
+        "io_core": 4,
         "worker_cores": [
           2
         ],

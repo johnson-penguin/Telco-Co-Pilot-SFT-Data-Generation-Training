@@ -368,9 +368,9 @@
               "rsrp_ThresholdSSB": 19,
               "prach_RootSequenceIndex_PR": 2,
               "prach_RootSequenceIndex": 1,
-              "msg1_SubcarrierSpacing": 1,
-              "restrictedSetConfig": 0,
-              "msg3_DeltaPreamble": 1,
+              "msg1_SubcarrierSpacing": 142,
+              "restrictedSetConfig": null,
+              "msg3_DeltaPreamble": null,
               "p0_NominalWithGrant": -90,
               "pucchGroupHopping": 0,
               "hoppingId": 40,
@@ -469,6 +469,7 @@
         "fh_config": [
           {
             "T1a_cp_dl": [
+              285,
               429
             ],
             "T1a_cp_ul": [

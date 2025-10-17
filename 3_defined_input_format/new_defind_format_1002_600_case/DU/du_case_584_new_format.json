@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth",
+  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].ul_carrierBandwidth=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -337,7 +337,7 @@
           "servingCellConfigCommon": [
             {
               "physCellId": 0,
-              "absoluteFrequencySSB": 641280,
+              "absoluteFrequencySSB": 151346,
               "dl_frequencyBand": 78,
               "dl_absoluteFrequencyPointA": 640008,
               "dl_offstToCarrier": 0,

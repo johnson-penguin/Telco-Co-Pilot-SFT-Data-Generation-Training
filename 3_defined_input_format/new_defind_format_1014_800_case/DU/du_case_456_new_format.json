@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.ru_addr[1]",
+  "misconfigured_param": "fhi_72.ru_addr[1]=ff:ff:ff:ff:ff:ff",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

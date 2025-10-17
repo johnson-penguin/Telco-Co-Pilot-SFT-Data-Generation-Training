@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "MACRLCs[0].remote_n_portd",
+  "misconfigured_param": "MACRLCs[0].remote_n_portd=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -347,7 +347,7 @@
               "initialDLBWPsubcarrierSpacing": 1,
               "initialDLBWPcontrolResourceSetZero": 12,
               "initialDLBWPsearchSpaceZero": 0,
-              "ul_frequencyBand": 78,
+              "ul_frequencyBand": 151,
               "ul_offstToCarrier": 0,
               "ul_subcarrierSpacing": 1,
               "ul_carrierBandwidth": 106,
@@ -404,7 +404,7 @@
           "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,
-          "remote_n_portd": "invalid_string"
+          "remote_n_portd": 2152
         }
       ],
       "L1s": [

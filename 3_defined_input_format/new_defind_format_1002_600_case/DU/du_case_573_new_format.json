@@ -354,7 +354,7 @@
               "pMax": 20,
               "initialULBWPlocationAndBandwidth": 28875,
               "initialULBWPsubcarrierSpacing": 1,
-              "prach_ConfigurationIndex": 98,
+              "prach_ConfigurationIndex": 144,
               "prach_msg1_FDM": 0,
               "prach_msg1_FrequencyStart": 0,
               "zeroCorrelationZoneConfig": 13,
@@ -477,6 +477,7 @@
               429
             ],
             "T1a_up": [
+              96,
               196
             ],
             "Ta4": [

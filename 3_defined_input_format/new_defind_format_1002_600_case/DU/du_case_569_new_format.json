@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "MACRLCs[0].remote_n_address",
+  "misconfigured_param": "MACRLCs[0].remote_n_address=abc.def.ghi.jkl",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -345,7 +345,7 @@
               "pMax": 20,
               "initialULBWPlocationAndBandwidth": 28875,
               "initialULBWPsubcarrierSpacing": 1,
-              "prach_ConfigurationIndex": 98,
+              "prach_ConfigurationIndex": 143,
               "prach_msg1_FDM": 0,
               "prach_msg1_FrequencyStart": 0,
               "zeroCorrelationZoneConfig": 13,
@@ -391,7 +391,7 @@
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
           "local_n_address": "127.0.0.3",
-          "remote_n_address": "abc.def.ghi.jkl",
+          "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,
           "remote_n_portc": 501,

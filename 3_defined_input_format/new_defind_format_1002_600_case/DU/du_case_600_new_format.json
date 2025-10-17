@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.mtu",
+  "misconfigured_param": "fhi_72.mtu=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -337,7 +337,7 @@
           "servingCellConfigCommon": [
             {
               "physCellId": 0,
-              "absoluteFrequencySSB": 641280,
+              "absoluteFrequencySSB": 151350,
               "dl_frequencyBand": 78,
               "dl_absoluteFrequencyPointA": 640008,
               "dl_offstToCarrier": 0,
@@ -465,7 +465,7 @@
           "e8:c7:4f:25:80:ed",
           "e8:c7:4f:25:80:ed"
         ],
-        "mtu": "invalid_string",
+        "mtu": 9000,
         "fh_config": [
           {
             "T1a_cp_dl": [

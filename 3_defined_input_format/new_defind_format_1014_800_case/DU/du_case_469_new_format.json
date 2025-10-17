@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "fhi_72.fh_config[0].Ta4",
+  "misconfigured_param": "fhi_72.fh_config[0].Ta4=[90, 950]",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

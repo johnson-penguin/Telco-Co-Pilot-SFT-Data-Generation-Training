@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "rfsimulator.serverport",
+  "misconfigured_param": "rfsimulator.serverport=-5",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

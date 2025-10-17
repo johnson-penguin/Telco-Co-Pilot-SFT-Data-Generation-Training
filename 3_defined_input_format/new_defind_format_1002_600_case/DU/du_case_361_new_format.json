@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "log_config.global_log_level",
+  "misconfigured_param": "log_config.global_log_level=123",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -399,7 +399,7 @@
           "num_cc": 1,
           "tr_s_preference": "local_L1",
           "tr_n_preference": "f1",
-          "local_n_address": "127.0.0.3",
+          "local_n_address": "10.20.113.77",
           "remote_n_address": "127.0.0.5",
           "local_n_portc": 500,
           "local_n_portd": 2152,
@@ -446,7 +446,7 @@
         "IQfile": "/tmp/rfsimulator.iqs"
       },
       "log_config": {
-        "global_log_level": 123,
+        "global_log_level": "info",
         "hw_log_level": "info",
         "phy_log_level": "info",
         "mac_log_level": "info"

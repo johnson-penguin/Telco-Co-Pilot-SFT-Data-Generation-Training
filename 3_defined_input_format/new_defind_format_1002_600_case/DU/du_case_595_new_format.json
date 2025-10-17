@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "RUs[0].nb_tx",
+  "misconfigured_param": "RUs[0].nb_tx=invalid_string",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
@@ -305,9 +305,9 @@
               "rsrp_ThresholdSSB": 19,
               "prach_RootSequenceIndex_PR": 2,
               "prach_RootSequenceIndex": 1,
-              "msg1_SubcarrierSpacing": 1,
-              "restrictedSetConfig": 0,
-              "msg3_DeltaPreamble": 1,
+              "msg1_SubcarrierSpacing": 148,
+              "restrictedSetConfig": null,
+              "msg3_DeltaPreamble": null,
               "p0_NominalWithGrant": -90,
               "pucchGroupHopping": 0,
               "hoppingId": 40,
@@ -356,11 +356,13 @@
       "RUs": [
         {
           "local_rf": "yes",
-          "nb_tx": "invalid_string",
-          "nb_rx": null,
-          "att_tx": null,
-          "att_rx": null,
-          "bands": [],
+          "nb_tx": 4,
+          "nb_rx": 4,
+          "att_tx": 0,
+          "att_rx": 0,
+          "bands": [
+            78
+          ],
           "max_pdschReferenceSignalPower": -27,
           "max_rxgain": 114,
           "sf_extension": 0,
