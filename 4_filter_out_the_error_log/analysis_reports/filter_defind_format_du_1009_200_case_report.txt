@@ -1,0 +1,42 @@
+--- 分析報告 (Analysis Report) ---
+分析目錄 (Analyzed Directory): C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\filter_defind_format_du_1009_200_case
+分析目標 Key (Target Key): 'misconfigured_param'
+
+總共在 37 個檔案中找到目標 Key。
+ (Found the target Key in a total of 37 files.)
+
+出現次數 (Count)         | 參數值 (Value)
+--------------------------------------------------------------------------------
+2                    | RUs[0].nb_tx=-1
+2                    | RUs[0].nb_rx=-1
+2                    | MACRLCs[0].local_n_address=999.999.999.999
+2                    | MACRLCs[0].remote_n_address=999.999.999.999
+1                    | gNBs.gNB_ID=0xFFFFFFFF
+1                    | tracking_area_code=0
+1                    | plmn_list[0].mcc=001A
+1                    | plmn_list[0].mnc_length=5
+1                    | nr_cellid=-1
+1                    | pdsch_AntennaPorts_XP=0
+1                    | dl_subcarrierSpacing=5
+1                    | rfsimulator.modelname=None
+1                    | MACRLCs[0].local_n_address=abc.def.ghi.jkl
+1                    | MACRLCs[0].remote_n_address=abc.def.ghi.jkl
+1                    | dl_carrierBandwidth=0
+1                    | RUs[0].nb_tx=invalid_string
+1                    | RUs[0].nb_rx=invalid_string
+1                    | prach_ConfigurationIndex=200
+1                    | preambleTransMax=11
+1                    | MACRLCs[0].local_n_address
+1                    | MACRLCs[0].remote_n_address
+1                    | ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR=9
+1                    | rsrp_ThresholdSSB=-1
+1                    | pucchGroupHopping=3
+1                    | hoppingId=2048
+1                    | ssb_periodicityServingCell=9
+1                    | subcarrierSpacing=4
+1                    | nrofDownlinkSlots=15
+1                    | MACRLCs[0].local_n_address=999.999.0.1
+1                    | RUs[0].nb_tx=9999999
+1                    | RUs[0].nb_rx=9999999
+1                    | Asn1_verbosity=None
+1                    | log_config.global_log_level=None

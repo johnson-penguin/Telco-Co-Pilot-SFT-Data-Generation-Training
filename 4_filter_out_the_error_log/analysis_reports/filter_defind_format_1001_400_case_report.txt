@@ -1,0 +1,107 @@
+--- 分析報告 (Analysis Report) ---
+分析目錄 (Analyzed Directory): C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\filter_defind_format_1001_400_case
+分析目標 Key (Target Key): 'misconfigured_param'
+
+總共在 136 個檔案中找到目標 Key。
+ (Found the target Key in a total of 136 files.)
+
+出現次數 (Count)         | 參數值 (Value)
+--------------------------------------------------------------------------------
+3                    | security.ciphering_algorithms[0]=nea9
+3                    | security.integrity_algorithms[0]=nia9
+3                    | gNBs.amf_ip_address.ipv4=999.999.999.999
+3                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF=999.999.999.999
+2                    | gNBs.tracking_area_code=invalid_string
+2                    | gNBs.tracking_area_code=9999999
+2                    | gNBs.plmn_list.mcc=9999999
+2                    | gNBs.plmn_list.mnc=9999999
+2                    | gNBs.plmn_list.mnc_length=9999999
+2                    | gNBs.plmn_list.snssaiList.sst=9999999
+2                    | gNBs.local_s_address=999.999.999.999
+2                    | gNBs.tr_s_preference=invalid_enum_value
+2                    | security.drb_ciphering=invalid_enum_value
+2                    | security.drb_integrity=invalid_enum_value
+2                    | security.ciphering_algorithms[1]=nea9
+2                    | security.ciphering_algorithms[2]=nea9
+2                    | security.integrity_algorithms[1]=nia9
+2                    | gNBs.gNB_ID=
+2                    | gNBs.gNB_name=
+2                    | gNBs.tracking_area_code=-1
+2                    | gNBs.plmn_list.mcc=-1
+2                    | gNBs.plmn_list.mnc=-1
+2                    | gNBs.plmn_list.mnc_length=-1
+2                    | gNBs.plmn_list.snssaiList.sst=-1
+2                    | gNBs.amf_ip_address.ipv4=abc.def.ghi.jkl
+2                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF=abc.def.ghi.jkl
+2                    | gNBs.local_s_address=abc.def.ghi.jkl
+2                    | security.drb_integrity=None
+2                    | Asn1_verbosity=None
+2                    | log_config.global_log_level=None
+2                    | RUs[0].nb_tx=-1
+2                    | RUs[0].nb_rx=-1
+2                    | MACRLCs[0].local_n_address=999.999.999.999
+2                    | MACRLCs[0].remote_n_address=999.999.999.999
+1                    | gNBs.tracking_area_code=65535
+1                    | gNBs.plmn_list.mcc=999
+1                    | gNBs.plmn_list.snssaiList.sst=256
+1                    | security.integrity_algorithms[0]=0
+1                    | security.integrity_algorithms[1]=0
+1                    | gNBs.gNB_ID=None
+1                    | gNBs.gNB_name=None
+1                    | gNBs.local_s_portd=invalid_string
+1                    | gNBs.plmn_list.mcc=invalid_string
+1                    | gNBs.plmn_list.mnc=invalid_string
+1                    | gNBs.plmn_list.mnc_length=invalid_string
+1                    | gNBs.amf_ip_address.ipv4=
+1                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF=
+1                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU=
+1                    | gNBs.local_s_address=
+1                    | gNBs.tr_s_preference=123
+1                    | security.ciphering_algorithms[0]=
+1                    | security.ciphering_algorithms[1]=
+1                    | security.ciphering_algorithms[2]=
+1                    | security.integrity_algorithms[0]=
+1                    | security.integrity_algorithms[1]=
+1                    | gNBs.gNB_name=12345
+1                    | gNBs.tr_s_preference=invalid_preference
+1                    | security.drb_ciphering=invalid_yes_no
+1                    | gNBs.local_s_address=invalid_ip_format
+1                    | gNBs.tr_s_preference=None
+1                    | security.drb_ciphering=None
+1                    | log_config.hw_log_level=None
+1                    | log_config.phy_log_level=None
+1                    | log_config.mac_log_level=None
+1                    | log_config.rlc_log_level=None
+1                    | log_config.pdcp_log_level=None
+1                    | log_config.rrc_log_level=None
+1                    | log_config.ngap_log_level=None
+1                    | log_config.f1ap_log_level=None
+1                    | security.ciphering_algorithms[0]=0
+1                    | security.ciphering_algorithms[1]=0
+1                    | security.ciphering_algorithms[2]=0
+1                    | tracking_area_code=0
+1                    | plmn_list[0].mcc=001A
+1                    | plmn_list[0].mnc_length=5
+1                    | nr_cellid=-1
+1                    | pdsch_AntennaPorts_XP=0
+1                    | dl_subcarrierSpacing=5
+1                    | rfsimulator.modelname=None
+1                    | MACRLCs[0].local_n_address=abc.def.ghi.jkl
+1                    | MACRLCs[0].remote_n_address=abc.def.ghi.jkl
+1                    | dl_carrierBandwidth=0
+1                    | RUs[0].nb_tx=invalid_string
+1                    | RUs[0].nb_rx=invalid_string
+1                    | prach_ConfigurationIndex=200
+1                    | preambleTransMax=11
+1                    | MACRLCs[0].local_n_address=
+1                    | MACRLCs[0].remote_n_address=
+1                    | ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR=9
+1                    | rsrp_ThresholdSSB=-1
+1                    | pucchGroupHopping=3
+1                    | hoppingId=2048
+1                    | ssb_periodicityServingCell=9
+1                    | subcarrierSpacing=4
+1                    | nrofDownlinkSlots=15
+1                    | MACRLCs[0].local_n_address=999.999.0.1
+1                    | RUs[0].nb_tx=9999999
+1                    | RUs[0].nb_rx=9999999

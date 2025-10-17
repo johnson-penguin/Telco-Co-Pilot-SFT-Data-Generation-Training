@@ -102,8 +102,8 @@ def filter_cases(input_dir, output_dir, success_pattern, reject_pattern):
 
 def main():
     base_dir = r"C:\Users\bmwlab\Desktop\cursor_gen_conf"
-    input_dir = os.path.join(base_dir, "3_defined_input_format", "new_defind_format_1002_600_case")
-    output_dir = os.path.join(base_dir, "4_filter_out_the_error_log", "filter_defind_format_1002_600_case")
+    input_dir = os.path.join(base_dir, "3_defined_input_format", "new_defind_format_1014_2000_case")
+    output_dir = os.path.join(base_dir, "4_filter_out_the_error_log", "filter_defind_format_1014_2000_case")
 
 
     success_pattern = "Received PDU Session Establishment Accept"

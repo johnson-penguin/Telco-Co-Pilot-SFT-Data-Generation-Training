@@ -1,0 +1,17 @@
+--- 分析報告 (Analysis Report) ---
+分析目錄 (Analyzed Directory): C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\filter_defind_format_1014_800_case
+分析目標 Key (Target Key): 'misconfigured_param'
+
+總共在 359 個檔案中找到目標 Key。
+ (Found the target Key in a total of 359 files.)
+
+出現次數 (Count)         | 參數值 (Value)
+--------------------------------------------------------------------------------
+79                   | gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex
+77                   | gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB
+75                   | MACRLCs[0].remote_n_address
+49                   | MACRLCs[0].local_n_address
+25                   | gNBs[0].servingCellConfigCommon[0].dl_absoluteFrequencyPointA
+25                   | gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing
+20                   | L1s[0].ofdm_offset_divisor
+9                    | rfsimulator.serverport

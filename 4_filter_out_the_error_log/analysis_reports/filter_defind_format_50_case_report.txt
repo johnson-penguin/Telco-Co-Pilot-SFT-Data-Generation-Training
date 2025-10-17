@@ -1,0 +1,39 @@
+--- 分析報告 (Analysis Report) ---
+分析目錄 (Analyzed Directory): C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\filter_defind_format_50_case
+分析目標 Key (Target Key): 'misconfigured_param'
+
+總共在 30 個檔案中找到目標 Key。
+ (Found the target Key in a total of 30 files.)
+
+出現次數 (Count)         | 參數值 (Value)
+--------------------------------------------------------------------------------
+1                    | gNBs.tracking_area_code=65535
+1                    | gNBs.plmn_list.mcc=999
+1                    | gNBs.plmn_list.snssaiList.sst=256
+1                    | gNBs.tracking_area_code=invalid_string
+1                    | security.ciphering_algorithms[0]=nea9
+1                    | security.integrity_algorithms[0]=nia9
+1                    | gNBs.tr_s_preference=invalid_preference
+1                    | security.drb_ciphering=invalid_yes_no
+1                    | gNBs.amf_ip_address.ipv4=999.999.999.999
+1                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NG_AMF=999.999.999.999
+1                    | gNBs.NETWORK_INTERFACES.GNB_IPV4_ADDRESS_FOR_NGU=999.999.999.999
+1                    | gNBs.local_s_address=invalid_ip_format
+1                    | security.drb_integrity=None
+1                    | tracking_area_code=0
+1                    | plmn_list[0].mcc=001A
+1                    | plmn_list[0].mnc_length=5
+1                    | nr_cellid=-1
+1                    | pdsch_AntennaPorts_XP=0
+1                    | dl_subcarrierSpacing=5
+1                    | dl_carrierBandwidth=0
+1                    | prach_ConfigurationIndex=200
+1                    | preambleTransMax=11
+1                    | ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR=9
+1                    | rsrp_ThresholdSSB=-1
+1                    | pucchGroupHopping=3
+1                    | hoppingId=2048
+1                    | ssb_periodicityServingCell=9
+1                    | subcarrierSpacing=4
+1                    | nrofDownlinkSlots=15
+1                    | MACRLCs[0].local_n_address=999.999.0.1
