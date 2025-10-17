@@ -1,5 +1,5 @@
 {
-  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].ul_frequencyBand",
+  "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].ul_frequencyBand=409",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
