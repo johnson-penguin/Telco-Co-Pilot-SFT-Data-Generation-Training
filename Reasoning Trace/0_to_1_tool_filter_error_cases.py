@@ -8,7 +8,7 @@ This script will:
 1. Scan all JSON files in the new_defind_format_1002_1000_case directory
 2. Skip files containing either the success or reject message
 3. Copy files WITHOUT both messages to the filter_defind_format_1002_1000_case directory
-4. Maintain the same directory structure (CU/DU)
+4. Maintain the same directory structure (CU/DU/UE)
 """
 
 import os
@@ -40,6 +40,7 @@ def create_output_directory(output_base_dir):
     """Create the output directory structure."""
     os.makedirs(os.path.join(output_base_dir, 'CU'), exist_ok=True)
     os.makedirs(os.path.join(output_base_dir, 'DU'), exist_ok=True)
+    os.makedirs(os.path.join(output_base_dir, 'UE'), exist_ok=True)
     print(f"Created output directories under {output_base_dir}")
 
 
@@ -51,8 +52,9 @@ def filter_cases(input_dir, output_dir, success_pattern, reject_pattern):
     filtered_files = 0
     cu_filtered = 0
     du_filtered = 0
+    ue_filtered = 0
 
-    for unit in ['CU', 'DU']:
+    for unit in ['CU', 'DU', 'UE']:
         input_subdir = os.path.join(input_dir, unit)
         output_subdir = os.path.join(output_dir, unit)
 
@@ -77,8 +79,10 @@ def filter_cases(input_dir, output_dir, success_pattern, reject_pattern):
                 filtered_files += 1
                 if unit == 'CU':
                     cu_filtered += 1
-                else:
+                elif unit == 'DU': 
                     du_filtered += 1
+                elif unit == 'UE': 
+                    ue_filtered += 1
             else:
                 reason = "success" if has_success else "reject"
                 print(f"  [SKIPPED-{reason.upper()}] {filename}")
@@ -91,14 +95,15 @@ def filter_cases(input_dir, output_dir, success_pattern, reject_pattern):
     print(f"Files WITHOUT success/reject message: {filtered_files}")
     print(f"  - CU cases: {cu_filtered}")
     print(f"  - DU cases: {du_filtered}")
+    print(f"  - UE cases: {ue_filtered}") 
     print(f"Output directory: {output_dir}")
     print("="*60)
 
 
 def main():
     base_dir = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\Reasoning Trace"
-    input_dir = os.path.join(base_dir, "0_input_data(unclean)", "new_defind_format_1014_2_1000_case")
-    output_dir = os.path.join(base_dir, "1_after_processing(clean)", "filter_defind_format_1014_2_1000_case")
+    input_dir = os.path.join(base_dir, "0_input_data(unclean)", "new_defind_format_ue_1016_175_case")
+    output_dir = os.path.join(base_dir, "1_after_processing(clean)", "filter_defind_format_ue_1016_175_case")
 
 
     success_pattern = "Received PDU Session Establishment Accept"
