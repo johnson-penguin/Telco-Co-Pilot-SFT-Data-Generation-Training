@@ -92,7 +92,7 @@ if __name__ == "__main__":
     TARGET_KEY = "misconfigured_param"
 
     # 4. 設定儲存報告的資料夾路徑。
-    OUTPUT_REPORTS_DIR = os.path.join(PARENT_DIRECTORY, "analysis_reports")
+    OUTPUT_REPORTS_DIR = os.path.join(PARENT_DIRECTORY, "param_check_reports")
 
     # --- 執行迴圈，處理所有指定的資料夾 ---
     
