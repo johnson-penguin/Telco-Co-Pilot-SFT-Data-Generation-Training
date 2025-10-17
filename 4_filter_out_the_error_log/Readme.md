@@ -1,9 +1,9 @@
-# 檔案計數報告
-> 最後更新時間：2025-10-17 18:45:46
+# File Count Report
+> Last Updated: 2025-10-17 19:37:55
 
 ---
 
-## 📁 各資料夾詳細計數
+## 📁 Detailed Counts by Folder
 
 ### filter_defind_format_1001_400_case
 - **CU**: `100` cases
@@ -39,7 +39,7 @@
 
 ---
 
-## 📊 總結
-- **總計 CU cases**: `272`
-- **總計 DU cases**: `1719`
-- **總計 UE cases**: `141`
+## 📊 Summary
+- **Total CU cases**: `272`
+- **Total DU cases**: `1719`
+- **Total UE cases**: `141`
