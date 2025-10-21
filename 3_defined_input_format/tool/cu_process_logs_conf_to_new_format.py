@@ -214,15 +214,9 @@ def main():
             # =======================================================
         
         else:
-            # 處理預設錯誤值的情況
-            misconfigured_param = "gNBs.gNB_ID=0xFFFFFFFF"
-            # 針對預設錯誤，嘗試查找 gNB_ID 的原始參數 (假設路徑為 gNBs.0.gNB_ID)
-            default_key = "gNBs.0.gNB_ID" 
-            default_original_value = get_value_from_json_path(cu_baseline, default_key)
-            if default_original_value is not None:
-                original_param = f"{default_key}={default_original_value}"
-            else:
-                original_param = "gNBs.gNB_ID=<CORRECT_DEFAULT_ID_NOT_FOUND>"
+            # 找不到具體的錯誤參數時，使用 none
+            misconfigured_param = "none"
+            original_param = "none"
 
 
         case_payload = {
