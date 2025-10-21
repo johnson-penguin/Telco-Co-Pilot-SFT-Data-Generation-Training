@@ -214,7 +214,7 @@ def main():
 
         case_payload = {
             "misconfigured_param": misconfigured_param,
-            "original_param": original_param,
+            "correct_param": original_param,
             "logs": log_data,
             "network_config": {
                 "cu_conf": cu_baseline,
