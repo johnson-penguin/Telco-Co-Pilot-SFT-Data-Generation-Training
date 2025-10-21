@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "log_config.pdcp_log_level=123",
+  "original_param": "log_config.pdcp_log_level=info",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

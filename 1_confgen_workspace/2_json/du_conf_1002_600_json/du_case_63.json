@@ -124,10 +124,12 @@
     {
       "local_rf": "yes",
       "nb_tx": 4,
-      "nb_rx": 9999999,
-      "att_tx": null,
-      "att_rx": null,
-      "bands": [],
+      "nb_rx": 4,
+      "att_tx": 0,
+      "att_rx": 0,
+      "bands": [
+        78
+      ],
       "max_pdschReferenceSignalPower": -27,
       "max_rxgain": 114,
       "sf_extension": 0,
@@ -171,7 +173,7 @@
     "fh_config": [
       {
         "T1a_cp_dl": [
-          285,
+          0,
           429
         ],
         "T1a_cp_ul": [

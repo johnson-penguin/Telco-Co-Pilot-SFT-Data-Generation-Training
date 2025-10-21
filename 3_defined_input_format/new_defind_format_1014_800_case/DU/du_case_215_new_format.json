@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "L1s[0].ofdm_offset_divisor=0",
+  "original_param": "L1s[0].ofdm_offset_divisor=8",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

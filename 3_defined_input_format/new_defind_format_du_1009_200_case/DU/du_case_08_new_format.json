@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "pusch_AntennaPorts=four",
+  "original_param": "pusch_AntennaPorts=4",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.gNB_ID=None",
+  "original_param": "gNBs.gNB_ID=0xe00",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/cu_case_102.conf - line 11: syntax error",

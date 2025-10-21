@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "security.ciphering_algorithms[1]=nea9",
+  "original_param": "security.ciphering_algorithms[1]=nea2",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

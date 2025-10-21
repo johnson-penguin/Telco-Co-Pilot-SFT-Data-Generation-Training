@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "rfsimulator.modelname=invalid_enum_value",
+  "original_param": "rfsimulator.modelname=AWGN",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

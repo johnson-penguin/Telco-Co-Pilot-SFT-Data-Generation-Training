@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "MACRLCs[0].local_n_address=172.70.113.14",
+  "original_param": "MACRLCs[0].local_n_address=127.0.0.3",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

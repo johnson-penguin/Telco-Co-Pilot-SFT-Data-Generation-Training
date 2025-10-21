@@ -108,7 +108,7 @@
       "local_n_portc": 500,
       "local_n_portd": 2152,
       "remote_n_portc": 501,
-      "remote_n_portd": 2152
+      "remote_n_portd": -1
     }
   ],
   "L1s": [

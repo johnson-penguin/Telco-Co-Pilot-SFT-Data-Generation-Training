@@ -131,7 +131,7 @@
         78
       ],
       "max_pdschReferenceSignalPower": -27,
-      "max_rxgain": 9999999,
+      "max_rxgain": 114,
       "sf_extension": 0,
       "eNB_instances": [
         0
@@ -177,7 +177,7 @@
           429
         ],
         "T1a_cp_ul": [
-          285,
+          0,
           429
         ],
         "T1a_up": [

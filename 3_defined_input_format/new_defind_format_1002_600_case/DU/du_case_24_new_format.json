@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "fhi_72.system_core=-1",
+  "original_param": "fhi_72.system_core=0",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

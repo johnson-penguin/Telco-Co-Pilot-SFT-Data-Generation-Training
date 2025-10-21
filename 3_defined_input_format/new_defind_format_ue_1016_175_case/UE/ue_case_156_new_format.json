@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "nssai_sst=None",
+  "original_param": "nssai_sst=1",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

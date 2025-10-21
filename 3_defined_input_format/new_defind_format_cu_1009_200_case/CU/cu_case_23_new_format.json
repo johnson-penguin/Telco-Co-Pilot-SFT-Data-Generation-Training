@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "log_config.global_log_level=invalid_level",
+  "original_param": "log_config.global_log_level=info",
   "logs": {
     "CU": [
       "[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000",

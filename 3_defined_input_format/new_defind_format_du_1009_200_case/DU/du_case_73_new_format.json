@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs[0].sib1_tda=9999999",
+  "original_param": "gNBs[0].sib1_tda=15",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

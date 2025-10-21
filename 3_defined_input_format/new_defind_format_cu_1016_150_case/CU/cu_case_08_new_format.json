@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.local_s_address=None",
+  "original_param": "gNBs.local_s_address=127.0.0.5",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1016_cu/cu_case_08.conf - line 34: syntax error",

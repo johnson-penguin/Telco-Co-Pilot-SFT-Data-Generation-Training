@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U=501",
+  "original_param": "gNBs.NETWORK_INTERFACES.GNB_PORT_FOR_S1U=2152",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

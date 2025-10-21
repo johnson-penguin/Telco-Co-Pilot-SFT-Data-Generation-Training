@@ -146,7 +146,7 @@
     "serveraddr": "server",
     "serverport": 4043,
     "options": [],
-    "modelname": "invalid_enum_value",
+    "modelname": "AWGN",
     "IQfile": "/tmp/rfsimulator.iqs"
   },
   "log_config": {

@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "plmn_list[0].snssaiList[0].sd=010203",
+  "original_param": "plmn_list[0].snssaiList[0].sd=0x010203",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

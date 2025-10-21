@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "security.drb_integrity=123",
+  "original_param": "security.drb_integrity=no",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

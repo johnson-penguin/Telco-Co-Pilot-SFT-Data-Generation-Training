@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "MACRLCs[0].remote_n_address=100.169.23.25",
+  "original_param": "MACRLCs[0].remote_n_address=127.0.0.5",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

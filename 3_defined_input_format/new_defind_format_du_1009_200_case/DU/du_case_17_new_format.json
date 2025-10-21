@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "hoppingId=2048",
+  "original_param": "hoppingId=40",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

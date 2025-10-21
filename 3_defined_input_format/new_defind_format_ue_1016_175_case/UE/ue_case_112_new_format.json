@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "opc=9D2C8E4A6B0F3D1C7E5A2B8D4F6C0E9A",
+  "original_param": "opc=C42449363BBAD02B66D16BC975D77CC1",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

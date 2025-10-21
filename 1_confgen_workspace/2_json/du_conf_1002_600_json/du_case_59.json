@@ -106,7 +106,7 @@
       "local_n_address": "127.0.0.3",
       "remote_n_address": "127.0.0.5",
       "local_n_portc": 500,
-      "local_n_portd": 9999999,
+      "local_n_portd": 2152,
       "remote_n_portc": 501,
       "remote_n_portd": 2152
     }
@@ -146,7 +146,7 @@
     "serveraddr": "server",
     "serverport": 4043,
     "options": [],
-    "modelname": "AWGN",
+    "modelname": "invalid_enum_value",
     "IQfile": "/tmp/rfsimulator.iqs"
   },
   "log_config": {

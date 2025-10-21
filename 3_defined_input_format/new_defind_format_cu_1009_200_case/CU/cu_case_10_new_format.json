@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.SCTP.SCTP_OUTSTREAMS=invalid_string",
+  "original_param": "gNBs.SCTP.SCTP_OUTSTREAMS=2",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

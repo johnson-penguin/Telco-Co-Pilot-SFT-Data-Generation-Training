@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "Asn1_verbosity=debug",
+  "original_param": "Asn1_verbosity=annoying",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

@@ -150,7 +150,7 @@
     "IQfile": "/tmp/rfsimulator.iqs"
   },
   "log_config": {
-    "global_log_level": "invalid_enum_value",
+    "global_log_level": "info",
     "hw_log_level": "info",
     "phy_log_level": "info",
     "mac_log_level": "info"

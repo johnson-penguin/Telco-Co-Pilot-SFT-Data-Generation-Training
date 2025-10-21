@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex=346",
+  "original_param": "gNBs[0].servingCellConfigCommon[0].prach_ConfigurationIndex=98",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

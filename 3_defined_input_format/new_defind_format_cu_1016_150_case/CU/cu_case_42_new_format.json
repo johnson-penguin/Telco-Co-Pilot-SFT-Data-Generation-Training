@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.local_s_portd=22",
+  "original_param": "gNBs.local_s_portd=2152",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

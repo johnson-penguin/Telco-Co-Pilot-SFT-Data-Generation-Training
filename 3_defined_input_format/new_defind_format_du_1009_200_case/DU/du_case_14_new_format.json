@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR=9",
+  "original_param": "ssb_perRACH_OccasionAndCB_PreamblesPerSSB_PR=4",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

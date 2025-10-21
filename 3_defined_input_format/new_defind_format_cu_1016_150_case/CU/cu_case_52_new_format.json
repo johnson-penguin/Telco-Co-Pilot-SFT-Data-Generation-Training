@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.remote_s_address=192.168.1.255",
+  "original_param": "gNBs.remote_s_address=127.0.0.3",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

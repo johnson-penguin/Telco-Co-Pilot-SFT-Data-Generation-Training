@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB=700032",
+  "original_param": "gNBs[0].servingCellConfigCommon[0].absoluteFrequencySSB=641280",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

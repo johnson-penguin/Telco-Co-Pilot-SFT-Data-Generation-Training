@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "log_config.pdcp_log_level=None",
+  "original_param": "log_config.pdcp_log_level=info",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/cu_case_93.conf - line 87: syntax error",

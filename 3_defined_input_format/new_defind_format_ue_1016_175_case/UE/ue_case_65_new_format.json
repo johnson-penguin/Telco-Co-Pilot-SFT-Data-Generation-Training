@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "key=f0e1d2c3b4a5968778695a4b3c2d1e0f",
+  "original_param": "key=fec86ba6eb707ed08905757b1bb44b8f",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

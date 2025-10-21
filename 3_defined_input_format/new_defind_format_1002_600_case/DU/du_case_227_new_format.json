@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "RUs[0].nb_rx=invalid_string",
+  "original_param": "RUs[0].nb_rx=4",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

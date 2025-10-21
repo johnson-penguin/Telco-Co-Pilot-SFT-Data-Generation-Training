@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM=None",
+  "original_param": "gNBs[0].servingCellConfigCommon[0].prach_msg1_FDM=0",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

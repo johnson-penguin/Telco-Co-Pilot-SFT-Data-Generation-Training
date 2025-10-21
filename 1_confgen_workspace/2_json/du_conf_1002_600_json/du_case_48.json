@@ -131,7 +131,7 @@
         78
       ],
       "max_pdschReferenceSignalPower": -27,
-      "max_rxgain": 114,
+      "max_rxgain": -1,
       "sf_extension": 0,
       "eNB_instances": [
         0

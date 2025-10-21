@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.amf_ip_address.ipv4=127.0.0.5",
+  "original_param": "gNBs.amf_ip_address.ipv4=192.168.70.132",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1016_cu/cu_case_138.conf - line 91: syntax error",

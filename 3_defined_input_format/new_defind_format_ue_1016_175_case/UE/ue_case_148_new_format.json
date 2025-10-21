@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "dnn=iotnet.gprs",
+  "original_param": "dnn=oai",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
