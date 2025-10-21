@@ -1,6 +1,6 @@
 import os
 import datetime
-
+from pathlib import Path
 def summarize_and_update_readme(root_dir, readme_path):
     """
     Traverses the specified root directory, counts the number of files in 'CU', 'DU', and 'UE'
@@ -89,9 +89,16 @@ def summarize_and_update_readme(root_dir, readme_path):
 # 2. Simply run this Python script.
 
 # The target directory to analyze
-target_directory = r'C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log'
+BASE_DIR = Path(__file__).resolve()
+PARENT_DIRECTORY = BASE_DIR.parent.parent
+# print("--------------------------------")
+# print(f"BASE_DIR: {BASE_DIR}")
+# print("--------------------------------")
+# print(f"PARENT_DIRECTORY: {PARENT_DIRECTORY}")
+
+target_directory = PARENT_DIRECTORY
 # The path for the output Readme.md file
-readme_file_path = r'C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\Readme.md'
+readme_file_path = PARENT_DIRECTORY / "Readme.md"
 
 # Execute the main function
 summarize_and_update_readme(target_directory, readme_file_path)

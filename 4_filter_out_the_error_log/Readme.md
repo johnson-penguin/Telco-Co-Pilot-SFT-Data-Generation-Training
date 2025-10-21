@@ -1,13 +1,9 @@
 # File Count Report
-> Last Updated: 2025-10-17 19:37:55
+> Last Updated: 2025-10-21 17:42:00
 
 ---
 
 ## 📁 Detailed Counts by Folder
-
-### filter_defind_format_1001_400_case
-- **CU**: `100` cases
-- **DU**: `36` cases
 
 ### filter_defind_format_1002_600_case
 - **DU**: `357` cases
@@ -17,10 +13,6 @@
 
 ### filter_defind_format_1014_800_case
 - **DU**: `359` cases
-
-### filter_defind_format_50_case
-- **CU**: `13` cases
-- **DU**: `17` cases
 
 ### filter_defind_format_cu_1009_200_case
 - **CU**: `104` cases
@@ -40,6 +32,6 @@
 ---
 
 ## 📊 Summary
-- **Total CU cases**: `272`
-- **Total DU cases**: `1719`
+- **Total CU cases**: `159`
+- **Total DU cases**: `1666`
 - **Total UE cases**: `141`

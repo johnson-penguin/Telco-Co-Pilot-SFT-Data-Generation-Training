@@ -1,7 +1,7 @@
 import os
 import json
 from collections import Counter
-
+from pathlib import Path
 def analyze_and_save_report(root_directory, target_key, output_filepath):
     """
     遞迴掃描指定目錄下的所有 .json 檔案，統計特定 key 的 value 分布，
@@ -73,7 +73,12 @@ if __name__ == "__main__":
     # --- 您只需要設定這裡的變數 ---
 
     # 1. 設定包含所有要分析資料夾的「上層目錄」
-    PARENT_DIRECTORY = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log"
+    BASE_DIR = Path(__file__).resolve()
+    PARENT_DIRECTORY = BASE_DIR.parent.parent
+    # print("--------------------------------")
+    # print(f"BASE_DIR: {BASE_DIR}")
+    # print("--------------------------------")
+    # print(f"PROJECT_ROOT: {PARENT_DIRECTORY}")
 
     # 2. 以列表形式，填入所有要分析的「資料夾名稱」
     FOLDERS_TO_ANALYZE = [
