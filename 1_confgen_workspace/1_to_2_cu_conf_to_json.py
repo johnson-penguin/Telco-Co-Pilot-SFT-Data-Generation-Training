@@ -3,6 +3,7 @@ import os
 import re
 import json
 import argparse
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 
@@ -253,9 +254,17 @@ def convert_file(input_path: str, output_path: str) -> None:
 
 
 def main() -> None:
-    # Hardcoded defaults for CU
-    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\cu_conf_1009_200\conf"
-    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\cu_conf_1009_200_json"
+    BASE_DIR = Path(__file__).resolve().parent
+    # 專案根目錄：從 BASE_DIR 往上退兩層
+    # C:\Users\wasd0\Desktop\Telco-Co-Pilot-SFT-Data-Generation-Training\1_confgen_workspace\1_to_2_cu_conf_to_json.py
+    PROJECT_ROOT = BASE_DIR.parent
+    # print("--------------------------------")
+    # print(f"BASE_DIR: {BASE_DIR}")
+    # print("--------------------------------")
+
+
+    DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "1_conf" / "cu_conf_1001_200" / "error_conf"
+    DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "2_json" / "cu_conf_1001_200_json"
 
     parser = argparse.ArgumentParser(description="Convert CU .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)

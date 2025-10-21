@@ -3,6 +3,7 @@ import os
 import re
 import json
 import argparse
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 
@@ -124,9 +125,16 @@ def convert_file(input_path: str, output_path: str) -> None:
 
 
 def main() -> None:
-    # Hardcoded defaults for UE
-    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\ue_conf_1016_175\conf"
-    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\ue_conf_1016_175_json"
+    BASE_DIR = Path(__file__).resolve().parent
+    PROJECT_ROOT = BASE_DIR.parent
+    # print("--------------------------------")
+    # print(f"BASE_DIR: {BASE_DIR}")
+    # print("--------------------------------")
+
+    DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "1_conf" / "ue_conf_1016_175" / "conf"
+    DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "2_json" / "ue_conf_1016_175_json"
+
+
 
     parser = argparse.ArgumentParser(description="Convert UE .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)

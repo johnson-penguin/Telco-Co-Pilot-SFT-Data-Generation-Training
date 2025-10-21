@@ -122,10 +122,10 @@ def main():
     print(f"PROJECT_ROOT: {PROJECT_ROOT}")
 
     # 使用 PROJECT_ROOT 搭配相對路徑
-    conf_root = PROJECT_ROOT / "1_confgen_workspace/1_conf/du_conf_1009_200"
-    du_config_root = PROJECT_ROOT / "1_confgen_workspace/2_json/du_conf_1009_200_json"
-    runlog_root_for_scan = PROJECT_ROOT / "2_runlog_workspace/logs_batch_run_du_1009_200"
-    output_dir = PROJECT_ROOT / "3_defined_input_format/new_defind_format_du_1009_200_case"
+    conf_root = PROJECT_ROOT / "1_confgen_workspace/1_conf/du_conf_1001_200"
+    du_config_root = PROJECT_ROOT / "1_confgen_workspace/2_json/du_conf_1001_200_json"
+    runlog_root_for_scan = PROJECT_ROOT / "2_runlog_workspace/logs_batch_run_du_1001_200"
+    output_dir = PROJECT_ROOT / "3_defined_input_format/new_defind_format_du_1001_200_case"
 
     
     # Baseline JSONs for CU, UE, and DU filling

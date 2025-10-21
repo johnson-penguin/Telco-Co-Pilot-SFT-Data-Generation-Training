@@ -14,7 +14,7 @@ This script will:
 import os
 import json
 import shutil
-
+from pathlib import Path 
 def contains_message(file_path, pattern):
     """Check if a JSON file contains the given message pattern."""
     try:
@@ -101,9 +101,15 @@ def filter_cases(input_dir, output_dir, success_pattern, reject_pattern):
 
 
 def main():
-    base_dir = r"C:\Users\bmwlab\Desktop\cursor_gen_conf"
-    input_dir = os.path.join(base_dir, "3_defined_input_format", "new_defind_format_1014_2000_case")
-    output_dir = os.path.join(base_dir, "4_filter_out_the_error_log", "filter_defind_format_1014_2000_case")
+    BASE_DIR = Path(__file__).resolve()
+    PROJECT_ROOT = BASE_DIR.parent.parent.parent
+    # print("--------------------------------")
+    # print(f"BASE_DIR: {BASE_DIR}")
+    # print("--------------------------------")
+    # print(f"PROJECT_ROOT: {PROJECT_ROOT}")
+
+    input_dir = os.path.join(PROJECT_ROOT, "3_defined_input_format", "new_defind_format_1002_600_case")
+    output_dir = os.path.join(PROJECT_ROOT, "4_filter_out_the_error_log", "filter_defind_format_1002_600_case")
 
 
     success_pattern = "Received PDU Session Establishment Accept"

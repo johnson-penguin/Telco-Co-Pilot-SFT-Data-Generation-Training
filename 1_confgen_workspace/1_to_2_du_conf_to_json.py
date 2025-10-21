@@ -3,6 +3,7 @@ import os
 import re
 import json
 import argparse
+from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 
@@ -423,15 +424,22 @@ def parse_conf_to_json(conf_text: str) -> Dict[str, Any]:
 
 
 def convert_file(input_path: str, output_path: str) -> None:
+    print(f"Converting: {input_path} -> {output_path}")
     conf_text = read_text(input_path)
     data = parse_conf_to_json(conf_text)
     write_json(output_path, data)
+    print(f"Successfully converted {os.path.basename(input_path)}.")
 
 
 def main() -> None:
-    # Hardcoded defaults (absolute paths requested by user)
-    DEFAULT_INPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\1_conf\du_conf_1009_200\conf"
-    DEFAULT_OUTPUT = r"C:\Users\bmwlab\Desktop\cursor_gen_conf\1_confgen_workspace\2_json\du_conf_1009_200_json"
+    BASE_DIR = Path(__file__).resolve().parent
+    PROJECT_ROOT = BASE_DIR.parent
+    # print("--------------------------------")
+    # print(f"BASE_DIR: {BASE_DIR}")
+    # print("--------------------------------")
+
+    DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "1_conf" / "du_conf_1001_200" / "error_conf"
+    DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "2_json" / "du_conf_1001_200_json"
 
     parser = argparse.ArgumentParser(description="Convert DU .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)
@@ -440,18 +448,20 @@ def main() -> None:
 
     # Fallback to workspace-relative paths if absolute defaults are not present
     if not os.path.exists(args.input):
-        rel_input = os.path.join("1_confgen_workspace", "1_conf", "du_conf_1002_600", "conf")
+        print(f"Warning: Default input path not found: {args.input}")
+        rel_input = os.path.join("1_confgen_workspace", "1_conf", "du_conf_default", "conf")
         if os.path.exists(rel_input):
+            print(f"Falling back to relative path: {rel_input}")
             args.input = rel_input
-    if not os.path.exists(args.output):
-        rel_output = os.path.join("1_confgen_workspace", "2_json", "du_conf_1002_600_json")
-        if os.path.exists(rel_output):
-            args.output = rel_output
+        else:
+            print(f"Error: Could not find fallback path either: {rel_input}")
+            return
 
     if os.path.isdir(args.input):
         in_dir = args.input
         out_dir = args.output
         os.makedirs(out_dir, exist_ok=True)
+        print(f"Processing directory: {in_dir} -> {out_dir}")
         for name in sorted(os.listdir(in_dir)):
             if not name.endswith(".conf"):
                 continue
@@ -459,10 +469,12 @@ def main() -> None:
             out_name = os.path.splitext(name)[0] + ".json"
             out_path = os.path.join(out_dir, out_name)
             convert_file(in_path, out_path)
+        print("\nDirectory processing complete.")
         return
 
     # Single file
     convert_file(args.input, args.output)
+    print("\nFile conversion complete.")
 
 
 if __name__ == "__main__":
