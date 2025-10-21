@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "plmn_list[0].mcc=001A",
+  "original_param": "plmn_list[0].mcc=1",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

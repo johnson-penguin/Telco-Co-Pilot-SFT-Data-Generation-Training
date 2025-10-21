@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "gNBs.local_s_address=127.0.0",
+  "original_param": "gNBs.local_s_address=127.0.0.5",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

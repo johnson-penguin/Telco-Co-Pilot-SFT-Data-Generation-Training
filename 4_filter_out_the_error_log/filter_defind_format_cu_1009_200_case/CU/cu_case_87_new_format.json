@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "security.drb_integrity=None",
+  "original_param": "security.drb_integrity=no",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/cu_case_87.conf - line 77: syntax error",

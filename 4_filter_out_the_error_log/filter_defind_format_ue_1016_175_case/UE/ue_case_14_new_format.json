@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "imsi=001020000000001",
+  "original_param": "imsi=001010000000001",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

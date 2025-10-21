@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "security.drb_ciphering=invalid_enum_value",
+  "original_param": "security.drb_ciphering=yes",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",

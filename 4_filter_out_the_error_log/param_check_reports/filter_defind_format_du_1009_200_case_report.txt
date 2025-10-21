@@ -1,5 +1,5 @@
 --- 分析報告 (Analysis Report) ---
-分析目錄 (Analyzed Directory): C:\Users\bmwlab\Desktop\cursor_gen_conf\4_filter_out_the_error_log\filter_defind_format_du_1009_200_case
+分析目錄 (Analyzed Directory): C:\Users\wasd0\Desktop\Telco-Co-Pilot-SFT-Data-Generation-Training\4_filter_out_the_error_log\filter_defind_format_du_1009_200_case
 分析目標 Key (Target Key): 'misconfigured_param'
 
 總共在 37 個檔案中找到目標 Key。

@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "Asn1_verbosity=None",
+  "original_param": "Asn1_verbosity=none",
   "logs": {
     "CU": [
       "[LIBCONFIG] file /home/oai72/Johnson/auto_run_gnb_ue/error_conf_1009_400/cu_case_84.conf - line 4: syntax error",

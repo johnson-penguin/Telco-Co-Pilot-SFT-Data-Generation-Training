@@ -1,5 +1,6 @@
 {
   "misconfigured_param": "preambleTransMax=11",
+  "original_param": "preambleTransMax=6",
   "logs": {
     "CU": [
       "[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)",
