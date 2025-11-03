@@ -81,8 +81,8 @@ def run_specific_llm_test():
     """
     
     # File Paths
-    conf_file_path = "/home/ksmo/johnson/Config-Variator-rApp/log_preprocessing_pipeline_tool/0_required_inputs/baseline_conf/du_gnb.conf"
-    json_file_path = "/home/ksmo/johnson/Config-Variator-rApp/log_preprocessing_pipeline_tool/0_required_inputs/baseline_conf_json/du_gnb.json"
+    conf_file_path = "/home/ksmo/johnson/Config-Variator-rApp/log_preprocessing_pipeline_tool/0_required_inputs/baseline_conf/cu_gnb.conf"
+    json_file_path = "/home/ksmo/johnson/Config-Variator-rApp/log_preprocessing_pipeline_tool/0_required_inputs/baseline_conf_json/cu_gnb.json"
     
     # 1. Checking API Key
     api_key = os.getenv("Johnson_GOOGLE_API_KEY")
@@ -122,19 +122,19 @@ def run_specific_llm_test():
     5.  Your entire response MUST be only the JSON array. Do not include any other text.
 
     ## Input: Baseline .conf file content
-    ---[START DU_GNB.CONF]---
+    ---[START CU_GNB.CONF]---
     {conf_content}
-    ---[END DU_GNB.CONF]---
+    ---[END CU_GNB.CONF]---
 
     ## Input: Reference .json file content
-    ---[START DU_GNB.JSON]---
+    ---[START CU_GNB.JSON]---
     {json_content}
-    ---[END DU_GNB.JSON]---
+    ---[END CU_GNB.JSON]---
 
     ## Output Schema (Produce a JSON array of objects like this)
     [
       {{
-        "filename": "du_case_001.json",
+        "filename": "cu_case_001.json",
         "modified_key": "path.to.the.key",
         "original_value": "original_value_from_json",
         "error_value": "new_generated_error_value"

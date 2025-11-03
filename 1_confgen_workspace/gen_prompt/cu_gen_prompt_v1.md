@@ -3,7 +3,7 @@ You are a 5G gNodeB configuration fuzz-test expert. Given a valid JSON configura
 ## Rules
 
 1. Modify exactly one key per case (single-key error). Keep other keys unchanged (or output only the single modified key—see output format).
-2. Produce 25 distinct cases, covering different error categories.
+2. producing 25 distinct cases, covering different error categories.
 3. Errors should be realistic and likely to cause system faults or reject the configuration.
 4. Error categories (cover at least these):
   - out_of_range
@@ -12,24 +12,40 @@ You are a 5G gNodeB configuration fuzz-test expert. Given a valid JSON configura
   - invalid_format
   - logical_contradiction
   - missing_value
-5. Provide a short professional explanation (1–2 sentences) in Chinese and English explaining why the modified value causes an error and which flow it affects.
+5. Provide a short professional explanation (1–2 sentences) in English explaining why the modified value causes an error and which flow it affects.
 6. Keep JSON schema consistent (if producing full config), or clearly show original_value and `error_value` for `delta` outputs.
-7. Name files `cu_case_01.json` … `cu_case_n.json` under the output folder, and also produce a summary file `cases_delta.json.`
+7. Produce a summary file `cases_delta.json.`
 8. Optional flags: --seed <int> for reproducibility; --format full|delta.
 9. If schema constraints exist for the key (e.g., allowed enum), generate errors that violate those constraints.
 c
 Example delta output
 [
+ {
+    "filename": "cu_case_001.json",
+    "modified_key": "paramater",
+    "original_value": "original_paramater_value",
+    "error_value": "error_paramater_value"
+  },
   {
-    "filename": "case_01.json",
-    "modified_key": "security.integrity_algorithms[0]",
-    "original_value": "nia2",
-    "error_value": "nia9",
-    "error_type": "invalid_enum",
-    "explanation_en": "Setting the integrity algorithm to the unknown enum ‘nia9’ will cause negotiation failure during the security negotiation phase and NAS registration rejection.",
-    "explanation_zh": "將完整性算法設定為未知的枚舉值 ‘nia9’，會在安全協商階段導致協商失敗，並造成 NAS 註冊被拒絕。"
-  }
+    "filename": "cu_case_002.json",
+    "modified_key": "paramater",
+    "original_value": "original_paramater_value",
+    "error_value": "error_paramater_value"
+  },
+  .
+  .
+  .
+  .
+  .
+  .
+    {
+    "filename": "cu_case_n.json",
+    "modified_key": "paramater",
+    "original_value": "original_paramater_value",
+    "error_value": "error_paramater_value"
+  },
 ]
+
 
 ## Return
 
