@@ -19,9 +19,12 @@ PROJECT_ROOT = BASE_DIR.parent.parent.parent
 #     "filter_defind_format_du_1009_200_case",
 #     "filter_defind_format_ue_1016_175_case"
 # ]
+
 SOURCE_FOLDERS = [
-    "filter_defind_format_du_1114_30_case"
+    "filter_defind_format_du_1113_20_case"
 ]
+
+
 # --- 🎯 步驟 2: 設定輸出路徑 (統一輸出到一個檔案) ---
 OUTPUT_DIR = PROJECT_ROOT / "4_filter_out_the_error_log" / "merge_cae"
 # 統一輸出檔案名稱 (避免檔名過長，並指出是多資料夾合併)

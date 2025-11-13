@@ -13,8 +13,8 @@ SCRIPT_DIR = os.path.dirname(__file__)
 
 # 預設路徑（以 repo 相對路徑為準）
 DEFAULT_BASELINE_CONF = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "..", "0_required_inputs", "baseline_conf", "du_gnb.conf"))
-DEFAULT_ERROR_CASES_JSON = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "1_conf", "du_conf_1114_30", "json", "cases_delta.json"))
-DEFAULT_OUTPUT_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "1_conf", "du_conf_1114_30", "conf"))
+DEFAULT_ERROR_CASES_JSON = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "1_conf", "du_conf_1113_30", "json", "cases_delta.json"))
+DEFAULT_OUTPUT_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "1_conf", "du_conf_1113_30", "conf"))
 
 
 def _find_block_span(conf_text: str, block_name: str, index: int):
