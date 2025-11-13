@@ -1,0 +1,272 @@
+[
+  {
+    "filename": "du_case_801.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 4,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 4，超出標準支援的 0-3 範圍，將導致 PDCCH/PDSCH 無法正確配置。",
+    "explanation_en": "Set to illegal enumeration value 4, exceeding the standard supported range 0-3, leading to incorrect PDCCH/PDSCH configuration."
+  },
+  {
+    "filename": "du_case_802.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 5，超出標準範圍，無線資源管理將無法正確排程。",
+    "explanation_en": "Set to illegal enumeration value 5, out of standard range, resulting in failure of radio resource management scheduling."
+  },
+  {
+    "filename": "du_case_803.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 6,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 6，超出標準範圍，影響下行控制與資料傳輸的配置。",
+    "explanation_en": "Set to illegal enumeration value 6, out of standard range, affecting the configuration of downlink control and data transmission."
+  },
+  {
+    "filename": "du_case_804.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 7,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 7，超出標準範圍，導致幀結構解析錯誤。",
+    "explanation_en": "Set to illegal enumeration value 7, out of standard range, leading to frame structure parsing error."
+  },
+  {
+    "filename": "du_case_805.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 99,
+    "error_type": "out_of_range",
+    "explanation": "設定值 99 遠超出 SCS 的合法枚舉範圍，造成系統配置失敗。",
+    "explanation_en": "Value 99 is far outside the legal SCS enumeration range, causing system configuration failure."
+  },
+  {
+    "filename": "du_case_806.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 0 (15 kHz)，但若其他參數（如載波帶寬或 PointA）僅支援 30 kHz，將導致網格不匹配。",
+    "explanation_en": "Set to 0 (15 kHz), which may cause grid mismatch if other parameters (e.g., bandwidth or PointA) only support 30 kHz."
+  },
+  {
+    "filename": "du_case_807.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 2,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 2 (60 kHz)，如果頻段或 UE 能力不支持，將導致接入失敗。",
+    "explanation_en": "Set to 2 (60 kHz), which may cause access failure if the band or UE capability does not support it."
+  },
+  {
+    "filename": "du_case_808.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "設定為非法負值 -1，明顯超出所有可能的枚舉或範圍，導致解析錯誤。",
+    "explanation_en": "Set to illegal negative value -1, clearly out of all possible enumerations or ranges, resulting in parsing error."
+  },
+  {
+    "filename": "du_case_809.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 32768,
+    "error_type": "out_of_range",
+    "explanation": "設定為極大值，超出一般配置變量的整數類型限制，導致配置載入失敗。",
+    "explanation_en": "Set to an extremely large value, exceeding the integer type limits of common config variables, causing configuration loading failure."
+  },
+  {
+    "filename": "du_case_810.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 255,
+    "error_type": "out_of_range",
+    "explanation": "設定為 255 (常見的 8-bit 整數最大值)，遠超合法枚舉，導致解析邏輯錯誤。",
+    "explanation_en": "Set to 255 (a common 8-bit integer max), far exceeding the legal enumeration, causing parsing logic error."
+  },
+  {
+    "filename": "du_case_811.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 4.5,
+    "error_type": "wrong_type",
+    "explanation": "雖然此處輸入數字，但如果系統內部將其識別為浮點數，可能導致類型轉換錯誤。",
+    "explanation_en": "Although a number is entered, if the system internally identifies it as a floating point number, it might cause type conversion errors."
+  },
+  {
+    "filename": "du_case_812.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 10,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 10，超出標準定義，導致下行資源無法解析。",
+    "explanation_en": "Set to illegal enumeration value 10, beyond standard definition, preventing downlink resource parsing."
+  },
+  {
+    "filename": "du_case_813.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 1000,
+    "error_type": "out_of_range",
+    "explanation": "設定為極大值 1000，超出合理範圍，導致無線資源計算錯誤。",
+    "explanation_en": "Set to an extreme value of 1000, out of reasonable range, leading to radio resource calculation error."
+  },
+  {
+    "filename": "du_case_814.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": -10,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -10，絕對是無效的子載波間隔配置。",
+    "explanation_en": "Set to negative value -10, which is absolutely an invalid subcarrier spacing configuration."
+  },
+  {
+    "filename": "du_case_815.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 128,
+    "error_type": "out_of_range",
+    "explanation": "設定為 128 (常見的 7-bit 整數最大值附近)，遠超合法枚舉，導致配置被拒絕。",
+    "explanation_en": "Set to 128 (near a common 7-bit integer max), far beyond the legal enumeration, causing configuration rejection."
+  },
+  {
+    "filename": "du_case_816.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 3,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 3 (120 kHz)，如果 PointA 或其他載波參數與之不兼容，將導致錯誤。",
+    "explanation_en": "Set to 3 (120 kHz), which will cause an error if the PointA or other carrier parameters are incompatible with it."
+  },
+  {
+    "filename": "du_case_817.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 8,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 8，無法對應到任何標準 SCS，導致下行訊號發送失敗。",
+    "explanation_en": "Set to illegal enumeration value 8, which cannot correspond to any standard SCS, leading to downlink signal transmission failure."
+  },
+  {
+    "filename": "du_case_818.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 16,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 16，導致系統無法正確解析 SIB1 配置。",
+    "explanation_en": "Set to illegal enumeration value 16, resulting in the system's inability to correctly parse the SIB1 configuration."
+  },
+  {
+    "filename": "du_case_819.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 30,
+    "error_type": "out_of_range",
+    "explanation": "設定為 30，容易與 30 kHz 的數值混淆，但作為枚舉值是無效的。",
+    "explanation_en": "Set to 30, easily confused with the 30 kHz value, but invalid as an enumeration value."
+  },
+  {
+    "filename": "du_case_820.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 60,
+    "error_type": "out_of_range",
+    "explanation": "設定為 60，容易與 60 kHz 的數值混淆，但作為枚舉值是無效的。",
+    "explanation_en": "Set to 60, easily confused with the 60 kHz value, but invalid as an enumeration value."
+  },
+  {
+    "filename": "du_case_821.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": -2,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -2，導致配置解析時出現非預期的錯誤狀態。",
+    "explanation_en": "Set to negative value -2, leading to an unexpected error state during configuration parsing."
+  },
+  {
+    "filename": "du_case_822.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 100,
+    "error_type": "out_of_range",
+    "explanation": "設定值 100，一個遠超合法枚舉範圍的整數，造成系統內部檢查失敗。",
+    "explanation_en": "Value 100 is an integer far exceeding the legal enumeration range, causing an internal system check failure."
+  },
+  {
+    "filename": "du_case_823.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 127,
+    "error_type": "out_of_range",
+    "explanation": "設定為 127 (常見的 7-bit 整數最大值)，遠超合法枚舉，導致邏輯錯誤。",
+    "explanation_en": "Set to 127 (a common 7-bit integer max), far beyond the legal enumeration, leading to logical error."
+  },
+  {
+    "filename": "du_case_824.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 512,
+    "error_type": "out_of_range",
+    "explanation": "設定為 512 (常見的 9-bit 整數範圍)，超出合理範圍，導致配置載入失敗。",
+    "explanation_en": "Set to 512 (a common 9-bit integer range), out of reasonable range, causing configuration loading failure."
+  },
+  {
+    "filename": "du_case_825.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 9，無法用於下行資源單元計算。",
+    "explanation_en": "Set to illegal enumeration value 9, unusable for downlink resource unit calculation."
+  },
+  {
+    "filename": "du_case_826.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 15,
+    "error_type": "out_of_range",
+    "explanation": "設定為 15，容易與 15 kHz 的數值混淆，但作為枚舉值是無效的。",
+    "explanation_en": "Set to 15, easily confused with the 15 kHz value, but invalid as an enumeration value."
+  },
+  {
+    "filename": "du_case_827.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 120,
+    "error_type": "out_of_range",
+    "explanation": "設定為 120，容易與 120 kHz 的數值混淆，但作為枚舉值是無效的。",
+    "explanation_en": "Set to 120, easily confused with the 120 kHz value, but invalid as an enumeration value."
+  },
+  {
+    "filename": "du_case_828.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 1024,
+    "error_type": "out_of_range",
+    "explanation": "設定為極大值 1024，導致配置無法通過邊界檢查。",
+    "explanation_en": "Set to an extreme value of 1024, causing the configuration to fail boundary checks."
+  },
+  {
+    "filename": "du_case_829.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": -5,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -5，違反物理層配置的基本要求。",
+    "explanation_en": "Set to negative value -5, violating the fundamental requirement for physical layer configuration."
+  },
+  {
+    "filename": "du_case_830.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].dl_subcarrierSpacing",
+    "original_value": 1,
+    "error_value": 31,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 31，導致無線幀結構參數計算錯誤。",
+    "explanation_en": "Set to illegal enumeration value 31, causing incorrect calculation of radio frame structure parameters."
+  }
+]
