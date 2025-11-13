@@ -10,16 +10,18 @@ PROJECT_ROOT = BASE_DIR.parent.parent.parent
 
 # --- 🎯 步驟 1: 定義所有要合併的「資料夾名稱」清單 ---
 # 請將所有想要合併的資料夾名稱放入這個列表中
+# SOURCE_FOLDERS = [
+#     "filter_defind_format_1002_600_case",
+#     "filter_defind_format_1014_800_case", 
+#     "filter_defind_format_1014_2000_case",
+#     "filter_defind_format_cu_1009_200_case",
+#     "filter_defind_format_cu_1016_150_case",
+#     "filter_defind_format_du_1009_200_case",
+#     "filter_defind_format_ue_1016_175_case"
+# ]
 SOURCE_FOLDERS = [
-    "filter_defind_format_1002_600_case",
-    "filter_defind_format_1014_800_case", 
-    "filter_defind_format_1014_2000_case",
-    "filter_defind_format_cu_1009_200_case",
-    "filter_defind_format_cu_1016_150_case",
-    "filter_defind_format_du_1009_200_case",
-    "filter_defind_format_ue_1016_175_case"
+    "filter_defind_format_du_1114_30_case"
 ]
-
 # --- 🎯 步驟 2: 設定輸出路徑 (統一輸出到一個檔案) ---
 OUTPUT_DIR = PROJECT_ROOT / "4_filter_out_the_error_log" / "merge_cae"
 # 統一輸出檔案名稱 (避免檔名過長，並指出是多資料夾合併)

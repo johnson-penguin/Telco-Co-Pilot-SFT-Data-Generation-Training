@@ -108,8 +108,8 @@ def main():
     # print("--------------------------------")
     # print(f"PROJECT_ROOT: {PROJECT_ROOT}")
 
-    input_dir = os.path.join(PROJECT_ROOT, "3_defined_input_format", "new_defind_format_ue_1016_175_case")
-    output_dir = os.path.join(PROJECT_ROOT, "4_filter_out_the_error_log", "filter_defind_format_ue_1016_175_case")
+    input_dir = os.path.join(PROJECT_ROOT, "3_defined_input_format", "new_defind_format_du_1114_30_case")
+    output_dir = os.path.join(PROJECT_ROOT, "4_filter_out_the_error_log", "filter_defind_format_du_1114_30_case")
 
 
     success_pattern = "Received PDU Session Establishment Accept"
