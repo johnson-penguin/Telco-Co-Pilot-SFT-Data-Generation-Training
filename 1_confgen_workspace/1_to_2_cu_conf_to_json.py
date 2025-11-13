@@ -266,6 +266,9 @@ def main() -> None:
     DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "1_conf" / "cu_conf_1001_200" / "error_conf"
     DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "2_json" / "cu_conf_1001_200_json"
 
+    # DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "0_workable_conf" / "cu_conf"
+    # DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "0_workable_json_conf" / "cu_gnb_json"
+
     parser = argparse.ArgumentParser(description="Convert CU .conf to JSON matching baseline structure")
     parser.add_argument("--input", help="Input .conf file or directory", required=False, default=DEFAULT_INPUT)
     parser.add_argument("--output", help="Output .json file or directory", required=False, default=DEFAULT_OUTPUT)

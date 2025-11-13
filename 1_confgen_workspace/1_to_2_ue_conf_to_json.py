@@ -133,6 +133,8 @@ def main() -> None:
 
     DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "1_conf" / "ue_conf_1016_175" / "conf"
     DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "2_json" / "ue_conf_1016_175_json"
+    # DEFAULT_INPUT = PROJECT_ROOT / "1_confgen_workspace" / "0_workable_conf" / "ue_conf"
+    # DEFAULT_OUTPUT = PROJECT_ROOT / "1_confgen_workspace" / "0_workable_json_conf" / "ue_json"
 
 
 
