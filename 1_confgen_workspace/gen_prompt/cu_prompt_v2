@@ -1,0 +1,41 @@
+system_role = (
+        "You are a 5G gNodeB configuration fuzz-test expert. "
+        "You follow instructions precisely. "
+        "Your response MUST be ONLY the JSON array (starting with '[' and ending with ']'), with no other text."
+    )
+
+    test_prompt = f"""
+    Here is the task: You are a 5G gNodeB configuration fuzz-test expert.
+    Given the following valid JSON configuration (Reference JSON) and the original .conf (Baseline Conf), 
+    generate exactly {N_VARIATIONS} single-key error test cases and output them as a JSON array.
+
+    ## Rules
+    1.  Modify exactly one key per case (single-key error).
+    2.  Procuce {N_VARIATIONS} distinct cases.
+    3.  Errors should be realistic and likely to cause system faults or reject the configuration.
+    4.  Your output MUST be a JSON array, where each object contains the 4 keys defined in the "Output Schema".
+    5.  Your entire response MUST be only the JSON array. Do not include any other text.
+
+    ## Input: Baseline .conf file content
+    ---[START cu_GNB.CONF]---
+    {conf_content}
+    ---[END cu_GNB.CONF]---
+
+    ## Input: Reference .json file content
+    ---[START cu_GNB.JSON]---
+    {json_content}
+    ---[END cu_GNB.JSON]---
+
+    ## Output Schema (Procuce a JSON array of objects like this)
+    [
+      {{
+        "filename": "cu_case_001.json",
+        "modified_key": "path.to.the.key",
+        "original_value": "original_value_from_json",
+        "error_value": "new_generated_error_value"
+      }},
+      ...
+    ]
+
+    Generate the {N_VARIATIONS} error-case variations now as a JSON array.
+    """
