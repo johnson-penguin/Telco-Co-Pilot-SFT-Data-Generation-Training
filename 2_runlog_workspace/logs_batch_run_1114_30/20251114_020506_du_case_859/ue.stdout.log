@@ -1,0 +1,1964 @@
+[UTIL]   running in SA mode (no --phy-test, --do-ra, --nsa option present)
+[0m[UTIL]   threadCreate() for Tpool0_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool1_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool2_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool3_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool4_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool5_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool6_-1: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for Tpool7_-1: creating thread with affinity ffffffff, priority 97
+[0m[OPT]   OPT disabled
+[0m[HW]   Version: Branch: develop Abrev. Hash: b2c9a1d2b5 Date: Tue May 20 05:46:54 2025 +0000
+[0m[NR_RRC]   create TASK_RRC_NRUE 
+[0m[UTIL]   threadCreate() for TASK_RRC_NRUE: creating thread with affinity ffffffff, priority 50
+[0m[UTIL]   threadCreate() for TASK_NAS_NRUE: creating thread with affinity ffffffff, priority 50
+[0m[SIM]   UICC simulation: IMSI=001010000000001, IMEISV=6754567890123413, Ki=fec86ba6eb707ed08905757b1bb44b8f, OPc=C42449363BBAD02B66D16BC975D77CC1, DNN=oai, SST=0x01, SD=0xffffff
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[NR_MAC]   Initializing dl and ul config_request. num_slots = 20
+[0m[RLC]   Activated srb0 for UE 0
+[0m[UTIL]   threadCreate() for time source iq samples: creating thread with affinity ffffffff, priority 2
+[0m[UTIL]   time manager configuration: [time source: iq_samples] [mode: standalone] [server IP: 127.0.0.1} [server port: 7374] (server IP/port not used)
+[0m[PHY]   Set UE_fo_compensation 0, UE_scan_carrier 0, UE_no_timing_correction 0 
+, chest-freq 0, chest-time 0
+[0m[PHY]   Set UE nb_rx_antenna 1, nb_tx_antenna 1, threequarter_fs 0, ssb_start_subcarrier 516
+[0m[PHY]   SA init parameters. DL freq 3619200000 UL offset 0 SSB numerology 1 N_RB_DL 106
+[0m[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176, ofdm_symbol_size 2048
+[0m[93m[PHY]   samples_per_subframe 61440/per second 61440000, wCP 57344
+[0m[UTIL]   threadCreate() for SYNC__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for DL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for UL__actor: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for UL__actor: creating thread with affinity ffffffff, priority 97
+[0m[PHY]   Initializing UE vars for gNB TXant 1, UE RXant 1
+[0m[PHY]   prs_config configuration NOT found..!! Skipped configuring UE for the PRS reception
+[0m[PHY]   HW: Configuring card 0, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 1, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 2, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 3, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 4, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 5, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 6, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   HW: Configuring card 7, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110
+[0m[PHY]   Intializing UE Threads for instance 0 ...
+[0m[UTIL]   threadCreate() for UEthread_0: creating thread with affinity ffffffff, priority 97
+[0m[UTIL]   threadCreate() for L1_UE_stats_0: creating thread with affinity ffffffff, priority 1
+[0m[HW]   Running as client: will connect to a rfsimulator server side
+[0m[HW]   [RRU] has loaded RFSIMULATOR device.
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   connect() to 127.0.0.1:4043 failed, errno(111)
+[0m[HW]   Trying to connect to 127.0.0.1:4043
+[0m[HW]   Connection to 127.0.0.1:4043 established
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 184320 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 12, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=142 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 184320 samples
+[0m[HW]   received write reorder clear context
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[PHY]   N_TA_offset changed from 0 to 800
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 169, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 169.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 40
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 171, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 171.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 173, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 173.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 27
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 175, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 175.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 177, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 177.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 179, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 179.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 181, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 181.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 183, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 183.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 185, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 185.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 187, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 187.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 52
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=190 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 217, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 217.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 219, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 219.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 221, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 221.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 223, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 223.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 10
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 225, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 225.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 10
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 227, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 227.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 42
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 229, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 229.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 231, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 231.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 233, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 233.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 61
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 235, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 235.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=238 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 265, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 265.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 267, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 267.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 38
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 269, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 269.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 44
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 271, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 271.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 273, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 273.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 275, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 275.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 277, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 277.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 279, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 279.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 53
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 281, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 281.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 283, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 283.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=286 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 313, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 313.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 315, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 315.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 9
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 317, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 317.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 35
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 319, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 319.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 321, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 321.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 323, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 323.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 59
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 325, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 325.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 327, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 327.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 329, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 329.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 53
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 331, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 331.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=334 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 361, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 361.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 10
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 363, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 363.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 365, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 365.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 51
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 367, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 367.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 369, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 369.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 14
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 371, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 371.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 373, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 373.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 375, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 375.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 377, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 377.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 1
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 379, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 379.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=382 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 409, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 409.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 49
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 411, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 411.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 7
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 413, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 413.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 415, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 415.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 417, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 417.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 419, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 419.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 40
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 421, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 421.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 423, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 423.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 425, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 425.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 49
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 427, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 427.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 41
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=430 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 457, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 457.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 459, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 459.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 59
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 461, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 461.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 463, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 463.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 465, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 465.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 467, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 467.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 469, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 469.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 59
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 471, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 471.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 23
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 473, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 473.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 475, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 475.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=478 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 505, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 505.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 507, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 507.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 509, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 509.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 36
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 511, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 511.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 43
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 513, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 513.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 515, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 515.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 517, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 517.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 519, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 519.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 521, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 521.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 523, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 523.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=526 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 553, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 553.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 555, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 555.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 557, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 557.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 559, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 559.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 561, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 561.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 55
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 563, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 563.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 565, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 565.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 567, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 567.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 14
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 569, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 569.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 21
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 571, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 571.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=574 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 601, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 601.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 43
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 603, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 603.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 15
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 605, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 605.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 23
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 607, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 607.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 33
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 609, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 609.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 611, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 611.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 613, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 613.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 615, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 615.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 617, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 617.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 619, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 619.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=622 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 649, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 649.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 1
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 651, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 651.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 653, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 653.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 1
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 655, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 655.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 657, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 657.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 57
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 659, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 659.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 27
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 661, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 661.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 663, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 663.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 45
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 665, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 665.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 57
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 667, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 667.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 41
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=670 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 697, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 697.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 699, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 699.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 701, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 701.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 703, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 703.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 37
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 705, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 705.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 15
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 707, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 707.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 709, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 709.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 711, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 711.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 54
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 713, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 713.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 715, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 715.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=718 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 745, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 745.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 747, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 747.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 43
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 749, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 749.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 60
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 751, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 751.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 41
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 753, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 753.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 5
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 755, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 755.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 60
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 757, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 757.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 759, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 759.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 761, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 761.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 763, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 763.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=766 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 793, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 793.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 795, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 795.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 797, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 797.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 21
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 799, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 799.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 801, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 801.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 803, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 803.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 805, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 805.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 807, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 807.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 809, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 809.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 14
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 811, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 811.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=814 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 841, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 841.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 843, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 843.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 9
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 845, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 845.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 53
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 847, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 847.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 849, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 849.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 851, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 851.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 55
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 853, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 853.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 37
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 855, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 855.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 857, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 857.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 27
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 859, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 859.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=862 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 889, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 889.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 891, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 891.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 59
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 893, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 893.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 57
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 895, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 895.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 897, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 897.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 899, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 899.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 901, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 901.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 903, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 903.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 905, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 905.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 907, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 907.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 41
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=910 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 937, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 937.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 939, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 939.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 941, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 941.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 51
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 943, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 943.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 945, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 945.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 61
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 947, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 947.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 22
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 949, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 949.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 12
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 951, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 951.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 953, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 953.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 38
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 955, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 955.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=958 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 985, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 985.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 987, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 987.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 989, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 989.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 38
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 991, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 991.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 52
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 993, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 993.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 15
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 995, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 995.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 997, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 997.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 12
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 999, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 999.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 61
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 1001, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 1001.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 36
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 1003, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 1003.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=1006 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 9, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 9.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 11, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 11.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 13, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 13.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 15, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 15.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 17, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 17.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 38
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 19, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 19.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 21, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 21.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 23, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 23.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 15
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 25, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 25.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 27, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 27.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 4 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200004 Hz, rx_freq 3619200004 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 4 Hz, rxgain 0.000000 (DL 3619200004.000000 Hz, UL 3619200004.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=30 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 57, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 57.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 59, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 59.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 44
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 61, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 61.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 63, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 63.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 36
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 65, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 65.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 31
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 67, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 67.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 69, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 69.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 54
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 71, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 71.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 42
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 73, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 73.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 75, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 75.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=78 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 105, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 105.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 107, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 107.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 2
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 109, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 109.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 111, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 111.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 113, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 113.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 55
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 115, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 115.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 52
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 117, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 117.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 119, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 119.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 121, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 121.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 37
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 123, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 123.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=126 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 153, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 153.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 29
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 155, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 155.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 22
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 157, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 157.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 159, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 159.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 5
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 161, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 161.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 163, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 163.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 51
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 165, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 165.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 51
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 167, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 167.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 169, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 169.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 171, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 171.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=174 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 201, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 201.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 8
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 203, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 203.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 41
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 205, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 205.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 44
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 207, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 207.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 1
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 209, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 209.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 211, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 211.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 213, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 213.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 37
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 215, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 215.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 21
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 217, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 217.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 219, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 219.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 5
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=222 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 249, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 249.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 16
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 251, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 251.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 54
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 253, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 253.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 22
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 255, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 255.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 35
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 257, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 257.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 57
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 259, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 259.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 261, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 261.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 15
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 263, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 263.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 265, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 265.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 267, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 267.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=270 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 297, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 297.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 10, first_nonzero_root_idx 0, preambleIndex = 43
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 299, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 299.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 36
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 301, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 301.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 35
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 303, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 303.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 49
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 305, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 305.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 307, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 307.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 44
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 309, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 309.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 311, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 311.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 45
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 313, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 313.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 315, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 315.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=318 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 345, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 345.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 9
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 347, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 347.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 47
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 349, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 349.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 351, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 351.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 1
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 353, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 353.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 54
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 355, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 355.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 19
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 357, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 357.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 44
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 359, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 359.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 361, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 361.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 363, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 363.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 3
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=366 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 393, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 393.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 395, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 395.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 21
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 397, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 397.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 399, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 399.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 401, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 401.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 17
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 403, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 403.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 14
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 405, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 405.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 407, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 407.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 37
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 409, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 409.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 23
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 411, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 411.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=414 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 441, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 441.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 12
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 443, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 443.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 445, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 445.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 447, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 447.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 7
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 449, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 449.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 451, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 451.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 14
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 453, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 453.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 455, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 455.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 457, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 457.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 51
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 459, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 459.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 63
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=462 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 489, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 489.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 56
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 491, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 491.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 31
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 493, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 493.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 495, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 495.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 25
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 497, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 497.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 499, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 499.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 4
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 501, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 501.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 503, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 503.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 36
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 505, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 505.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 507, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 507.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=510 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 537, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 537.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 539, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 539.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 541, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 541.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 543, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 543.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 12
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 545, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 545.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 547, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 547.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 549, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 549.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 8
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 551, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 551.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 23
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 553, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 553.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 555, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 555.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=558 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 585, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 585.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 587, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 587.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 589, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 589.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 28
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 591, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 591.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 52
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 593, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 593.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 595, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 595.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 7, first_nonzero_root_idx 0, preambleIndex = 30
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 597, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 597.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 49
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 599, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 599.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 9, first_nonzero_root_idx 0, preambleIndex = 39
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 601, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 601.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 57
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 603, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 603.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=606 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 633, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 633.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 0, first_nonzero_root_idx 0, preambleIndex = 0
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 635, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 635.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 637, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 637.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 639, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 639.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 13, first_nonzero_root_idx 0, preambleIndex = 53
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 641, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 641.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 13
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 643, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 643.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 645, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 645.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 647, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 647.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 10
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 649, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 649.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 61
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 651, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 651.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=654 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 681, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 681.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 5, first_nonzero_root_idx 0, preambleIndex = 20
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 683, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 683.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 50
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 685, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 685.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 16
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 687, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 687.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 689, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 689.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 691, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 691.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 693, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 693.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 3, first_nonzero_root_idx 0, preambleIndex = 12
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 695, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 695.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 4, first_nonzero_root_idx 0, preambleIndex = 18
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 697, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 697.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 15, first_nonzero_root_idx 0, preambleIndex = 62
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 699, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 699.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 32
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 5 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200005 Hz, rx_freq 3619200005 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 5 Hz, rxgain 0.000000 (DL 3619200005.000000 Hz, UL 3619200005.000000 Hz)
+[0m[32m[PHY]   UE synchronized! decoded_frame_rx=702 UE->init_sync_frame=0 trashed_frames=24
+[0m[PHY]   Resynchronizing RX by 550736 samples
+[0m[HW]   received write reorder clear context
+[0m[1;31m[HW]   write_reorder_clear_context call while still writing on the device
+[0m[32m[NR_RRC]   SIB1 decoded
+[0m[NR_MAC]   TDD period index = 6, based on the sum of dl_UL_TransmissionPeriodicity from Pattern1 (5.000000 ms) and Pattern2 (0.000000 ms): Total = 5.000000 ms
+[0m[NR_MAC]   Set TDD configuration period to: 8 DL slots, 3 UL slots, 10 slots per period (NR_TDD_UL_DL_Pattern is 7 DL slots, 2 UL slots, 6 DL symbols, 4 UL symbols)
+[0m[NR_MAC]   Configured 1 TDD patterns (total slots: pattern1 = 10, pattern2 = 0)
+[0m[MAC]   Initialization of 4-Step CBRA procedure
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 729, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 729.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 12, first_nonzero_root_idx 0, preambleIndex = 48
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 731, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 731.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 24
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 733, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 733.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 735, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 735.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 11
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 737, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 737.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 1, first_nonzero_root_idx 0, preambleIndex = 6
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 739, Slot 9, Symbol 8, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 739.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 11, first_nonzero_root_idx 0, preambleIndex = 46
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 741, Slot 9, Symbol 4, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 741.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0, preambleIndex = 26
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 743, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 743.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 8, first_nonzero_root_idx 0, preambleIndex = 34
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 745, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 745.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 14, first_nonzero_root_idx 0, preambleIndex = 58
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_MAC]   PRACH scheduler: Selected RO Frame 747, Slot 9, Symbol 0, Fdm 0
+[0m[PHY]   PRACH [UE 0] in frame.slot 747.9, placing PRACH in position 5652, Msg1/MsgA-Preamble frequency start 0 (k1 0), preamble_offset 2, first_nonzero_root_idx 0, preambleIndex = 9
+[0m[93m[MAC]   [UE 0] RAR reception failed
+[0m[NR_RRC]   RRC moved into IDLE state
+[0m[NAS]   [UE 0] Received NR_NAS_CONN_RELEASE_IND: cause OTHER
+[0m[NR_MAC]   [UE0] Initializing MAC
+[0m[93m[PHY]   SSB position provided
+[0m[93m[NR_PHY]   Starting sync detection
+[0m[PHY]   [UE thread Synch] Running Initial Synch 
+[0m[NR_PHY]   Starting cell search with center freq: 3619200000, bandwidth: 106. Scanning for 1 number of GSCN.
+[0m[NR_PHY]   Scanning GSCN: 0, with SSB offset: 516, SSB Freq: 0.000000
+[0m[PHY]   Initial sync: pbch decoded sucessfully, ssb index 0
+[0m[PHY]   pbch rx ok. rsrp:51 dB/RE, adjust_rxgain:-1 dB
+[0m[NR_PHY]   Cell Detected with GSCN: 0, SSB SC offset: 516, SSB Ref: 0.000000, PSS Corr peak: 99 dB, PSS Corr Average: 63
+[0m[PHY]   [UE0] In synch, rx_offset 550736 samples
+[0m[PHY]   [UE 0] Measured Carrier Frequency offset 6 Hz
+[0m[32m[PHY]   Initial sync successful, PCI: 0
+[0m[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200006 Hz, rx_freq 3619200006 Hz, tune_offset 0
+[0m[PHY]   Got synch: hw_slot_offset 36, carrier off 6 Hz, rxgain 0.000000 (DL 3619200006.000000 Hz, UL 3619200006.000000 Hz)
+[0m

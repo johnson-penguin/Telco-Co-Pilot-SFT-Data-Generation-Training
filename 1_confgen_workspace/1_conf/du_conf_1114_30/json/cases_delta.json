@@ -1,0 +1,272 @@
+[
+  {
+    "filename": "du_case_831.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 4,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 4，超出標準 0-3 範圍，導致 PRACH 資源配置失敗。",
+    "explanation_en": "Set to illegal enumeration value 4, exceeding the standard 0-3 range, causing PRACH resource configuration failure."
+  },
+  {
+    "filename": "du_case_832.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 5,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 5，超出標準 0-3 範圍，UE 將無法計算正確的 Msg1 傳輸參數。",
+    "explanation_en": "Set to illegal enumeration value 5, outside the standard 0-3 range, the UE will be unable to calculate correct Msg1 transmission parameters."
+  },
+  {
+    "filename": "du_case_833.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": -1,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -1，為無效參數，將導致 gNB 配置載入失敗或 PRACH 功能異常。",
+    "explanation_en": "Set to a negative value -1, an invalid parameter, which will cause gNB configuration loading failure or PRACH function abnormality."
+  },
+  {
+    "filename": "du_case_834.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 2,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 2 (60 kHz)，這在 n78 (FR1) 頻段上通常不支援 PRACH，與頻段特性衝突，導致 UE 無法發起 Msg1。",
+    "explanation_en": "Set to 2 (60 kHz), which is typically not supported for PRACH in band n78 (FR1), conflicting with band characteristics and preventing UE from initiating Msg1."
+  },
+  {
+    "filename": "du_case_835.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 3,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 3 (120 kHz)，此為 FR2 設置，與 n78 (FR1) 頻段不兼容，導致 PRACH 隨機接入失敗。",
+    "explanation_en": "Set to 3 (120 kHz), an FR2 setting, which is incompatible with the n78 (FR1) band, leading to PRACH random access failure."
+  },
+  {
+    "filename": "du_case_836.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 10,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 10，gNB 無法將其映射到任何有效的 PRACH SCS，導致接入流程中止。",
+    "explanation_en": "Set to illegal enumeration value 10, the gNB cannot map it to any valid PRACH SCS, causing the access procedure to abort."
+  },
+  {
+    "filename": "du_case_837.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 99,
+    "error_type": "out_of_range",
+    "explanation": "設定為 99，遠超合法枚舉範圍，導致配置驗證失敗。",
+    "explanation_en": "Set to 99, far exceeding the legal enumeration range, leading to configuration validation failure."
+  },
+  {
+    "filename": "du_case_838.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 255,
+    "error_type": "out_of_range",
+    "explanation": "設定為 255 (常見 8-bit 最大值)，為無效枚舉，將導致 RRC 配置解析器錯誤。",
+    "explanation_en": "Set to 255 (common 8-bit max value), an invalid enumeration, which will cause an RRC configuration parser error."
+  },
+  {
+    "filename": "du_case_839.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 128,
+    "error_type": "out_of_range",
+    "explanation": "設定為 128，超出標準範圍，導致 Msg1 參數計算溢出或錯誤。",
+    "explanation_en": "Set to 128, exceeding the standard range, causing Msg1 parameter calculation overflow or error."
+  },
+  {
+    "filename": "du_case_840.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 6,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 6，gNB 無法為此配置分配 PRACH 資源。",
+    "explanation_en": "Set to illegal enumeration value 6, the gNB cannot allocate PRACH resources for this configuration."
+  },
+  {
+    "filename": "du_case_841.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 7,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 7，導致 SIB1 廣播的 RACH 配置無效。",
+    "explanation_en": "Set to illegal enumeration value 7, resulting in an invalid RACH configuration broadcast in SIB1."
+  },
+  {
+    "filename": "du_case_842.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 8,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 8，UE 收到此配置後將視為無效並導致接入失敗。",
+    "explanation_en": "Set to illegal enumeration value 8, the UE will treat this configuration as invalid upon receipt, leading to access failure."
+  },
+  {
+    "filename": "du_case_843.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 9,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 9，超出標準 0-3 範圍，導致 PRACH 物理層處理失敗。",
+    "explanation_en": "Set to illegal enumeration value 9, exceeding the standard 0-3 range, causing PRACH physical layer processing failure."
+  },
+  {
+    "filename": "du_case_844.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 11,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 11，導致 gNB 無法正確配置 Msg1 接收窗口。",
+    "explanation_en": "Set to illegal enumeration value 11, preventing the gNB from correctly configuring the Msg1 reception window."
+  },
+  {
+    "filename": "du_case_845.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 12,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 12，為未定義的 SCS，將導致隨機接入配置錯誤。",
+    "explanation_en": "Set to illegal enumeration value 12, an undefined SCS, which will lead to random access configuration error."
+  },
+  {
+    "filename": "du_case_846.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 13,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 13，導致 SIB1 中的 RACH-ConfigCommon 欄位無效。",
+    "explanation_en": "Set to illegal enumeration value 13, rendering the RACH-ConfigCommon field in SIB1 invalid."
+  },
+  {
+    "filename": "du_case_847.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 14,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 14，使 UE 無法確定 PRACH 的子載波間隔。",
+    "explanation_en": "Set to illegal enumeration value 14, making it impossible for the UE to determine the PRACH subcarrier spacing."
+  },
+  {
+    "filename": "du_case_848.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 15,
+    "error_type": "out_of_range",
+    "explanation": "設定為 15，易與 15 kHz 混淆，但作為枚舉值是無效的，導致 gNB 解析錯誤。",
+    "explanation_en": "Set to 15, easily confused with 15 kHz, but it is invalid as an enumeration value, causing a gNB parsing error."
+  },
+  {
+    "filename": "du_case_849.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 16,
+    "error_type": "invalid_enum",
+    "explanation": "設定為非法枚舉值 16，超出 RRC 規範，導致配置被 UE 拒絕。",
+    "explanation_en": "Set to illegal enumeration value 16, exceeding RRC specifications, causing the configuration to be rejected by the UE."
+  },
+  {
+    "filename": "du_case_850.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 30,
+    "error_type": "out_of_range",
+    "explanation": "設定為 30，易與 30 kHz 混淆，但作為枚舉值是無效的，導致 gNB 解析錯誤。",
+    "explanation_en": "Set to 30, easily confused with 30 kHz, but it is invalid as an enumeration value, causing a gNB parsing error."
+  },
+  {
+    "filename": "du_case_851.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 60,
+    "error_type": "out_of_range",
+    "explanation": "設定為 60，易與 60 kHz 混淆，但作為枚舉值是無效的，導致 gNB 解析錯誤。",
+    "explanation_en": "Set to 60, easily confused with 60 kHz, but it is invalid as an enumeration value, causing a gNB parsing error."
+  },
+  {
+    "filename": "du_case_852.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 120,
+    "error_type": "out_of_range",
+    "explanation": "設定為 120，易與 120 kHz 混淆，但作為枚舉值是無效的，導致 gNB 解析錯誤。",
+    "explanation_en": "Set to 120, easily confused with 120 kHz, but it is invalid as an enumeration value, causing a gNB parsing error."
+  },
+  {
+    "filename": "du_case_853.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": -2,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -2，為無效參數，導致配置驗證和 PRACH 初始化失敗。",
+    "explanation_en": "Set to negative value -2, an invalid parameter, causing configuration validation and PRACH initialization failure."
+  },
+  {
+    "filename": "du_case_854.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": -100,
+    "error_type": "out_of_range",
+    "explanation": "設定為負值 -100，為無效參數，導致 RRC 配置解析器錯誤。",
+    "explanation_en": "Set to negative value -100, an invalid parameter, causing an RRC configuration parser error."
+  },
+  {
+    "filename": "du_case_855.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 100,
+    "error_type": "out_of_range",
+    "explanation": "設定為 100，遠超合法枚舉範圍 (0-3)，導致 PRACH 參數計算錯誤。",
+    "explanation_en": "Set to 100, far exceeding the legal enumeration range (0-3), leading to PRACH parameter calculation error."
+  },
+  {
+    "filename": "du_case_856.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 65536,
+    "error_type": "out_of_range",
+    "explanation": "設定為 65536 (常見 16-bit 溢出值)，遠超參數範圍，導致配置載入失敗。",
+    "explanation_en": "Set to 65536 (common 16-bit overflow value), far exceeding the parameter range, causing configuration loading failure."
+  },
+  {
+    "filename": "du_case_857.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 32768,
+    "error_type": "out_of_range",
+    "explanation": "設定為 32768，超出整數範圍限制，導致 RRC 處理失敗。",
+    "explanation_en": "Set to 32768, exceeding integer range limits, leading to RRC processing failure."
+  },
+  {
+    "filename": "du_case_858.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 1.5,
+    "error_type": "wrong_type",
+    "explanation": "設定為浮點數 1.5，而此參數應為整數枚舉值，導致類型錯誤和解析失敗。",
+    "explanation_en": "Set to a float value 1.5, whereas this parameter should be an integer enumeration, causing a type error and parsing failure."
+  },
+  {
+    "filename": "du_case_859.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 0,
+    "error_type": "logical_contradiction",
+    "explanation": "設為 0 (15 kHz)。雖然合法，但如果 prach_ConfigurationIndex (98) 暗示需要 30 kHz，這將導致配置衝突。",
+    "explanation_en": "Set to 0 (15 kHz). While legal, if prach_ConfigurationIndex (98) implies 30 kHz is required, this will cause a configuration conflict."
+  },
+  {
+    "filename": "du_case_860.json",
+    "modified_key": "gNBs[0].servingCellConfigCommon[0].msg1_SubcarrierSpacing",
+    "original_value": 1,
+    "error_value": 50,
+    "error_type": "out_of_range",
+    "explanation": "設定為 50，為無效枚舉，將導致 gNB 無法正確解碼 Msg1。",
+    "explanation_en": "Set to 50, an invalid enumeration, which will prevent the gNB from correctly decoding Msg1."
+  }
+]
